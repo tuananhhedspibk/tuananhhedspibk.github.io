@@ -1,0 +1,29 @@
+img{
+	float: left;
+	border-width: 1.5px;
+	border-style: solid;
+	border-color: black;
+}
+
+p{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+i{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+b{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h2{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border-bottom: 1px solid #95afa1;
+	padding-bottom: 5px;
+}
+
+.greyCell{
+	background-color: rgb(243, 243, 243);
+	width: 400px;
+}

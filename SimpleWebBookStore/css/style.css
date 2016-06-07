@@ -1,0 +1,24 @@
+img{
+	max-height: 300px;
+}
+
+a:visited{
+	color: black;
+}
+
+a:link{
+	color: black;
+}
+
+a:hover{
+	color: blue;
+}
+
+a{
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.bigImg{
+	max-height: 400px;
+}
