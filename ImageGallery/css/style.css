@@ -42,11 +42,7 @@
 	cursor: pointer; 
 }
 
-.menu_item li:selected{
-	background: #777;
-}
-
-#menu_item_home{
+.menu_item_home{
 	background: rgb(33, 87, 123);
 	width: 35px;
 	float: left;
@@ -54,9 +50,14 @@
 	border-right: 1px solid white;
 }
 
-#menu_item_home:hover{
+.menu_item_home:hover{
 	background: #555;
 	cursor: pointer; 
+}
+
+.item_cliked{
+	background: #777;
+	cursor: pointer;
 }
 
 .subPic{
