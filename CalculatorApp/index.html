@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator Application</title>
+		<link rel="icon" type="image/ico" href="img/icon.ico">
+		<link rel="stylesheet" type="text/css" href="https:tuananhhedspibk.github.io/CalculatorApp/css/style.css">
+		<link rel="stylesheet" type="text/css" href="https:tuananhhedspibk.github.io/CalculatorApp/font-awesome-4.6.3/css/font-awesome.min.css"/>
+
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<b>WEB</b>
+				<b>2.0</b>
+				<b>CALC</b>
+				<b id="menu_item">HOME</b>
+				<a href="https://github.com/tuananhhedspibk" target="blank">AUTHOR</a>
+				<b>CONTACT ME AT : </b>
+				<a href="https://www.facebook.com/Web2.0Calc/" target="blank"><img src="https:tuananhhedspibk.github.io/CalculatorApp/img/facebookIcon.png" style="width: 23px;"></a>
+				<a href="https://plus.google.com/113161946690341932096/posts" target="blank" style="margin-left: 10px;"><img src="https:tuananhhedspibk.github.io/CalculatorApp/img/googlePlusIcon.png" style="width: 23px;"></a>
+			</div>
+			<div class="content">
+				<div class="main_content">
+					<input id="screen" type="text"style="height: 20px; ;width: 320px; margin-top: 15px; margin-left: 15px; font-weight: bold; padding-right: 35px; padding-left: 10px;"></input>
+					<i id="cal_icon" class="fa fa-calculator" aria-hidden="true"></i>
+					<div class="row_one">
+						<button id="btn7" style="margin-top: 20px; margin-left: 15px;" onclick="press(this.id)">7</button>
+						<button id="btn8" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">8</button>
+						<button id="btn9" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">9</button>
+						<button id="btn!" style="margin-top: 20px; margin-left: 17px;" onclick="press(this.id)">!</button>
+						<button id="btn_reset" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">RE</button>
+					</div>
+					<div class="row_two">
+						<button id="btn4" style="margin-top: 20px; margin-left: 15px;" onclick="press(this.id)">4</button>
+						<button id="btn5" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">5</button>
+						<button id="btn6" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">6</button>
+						<button id="btn_multi" style="margin-top: 20px; margin-left: 17px;" onclick="press(this.id)">*</button>
+						<button id="btn_division" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">/</button>
+					</div>
+					<div class="row_three">
+						<button id="btn1" style="margin-top: 20px; margin-left: 15px;" onclick="press(this.id)">1</button>
+						<button id="btn2" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">2</button>
+						<button id="btn3" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">3</button>
+						<button id="btn_plus" style="margin-top: 20px; margin-left: 17px;" onclick="press(this.id)">+</button>
+						<button id="btn_minus" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">-</button>
+					</div>
+					<div class="row_four">
+						<button id="btn0"style="margin-top: 20px; margin-left: 15px;" onclick="press(this.id)">0</button>
+						<button id="btn_dot" style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">.</button>
+						<button id="btn_square_root"style="margin-top: 20px; margin-left: 18px;" onclick="press(this.id)">&radic;</button>
+						<button id="btn_square"style="margin-top: 20px; margin-left: 17px;" onclick="press(this.id)">x<sup>2</sup></button>
+						<button id="btn_equal" style="margin-top: 20px; margin-left: 18px; " onclick="result()">=</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			var arrayOfNum = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+			var arrayOfOpe = ['+', '-', '/', '*', '^', 	'\u221A'];
+
+			function rFact(num){
+				if (num === 0){ 
+					return 1; 
+				}
+				else{ 
+					return num * rFact( num - 1 ); 
+				}
+			}
+
+			function press(id){
+				var screen = $('#screen');
+				if(id == 'btn_reset'){
+					screen.val('');
+					return null;
+				}
+				if(id == 'btn_square'){
+					screen.val(screen.val() + '^2');
+					return null;
+				}
+				var button = document.getElementById(id);
+				var text = button.innerText;
+				screen.val(screen.val() + text);
+			}
+
+			function result(){
+				var screen = $('#screen');
+				var expression = screen.val();
+				if(expression.indexOf("!") >= 0){
+					if(expression.indexOf("!") == 0){
+						screen.val("Syntax Error");
+						return null;
+					}
+					var index = expression.indexOf("!");
+					if(arrayOfNum.indexOf(expression.charAt(index + 1)) >= 0){
+						screen.val("Syntax Error");
+						return null;
+					}
+					while(index != -1){
+						var factor = "";
+						var num = "";
+						var i;
+						for(i = index - 1; i >= 0 ; i--){
+							if(arrayOfOpe.indexOf(expression.charAt(i)) >= 0){
+								break;
+							}
+						}
+						for(var j = i + 1 ; j < index ; j++){
+							num += expression.substring(j, j + 1);
+						}
+						factor = num + "!";
+						num = rFact(Number(num));
+						console.log(num);
+						expression = expression.replace(factor, num);
+						index = expression.indexOf("!");
+					}
+					screen.val(expression);
+				}
+				if(expression.indexOf('\u221A') >= 0){
+					var numBeforeText = "";
+					var numBefore = 1;
+					var numArr = [];
+					var index = expression.indexOf('\u221A');
+					var pivot;
+					var factor ="";
+					for(pivot = index - 1 ; pivot >= 0 ; pivot--){
+						if(arrayOfOpe.indexOf(expression.charAt(pivot)) >= 0){
+							break;
+						}
+					}
+					for(var j = pivot + 1 ; j < index ; j++){
+						numBeforeText += expression.charAt(j);
+					}
+					if(numBeforeText.localeCompare('') == 0){
+						numBefore = 1;
+					}
+					else{
+						numBefore = Number(numBeforeText);
+					}
+					for(var i = 0 ; i < expression.length ; i++){
+						if(expression.charAt(i) == '\u221A'){
+							var temp = "";
+							for(var j = i + 1 ; j < expression.length ; j++){
+								if(arrayOfNum.indexOf(expression.charAt(j)) >= 0){
+									temp += expression.charAt(j);
+									if(j == expression.length - 1){
+										numArr.push(temp);
+									}
+								}
+								else {
+									numArr.push(temp);
+									temp = "";
+									break;
+								}
+							}
+						}
+					}
+					pivot = 1;
+					factor += numBeforeText;
+					pivot *= numBefore;
+					for(var i = 0 ; i < numArr.length ; i++){
+						factor += '\u221A' + numArr[i];
+						pivot *= Math.sqrt(Number(numArr[i]));
+					}
+					expression = expression.replace(factor, pivot);
+					screen.val(expression);
+				}
+				if(expression.indexOf("^") >= 0){
+					if(expression.indexOf("^") == 0){
+						screen.val("Syntax Error");
+						return null;
+					}
+					var index = expression.indexOf("^");
+					if(arrayOfNum.indexOf(expression.charAt(index + 2)) >= 0){
+						screen.val("Syntax Error");
+						return null;
+					}
+					while(index != -1){
+						var factor = "";
+						var num = "";
+						var i;
+						for(i = index - 1; i >= 0 ; i--){
+							if(arrayOfOpe.indexOf(expression.charAt(i)) >= 0){
+								if(expression.charAt(i) == '^' || expression.charAt(i) == '!'){
+									screen.val("Syntax Error");
+									return null;
+								}
+							}
+						}
+						for(var j = i + 1 ; j < index ; j++){
+							num += expression.substring(j, j + 1);
+						}
+						factor = num + "^2";
+						num = Math.pow(Number(num), 2);
+						console.log(num);
+						expression = expression.replace(factor, num);
+						index = expression.indexOf("^");
+					}
+					screen.val(expression);
+				}
+				if(expression.indexOf("!") == -1 && expression.indexOf('\u221A') && expression.indexOf("^") == -1){
+					var result = eval(expression);
+					screen.val(result);
+				}	
+			}
+		</script>
+	</body>
+</html>
