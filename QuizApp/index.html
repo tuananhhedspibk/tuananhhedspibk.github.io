@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Let's Take A Quizzzzz</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="https:tuananhhedspibk.github.io/QuizApp/css/style.css">
+		<link rel="icon" type="image/png" href="https:tuananhhedspibk.github.io/QuizApp/img/icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="https:tuananhhedspibk.github.io/QuizApp/font-awesome-4.6.3/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="content">
+				<pre id="result" style="float: left;">Score : </pre>
+				<div class="question_part">
+					<p id="question">Where Is Paris ?</p>
+					<button class="answer" id="ans_a" onclick="press(this.id)">A. Norway</button><img id="true_false_a" style="width: 50px; margin-left: 20px;vertical-align: middle; margin-bottom: 10px;"><br/>
+					<button class="answer" id="ans_b" onclick="press(this.id)">B. France</button><img id="true_false_b" style="width: 50px; margin-left: 20px;vertical-align: middle; margin-bottom: 10px;"><br/>
+					<button class="answer" id="ans_c" onclick="press(this.id)">C. America</button><img id="true_false_c" style="width: 50px; margin-left: 20px;vertical-align: middle; margin-bottom: 10px;"><br/>
+					<button class="answer" id="ans_d" onclick="press(this.id)">D. VietNam</button><img id="true_false_d" style="width: 50px; margin-left: 20px;vertical-align: middle; margin-bottom: 10px;"><br/>
+					<button class="extra" id="previous" style="background: #908784; cursor: auto;" onclick="toPreviousQuest()"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-right: 12px;"></i>Previous</button>
+					<button class="extra" id="submit" onclick="submit()">Submit</button>
+					<button class="extra" id="next" onclick="toNextQuest()">Next <i class="fa fa-arrow-right" aria-hidden="true" style="margin-left: 10px;"></i></button>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https:tuananhhedspibk.github.io/QuizApp/script/script.js"></script>
+	</body>
+</html>
