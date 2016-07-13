@@ -1,0 +1,174 @@
+body{
+	font-family: 'Playfair Display', serif;
+	font-size: 14px;
+	color: #626262;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.navbar-brand{
+	font-family: 'Inconsolata', monospace;
+	text-transform: uppercase;
+	font-size: 30px;
+	padding-left: 0;
+}
+
+.navbar-default{
+	background-color: #ffffff; 
+	border-color : #ffffff;
+	background-image: linear-gradient(to bottom,#ffffff 0,#ffffff 100%);
+	box-shadow : inset 0 0px 0;
+}
+
+.nav>li>a {
+	padding: 10px 50px;
+	align : right;
+}
+
+.container-fluid{
+	padding-right: 0px;
+}
+
+.navbar-right{
+	margin-right: -65px;
+}
+
+@media (min-width: 1200px){
+	.container {
+		width: 1062px;
+	}
+}
+
+.paragraph{
+	padding: 0 75px;
+}
+
+.container h5{
+	font-family: 'Ubuntu', sans-serif;
+	color: #b4ad9e;
+}
+
+.thumbnail{
+	box-shadow: none;
+	padding: 0;
+	border : none;
+}
+
+.thumbnail>img{
+	margin-left: 0px;
+}
+
+.morecontent span {
+	display: none;
+}
+
+.item{
+	margin-top: 135px;
+}
+
+a:focus{
+	outline: 0;
+}
+
+a::-moz-focus-inner {
+  border: 0;
+}
+
+input{
+	border: none;
+	background: transparent;
+	margin-top: 80px;
+	padding-bottom: 10px;
+	width: 380px;
+}
+
+::-moz-placeholder {
+	color: #626262;
+	opacity: 1;
+}
+
+.row button{
+	border : 1px solid #626262;
+	background: #ffffff;
+	width: 160px;
+	height: 60px;
+	font-size: 19px;
+	margin-top: 165px;
+}
+
+.footer_option li{
+	list-style-type: none;
+	float: left;
+	display: inline;
+	color: black;
+}
+
+.footer_option li:nth-child(2){
+	margin-left: 25px;
+}
+
+.follow li:first-child{
+	margin-right: 25px;
+}
+
+.fa{
+	color: black;
+}
+
+ul.list_social_network li{
+	list-style-type: none;
+	float: right;
+	display: inline;
+	padding-left: 20px;
+	padding-right: 0;
+	margin-right: 0;
+	font-size: 13pt;
+	font-family: 'Ubuntu', sans-serif;
+	color: #b4ad9e;
+}
+
+ul.list_social_network li>i{
+	color: #b4ad9e;
+}
+
+ul.list_social_network li:last-child{
+	padding: 0 15px;
+}
+
+.extra_pic p:first-child{
+	font-family: 'Ubuntu', sans-serif;
+	color: #b4ad9e;
+}
+
+.comment_part p:first-child{
+	color: #b4ad9e;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.row_comment img{
+	border-radius: 50%;
+}
+
+.row_comment input::-moz-placeholder {
+	color: #b4ad9e;
+	opacity: 1;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.row_comment input{
+	border-radius: 3px;
+	padding: 25px 35px;
+	border: 1px solid #b4ad9e;
+	margin-top: 6.5%;
+	width: 100%;
+}
+
+.list_statistical li{
+	color: #b4ad9e;
+}
+
+.list_statistical li p{
+	color: #626262;
+	font-size: 16px; 
+	padding-left: 5%;
+}
