@@ -25,7 +25,7 @@ function genPostsPreviewFromSource(fileURL) {
         numberPosts = counter - 1;
         postsList.push(
             '<div class="clearfix">' +
-                '<a class="btn btn-primary float-right" href="#" onClick="displayOlderPosts()">Older Posts &rarr;</a>' +
+                '<a class="btn btn-primary float-right" onClick="displayOlderPosts()">Older Posts &rarr;</a>' +
             '</div>'
         );
 
