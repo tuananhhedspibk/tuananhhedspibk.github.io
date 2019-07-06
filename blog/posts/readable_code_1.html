@@ -133,8 +133,10 @@
     <script src="../js/clean-blog.min.js"></script>
     <script>
       function highlightCode() {
-        var pres = document.getElementById("content");
-        hljs.highlightBlock(pres);
+        var pres = document.querySelectorAll("pre>code");
+        for (var i = 0; i < pres.length; i++) {
+          hljs.highlightBlock(pres[i]);
+        }
       }
 
       var rawFile = new XMLHttpRequest();
