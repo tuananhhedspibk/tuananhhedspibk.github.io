@@ -2,6 +2,7 @@ function genPostsPreviewFromSource(fileURL) {
     $.getJSON(fileURL, function (data) {
         var postsList = [];
         $.each(data, function (key, val){
+            console.log(val);
             postsList.push(
                 '<div class="post-preview">' +
                     `<a href="https://tuananhhedspibk.github.io/blog/posts/${key}.html">` +
