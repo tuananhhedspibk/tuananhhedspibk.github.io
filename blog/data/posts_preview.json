@@ -1,0 +1,32 @@
+{
+    "readable_code_1": {
+        "title": "Readable code translation to Vietnamese (chapter 1)",
+        "sub_title": "This chapter is about writing code for understanding cheap",
+        "posted_at": "Posted on July 6, 2019"
+    }  ,
+    "readable_code_2": {
+        "title": "Readable code translation to Vietnamese (chapter 2)",
+        "sub_title": "This chapter is about naming for variable",
+        "posted_at": "Posted on July 6, 2019"
+    },
+    "readable_code_3": {
+        "title": "Readable code translation to Vietnamese (chapter 3)",
+        "sub_title": "This chapter is about naming for not misunderstood",
+        "posted_at": "Posted on July 6, 2019"
+    },
+    "readable_code_4": {
+        "title": "Readable code translation to Vietnamese (chapter 4 - processing)",
+        "sub_title": "This chapter is about the beautiful of the coding style",
+        "posted_at": "Posted on July 6, 2019"
+    },
+    "elixir_basic": {
+        "title": "Elixir basic",
+        "sub_title": "Basic concepts, syntax about elixir",
+        "posted_at": "Posted on July 6, 2019"
+    },
+    "elm_basic": {
+        "title": "Elm basic",
+        "sub_title": "Basic concepts, syntax about elm",
+        "posted_at": "Posted on July 6, 2019"
+    }
+}

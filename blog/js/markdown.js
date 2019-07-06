@@ -11,10 +11,10 @@ function showMarkdownFromFileAt(fileURL) {
     rawFile.onreadystatechange = function () {
         if(rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
-            var allText = rawFile.responseText;
-            var converter = new showdown.Converter();
-            document.getElementById('content').innerHTML = converter.makeHtml(allText);
-            highlightCode();
+                var allText = rawFile.responseText;
+                var converter = new showdown.Converter();
+                document.getElementById('content').innerHTML = converter.makeHtml(allText);
+                highlightCode();
             }
         }
     }
