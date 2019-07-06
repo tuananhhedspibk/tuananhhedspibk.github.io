@@ -25,7 +25,7 @@ function genPostsPreviewFromSource(fileURL) {
         numberPosts = counter - 1;
         postsList.push(
             '<div class="clearfix">' +
-                '<a class="btn btn-primary float-right" href="#" id="older_posts_display">Older Posts &rarr;</a>' +
+                '<a class="btn btn-primary float-right" href="#" onClick="displayOlderPosts()">Older Posts &rarr;</a>' +
             '</div>'
         );
 
@@ -37,6 +37,6 @@ function genPostsPreviewFromSource(fileURL) {
 
 genPostsPreviewFromSource('https://tuananhhedspibk.github.io/blog/data/posts_preview.json');
 
-$('#older_posts_display').click(function() {
+function displayOlderPosts () {
     console.log(numberPosts);
-});
+}
