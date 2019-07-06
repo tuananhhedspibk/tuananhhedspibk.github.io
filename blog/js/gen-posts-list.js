@@ -18,6 +18,12 @@ function genPostsPreviewFromSource(fileURL) {
                 '<hr>'
             );
         });
+        postsList.push(
+            '<div class="clearfix">' +
+                '<a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>' +
+            '</div>'
+        );
+
         $('<div/>', {
             html: postsList.join('')
         }).appendTo('#posts-list');
