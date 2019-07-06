@@ -9,7 +9,7 @@ function genPostsPreviewFromSource(fileURL) {
                             val['title'] +
                         '</h2>' +
                         '<h3 class="post-subtitle">' +
-                            + val['sub_title'] +
+                            val['sub_title'] +
                         '</h3>' +
                     '</a>' +
                     '<p class="post-meta">' + val['posted_at'] + '</p>' +
