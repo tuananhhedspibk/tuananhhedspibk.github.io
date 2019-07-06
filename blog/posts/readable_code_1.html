@@ -7,10 +7,13 @@
     <meta name="author" content="">
 
     <title>Readable code 1</title>
+    <link rel="icon" type="img/png" href="https:tuananhhedspibk.github.io/blog/img/icon.png">
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="img/png" href="https:tuananhhedspibk.github.io/blog/img/icon.png">
+
+    <!-- highlightjs CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
 
     <!-- Custom fonts for this template -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -119,11 +122,21 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- highlightjs -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+    <!-- showdown lib JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="../js/clean-blog.min.js"></script>
     <script>
+      function highlightCode() {
+        var pres = document.getElementById("content");
+        hljs.highlightBlock(pres);
+      }
+
       var rawFile = new XMLHttpRequest();
       rawFile.open('GET', 'http://tuananhhedspibk.github.io/blog/markdowns/readable_code_1.md', false);
       rawFile.onreadystatechange = function () {
@@ -132,6 +145,7 @@
                 var allText = rawFile.responseText;
                 var converter = new showdown.Converter();
                 document.getElementById('content').innerHTML = converter.makeHtml(allText);
+                highlightCode();
               }
           }
       }
