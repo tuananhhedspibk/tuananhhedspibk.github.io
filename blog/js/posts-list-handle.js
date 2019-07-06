@@ -1,10 +1,13 @@
+var numberPosts = 0;
+
 function genPostsPreviewFromSource(fileURL) {
     $.getJSON(fileURL, function (data) {
         var postsList = [];
+        var counter = 1;
         $.each(data, function (key, val){
-            console.log(val);
+            var representClassName = counter <= 5 ? 'display-post' : 'hide-post';
             postsList.push(
-                '<div class="post-preview">' +
+                `<div class="post-preview ${representClassName}" id="post_${counter}">` +
                     `<a href="https://tuananhhedspibk.github.io/blog/posts/${key}.html">` +
                         '<h2 class="post-title">' +
                             val['title'] +
@@ -17,10 +20,12 @@ function genPostsPreviewFromSource(fileURL) {
                 '</div>' +
                 '<hr>'
             );
+            counter++;
         });
+        numberPosts = counter - 1;
         postsList.push(
             '<div class="clearfix">' +
-                '<a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>' +
+                '<a class="btn btn-primary float-right" href="#" id="older_posts_display">Older Posts &rarr;</a>' +
             '</div>'
         );
 
@@ -31,3 +36,7 @@ function genPostsPreviewFromSource(fileURL) {
 }
 
 genPostsPreviewFromSource('https://tuananhhedspibk.github.io/blog/data/posts_preview.json');
+
+$('#older_posts_display').click(function() {
+    console.log(numberPosts);
+});
