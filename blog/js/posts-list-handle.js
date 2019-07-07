@@ -18,7 +18,7 @@ function genPostsPreviewFromSource(fileURL) {
                     '</a>' +
                     '<p class="post-meta">' + val['posted_at'] + '</p>' +
                 '</div>' +
-                '<hr>'
+                `<hr class="${representClassName}">`
             );
             counter++;
         });
