@@ -437,10 +437,11 @@ footer .copyright {
 
 .speech-bubble {
   background: #015171;
+  color: #fff;
   border-radius: .4em;
   display: inline-block;
-  margin-left: 15px;
-  padding: 30px;
+  margin-left: 30px;
+  padding: 20px;
   position: relative;
   width: 350px;
 }
