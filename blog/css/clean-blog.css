@@ -426,7 +426,7 @@ footer .copyright {
 }
 
 .display-post {
-  display: inline-block;
+  display: block;
 }
 
 .hide-post {
