@@ -7,3 +7,11 @@
 @import "contact.scss";
 @import "footer.scss";
 @import "bootstrap-overrides.scss";
+
+.display-post {
+    display: inline-block;
+}
+
+.hide-post {
+    display: none;
+}
