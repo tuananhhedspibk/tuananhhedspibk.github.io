@@ -431,8 +431,9 @@ footer .copyright {
 
 .speech-bubble {
   border-radius: .4em;
-  box-shadow: 1px 1px 1px 1px gray;
-  color: #fff;
+  box-shadow: 1px 1px 1px 1px #e8e8e8;
+  display: inline-block;
+  color: #000;
   position: relative;
 }
 
@@ -444,7 +445,7 @@ footer .copyright {
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  box-shadow: 1px 1px 1px 1px gray;
+  box-shadow: 1px 1px 1px 1px #e8e8e8;
   border-left: 0;
   margin-top: -20px;
   margin-left: -20px;
