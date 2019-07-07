@@ -29,14 +29,9 @@
         "sub_title": "Basic concepts, syntax about elm",
         "posted_at": "Posted on July 7, 2019"
     },
-    "distributed_system": {
+    "en_ja_trans_exp": {
         "title": "English Japanese translation experience",
         "sub_title": "Experiences that I have got when translating documents from english to japanese",
         "posted_at": "Posted on July 7, 2019"
     },
-    "micro_services": {
-        "title": "Microservice Architect (preprocessing)",
-        "sub_title": "Basic concepts",
-        "posted_at": "Posted on July 7, 2019"
-    }
 }
