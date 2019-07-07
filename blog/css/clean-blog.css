@@ -425,10 +425,10 @@ footer .copyright {
   padding: 25px 35px;
 }
 
-.display-post {
+.display-element {
   display: block;
 }
 
-.hide-post {
+.hide-element {
   display: none;
 }
