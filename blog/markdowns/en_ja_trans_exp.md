@@ -16,7 +16,7 @@ Nên đọc và hiểu kĩ nghĩa của câu tiếng anh trước khi dịch qua
 Do tiếng anh cũng như tiếng nhật chuyên ngành IT không quá nặng về mặt ngữ pháp, cấu trúc nên ta có thể ghi nhớ được 1 số cụm từ thường xuyên xuất hiện trong các tài liệu IT tiếng anh cũng như tiếng nhật. Dưới đây là danh sách các từ tôi đã tự tổng hợp được trong quá trình tự mày mò dịch tài liệu của mình
 
 | Tiếng Anh | Tiếng Nhật |
-----|---- 
+| ----|---- |
 | Each | それぞれ |
 | With respect to | に関して |
 | Matrix | 行列 |
