@@ -51,7 +51,7 @@ function displayOlderPosts () {
         upperBound = lastDisplayElementIndex + 6;
     }
     else {
-        $('#older_posts_display_btn').hide(1000);
+        $('#older_posts_display_btn').hide(500);
         upperBound = numberPosts;
     }
 
