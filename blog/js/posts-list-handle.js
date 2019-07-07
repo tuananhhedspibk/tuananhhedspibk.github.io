@@ -45,13 +45,13 @@ function displayOlderPosts () {
     var upperBound = 0;
 
     if (lastDisplayElementIndex == numberPosts - 1) {
-        $('#older_posts_display_btn').hide(1000);
         return;
     }
     else if (lastDisplayElementIndex + 5 < numberPosts) {
         upperBound = lastDisplayElementIndex + 6;
     }
     else {
+        $('#older_posts_display_btn').hide(1000);
         upperBound = numberPosts;
     }
 
