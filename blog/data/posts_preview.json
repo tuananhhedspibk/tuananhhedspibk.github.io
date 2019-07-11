@@ -1,4 +1,9 @@
 {
+    "git_merged_commit_revert": {
+        "title": "Git merged commit revert",
+        "sub_title": "Share knowledge about revert merged commit",
+        "posted_at": "Posted on July 11, 2019"
+    },
     "readable_code_5": {
         "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
         "sub_title": "This chapter is about writing comment when coding",
