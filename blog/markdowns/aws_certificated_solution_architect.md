@@ -8,8 +8,8 @@ Dịch tóm tắt từ [sách](https://www.amazon.co.jp/AWS%E8%AA%8D%E5%AE%9A%E8
 
 Khái niệm **region** ở đây có nghĩa là các khu vực (điểm) nơi mà AWS công khai, chia sẻ dịch vụ của mình.
 
-Trong **region** bao gồm nhiều **Availability zone* (AZ)*
-Mỗi AZ lại gồm nhiều **Data centers**. Các Regions và AZ đóng vai trò quan trọng trong thiết kế kiến trúc của AWS
+Trong **region** bao gồm nhiều **Availability zone* (AZ)**
+Mỗi AZ lại gồm nhiều **Data centers**. Các Region và AZ đóng vai trò quan trọng trong thiết kế kiến trúc của AWS
 
 #### Cải thiện tính tin cậy dựa vào sự độc lập của AZ về mặt địa lý, năng lượng
 
