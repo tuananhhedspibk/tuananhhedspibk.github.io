@@ -1,4 +1,9 @@
 {
+    "neural_networks_and_deep_learning": {
+        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
+        "sub_title": "Content is going to be updated day by day",
+        "posted_at": "Posted on July 11, 2019"
+    },
     "git_merged_commit_revert": {
         "title": "Git merged commit revert",
         "sub_title": "Share knowledge about revert merged commit",
@@ -13,11 +18,6 @@
         "title": "Readable code translation to Vietnamese (chapter 4)",
         "sub_title": "This chapter is about the beautiful of the coding style",
         "posted_at": "Posted on July 11, 2019"
-    },
-    "neural_networks_and_deep_learning": {
-        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
-        "sub_title": "Content is going to be updated day by day",
-        "posted_at": "Posted on July 07, 2019"
     },
     "readable_code_3": {
         "title": "Readable code translation to Vietnamese (chapter 3)",
