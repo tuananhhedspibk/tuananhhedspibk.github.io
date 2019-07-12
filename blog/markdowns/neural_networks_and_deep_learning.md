@@ -155,7 +155,7 @@ Xét ví dụ như sau: Ta có hàm **J(a, b, c) = 3(a + bc)**. Để tính toá
 
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
-<img src="https://user-images.githubusercontent.com/15076665/61030158-bf1b5580-a3f7-11e9-9e0d-b38e11f99cb8.png">
+<img src="https://user-images.githubusercontent.com/15076665/61030158-bf1b5580-a3f7-11e9-9e0d-b38e11f99cb8.png" width=720>
 
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
@@ -169,7 +169,7 @@ Cho J là hàm của v, a. Ta có quy tắc **chain rule** như dưới đây
 
 Sử dụng **chain rule** ta sẽ tính được đạo hàm riêng phần của hàm J đối với từng biến u, v, a, b, c trong ví dụ trên
 
-<img src="https://user-images.githubusercontent.com/15076665/61031467-892ba080-a3fa-11e9-8494-2f12b8e7107f.png">
+<img src="https://user-images.githubusercontent.com/15076665/61031467-892ba080-a3fa-11e9-8494-2f12b8e7107f.png" width=720>
 
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
@@ -179,7 +179,7 @@ Qua đó ta có thể rút ra được cách tính bằng **Compute Graph** như
 
 Nội dung chính của Logistic Regression có thể tóm lược như hình bên dưới, với x1, x2 chính là các **input features**, mục tiêu của chúng ta là tìm ra **(w1, w2, ...) = W** và **b** để sao cho giá trị của **L(a, y)** là nhỏ nhất
 
-<img src="https://user-images.githubusercontent.com/15076665/61033218-f42aa680-a3fd-11e9-8131-751ebfb97174.png">
+<img src="https://user-images.githubusercontent.com/15076665/61033218-f42aa680-a3fd-11e9-8131-751ebfb97174.png" width=720>
 
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
@@ -187,7 +187,7 @@ Khi thực hiện **backward propagation** ta sẽ tính theo thứ tự sau
 
 > dL(a, y) / da => dL(a, y) / dz => ∂L/∂w1
 
-<img src="https://user-images.githubusercontent.com/15076665/61035578-64d3c200-a402-11e9-86e9-98a4db796a97.png">
+<img src="https://user-images.githubusercontent.com/15076665/61035578-64d3c200-a402-11e9-86e9-98a4db796a97.png" width=720>
 
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
@@ -205,13 +205,13 @@ Xét **Logistic Regression** cho **m ví dụ**
 
 Ta có công thức như hình bên dưới
 
-<img src="https://user-images.githubusercontent.com/15076665/61037323-c8132380-a405-11e9-9927-5397fc12cc56.png">
+<img src="https://user-images.githubusercontent.com/15076665/61037323-c8132380-a405-11e9-9927-5397fc12cc56.png" width=720>
 
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
 Đây là thuật toán để tính
 
-<img src="https://user-images.githubusercontent.com/15076665/61037905-f47b6f80-a406-11e9-9e5d-915a2da22de7.png">
+<img src="https://user-images.githubusercontent.com/15076665/61037905-f47b6f80-a406-11e9-9e5d-915a2da22de7.png" width=720>
 
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
