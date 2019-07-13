@@ -1,5 +1,6 @@
 var numberPosts = 0;
 var lastDisplayElementIndex = 0;
+var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick'];
 
 function genPostsPreviewFromSource(fileURL) {
     $.getJSON(fileURL, function (data) {
@@ -7,6 +8,18 @@ function genPostsPreviewFromSource(fileURL) {
         var counter = 0;
         $.each(data, function (key, val){
             var representClassName = counter <= 4 ? '' : ' hide-element';
+            var valuesOfTags = val['tags'];
+            var tagElements = [];
+            valuesOfTags.forEach(tagValue => {
+                var classOfTag = 'tech-tag';
+
+                if (nonTechTagValues.indexOf(tagValue) !== -1) {
+                    classOfTag = 'non-tech-tag';
+                }
+                tagElements.push(`
+                    a class="${classOfTag}">${tagValue}</a>
+                `);
+            });
             lastDisplayElementIndex = counter <= 4 ? counter : lastDisplayElementIndex;
             postsList.push(
                 `<div class="post-preview${representClassName}" id="post_${counter}">` +
@@ -18,6 +31,7 @@ function genPostsPreviewFromSource(fileURL) {
                             val['sub_title'] +
                         '</h3>' +
                     '</a>' +
+                    '<div class="tags">' + tagElements.join('') + '</div>' +
                     '<p class="post-meta">' + val['posted_at'] + '</p>' +
                 '</div>' +
                 `<hr id="hr_${counter}" class="${representClassName}">`

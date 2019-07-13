@@ -465,3 +465,7 @@ footer .copyright {
   height: 150px;
   width: 150px;
 }
+
+#older_posts_display_btn {
+  color: #fff;
+}

@@ -2,61 +2,73 @@
     "distributed_system_design_pattern": {
         "title": "Distributed System Design Pattern Translation to Vietnamese (processing)",
         "sub_title": "Content is going to be updated day by day",
+        "tags": ["Design Pattern", "Distibuted System", "Translation"],
         "posted_at": "Posted on July 12, 2019"
     },
     "aws_certificated_solution_architect": {
         "title": "AWS Certificated Solution Architect Translation to Vietnamese (processing)",
         "sub_title": "Content is going to be updated day by day",
+        "tags": ["AWS", "Translation"],
         "posted_at": "Posted on July 11, 2019"
     },
     "neural_networks_and_deep_learning": {
         "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
         "sub_title": "Content is going to be updated day by day",
+        "tags": ["Neural network", "Deep Learning"],
         "posted_at": "Posted on July 11, 2019"
     },
     "git_merged_commit_revert": {
         "title": "Git merged commit revert",
         "sub_title": "Share knowledge about revert merged commit",
+        "tags": ["Git", "Tip & Trick", "Translation"],
         "posted_at": "Posted on July 11, 2019"
     },
     "readable_code_5": {
         "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
         "sub_title": "This chapter is about writing comment when coding",
+        "tags": ["Clean code", "Translation"],
         "posted_at": "Posted on July 11, 2019"
     },
     "readable_code_4": {
         "title": "Readable code translation to Vietnamese (chapter 4)",
         "sub_title": "This chapter is about the beautiful of the coding style",
+        "tags": ["Clean code", "Translation"],
         "posted_at": "Posted on July 11, 2019"
     },
     "readable_code_3": {
         "title": "Readable code translation to Vietnamese (chapter 3)",
         "sub_title": "This chapter is about naming for not misunderstood",
+        "tags": ["Clean code", "Translation"],
         "posted_at": "Posted on July 06, 2019"
     },
     "readable_code_2": {
         "title": "Readable code translation to Vietnamese (chapter 2)",
         "sub_title": "This chapter is about naming for variable",
+        "tags": ["Clean code", "Translation"],
         "posted_at": "Posted on July 06, 2019"
     },
     "readable_code_1": {
         "title": "Readable code translation to Vietnamese (chapter 1)",
         "sub_title": "This chapter is about writing code for understanding cheap",
+        "tags": ["Clean code", "Translation"],
         "posted_at": "Posted on July 06, 2019"
     },
     "elixir_basic": {
         "title": "Elixir basic",
         "sub_title": "Basic concepts, syntax about elixir",
+        "tags": ["Elixir"],
         "posted_at": "Posted on July 05, 2019"
     },
     "elm_basic": {
         "title": "Elm basic",
         "sub_title": "Basic concepts, syntax about elm",
+        "tags": ["Elm"],
         "posted_at": "Posted on July 05, 2019"
     },
     "en_ja_trans_exp": {
         "title": "English Japanese translation experience",
         "sub_title": "Experiences that I have got when translating documents from english to japanese",
+        "tags": ["Translation", "Experience"],
         "posted_at": "Posted on July 05, 2019"
     }
 }
