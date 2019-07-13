@@ -494,7 +494,7 @@ footer .copyright {
 .tags a:before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 0;
   float: left;
   width: 5px;
