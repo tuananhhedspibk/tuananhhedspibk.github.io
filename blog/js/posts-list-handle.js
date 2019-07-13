@@ -1,6 +1,7 @@
 var numberPosts = 0;
 var lastDisplayElementIndex = 0;
-var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick'];
+var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick', 'Summary'];
+var languagesTagValues = ['English', 'Japanese', 'Vietnamese', 'French'];
 
 function genPostsPreviewFromSource(fileURL) {
     $.getJSON(fileURL, function (data) {
