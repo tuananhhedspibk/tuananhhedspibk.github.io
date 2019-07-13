@@ -17,7 +17,7 @@ function genPostsPreviewFromSource(fileURL) {
                     classOfTag = 'non-tech-tag';
                 }
                 tagElements.push(`
-                    a class="${classOfTag}">${tagValue}</a>
+                    <a class="${classOfTag}">${tagValue}</a>
                 `);
             });
             lastDisplayElementIndex = counter <= 4 ? counter : lastDisplayElementIndex;
