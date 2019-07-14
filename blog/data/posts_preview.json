@@ -1,4 +1,10 @@
 {
+    "quick_eng_note": {
+        "title": "Quick note about English knowledges",
+        "sub_title": "The content is going to be updated everyday",
+        "tags": ["english", "Note"],
+        "posted_at": "Posted on July 12, 2019"
+    },
     "english_grammar_1": {
         "title": "English Grammar Series 1 (processing)",
         "sub_title": "Summary the content of English Grammar in Use book",

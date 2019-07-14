@@ -1,6 +1,6 @@
 var numberPosts = 0;
 var lastDisplayElementIndex = 0;
-var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick', 'Summary', 'Grammar'];
+var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick', 'Summary', 'Grammar', 'Note'];
 var languagesTagValues = ['english', 'japanese', 'french'];
 var rootBaseURL = "https://tuananhhedspibk.github.io/blog";
 

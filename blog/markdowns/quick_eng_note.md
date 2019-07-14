@@ -1,0 +1,1 @@
+## Quick note about English knowledges
