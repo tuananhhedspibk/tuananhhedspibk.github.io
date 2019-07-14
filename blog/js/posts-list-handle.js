@@ -1,7 +1,7 @@
 var numberPosts = 0;
 var lastDisplayElementIndex = 0;
-var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick', 'Summary'];
-var languagesTagValues = ['English', 'Japanese', 'Vietnamese', 'French'];
+var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick', 'Summary', 'Grammar'];
+var languagesTagValues = ['english', 'japanese', 'french'];
 
 function genPostsPreviewFromSource(fileURL) {
     $.getJSON(fileURL, function (data) {
@@ -16,6 +16,9 @@ function genPostsPreviewFromSource(fileURL) {
 
                 if (nonTechTagValues.indexOf(tagValue) !== -1) {
                     classOfTag = 'non-tech-tag';
+                }
+                if (languagesTagValues.indexOf(tagValue) !== -1) {
+                    classOfTag = tagValue;
                 }
                 tagElements.push(`
                     <a class="${classOfTag}">${tagValue}</a>
