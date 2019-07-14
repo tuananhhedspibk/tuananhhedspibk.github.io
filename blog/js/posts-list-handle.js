@@ -2,6 +2,7 @@ var numberPosts = 0;
 var lastDisplayElementIndex = 0;
 var nonTechTagValues = ['Translation', 'Experience', 'Tip & Trick', 'Summary', 'Grammar'];
 var languagesTagValues = ['english', 'japanese', 'french'];
+var rootBaseURL = "https://tuananhhedspibk.github.io/blog";
 
 function genPostsPreviewFromSource(fileURL) {
     $.getJSON(fileURL, function (data) {
@@ -17,7 +18,7 @@ function genPostsPreviewFromSource(fileURL) {
                 if (languagesTagValues.indexOf(tagValue) !== -1) {
                     tagElements.push(`
                         <img class="flag"
-                            src="${tagValue}.svg"></img>
+                            src="${rootBaseURL + '/img/' + tagValue}.svg"></img>
                     `);
                     return;
                 }
