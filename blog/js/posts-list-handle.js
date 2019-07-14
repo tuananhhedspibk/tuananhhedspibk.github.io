@@ -15,9 +15,9 @@ function genPostsPreviewFromSource(fileURL) {
                 var classOfTag = 'tech-tag';
 
                 if (languagesTagValues.indexOf(tagValue) !== -1) {
-                    classOfTag = tagValue;
                     tagElements.push(`
-                        <img class="${classOfTag}"></img>
+                        <img class="flag"
+                            src="${tagValue}.svg"></img>
                     `);
                     return;
                 }
