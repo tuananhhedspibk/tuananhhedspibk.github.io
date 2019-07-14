@@ -14,11 +14,15 @@ function genPostsPreviewFromSource(fileURL) {
             valuesOfTags.forEach(tagValue => {
                 var classOfTag = 'tech-tag';
 
-                if (nonTechTagValues.indexOf(tagValue) !== -1) {
-                    classOfTag = 'non-tech-tag';
-                }
                 if (languagesTagValues.indexOf(tagValue) !== -1) {
                     classOfTag = tagValue;
+                    tagElements.push(`
+                        <img class="${classOfTag}"></img>
+                    `);
+                    return;
+                }
+                if (nonTechTagValues.indexOf(tagValue) !== -1) {
+                    classOfTag = 'non-tech-tag';
                 }
                 tagElements.push(`
                     <a class="${classOfTag}">${tagValue}</a>
