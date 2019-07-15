@@ -93,3 +93,54 @@ I **always do (sth)** = I do it every time
 I **'m always doing** something has negative meaning
 - I've lost my phone again. I **'m always losing** things. (I lose things very ofter, perhaps too often, or more than normal)
 - You **'re always playing** video games. You should do something more active.
+
+### Present continous and present simple 2
+
+#### A. We use continous form for actions and happenings that have started but not finished
+
+Some verbs (for example, **like**, **know**) are not normally use in this way.
+We don't say "I am knowing" or "They are liking"; we say "I **know**"m "they **like**".
+
+The following verbs are not normally used in the present continous
+
+- **like**, **want**, **need**, **prefer**
+- **know**, **realise**, **suppose**, **mean**, **understand**, **believe**, **remember**
+- **belong**, **fit**, **contain**, **consist**, **seem**
+
+For examples:
+- I'm hungry. I **want** something to eat.
+- **Do** you **understand** what I **mean**?
+
+#### B. Think
+
+WHne **think** means "beleive" or "have an opinion", we do not use present continous
+- I **think** Mary is Canadian, but I'm not sure
+
+When **think** means "consider", the continous is possible
+- I **'m thinking** about what happened.
+
+#### C. See, hear, smell, taste
+
+We normally use present simple with these verb
+- **Do** you **see** that man over there?
+- This room **smells**
+
+We often use **can + see/hear/smell/taste**
+- I **can hear** a strange noise. **Can** you **hear** it?
+
+#### D. Look, feel
+
+You can use the present simple or continous to say how somebody looks or feels now
+
+- You **look** well today *or* You **'re looking** well today
+- How **do** you **feel** now ? *or* How **are** you **feeling** now?
+
+#### He is selfish and He is being selfish
+
+He **'s being** = He 's behaving / He 's acting
+- I can't understand why he **'s being** so selfish. He isn't usually like that.
+- He never thinks about other people. He **is** very selfish (*not* He is being)
+
+We use **am/is/are being** to say how somebody is **behaving**. It is not usually possible in other sentences
+- It **'s** hot today (*not* It is being hot)
+- Sarah **is** very tired (*not* is being tired)

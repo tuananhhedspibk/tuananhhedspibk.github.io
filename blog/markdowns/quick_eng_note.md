@@ -23,6 +23,10 @@ Tuy nhiên sau **everyone**, **everybody** chúng ta sử dụng **the**, **thei
 - **No-one** came to the party
 - They are homeless. They have **nowhere** to live.
 
+#### These là số nhiều của this, Those là số nhiều của that
+
+#### Tân ngữ = object (bị tác động bởi subject)
+
 ### Tham khảo
 
 - [Tiếng Anh Hay Mỗi Ngày](https://www.facebook.com/TiengAnhHayMoiNgay/posts/406386919440414/)
