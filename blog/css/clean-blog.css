@@ -468,6 +468,7 @@ footer .copyright {
 
 #older_posts_display_btn {
   color: #fff;
+  cursor: pointer;
 }
 
 .tags a {
