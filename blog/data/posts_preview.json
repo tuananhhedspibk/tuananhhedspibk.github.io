@@ -1,4 +1,10 @@
 {
+    "aws_quick_note": {
+        "title": "AWS Quick Note",
+        "sub_title": "Content is going to be updated everyday",
+        "tags": ["AWS", "Note"],
+        "posted_at": "Posted on July 16, 2019"
+    },
     "quick_eng_note": {
         "title": "Quick note about English knowledges",
         "sub_title": "The content is going to be updated everyday",

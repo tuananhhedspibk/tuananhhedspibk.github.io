@@ -144,3 +144,15 @@ He **'s being** = He 's behaving / He 's acting
 We use **am/is/are being** to say how somebody is **behaving**. It is not usually possible in other sentences
 - It **'s** hot today (*not* It is being hot)
 - Sarah **is** very tired (*not* is being tired)
+
+### Past simple
+
+#### A. Very often the past simple ends in -ed (regular verb)
+- I work in a travel agency now. Before that I **worked** in a department store.
+- We **invited** them to our party, but the **decided** not to come
+
+But many verbs in *irregular*. For example **wrote**, **saw**, **went**, **shut**
+- Mozart **wrote** more than 600 pieces of music.
+- We **saw** Tanya in town a few days ago.
+
+#### B. To be - is/are -> was/were
