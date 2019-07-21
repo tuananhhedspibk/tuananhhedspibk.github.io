@@ -110,3 +110,37 @@ When we talk about a period of time that continues from the past until now, we u
 
 - Don is having a driving lesson. It's his first one. It's the first time he **has driven** a car (or He **has never driven** a car **before**)
 - Saras has lost her passport again. This is the second time this **has happened**
+
+## Present perfect continous (I have been doing)
+
+### A. It has been raining
+
+> Have/ has been + V-ing
+
+We use present perfect continous for an activity that has **recently stopped** or **just stopped**. There is a connection with *now*
+
+- You're out of breath. **Have** you **been running**? (= you are out of breath *now*)
+- Paul is very tired. He **'s been working** very hard. (= he's tired *now*)
+- Why are your clothes so dirty? What **have** you **been doing**?
+
+### B. It has been raining for two hours
+
+Study this example situation:
+
+It began raining two hours ago and it is still raining.
+How long **has** it **been raining**?
+It **has been raining** for two hours.
+
+We use the present perfect continous in this way especially with **how long**, **for**, **since**, ... The activity is still happening or has just stopped.
+
+- **How long have** you **been learning** English? (= you are still learning English)
+- Where have you been? I **'ve been looking** for you **for the last half hour**
+- Chris **hasn't been feeling** well **recently**
+
+You can use the present perfect continous for actions repeated over a period of time
+- Silvia is a very good tennis player. SHe **'s been playing since she was eight**.
+
+### C. Compare I am doing and I have been doing
+
+- Dont't disturb me now. I **'m working** (*now*)
+- I **'ve been working** hard. Now I'm going to have a break.
