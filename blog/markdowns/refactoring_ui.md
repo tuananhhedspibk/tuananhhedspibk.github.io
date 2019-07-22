@@ -27,3 +27,26 @@ Giao diện của bạn sẽ cần:
 
 ### Detail comes later
 
+Ở phần trước chúng ta đã thấy được tầm quan trọng của việc không quá tập trung vào những chi tiết nhỏ nhặt như: **icon**, **shadow**, **typefaces**
+
+Một tip khá hay đó là
+
+> Design trên giấy sử dụng bút Sharpie
+
+<img src="https://user-images.githubusercontent.com/15076665/61635785-48236e00-accf-11e9-9f91-2493f2c4fdac.png">
+
+Việc vẽ những chi tiết nhỏ nhặt bằng but Sharpie là việc không thể. Nên sẽ khá hay nếu ta muốn bỏ thói quen đi quá nhiều vào chi tiết ngay từ đầu thiết kế
+
+### Hold the color
+
+Ban đầu nên thiết kế với 2 màu **đen**, **trắng** (**grayscale**) ta buộc phải chú trọng vào **khoảng cách**, **tương phản**, **size**
+
+Có thể lúc đầu sẽ hơi khó khăn nhưng chúng ta có thể sẽ có được 1 giao diện có tính phân cấp tốt kèm theo màu sắc sau đó.
+
+### Don't over-invest
+
+Một điều khá hay đó là ta nên build 1 thiết kế nhanh nhất có thể.
+
+Việc này giúp chúng ta thể hiện ý tưởng của bản thân. Sau đó loại bỏ bản thiết kế thô ban đầu này khi chúng ta đã đi đến quyết định cuối cùng
+
+## Don't design too much
