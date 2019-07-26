@@ -1,4 +1,10 @@
 {
+    "ant_design": {
+        "title": "Ant Design (Quick note)",
+        "sub_title": "Quick note in Vietnamese about Ant design",
+        "tags": ["UI", "UX", "Translation"],
+        "posted_at": "Posted on July 26, 2019"
+    },
     "refactoring_ui": {
         "title": "Refactoring UI",
         "sub_title": "Summary content of Refactoring UI book in Vietnamese (processing)",
