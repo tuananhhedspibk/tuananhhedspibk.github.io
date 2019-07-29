@@ -113,7 +113,7 @@ Border radius lớn sẽ tạo nên cảm giác năng động
 
 Và với trường hợp không sử dụng border-radius, sẽ cho ta cảm giác trang trọng, lịch sự
 
-<img src="https://user-images.githubusercontent.com/15076665/62049065-69450b00-b249-11e9-93a5-eeaf4a1743b0.png">
+<img src="https://user-images.githubusercontent.com/15076665/62049065-69450b00-b249-11e9-93a5-eeaf4a1743b0.png" width="720">
 
 Tuỳ vào sự lựa chọn của cá nhân với nút bo tròn hoặc nút không bo tròn nhưng điểm mấu chốt ở đây là **chỉ sử dụng một loại nút duy nhất** để từ đó tạo nên **sự thống nhất** cho thiết kế
 
@@ -125,4 +125,3 @@ Ngôn ngữ tuy không phải là yếu tố trực quan trong thiết kế như
 - Sử dụng từ ngữ thân thiên sẽ tạo cảm giác gần gũi, trẻ trung
 
 Việc lựa chọn ngôn ngữ là rất quan trọng vì chúng xuất hiện ở mọi nơi trong giao diện của bạn
-
