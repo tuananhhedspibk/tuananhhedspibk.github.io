@@ -1,4 +1,10 @@
 {
+    "neural_networks_and_deep_learning": {
+        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
+        "sub_title": "Content is going to be updated day by day",
+        "tags": ["Neural network", "Deep Learning"],
+        "posted_at": "Posted on July 30, 2019"
+    },
     "ant_design": {
         "title": "Ant Design (Quick note)",
         "sub_title": "Quick note in Vietnamese about Ant design",
@@ -57,12 +63,6 @@
         "title": "AWS Certificated Solution Architect Translation to Vietnamese (processing)",
         "sub_title": "Content is going to be updated day by day",
         "tags": ["AWS", "Translation"],
-        "posted_at": "Posted on July 11, 2019"
-    },
-    "neural_networks_and_deep_learning": {
-        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
-        "sub_title": "Content is going to be updated day by day",
-        "tags": ["Neural network", "Deep Learning"],
         "posted_at": "Posted on July 11, 2019"
     },
     "git_merged_commit_revert": {

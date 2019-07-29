@@ -216,3 +216,18 @@ Ta có công thức như hình bên dưới
 **Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
 Tuy nhiên cần chú ý, ví dụ trên là cho 2 features nhưng nếu dữ liệu đầu vào có nhiều features thì sẽ cần 2 vòng lặp lồng nhau. Nếu xử lí với lượng dữ liệu lớn thì sẽ gặp vấn đề về hiệu năng. Để tránh điều đó, ta sẽ sử dụng **Vectorization**
+
+#### Vectorization
+
+Sử dụng vectorization sẽ nhanh hơn 400 lần so với sử dụng vòng for cho công thức
+
+> z = wT * x + b
+
+GPU và CPU đều có cấu trúc song song (SIMD - Single Instruction Multiple Data)
+
+#### Neural network programming guideline
+
+- Cố gắng tránh sử dụng những vòng lặp for nhiều nhất có thể
+- Vectors and matrix valued functions
+  - Chúng ta cần áp dụng những thao tác có thời gian tính toán là e mũ cho mọi phần tử của ma trận/ vector
+  
