@@ -228,6 +228,3 @@ GPU và CPU đều có cấu trúc song song (SIMD - Single Instruction Multiple
 #### Neural network programming guideline
 
 - Cố gắng tránh sử dụng những vòng lặp for nhiều nhất có thể
-- Vectors and matrix valued functions
-  - Chúng ta cần áp dụng những thao tác có thời gian tính toán là e mũ cho mọi phần tử của ma trận/ vector
-  
