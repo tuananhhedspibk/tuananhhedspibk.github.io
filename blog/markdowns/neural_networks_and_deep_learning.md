@@ -228,3 +228,46 @@ GPU và CPU đều có cấu trúc song song (SIMD - Single Instruction Multiple
 #### Neural network programming guideline
 
 - Cố gắng tránh sử dụng những vòng lặp for nhiều nhất có thể
+
+#### Vectorizing Logistic Regression
+
+Trong python có khái niệm **Broadcasting** nghĩa là khi sử dụng phép tính của ma trận với 1 số thực **b** thì số thực **b** này sẽ được tự động mở rộng thành một **row vector** hoặc một **column vector**
+
+Công thức của **Logistic Regression**
+
+> z(i) = wT * x(i) + b, a(i) = σ(z(i)
+
+> Z = [... z(i) ...], A = [... a(i) ...]
+
+> dz(i) = a(i) - y(i)
+
+> dZ = [... dz(i) ...] = A - Y
+
+> dw = 0, dw += x(i) * dz(i), dw /= m
+
+> db = 0, db += dz(i), db /= m
+
+#### Broadcasting Example
+
+> A.sum(axis=0 | 1), axis = 0: vertically, axis = 1: horizontally
+
+General Principle
+- matrix (m, n) +-*/ (1, n) ~> (m, n) | (1, m) ~> (m, n)
+
+Ví dụ minh hoạ
+
+<img src="https://user-images.githubusercontent.com/15076665/62253815-1c705880-b432-11e9-86a2-fb73a0ab4c95.png" width="720">
+
+Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning/lecture/uBuTv/broadcasting-in-python
+
+#### A note on python/ numpy code
+
+> a = np.random.randn(5) -> a.shape = (5,) - rank 1 array
+
+**Do not use rank 1 array with logistic regression implementation**
+
+> should: np.random.rand(5, 1) -> a.shape = (5, 1) - column vector
+
+> should: np.random.rand(1, 5) -> a.shape = (1, 5) - row vector
+
+> assert(a.shape == (5, 1)) -> just like documentation for code
