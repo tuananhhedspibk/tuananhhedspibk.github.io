@@ -356,3 +356,53 @@ Trong các pages thì hầu như chỉ có:
 Nếu thiết kế theo semantics thì sẽ trông như sau
 
 <img src="https://user-images.githubusercontent.com/43769314/62200702-ee9efb80-b3c0-11e9-982a-5c92cc9bb22f.png" width="720">
+
+Các actions trong page thường có độ quan trọng theo hình kim tự tháp
+
+Một số tips thường dùng khi thiết kế các buttons dựa theo mức độ kế thừa như sau:
+- **Primary actions nên được chú trọng**  - thông qua việc sử dụng background tương phản, solid
+- **Secondary actions nên rõ ràng chứ không nên quá nổi bật** - outline style hoặc màu sắc tương phản thấp là một sự lựa chọn hợp lí
+- **Tertiary actions nên tìm được chứ không nên quá nổi bật** - style cho các actions kiểu này như một **link** là một giải pháp tốt
+
+<img src="https://user-images.githubusercontent.com/43769314/62268151-d33bfb00-b469-11e9-98b8-c50a072b17d6.png" width="720">
+
+### Destructive actions
+
+Các actions liên quan đến xoá không có nghĩa sẽ mặc nhiên là **primary action** của page, nên không phải lúc nào các **actions xoá** sẽ có background đỏ và solid
+
+Nếu không phải **primary action** thì các actions loại này nên là **secondary** hoặc **tertiary**
+
+<img src="https://user-images.githubusercontent.com/43769314/62268618-590c7600-b46b-11e9-8353-1c69337a666b.png" width="720">
+
+Nếu các actions loại này đi kèm với bước xác nhận thì nó nên là **primary action**
+
+# Layout and Spacing
+
+## Start with too much white space
+
+Một trong những cách đơn giản để *clean up* thiết kế đó là tạo thêm *không gian thở* cho các elements
+
+<img src="https://user-images.githubusercontent.com/15076665/62293414-84ab5280-b4a3-11e9-9c50-49d8208bc9b2.png" width="720">
+
+## White space should be removed, not added
+
+Với những thiết kế trông có vẻ chật chội, ta thường thêm các khoảng trắng như **margin** hay **padding** nhưng sự thật thì không gian mà ta thêm cho các elements thường khá ít nên cảm giác vẫn không mấy cải thiện
+
+Một cách tiếp cận hay ho hơn đó là bắt đầu với một thiết kế có **nhiều khoảng trắng** sau đó thu hẹp dần không gian trống cho đến khi bạn cảm thấy ổn
+
+<img src="https://user-images.githubusercontent.com/15076665/62293812-5b3ef680-b4a4-11e9-9796-f5e8ef36149e.png" width="720">
+
+Có thể ta sẽ thấy có *hơi nhiều* không gian thừa trong thiết kế nhưng thực tế cho thấy *hơi nhiều* lại khá gần với *vừa đủ* 
+
+## Dense UIs have their place
+
+Khi thiết kế những giao diện kiểu dashboard (giao diện loại này thường có khá nhiều thông tin xuất hiện trên một màn hình)
+
+Các giao diện dashboard được liệt vào giao diện **Dense**, giao diện kiểu này mang lại cho người xem một cảm giác *bận rộn* nhất định
+
+Nếu theo như thông thường ta cần các khoảng trắng để tạo *không gian thở* cho giao diện thì với giao diện loại này đôi khi không cần quá nhiều khoảng trắng
+
+<img src="https://user-images.githubusercontent.com/15076665/62294271-8544e880-b4a5-11e9-8d12-79e0e06220a9.png" width="720">
+
+## Establish a spacing and sizing system
+
