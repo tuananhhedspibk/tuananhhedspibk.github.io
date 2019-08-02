@@ -406,3 +406,37 @@ Nếu theo như thông thường ta cần các khoảng trắng để tạo *kh�
 
 ## Establish a spacing and sizing system
 
+Thay vì căn chỉnh từng pixel một, sẽ khiến cho công việc thiết kế nhàm chán và mệt mỏi, hãy xây dựng một hệ thống spacing cho bản thân mình
+
+### A linear scale won’t work
+
+Để tạo ra một **hệ thống spacing** thực sự, mọi thứ không chỉ dừng ở việc *Cố gắng làm cho các khoảng cách là bội số của 4*
+
+Ta xét một ví dụ với các elements có kích cỡ nhỏ, việc thay đổi dù chỉ là **2px** cũng tạo ra sự thay đổi đáng kể (~20% - 25%) - ví dụ như khi thay đổi padding của button hay kích cỡ của icon
+
+<img src="https://user-images.githubusercontent.com/15076665/62372149-b12da000-b571-11e9-8eca-3d55d0f6bbea.png" width="720">
+
+Tuy nhiên với các elements cỡ lớn như **card** thì khi thay đổi cả **20px** thì sự khác biệt cũng không nhiều (~2%)
+
+Vậy ta nên giữ cho sự khác biệt trong tầm 25%
+
+### Defining the system
+
+Nếu bạn không muốn phải chỉnh sửa khoảng cách một cách vất vả hãy xây dựng một hệ thống space hợp lí cho chính mình **dựa theo một kích cỡ base tiêu chuẩn**
+
+Kích cỡ thường dùng làm base là 16px vì nó là **default font size** của rất nhiều trình duyệt web lớn. Sau đó các kích cỡ lớn hơn sẽ là bội số của 16px
+
+Ban đầu các kích cỡ có bội số nhỏ thường khá gần nhau, nhưng sẽ có sự khác biệt lớn khi bội số tăng dần
+
+Ví dụ như:
+
+<img src="https://user-images.githubusercontent.com/15076665/62372718-2c438600-b573-11e9-90b0-8c313e4e358d.png" width="720">
+
+### Using the system
+
+Sau khi xây dựng xong hệ thống spacing hãy bắt đầu sử dụng chúng
+
+Thử lấy 1 giá trị, nếu không thấy phù hợp hãy thử cái tiếp theo
+Đến lúc này bạn sẽ nhận ra công việc thiết kế thật dễ dàng và trôi chảy hơn bao giờ hết, chưa kể đến tính nhất quán trong thiết kế, khiến nó trở nên *sáng sủa, clean* hơn
+
+<img src="https://user-images.githubusercontent.com/15076665/62373927-cad0e680-b575-11e9-8566-04910f85ea38.png" width="720">

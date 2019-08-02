@@ -83,7 +83,7 @@ Ta xét 2 TH sau:
 
 - y = 0: **L = -log(1 - y^)**, lí luận tương tự trên **L nhỏ** thì **log phải lớn** vậy nên **1 - y^ phải lớn** nên **y^ phải nhỏ** khi đó **y^ sẽ tiệm cận 0**
 
-> Cost function: J(w, b) = -1/mm ∑(i = 1 -> m) L(y^(i), y(i))
+> Cost function: J(w, b) = -1/m ∑(i = 1 -> m) L(y^(i), y(i))
 
 (Kí hiệu (i) nghĩa là **thứ i**, với m là số lượng dữ liệu huấn luyện)
 
@@ -271,3 +271,7 @@ Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning/lecture/uB
 > should: np.random.rand(1, 5) -> a.shape = (1, 5) - row vector
 
 > assert(a.shape == (5, 1)) -> just like documentation for code
+
+> np.dot(a, b) - matrix mutiplication
+
+> a * b performs an element-wise multiplication
