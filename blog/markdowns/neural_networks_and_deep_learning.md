@@ -256,3 +256,25 @@ Ví dụ minh hoạ
 ## Week3 
 
 ### Neural Networks Overview
+
+<img src="https://user-images.githubusercontent.com/15076665/62420625-77bf7680-b6d0-11e9-9dda-fb79da4604a2.png" width="720">
+
+Minh hoạ cho *logistic regression*
+
+<img src="https://user-images.githubusercontent.com/15076665/62420635-ab020580-b6d0-11e9-8e50-39d56fa77046.png" width="720">
+
+Minh hoạ cho *neural network*
+
+Ta có thể thấy, neural network là mô hình *stack* của *logistic regression*
+
+### Neural Network Representation
+
+> Activation (A - a) là các giá trị truyền từ layer trên xuống layer dưới trong neural network
+
+Activation được biểu diễn dưới dạng *column vector*
+
+Trong *logistic regression* ta thấy
+
+> y^ = a
+
+Nhưng trong neural network

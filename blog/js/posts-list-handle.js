@@ -37,7 +37,7 @@ function genPostsPreviewFromSource(fileURL) {
                             val['title'] +
                         '</h2>' +
                         '<h3 class="post-subtitle">' +
-                            val['sub_title'] +
+                            val['description'] +
                         '</h3>' +
                     '</a>' +
                     '<div class="tags">' + tagElements.join('') + '</div>' +

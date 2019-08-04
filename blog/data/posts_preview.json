@@ -1,128 +1,203 @@
 {
+    "refactoring_ui_2": {
+        "title": "Refactoring UI Part 2",
+        "description": "Summary content of Refactoring UI book in Vietnamese  - Part 2 (processing)",
+        "tags": [
+            "UI",
+            "UX",
+            "Translation"
+        ],
+        "posted_at": "Posted at August 04, 2019"
+    },
     "deep_learning_coding_note": {
         "title": "Deep Learning Coding Note",
-        "sub_title": "Quick note about deep learning coding",
-        "tags": ["Deep Learning", "Coding"],
+        "description": "Quick note about deep learning coding",
+        "tags": [
+            "Deep Learning",
+            "Coding"
+        ],
         "posted_at": "Posted on August 03, 2019"
     },
     "refactoring_ui_1": {
         "title": "Refactoring UI",
-        "sub_title": "Summary content of Refactoring UI book in Vietnamese  - Part 1 (processing)",
-        "tags": ["UI", "UX", "Translation"],
+        "description": "Summary content of Refactoring UI book in Vietnamese  - Part 1 (processing)",
+        "tags": [
+            "UI",
+            "UX",
+            "Translation"
+        ],
         "posted_at": "Posted on August 02, 2019"
     },
     "neural_networks_and_deep_learning": {
         "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
-        "sub_title": "Content is going to be updated day by day",
-        "tags": ["Neural network", "Deep Learning"],
+        "description": "Content is going to be updated day by day",
+        "tags": [
+            "Neural network",
+            "Deep Learning"
+        ],
         "posted_at": "Posted on August 02, 2019"
     },
     "ant_design": {
         "title": "Ant Design (Quick note)",
-        "sub_title": "Quick note in Vietnamese about Ant design",
-        "tags": ["UI", "UX", "Translation"],
+        "description": "Quick note in Vietnamese about Ant design",
+        "tags": [
+            "UI",
+            "UX",
+            "Translation"
+        ],
         "posted_at": "Posted on July 26, 2019"
     },
     "english_grammar_2": {
         "title": "English Grammar Series 2 (processing)",
-        "sub_title": "Summary the content of English Grammar in Use book",
-        "tags": ["english", "Grammar"],
+        "description": "Summary the content of English Grammar in Use book",
+        "tags": [
+            "english",
+            "Grammar"
+        ],
         "posted_at": "Posted on July 21, 2019"
     },
     "graph_ql": {
         "title": "GraphQL Basics",
-        "sub_title": "Tranlsate to vietnamese about GraphQL basic concepts",
-        "tags": ["GraphQL", "Translation"],
+        "description": "Tranlsate to vietnamese about GraphQL basic concepts",
+        "tags": [
+            "GraphQL",
+            "Translation"
+        ],
         "posted_at": "Posted on July 17, 2019"
     },
     "gan_with_python": {
         "title": "GAN with python",
-        "sub_title": "Content is going to be updated everyday",
-        "tags": ["GAN", "Translation"],
+        "description": "Content is going to be updated everyday",
+        "tags": [
+            "GAN",
+            "Translation"
+        ],
         "posted_at": "Posted on July 16, 2019"
     },
     "aws_quick_note": {
         "title": "AWS Quick Note",
-        "sub_title": "Content is going to be updated everyday",
-        "tags": ["AWS", "Note"],
+        "description": "Content is going to be updated everyday",
+        "tags": [
+            "AWS",
+            "Note"
+        ],
         "posted_at": "Posted on July 16, 2019"
     },
     "quick_eng_note": {
         "title": "Quick note about English knowledges",
-        "sub_title": "The content is going to be updated everyday",
-        "tags": ["english", "Note"],
+        "description": "The content is going to be updated everyday",
+        "tags": [
+            "english",
+            "Note"
+        ],
         "posted_at": "Posted on July 12, 2019"
     },
     "english_grammar_1": {
         "title": "English Grammar Series 1 (processing)",
-        "sub_title": "Summary the content of English Grammar in Use book",
-        "tags": ["english", "Grammar"],
+        "description": "Summary the content of English Grammar in Use book",
+        "tags": [
+            "english",
+            "Grammar"
+        ],
         "posted_at": "Posted on July 12, 2019"
     },
     "distributed_system_design_pattern": {
         "title": "Distributed System Design Pattern Translation to Vietnamese (processing)",
-        "sub_title": "Content is going to be updated day by day",
-        "tags": ["Design Pattern", "Distibuted System", "Translation"],
+        "description": "Content is going to be updated day by day",
+        "tags": [
+            "Design Pattern",
+            "Distibuted System",
+            "Translation"
+        ],
         "posted_at": "Posted on July 12, 2019"
     },
     "aws_certificated_solution_architect": {
         "title": "AWS Certificated Solution Architect Translation to Vietnamese (processing)",
-        "sub_title": "Content is going to be updated day by day",
-        "tags": ["AWS", "Translation"],
+        "description": "Content is going to be updated day by day",
+        "tags": [
+            "AWS",
+            "Translation"
+        ],
         "posted_at": "Posted on July 11, 2019"
     },
     "git_merged_commit_revert": {
         "title": "Git merged commit revert",
-        "sub_title": "Share knowledge about revert merged commit",
-        "tags": ["Git", "Tip & Trick", "Translation"],
+        "description": "Share knowledge about revert merged commit",
+        "tags": [
+            "Git",
+            "Tip & Trick",
+            "Translation"
+        ],
         "posted_at": "Posted on July 11, 2019"
     },
     "readable_code_5": {
         "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
-        "sub_title": "This chapter is about writing comment when coding",
-        "tags": ["Clean code", "Translation"],
+        "description": "This chapter is about writing comment when coding",
+        "tags": [
+            "Clean code",
+            "Translation"
+        ],
         "posted_at": "Posted on July 11, 2019"
     },
     "readable_code_4": {
         "title": "Readable code translation to Vietnamese (chapter 4)",
-        "sub_title": "This chapter is about the beautiful of the coding style",
-        "tags": ["Clean code", "Translation"],
+        "description": "This chapter is about the beautiful of the coding style",
+        "tags": [
+            "Clean code",
+            "Translation"
+        ],
         "posted_at": "Posted on July 11, 2019"
     },
     "readable_code_3": {
         "title": "Readable code translation to Vietnamese (chapter 3)",
-        "sub_title": "This chapter is about naming for not misunderstood",
-        "tags": ["Clean code", "Translation"],
+        "description": "This chapter is about naming for not misunderstood",
+        "tags": [
+            "Clean code",
+            "Translation"
+        ],
         "posted_at": "Posted on July 06, 2019"
     },
     "readable_code_2": {
         "title": "Readable code translation to Vietnamese (chapter 2)",
-        "sub_title": "This chapter is about naming for variable",
-        "tags": ["Clean code", "Translation"],
+        "description": "This chapter is about naming for variable",
+        "tags": [
+            "Clean code",
+            "Translation"
+        ],
         "posted_at": "Posted on July 06, 2019"
     },
     "readable_code_1": {
         "title": "Readable code translation to Vietnamese (chapter 1)",
-        "sub_title": "This chapter is about writing code for understanding cheap",
-        "tags": ["Clean code", "Translation"],
+        "description": "This chapter is about writing code for understanding cheap",
+        "tags": [
+            "Clean code",
+            "Translation"
+        ],
         "posted_at": "Posted on July 06, 2019"
     },
     "elixir_basic": {
         "title": "Elixir basic",
-        "sub_title": "Basic concepts, syntax about elixir",
-        "tags": ["Elixir"],
+        "description": "Basic concepts, syntax about elixir",
+        "tags": [
+            "Elixir"
+        ],
         "posted_at": "Posted on July 05, 2019"
     },
     "elm_basic": {
         "title": "Elm basic",
-        "sub_title": "Basic concepts, syntax about elm",
-        "tags": ["Elm"],
+        "description": "Basic concepts, syntax about elm",
+        "tags": [
+            "Elm"
+        ],
         "posted_at": "Posted on July 05, 2019"
     },
     "en_ja_trans_exp": {
         "title": "English Japanese translation experience",
-        "sub_title": "Experiences that I have got when translating documents from english to japanese",
-        "tags": ["Translation", "Experience"],
+        "description": "Experiences that I have got when translating documents from english to japanese",
+        "tags": [
+            "Translation",
+            "Experience"
+        ],
         "posted_at": "Posted on July 05, 2019"
     }
 }
