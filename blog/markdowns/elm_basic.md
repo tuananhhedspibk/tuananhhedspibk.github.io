@@ -1,8 +1,7 @@
 ## Note about Elm knowledge that have learnt by myself
 
-Learn from course [Elm For Beginners](https://courses.knowthen.com/p/elm-for-beginners)
-References documentations:
-https://elm-lang.org/docs/syntax
+- Learn from course [Elm For Beginners](https://courses.knowthen.com/p/elm-for-beginners)
+- References documentations: https://elm-lang.org/docs/syntax
 
 ### Pure functions
 

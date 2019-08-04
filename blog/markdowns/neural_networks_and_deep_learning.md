@@ -1,8 +1,9 @@
-## Coursera Neural Network And Deep Learning
+# Coursera Neural Network And Deep Learning
 
-Đây là phần tổng hợp những kiến thức lõi của khoá học [Neural Network And Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) trên trang Coursera
+- Đây là phần tổng hợp những kiến thức chính của khoá học [Neural Network And Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) trên trang Coursera
+- Ảnh trong bài viết đều lấy từ [nguồn](https://www.coursera.org/learn/neural-networks-deep-learning)
 
-### Week1
+## Week1
 
 Mô hình của 1 neural network cơ bản là như sau:
 
@@ -11,9 +12,9 @@ Mô hình của 1 neural network cơ bản là như sau:
 Neural network sẽ sử dụng 1 hàm gọi là hàm **ReLU** - viết tắt của **Rectified Linear Unit**
 Densely connected được hiểu theo nghĩa: tất cả các xi của input feature sẽ là đầu vào của từng neural trong tầng ẩn (hidden layer)
 
-### Week2
+## Week2
 
-#### Binary Classification
+### Binary Classification
 
 Một bức ảnh được lưu trữ trong máy tính dưới dạng tổ hợp của 3 ma trận **Red**, **Green**, **Blue**. Ví dụ nếu ta có một bức ảnh có kích cỡ 64x64 
 thì bức ảnh đó được lưu trữ dưới dạng 3 ma trận 64x64
@@ -41,7 +42,7 @@ X = [x(1)]
 
 Y = [y(1), y(2), ..., y(m)]
 
-#### Logistic Regression
+### Logistic Regression
 
 Cho trước X là đầu vào, y^ = P(y = 1 | x)
 Parameters: w ∈ Rnx, b ∈ R
@@ -58,8 +59,6 @@ Dưới đây là đồ thị minh hoạ cho hàm **sigmoid**
 
 <img src="https://user-images.githubusercontent.com/15076665/60768742-9434b700-a102-11e9-9565-56ab91691887.png">
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 Đây là hàm dạng chuẩn của hàm **sigmoid**
 
 ```
@@ -68,7 +67,7 @@ Dưới đây là đồ thị minh hoạ cho hàm **sigmoid**
 
 Mục tiêu của chúng ta là học được **b** và **w** để có được **y^** như ý muốn
 
-#### Logistic Regression cost function
+### Logistic Regression cost function
 
 Lost (error) function: 
 
@@ -91,13 +90,11 @@ Ta xét 2 TH sau:
 
 Cost function là tiêu chí đánh giá mức độ dự đoán tốt của W, b với tập dữ liệu training
 
-#### Gradient descent
+### Gradient descent
 
 Với cost function J là hàm lồi, ta sẽ sử dụng **Gradient descent** để tìm điểm tối ưu toàn cục cho J từ 1 điểm dữ liệu khởi tạo. Dưới đây là hình minh hoạ
 
 <img src="https://user-images.githubusercontent.com/15076665/60769323-3b1c5180-a109-11e9-841c-4cab9351a08e.png">
-
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
 Với hàm J(w), ta sẽ cập nhật w liên tục
 
@@ -111,8 +108,6 @@ Như minh hoạ trong hình dưới đây, đi từ trái sang thì giá trị c
 
 <img src="https://user-images.githubusercontent.com/15076665/61016656-59b16f80-a3cb-11e9-90eb-89faedc9da8b.png">
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 Nếu có thêm b thì công thức sẽ như sau
 
 > w = w - α * dJ(w, b) / dw 
@@ -123,7 +118,7 @@ Kí hiệu **db, dw** còn có thể viết như sau **∂b, ∂w**
 
 Với trường hợp đạo hàm của một hàm nhiều biến ta sẽ dùng kí hiệu **∂** thay cho **d** và gọi nó là **partial derivation** 
 
-#### Derivatives
+### Derivatives
 
 Diễn giải một chút về nội dung của hình trên, xét hàm **f(a) = 3a**, xét 2 điểm **a = 2** và **a = 2.001** giá trị của hàm f sẽ tăng từ 6 lên 6.003, hình tam giác màu xanh lá cây thể hiện điều đó
 
@@ -139,13 +134,11 @@ Một ví dụ khác với hình minh hoạ như ở dưới đây
 
 <img src="https://user-images.githubusercontent.com/15076665/61019993-1e1ca280-a3d7-11e9-904b-09f1c123b854.png">
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 Với ví dụ trên, ta xét hàm **f(a) = a^2**, slope của **f(a)** sẽ là khác nhau với từng điểm dữ liệu khác nhau
 
 > Với a = 2 thì slope = 4, a = 5 thì slope = 10
 
-#### Computation Graph
+### Computation Graph
 
 Trong một mạng neural, ta phải tính toán **forward propagation** và **backward propagation**, với **backward propagation** ta có thể sử dụng **Computation graph** để tính toán
 
@@ -153,15 +146,11 @@ Xét ví dụ như sau: Ta có hàm **J(a, b, c) = 3(a + bc)**. Để tính toá
 
 <img src="https://user-images.githubusercontent.com/15076665/61030182-ce020800-a3f7-11e9-9b8c-870c09433d58.png">
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 <img src="https://user-images.githubusercontent.com/15076665/61030158-bf1b5580-a3f7-11e9-9e0d-b38e11f99cb8.png" width=720>
-
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
 Do cách tính khá đơn giản nên tôi xin bỏ qua phần giải thích chi tiết cho 2 hình minh hoạ trên.
 
-#### Derivatives with a Computation Graph
+### Derivatives with a Computation Graph
 
 Cho J là hàm của v, a. Ta có quy tắc **chain rule** như dưới đây
 
@@ -171,17 +160,13 @@ Sử dụng **chain rule** ta sẽ tính được đạo hàm riêng phần củ
 
 <img src="https://user-images.githubusercontent.com/15076665/61031467-892ba080-a3fa-11e9-8494-2f12b8e7107f.png" width=720>
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 Qua đó ta có thể rút ra được cách tính bằng **Compute Graph** như sau, tính từ phải qua trái, tính **derivative** của J đối với từng biến một, từng biến một (theo cùng thứ tự từ phải qua trái), tính **derivative** của biến phía trước dựa theo biến phía sau
 
-#### Logistic Regression Gradient Descent
+### Logistic Regression Gradient Descent
 
 Nội dung chính của Logistic Regression có thể tóm lược như hình bên dưới, với x1, x2 chính là các **input features**, mục tiêu của chúng ta là tìm ra **(w1, w2, ...) = W** và **b** để sao cho giá trị của **L(a, y)** là nhỏ nhất
 
 <img src="https://user-images.githubusercontent.com/15076665/61033218-f42aa680-a3fd-11e9-8131-751ebfb97174.png" width=720>
-
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
 
 Khi thực hiện **backward propagation** ta sẽ tính theo thứ tự sau
 
@@ -189,13 +174,11 @@ Khi thực hiện **backward propagation** ta sẽ tính theo thứ tự sau
 
 <img src="https://user-images.githubusercontent.com/15076665/61035578-64d3c200-a402-11e9-86e9-98a4db796a97.png" width=720>
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 Tương tự khi tính **∂L/∂w1**
 
 > ∂L/∂w1 = ∂L/∂z * ∂z/∂w1 = x1 * dz
 
-#### Gradient descent on m examples
+### Gradient descent on m examples
 
 Xét **Logistic Regression** cho **m ví dụ**
 
@@ -207,17 +190,13 @@ Ta có công thức như hình bên dưới
 
 <img src="https://user-images.githubusercontent.com/15076665/61037323-c8132380-a405-11e9-9927-5397fc12cc56.png" width=720>
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 Đây là thuật toán để tính
 
 <img src="https://user-images.githubusercontent.com/15076665/61037905-f47b6f80-a406-11e9-9e5d-915a2da22de7.png" width=720>
 
-**Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning**
-
 Tuy nhiên cần chú ý, ví dụ trên là cho 2 features nhưng nếu dữ liệu đầu vào có nhiều features thì sẽ cần 2 vòng lặp lồng nhau. Nếu xử lí với lượng dữ liệu lớn thì sẽ gặp vấn đề về hiệu năng. Để tránh điều đó, ta sẽ sử dụng **Vectorization**
 
-#### Vectorization
+### Vectorization
 
 Sử dụng vectorization sẽ nhanh hơn 400 lần so với sử dụng vòng for cho công thức
 
@@ -225,11 +204,11 @@ Sử dụng vectorization sẽ nhanh hơn 400 lần so với sử dụng vòng f
 
 GPU và CPU đều có cấu trúc song song (SIMD - Single Instruction Multiple Data)
 
-#### Neural network programming guideline
+### Neural network programming guideline
 
 - Cố gắng tránh sử dụng những vòng lặp for nhiều nhất có thể
 
-#### Vectorizing Logistic Regression
+### Vectorizing Logistic Regression
 
 Trong python có khái niệm **Broadcasting** nghĩa là khi sử dụng phép tính của ma trận với 1 số thực **b** thì số thực **b** này sẽ được tự động mở rộng thành một **row vector** hoặc một **column vector**
 
@@ -247,7 +226,7 @@ Công thức của **Logistic Regression**
 
 > db = 0, db += dz(i), db /= m
 
-#### Broadcasting Example
+### Broadcasting Example
 
 > A.sum(axis=0 | 1), axis = 0: vertically, axis = 1: horizontally
 
@@ -258,9 +237,7 @@ Ví dụ minh hoạ
 
 <img src="https://user-images.githubusercontent.com/15076665/62253815-1c705880-b432-11e9-86a2-fb73a0ab4c95.png" width="720">
 
-Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning/lecture/uBuTv/broadcasting-in-python
-
-#### A note on python/ numpy code
+### A note on python/ numpy code
 
 > a = np.random.randn(5) -> a.shape = (5,) - rank 1 array
 
@@ -275,3 +252,7 @@ Nguồn: https://www.coursera.org/learn/neural-networks-deep-learning/lecture/uB
 > np.dot(a, b) - matrix mutiplication
 
 > a * b performs an element-wise multiplication
+
+## Week3 
+
+### Neural Networks Overview

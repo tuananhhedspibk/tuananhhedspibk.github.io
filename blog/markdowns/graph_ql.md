@@ -1,7 +1,7 @@
 ## GraphQL Tutorials
 
-- Nguồn: https://www.howtographql.com/basics/0-introduction/
-- Nguồn ảnh background: https://techblog.zozo.com/entry/graphql_error_handling
+- Nội dung tham khảo từ [nguồn](https://www.howtographql.com/basics/0-introduction/)
+- Ảnh background được lấy từ [nguồn](https://techblog.zozo.com/entry/graphql_error_handling)
 
 ### Introduction
 - Là 1 chuẩn API

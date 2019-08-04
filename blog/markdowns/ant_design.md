@@ -1,7 +1,7 @@
 # Ant Design
 
-- Nội dung được dịch từ trang: https://ant.design/
-- Nguồn ảnh background: https://uxdesign.cc/chinese-material-design-5d31359df4a6
+- Nội dung được dịch từ [nguồn](https://ant.design/)
+- Ảnh background lấy từ [nguồn](https://uxdesign.cc/chinese-material-design-5d31359df4a6)
 
 ## Proximity
 
@@ -16,8 +16,6 @@ Ant Design sử dụng 3 kiểu khoảng cách dọc
 
 <img src="https://user-images.githubusercontent.com/43769314/61839651-5ccb5600-aec9-11e9-8a65-fe6001ee4181.png">
 
-Nguồn: https://ant.design/
-
 > Note: Trong Ant Design, y = 8 + 8 * n (n >= 0), y là vertical spacing, 8 là [basic spacing]
 
 Qua đó ta thấy, để tăng mức độ phân cấp cho thông tin ta có thể **thêm** hoặc **bớt** đi các **basic spacing**.
@@ -31,8 +29,6 @@ Horizontal spacing gồm 2 kiểu
 - Inner: Khoảng cách giữa các thành phần trong 1 component
 
 <img src="https://user-images.githubusercontent.com/43769314/61840300-a3ba4b00-aecb-11e9-9928-7351be0f75b2.png">
-
-Nguồn: https://ant.design/
 
 ## Alignment
 
@@ -52,15 +48,11 @@ Căn lề cho các dấu **:** trong form sẽ giúp tăng tốc độ cho ngư�
 
 <img src="https://user-images.githubusercontent.com/43769314/61841543-19281a80-aed0-11e9-9127-58e61af257ae.png">
 
-Nguồn: https://ant.design/
-
 ### Number Alignment
 
 Để so sánh nhanh các số, ta nên căn lề phải, cũng như sử dụng cùng một số lượng chữ số sau dấu phảy.
 
 <img src="https://user-images.githubusercontent.com/43769314/61841636-5e4c4c80-aed0-11e9-9893-3af7a8bc1e7f.png">
-
-Nguồn: https://ant.design/
 
 ## Contrast
 
@@ -74,8 +66,6 @@ Tương phản giúp tăng mức độ thú vị cho page cũng như tạo ra h�
 
 <img src="https://user-images.githubusercontent.com/43769314/61841899-45906680-aed1-11e9-8f9e-1b4a6689a45b.png">
 
-Nguồn: https://ant.design/
-
 Khi hệ thống có những thứ cần user quyết định thận trọng thì nên đảm bảo tính công minh (nghĩa là không hướng user theo 1 quyết định cụ thể nào cả)
 
 VD: Accept và Reject nên sử dụng default button để không làm ảnh hưởng đến quyết định của user
@@ -87,15 +77,11 @@ ta có thể tạo ra sự khác biệt giữa các cấp độ thông tin, gi�
 
 <img src="https://user-images.githubusercontent.com/43769314/61920137-82bd2d00-af93-11e9-93e9-3ab346629f4a.png">
 
-Nguồn: https://ant.design/
-
 ### Contrast of the state relation
 
 Thông qua việc thay đổi màu sắc hoặc sử dụng thêm các hình hỗ trợ, cũng có thể giúp cho hệ thống phân cấp thông tin của chúng ta hoạt động tốt hơn
 
 <img src="https://user-images.githubusercontent.com/43769314/61921160-1e03d180-af97-11e9-9b8d-1280fbcf4f20.png">
-
-Nguồn: https://ant.design/
 
 Có 2 loại contrast ta thường gặp
 - static contrast
@@ -111,11 +97,7 @@ Repetitive element có thể là một rule nào đó trong thiết kế (màu s
 
 <img src="https://user-images.githubusercontent.com/43769314/61922278-ccf5dc80-af9a-11e9-9cef-40abeaa10ebb.png">
 
-Ví dụ về repetitive wireframe - Nguồn: https://ant.design/
-
 <img src="https://user-images.githubusercontent.com/43769314/61922376-2958fc00-af9b-11e9-82a1-9bb9ad5d4711.png">
-
-Ví dụ về repetitive format - Nguồn: https://ant.design/
 
 ## Make it direct
 
@@ -127,13 +109,9 @@ Nếu **readability** quan trọng hơn **editability** ta nên sử dụng **cl
 
 <img src="https://user-images.githubusercontent.com/43769314/61922862-da13cb00-af9c-11e9-9f27-eb3c3784d44f.png">
 
-Nguồn: https://ant.design/
-
 Nếu như 2 yếu tố trên là ngang bằng nhau ta có thể sử dụng **text link/ edit icon** như bên dưới
 
 <img src="https://user-images.githubusercontent.com/43769314/61922962-3840ae00-af9d-11e9-962c-05679cfb279c.png">
-
-Nguồn: https://ant.design/
 
 ### Multi-Field Inline Edit
 
@@ -158,15 +136,11 @@ Có thể kể đến chức năng auto-complete khi tìm kiếm, tuỳ vào n�
 
 <img src="https://user-images.githubusercontent.com/43769314/61922962-3840ae00-af9d-11e9-962c-05679cfb279c.png">
 
-Nguồn: https://ant.design/
-
 ### Live suggest
 
 **Live preview:** có thể kể đến là việc xác định mức độ mạnh/ yếu của password
 
 <img src="https://user-images.githubusercontent.com/43769314/61924368-6674bc80-afa2-11e9-94a7-63f31afea193.png">
-
-Nguồn: https://ant.design/
 
 **Click refresh**: cung cấp nút, tool để người dùng click khi có nội dung mới
 
