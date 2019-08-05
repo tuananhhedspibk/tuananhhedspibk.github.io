@@ -199,5 +199,14 @@
             "Experience"
         ],
         "posted_at": "Posted on July 05, 2019"
+    },
+    "flutter_basic": {
+        "title": "Flutter Basics",
+        "description": "Basic knowledge about flutter",
+        "tags": [
+            "Flutter",
+            "Dart"
+        ],
+        "posted_at": "Posted at August 05, 2019"
     }
 }

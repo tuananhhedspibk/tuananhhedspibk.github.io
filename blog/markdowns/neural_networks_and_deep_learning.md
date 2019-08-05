@@ -278,3 +278,13 @@ Trong *logistic regression* ta thấy
 > y^ = a
 
 Nhưng trong neural network
+
+> a[0] = X (input), a[1] <=> hidden layer, a[2] = y^
+
+Trong neural network chúng ta không đếm **input layer**, mà chỉ đếm từ **hidden layer** cho đến hết mạng
+
+<img src="https://user-images.githubusercontent.com/15076665/62500844-31c6f780-b823-11e9-9c83-c990a423c220.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/62500863-42776d80-b823-11e9-9c80-da3b648374e1.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/62500877-515e2000-b823-11e9-93f2-48689c2e71bf.png" width="720">
