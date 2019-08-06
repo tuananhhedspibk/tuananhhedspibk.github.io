@@ -324,6 +324,63 @@ Tuy nhiên nếu có sự phân vân về activation function thì nên dùng h�
 
 <img src="https://user-images.githubusercontent.com/15076665/62545381-91adb480-b89c-11e9-91c0-765c387f882c.png" width="720">
 
-Hàm ReLU có đạo hàm = 1 khi z > 0, đạo hàm bằng 0 khi z <= 0
+Hàm ReLU có đạo hàm = 1 khi z > 0, đạo hàm bằng 0 khi z <= 0. Đây là 1 nhược điểm của ReLU nên người ta đã phát minh ra hàm **leaky ReLU**
 
 Do nhược điểm của sigmoid và tanh function đó là khi z rất nhỏ, hoặc rất lớn thì đạo hàm có giá trị nhỏ nên độ dốc của đồ thị hàm số gần như là 0 nên khó có thể hội tụ
+
+Một trong những điểm mạnh của ReLU đó là đạo hàm của nó khác 0 khá nhiều nên mạng neural sử dụng hàm này sẽ học nhanh hơn khi sử dụng hàm **tanh** hoặc **sigmoid**
+
+Tổng kết
+
+<img src="https://user-images.githubusercontent.com/15076665/62581661-e83ee100-b8e4-11e9-90b5-f2cc57b46ab8.png" width="720">
+
+- Chỉ sử dụng **sigmoid** cho các bài toán **binary classification**
+- **leaky ReLU** - a = max(0.01 * z, z)
+
+## Why do you need non-linear activation functions?
+
+Nếu trong hidden layer ta sử dụng **linear activation function** thì đầu ra sẽ như sau
+
+<img src="https://user-images.githubusercontent.com/15076665/62582185-82535900-b8e6-11e9-8c9e-84738af4b4bd.png" width="720">
+
+Khi đó dù có nhiều layers đi chăng nữa thì mạng neural cũng chỉ tính toán **linear activation function** mà thôi cũng không khác gì mạng neural **không có layer** 
+
+Nên nếu có sử dụng **linear activation function** thì cũng chỉ nên sử dụng ở **output layer** mà thôi
+
+## Derivative of activation functions
+
+### Xét sigmoid activation function
+
+> g(z) = 1 / (1 + e^-z)
+
+> d(g(z))/dz = slope của g(x) tại z 
+
+> d(g(z))/dz = g(z) * (1 - g(z))
+
+- Khi z = 10 thì d(g(z))/dz ~= 1 (1 - 1) ~= 0
+- Khi z = -10 thì d(g(z))/dz ~= 0 (1 - 0) ~= 0
+- Khi z = 0 thì g(z) = 1/2 thì d(g(z))/dz = 1/4
+
+### Xét tanh activation function
+
+> g(z) = tanh(z) = (e^z - e^-z) / (e^z + e^-z)
+
+> d(g(z))/dz = 1 - (tanh(z))^2
+
+- Khi z = 10 thì d(g(z))/dz ~= 0 (g(z) = 1)
+- Khi z = -10 thì d(g(z))/dz ~= 0 (g(z) = -1)
+- Khi z = 0 thì d(g(z))/dz = 1
+
+### Xét ReLU, Leake ReLU activation function
+
+#### ReLU
+
+> g(z) = max(0, z)
+
+> g'(z) = 0 nếu z < 0, g'(z) = 1 nếu z >= 0
+
+#### Leaky ReLU
+
+> g(z) = max(0.01 * z, z)
+
+> g'(z) = 0.01 nếu z < 0, g'(z) = 1 nếu z >= 0
