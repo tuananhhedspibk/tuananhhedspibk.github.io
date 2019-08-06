@@ -287,4 +287,43 @@ Trong neural network chúng ta không đếm **input layer**, mà chỉ đếm t
 
 <img src="https://user-images.githubusercontent.com/15076665/62500863-42776d80-b823-11e9-9c80-da3b648374e1.png" width="720">
 
-<img src="https://user-images.githubusercontent.com/15076665/62500877-515e2000-b823-11e9-93f2-48689c2e71bf.png" width="720">
+<img src="https://user-images.githubusercontent.com/15076665/62500877-515e2000-b823-11e9-93f2-48689c2e71bf.png " width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/62544573-f9fb9680-b89a-11e9-8eec-36b340634c9f.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/62544613-11d31a80-b89b-11e9-9d56-3a78ae41ddd6.png" width="720">
+
+Cũng cần phải chú ý đến kích cỡ của các ma trận A, Z
+
+<img src="https://user-images.githubusercontent.com/15076665/62544668-35966080-b89b-11e9-8f44-960c399cc224.png" width="720">
+
+## Activation Functions
+
+Chính là các hàm sigmoid dùng trong mạng neural
+Tuy nhiên ngoài hàm sigmoid ta cũng có thể sử dụng hàm **tanh**
+
+> tanh(z) = (e^z - e^-z) / (e^z + e^-z)
+
+Hàm **tanh** có đồ thị như sau
+
+<img src="https://user-images.githubusercontent.com/15076665/62544713-47780380-b89b-11e9-8019-af31bcdffd5e.png" width="720">
+
+Trên thực tế, việc sử dụng hàm tanh có rất nhiều lợi thế do giá trị của hàm tanh là khoảng [-1, 1] nên khá phù hợp cho việc tính **giá trị trung bình**, cũng như tìm điểm hội tụ của dữ liệu
+
+Nếu bài toán thuộc về dạng **binary classification** thì ta nên dùng hàm **sigmoid** do giá trị cần đạt được trong khoảng [0, 1] thay vì [-1, 1]
+
+Sẽ có 1 mô hình đó là sử dụng hàm **tanh** cho **hidden layer**, sử dụng hàm **sigmoid** cho **output layer**
+
+Ở đây ta kí hiệu **g** là **activation function**, tuy nhiên nếu các activation functions ở các tầng khác nhau là khác nhau ta sẽ có kí hiệu
+
+> g[1] và g[2], ...
+
+Tuy nhiên nếu có sự phân vân về activation function thì nên dùng hàm **ReLU (Rectified Linear Unit)**
+
+> a = max(0, z)
+
+<img src="https://user-images.githubusercontent.com/15076665/62545381-91adb480-b89c-11e9-91c0-765c387f882c.png" width="720">
+
+Hàm ReLU có đạo hàm = 1 khi z > 0, đạo hàm bằng 0 khi z <= 0
+
+Do nhược điểm của sigmoid và tanh function đó là khi z rất nhỏ, hoặc rất lớn thì đạo hàm có giá trị nhỏ nên độ dốc của đồ thị hàm số gần như là 0 nên khó có thể hội tụ
