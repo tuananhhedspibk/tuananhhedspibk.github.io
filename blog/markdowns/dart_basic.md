@@ -40,3 +40,11 @@ We can have a different way to define constructor of class in dart
 ```dart
 ClassName.constructor_name() {}
 ```
+
+We can use **${variable}** syntax to embed variable's value into a string (called *string interpolation* - Dart will automatically calls **toString()** for us)
+
+```dart
+"${tx.ammount}"
+```
+
+**$** symbol has a special meaning in Dart, so if you want to treat it like a normal character of string, must use this syntax **"\$"**
