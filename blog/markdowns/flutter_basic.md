@@ -79,6 +79,73 @@ State in general is data/ information used by app
 
 We can also provide the default value for argument too
 
+## Styles
+
+In Flutter we style for elements, widgets **through arguments**
+
+<img src="https://user-images.githubusercontent.com/15076665/62819872-4fcf8780-bb96-11e9-8452-2a7f772e3ff5.png" width="720">
+
+For text's style we use **TextStyle()**
+
 ## Tips & Tricks
 
 - In flutter it will be helpful when we see the beginning of the error message
+- Use the code below to close the most top screen
+```dart
+Navigator.of(context).pop();
+```
+- **widget** object is the connection between **Widget** and **State** (StatefulWidget), **context** gives you access to the context related to your widget
+
+## Container vs Column / Row
+
+- Container - Takes exactly one child widget
+  - Rich aligment & styling options
+  - Flexible widget, set width on container
+  - Perfect for custom styling & alignment
+- Column / Row: Takes multiple (unlimited) child widgets
+  - Aligment but no styling options
+  - Always takes full available height (column) / width (row)
+  - Have no extra options or arguments you can set on column and row
+
+## Scroll View
+
+Flutter tries to always scroll the input, to make input can never be below that soft keyboard, that why the height of text field is always added as a padding above the soft keyboard
+
+## ListView
+
+ListView can not have a fixed height, has a infinite height
+It's Scrollable
+If we combine **ListView** with **Column** it can be horrible, because **Column** itself gets all height that it can get, but **ListView** has a infinite height so it becomes **no limit**
+
+So we need to wrap **ListView** with **Container** to know how high it should be in this case
+
+```dart
+Container(
+  height: 300,
+  child: ListView()
+)
+```
+
+There are two ways of using **ListView**
+
+```dart
+ListView(children: [])
+ListView.builder()
+```
+
+The difference between them is when you load a lot of items, **ListView.builder()** have some optimizations put in place by Flutter, **builder** only render **visible items**
+But when you pass children as argument to **ListView** constructor, all the widgets that are part of the ListView are rendered even if they're offscreen
+
+So if you then scroll a long list you can have lags or bad performance because Flutter has to manage all these items in memory
+
+<img src="https://user-images.githubusercontent.com/15076665/62853147-64db2080-bd26-11e9-92bd-f2393d9c2256.png" width="720">
+
+With **builder()**
+
+```dart
+itemBuilder() // called by flutter
+```
+
+## SizedBox
+
+Allow us to add a **Box** with **specific size**. Usually is used as separator
