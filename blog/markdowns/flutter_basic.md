@@ -186,3 +186,12 @@ Don't use **{}** in *if inside of a list* syntax
 ```dart
 if (condition) handle
 ```
+
+Flutter aims to give you a 60fps application, so it updates the screen 60 times per second (mean frame is re-drawed 60 times per second)
+
+## Widget Tree, Element Tree, Render Tree
+
+- Widget Tree is controlled by your code, immutable
+- Element & Render Tree is controlled internally by Flutter
+
+<img src="https://user-images.githubusercontent.com/15076665/62946305-66d2db80-be1b-11e9-9e6b-54b5dd17878a.png" width="720">
