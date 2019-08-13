@@ -1,6 +1,6 @@
 # Dart Basic
 
-Source of background: https://medium.com/@krossovochkin/dart-language-bad-design-choices-6e35987dc693
+Source of banner: https://medium.com/@krossovochkin/dart-language-bad-design-choices-6e35987dc693
 
 ## Basic concepts
 

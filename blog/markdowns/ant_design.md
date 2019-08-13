@@ -1,7 +1,7 @@
 # Ant Design
 
 - Nội dung được dịch từ [nguồn](https://ant.design/)
-- Ảnh background lấy từ [nguồn](https://uxdesign.cc/chinese-material-design-5d31359df4a6)
+- Ảnh banner lấy từ [nguồn](https://uxdesign.cc/chinese-material-design-5d31359df4a6)
 
 ## Proximity
 

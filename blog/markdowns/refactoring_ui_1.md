@@ -1,6 +1,6 @@
 # Refactoring UI
 
-- Ảnh background được lấy từ [nguồn](https://vironit.com/basic-features-of-ux-and-ui-design-and-is-there-any-difference-between-these-definitions/)
+- Ảnh banner được lấy từ [nguồn](https://vironit.com/basic-features-of-ux-and-ui-design-and-is-there-any-difference-between-these-definitions/)
 - Tất cả các ảnh, nội dung sử dụng trong bài viết đều được dẫn từ [sách](https://refactoringui.com/book/)
 
 ## Chương 1. Starting from scratch

@@ -1,6 +1,6 @@
 # Flutter Basic
 
-- Source of background image: https://levelup.gitconnected.com/flutter-to-build-ios-android-apps-f8786d6fe987
+- Source of banner image: https://levelup.gitconnected.com/flutter-to-build-ios-android-apps-f8786d6fe987
 - Source of images have beeen used in this post is: https://www.udemy.com/learn-flutter-dart-to-build-ios-android-apps/
 - Content of this post is referenced from [course](https://www.udemy.com/learn-flutter-dart-to-build-ios-android-apps/)
 
