@@ -48,3 +48,22 @@ We can use **${variable}** syntax to embed variable's value into a string (calle
 ```
 
 **$** symbol has a special meaning in Dart, so if you want to treat it like a normal character of string, must use this syntax **"\$"**
+
+With **List** in Dart, we have **where** function, it is same with **filter** function in javascript
+
+## Lexical scope
+
+- Scope is defined statically
+- We can *follow the curly braces outwards*
+
+## Lexical closures
+
+- A closure is a function object that has access to variables in its lexical scope, even when the function is used outside of its original scope.
+
+```dart
+Function makeAdder(num addBy) {
+  return (num i) => addBy + i;
+}
+```
+
+**Future.then(() {});** the function that we passed to **then()** will be stored in memory until Future value is available
