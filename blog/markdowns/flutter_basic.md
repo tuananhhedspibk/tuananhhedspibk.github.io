@@ -25,6 +25,17 @@
 
 Flutter will provide content for **context object** of **build method** and build method must return a **Widget object**, context object hold a metadata about widget (position in widget tree or in application and so on ...)
 
+With StatefulWidget, **build()** is called when **setState** called, after state is updated we will have a new StatefulWidget to replace the old Widget that we are using, but state object is not replaced instead it is updated
+
+After **build()** called, the Widget tree is built again. Element hold some information on how to identify their related widget (position, its childs), store information about skeleton of Widget tree
+
+Element knows which kind or which type of widget it was connected to
+Flutter will check widget position in Widget tree if widget consists, Flutter will update reference of element to new widget
+
+After that element passes *changed* information to render object so **render object** cand re-render on screen
+
+Flutter will not re-render the whole screen, it will check which parts on the real screen to be updated
+
 ## Widgets
 
 Different types of widgets:
