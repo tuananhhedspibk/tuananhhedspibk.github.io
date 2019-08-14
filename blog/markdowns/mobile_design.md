@@ -50,7 +50,7 @@
 
 ### Serif
 
-There are some **feet** so you can feel older when use this type of Typography
+There are some **feets** so you can feel older when use this type of Typography
 Look more traditional. Usually use for
 - Law
 - Modern brand
@@ -63,4 +63,48 @@ Serif is splited into **4 major families**
 - **Modern**
 - **Slab-Serif**
 
+<img src="https://user-images.githubusercontent.com/15076665/63023019-1c1a9780-bedf-11e9-8446-664e930866e4.png" width="720">
+
+How to differentiate three of them (Old style, Transitional, Modern)
+- Look at the thinnest versus thickest part of the letters -> We call that is **modulation of the typeface**
+- **Old style** is written by **flat nipped pens**
+
+<img src="https://user-images.githubusercontent.com/15076665/63023282-c1357000-bedf-11e9-9d89-737ee248af7d.png" width="720">
+
+**Slab-Serif** - zero different between thickest and thinnest parts of the font - used for newpapers printing
+
 ### Sans serif
+
+<img src="https://user-images.githubusercontent.com/15076665/63024196-b2e85380-bee1-11e9-93e1-4b9c141b4d3c.png" width="720">
+
+**Geometric** is the most modern type
+
+Compare between **Human type face** and **Grotesque**
+
+**Humans type face** has more open shapes
+
+<img src="https://user-images.githubusercontent.com/15076665/63024589-78cb8180-bee2-11e9-8a75-0f8ea5d62fc5.png" width="720">
+
+There's less distance between each of the letters than **human type face**
+
+<img src="https://user-images.githubusercontent.com/15076665/63024987-466e5400-bee3-11e9-9d1d-fc364056b9d0.png" width="720">
+
+Less confusion between **g** and **9** on **human type face**
+
+<img src="https://user-images.githubusercontent.com/15076665/63025187-a238dd00-bee3-11e9-835b-1f27579d3f45.png" width="720">
+
+=> **Huamn type face** is more readability than **Grotestque**
+
+### Combine fonts
+
+Serif and San serif work together very well
+
+Heading uses **Serif**, Body uses **San-serif** (sanserif is more readability than serif)
+
+Do not combine:
+- **serif** with **serif**
+- **san-serif** with **san-serif**
+
+It will be **bland** and **undifferentiated**
+
+Two different fonts is really good, no more
