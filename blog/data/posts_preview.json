@@ -1,4 +1,13 @@
 {
+    "cnn_basics": {
+        "title": "CNN",
+        "description": "CNN basics",
+        "tags": [
+            "CNN",
+            "DeepLearning"
+        ],
+        "posted_at": "Posted at August 18, 2019"
+    },
     "mobile_design": {
         "title": "MobileDesign",
         "description": "Basic Mobile App Design Knowledge",
