@@ -1,31 +1,22 @@
 {
-    "cnn_basics": {
+    "cnn_basic": {
         "title": "CNN",
-        "description": "CNN basics",
+        "description": "CNN basic",
         "tags": [
             "CNN",
-            "DeepLearning"
+            "DeepLearning",
+            "english"
         ],
-        "posted_at": "Posted at August 20, 2019"
-    },
-    "mobile_design": {
-        "title": "MobileDesign",
-        "description": "Basic Mobile App Design Knowledge",
-        "tags": [
-            "UI",
-            "UX",
-            "Mobile"
-        ],
-        "posted_at": "Posted at August 14, 2019"
+        "posted_at": "Posted at August 21, 2019"
     },
     "flutter_basic": {
-        "title": "Flutter basics",
+        "title": "Flutter basic",
         "description": "Basic Knowledge about Flutter",
         "tags": [
             "Flutter",
             "english"
         ],
-        "posted_at": "Posted at August 14, 2019"
+        "posted_at": "Posted at August 21, 2019"
     },
     "dart_basic": {
         "title": "Dart Basic",
@@ -34,7 +25,18 @@
             "Dart",
             "english"
         ],
-        "posted_at": "Posted at August 13, 2019"
+        "posted_at": "Posted at August 21, 2019"
+    },
+    "mobile_design": {
+        "title": "MobileDesign",
+        "description": "Basic Mobile App Design Knowledge",
+        "tags": [
+            "UI",
+            "UX",
+            "Mobile",
+            "english"
+        ],
+        "posted_at": "Posted at August 14, 2019"
     },
     "refactoring_ui_2": {
         "title": "Refactoring UI Part 2",

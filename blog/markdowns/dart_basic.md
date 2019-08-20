@@ -67,3 +67,28 @@ Function makeAdder(num addBy) {
 ```
 
 **Future.then(() {});** the function that we passed to **then()** will be stored in memory until Future value is available
+
+- The same syntax like Java. OOP Language
+- Everything in dart is object
+- Although Dart is strongly typed, type annotations are optional because Dart can infer types
+- Unlike Java, Dart doesn’t have the keywords **public**, **protected**, and **private**.
+- If an identifier starts with an underscore (_), it’s private to its library
+- Uninitialized variables have an initial value of null. Even variables with numeric types are initially null, because numbers—like everything else in Dart—are objects.
+- Variables store references
+- If an object isn’t restricted to a single type, specify the **Object** or **dynamic** type
+- **@override** provided by Dart
+- In Dart we have **Map** (same with **object** in **javascript**)
+- Same with Java, Dart also has constructor for class which is the special function (method) has the same name with class name.
+- **null** value in Dart - used in uninitialized state
+- Dart **doesn’t allow** constant variable at **class level**, but it can be if variable is a **static variable**
+- Do not confuse between **Map** and **Object** in Dart. In Dart **Object** is the instance of the class
+
+## Anonymous functions
+
+- Same with javascript
+- Can be assigned to a variable
+- NO NAMED
+
+## Mixin and Class
+
+With **mixin** you can share properties or methods but less of a strong connection, just like utility functions provider

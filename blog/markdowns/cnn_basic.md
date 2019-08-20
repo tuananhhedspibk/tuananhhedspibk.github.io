@@ -1,6 +1,7 @@
 # CNN basics
 
-Referenced from [course](https://www.udemy.com/deeplearning)
+- Referenced from [course](https://www.udemy.com/deeplearning)
+- Banner image source: https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
 
 Depending on the features that you saw, you categorize things in certain ways
 
@@ -58,7 +59,7 @@ After run with **Rectifier function** we have only non-negative values
 When you see **white -> grey -> black** that is linearity
 But after run with **Rectifier function** we only have **black** so it breaks up linearity
 
-- Step 2: Max Pooling
+- Step 2: Max Pooling (Downsampling)
 
 We have to make sure that our Neural Network has a property called **spatial invariance**, it doesn't care where the feature are located or our features are litte tilted, a bit in texture
 
@@ -68,5 +69,26 @@ With max-pooling we take a box of **2x2 pixels**, put that in top-left corner an
 
 <img src="https://user-images.githubusercontent.com/15076665/63352155-87f77700-c39b-11e9-9ffe-133163ccaf4e.png" width="720">
 
+With Pooling we can reduce the size of image and parameters number
+
+The most important benefit of Pooling is **prevent overfitting** by disregarding the non-important information
+
+We have a lot of types of pooling: max, sum, min pooling
+
+Sum up:
+
+<img src="https://user-images.githubusercontent.com/15076665/63391217-a9cd1a00-c3ec-11e9-9856-20f806125a85.png" width="720">
+
 - Step 3: Flattening
+
+<img src="https://user-images.githubusercontent.com/15076665/63391461-7dfe6400-c3ed-11e9-9bb0-c1e6ec19738d.png" width="720">
+
+Flat the **pooled feature map** to **column vector**, after flattening we will feed it as input to ANN
+
+<img src="https://user-images.githubusercontent.com/15076665/63391568-de8da100-c3ed-11e9-87e4-61761e349565.png" width="720">
+
+Sum up:
+
+<img src="https://user-images.githubusercontent.com/15076665/63391598-f6fdbb80-c3ed-11e9-871e-1546a2e8efc6.png" width="720">
+
 - Step 4: Full Connection
