@@ -92,3 +92,98 @@ Function makeAdder(num addBy) {
 ## Mixin and Class
 
 With **mixin** you can share properties or methods but less of a strong connection, just like utility functions provider
+
+```dart
+mixin Agility {
+   var speed = 10;
+  
+  void sitDown() {
+    print('Sitting down...');
+  }
+}
+
+class Mammal {
+  void breathe() {
+    print('Breathe in ... Breathe out ...');
+  }
+}
+
+class Person extends Mammal with Agility {
+  String name;
+  int age;
+  
+  Person(this.name, this.age);
+}
+
+void main() {
+  final pers = Person('Max', 30);
+  print(pers.name);
+  
+  pers.breathe();
+  pers.sitDown();
+  print(pers.speed);
+}
+```
+
+## Deep Dive With Future
+
+Basically in Dart **Future is a generic type**
+
+```dart
+Future<Type>
+```
+
+**catchError** will catch all errors **before it not after it**
+
+```dart
+void main() {
+  var result = 1 + 1; // this is available immediately
+
+  var myFuture = Future(() {
+     return 'Hello';
+  }); // not stop dart code executing until this Future job done
+  
+  print('This runs first!');
+  myFuture
+    .then((result) => print(result))
+    .then((_) {
+      print('After first then!');
+    })
+    .catchError((err) {
+      print(err);
+    });
+  print('This also runs before the future is done!');
+}
+```
+
+If we use **async** key word, all the code inside a function will be automatically wrapped by the **Future**
+
+```dart
+Future<void> functionName(params) async {
+  // code inside here are automatically wrapped by Future object, so we do not need to use return keyword here
+}
+
+var myFuture = Future(() {
+     return 'Hello';
+  }); // not stop dart code executing until this Future job done
+  
+  print('This runs first!');
+  myFuture
+    .then((result) => print(result))
+    .then((_) {
+      print('After first then!');
+    })
+    .catchError((err) {
+      print(err);
+    });
+  print('This also runs before the future is done!');
+}
+```
+
+If we use **async** key word, all the code inside a function will be automatically wrapped by the **Future**
+
+```dart
+Future<void> functionName(params) async {
+  // code inside here are automatically wrapped by Future object, so we do not need to use return keyword here
+}
+```

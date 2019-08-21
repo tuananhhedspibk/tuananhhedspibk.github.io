@@ -358,3 +358,15 @@ Do not use the **Provider** if you want to change only inside widget 's state
 If you work with your own **FocusNode** you must **dispose()** all of those in **class dispose() method**
 
 We can not use both **TextEditingController** with **initialValue** for **TextFormField**
+
+In **initState()** all **of(context)** doesn't work but if we use with **Provider** and **listen: false**, we don't get any problems and the solution is **Future.delayed()**
+
+```dart
+Future.delayed(Duration.zero).then((_) {
+    Provider.of<Products>(context).func();
+});
+```
+
+We could **fetch server data** in
+- **initState()** function
+- **didChangeDependencies()** function (run more often than **initState**)
