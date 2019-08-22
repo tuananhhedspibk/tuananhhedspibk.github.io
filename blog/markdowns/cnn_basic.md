@@ -92,3 +92,39 @@ Sum up:
 <img src="https://user-images.githubusercontent.com/15076665/63391598-f6fdbb80-c3ed-11e9-871e-1546a2e8efc6.png" width="720">
 
 - Step 4: Full Connection
+
+In CNN we use fully connected ANN (Neural network with **fully connected hidden layer**)
+
+ANN will combine our features into more attributes that predict class even better
+
+We calculate MSE (Mean square error) after that we perform **backward propagate** to adjust weights of ANN and feature detector (maybe in the previous time detector found **bad features** instead **good features**)
+
+<img src="https://user-images.githubusercontent.com/15076665/63437108-e5a3c600-c464-11e9-8171-7d31619f4964.png" width="720">
+
+**1** means that neural very confidents that it found a certain feature, **0** means that neural didn't find the feature are looking for
+
+<img src="https://user-images.githubusercontent.com/15076665/63439322-c4dd6f80-c468-11e9-8fad-3bfe954fe9fc.png" width="720">
+
+**0.9, 1** are the neurals those important for both Dog and Cat (ex: nose, eyebrow, ...). 1 and 0.9 neurals will tell to **Cat neural** this picture is not about cat and **Cat neural** will ignore it. And those neurals contribute very well to the classification of what is looking for and which is a dog
+
+Dog neural is paying attention to the bold lines (three neurals)
+
+<img src="https://user-images.githubusercontent.com/15076665/63554778-99967580-c579-11e9-99fc-387741c74514.png" width="720">
+
+We can see that there are some neurals (1, 0.9) go both ways (cat and dog) but it's up to the dog and the cat to decide to learn from it neural or not
+
+Wrap up
+
+<img src="https://user-images.githubusercontent.com/15076665/63555701-eb8cca80-c57c-11e9-86f6-d045ffb23355.png" width="720">
+
+## Softmax & Cross-entropy
+
+About cross-entropy we have:
+
+<img src="https://user-images.githubusercontent.com/15076665/63556229-e7fa4300-c57e-11e9-9986-582edebd6119.png" width="720">
+
+Output neurals **don't connect to each other**. We use **cross-entropy** to calculate performance of NN. Look at the picture
+
+<img src="https://user-images.githubusercontent.com/15076665/63556194-d0bb5580-c57e-11e9-92e3-da2edb3fbc14.png" width="720">
+
+In **Mean square error** you use substract so it takes you very slow to improve your result but in **cross-entropy** you use logarithm so it is much faster

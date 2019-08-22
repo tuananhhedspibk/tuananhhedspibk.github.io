@@ -370,3 +370,11 @@ Future.delayed(Duration.zero).then((_) {
 We could **fetch server data** in
 - **initState()** function
 - **didChangeDependencies()** function (run more often than **initState**)
+
+**http** package on throws error with **GET** and **POST** request if the server returns an error status code, for **PATCH**, **PUT**, **DELETE**, it doesn't do that
+
+**FlatButton** with **onPressed = null** will be automatically disabled
+
+Do not rebuild the whole widget tree if state changes (only **rebuild a part of widget tree**)
+
+We have **transform** property of **Container**, its data type is **Matrix4**, basically it's an object that describes the transformation of a container, simply allows you to describr rotation, scaling, offset of a container (all in one object)

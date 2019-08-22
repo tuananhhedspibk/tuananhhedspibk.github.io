@@ -187,3 +187,20 @@ Future<void> functionName(params) async {
   // code inside here are automatically wrapped by Future object, so we do not need to use return keyword here
 }
 ```
+
+**..** notation will not return result the of method is used with it, it will return the result of method before
+
+```dart
+Matrix4.rotationZ(-8 * pi / 180)
+  ..translate(-10.0), // return the result of rotationZ not translate
+```
+
+**try**, **catch**, **on** - with **on** we can specify exactly **what type of error**
+
+```dart
+try {
+  // code
+} on HttpException catch (error) {
+  // handle error
+}
+```
