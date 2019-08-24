@@ -384,3 +384,44 @@ Nên nếu có sử dụng **linear activation function** thì cũng chỉ nên 
 > g(z) = max(0.01 * z, z)
 
 > g'(z) = 0.01 nếu z < 0, g'(z) = 1 nếu z >= 0
+
+## Gradient descent for neural networks
+
+Trong ví dụ dưới đây ta có n[0], n[1], n[2] lần lượt là số lượng của: input feature, hidden unit, output unit
+
+w[1] - size: (n[1], n[0])
+b[1] - size: (n[1], 1)
+w[2] - size: (n[2], n[1])
+b[2] - size: (n[2], 1)
+
+<img src="https://user-images.githubusercontent.com/15076665/63633811-f765b300-c688-11e9-84cb-20f8f300297e.png" width="720">
+
+Formula for computing derivatives
+
+<img src="https://user-images.githubusercontent.com/15076665/63633869-19136a00-c68a-11e9-9909-a4092d50765a.png" width="720">
+
+## Backpropagation intuition
+
+<img src="https://user-images.githubusercontent.com/15076665/63634034-fc783180-c68b-11e9-8471-9a023eb95bce.png" width="720">
+
+
+<img src="https://user-images.githubusercontent.com/15076665/63634178-d6539100-c68d-11e9-9fd7-46bcc2d597a0.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/63634252-b07abc00-c68e-11e9-895d-d79d6adffa63.png" width="720">
+
+## Random Initialization
+
+### What happens if you initialize weights to zero?
+
+Khi đó tất cả các hidden units đều tính toán cùng 1 hàm
+
+<img src="https://user-images.githubusercontent.com/15076665/63634380-89bd8500-c690-11e9-8d06-10cb8415242f.png" width="720">
+
+Vì lí do đó ta cần khởi tạo ngẫu nhiên các weights, khi đó các hidden units sẽ tính toán bằng các hàm khác nhau
+
+<img src="https://user-images.githubusercontent.com/15076665/63634452-968ea880-c691-11e9-9234-6300793c5e7a.png" width="720">
+
+Ta sử dụng giá trị 0.01 là vì nếu sử dụng các giá trị lớn như 100, 1000 thì giá trị của W cũng sẽ rất lớn vì thế nên Z cũng lớn theo, từ đó khiến cho slop hoặc gradient nhỏ, gradient descent sẽ hội tụ chậm
+
+Tuy nhiên nếu train những neural network lớn hơn thì nên chọn các giá trị khác 0.01 (vốn dùng cho neural network với 1 hidden layer)
+
