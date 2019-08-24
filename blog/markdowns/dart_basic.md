@@ -204,3 +204,8 @@ try {
   // handle error
 }
 ```
+
+```dart
+import 'dart:io';
+// to use File type
+```

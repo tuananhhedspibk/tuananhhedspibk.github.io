@@ -378,3 +378,7 @@ We could **fetch server data** in
 Do not rebuild the whole widget tree if state changes (only **rebuild a part of widget tree**)
 
 We have **transform** property of **Container**, its data type is **Matrix4**, basically it's an object that describes the transformation of a container, simply allows you to describr rotation, scaling, offset of a container (all in one object)
+
+**AnimatedBuilder** or **FutureBuilder**, Flutter executes something for you and then rebuilds a part of the UI, when something is done or changes instead of entire widget tree
+
+In Flutter we have **Type<T>** - T is the same with **place holder**
