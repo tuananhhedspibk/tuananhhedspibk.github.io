@@ -1,4 +1,15 @@
 {
+    "refactoring_ui_1_ja": {
+        "title": "リファクタリングUI - パート1",
+        "description": "「Refactoring UI」という本のまとめ内容（日本語版）パート1",
+        "tags": [
+            "UI",
+            "UX",
+            "Translation",
+            "Japanese"
+        ],
+        "posted_at": "Posted at August 25, 2019"
+    },
     "cnn_basic": {
         "title": "CNN",
         "description": "CNN basic",
@@ -70,7 +81,7 @@
         "posted_at": "Posted on August 03, 2019"
     },
     "refactoring_ui_1": {
-        "title": "Refactoring UI",
+        "title": "Refactoring UI Part 1",
         "description": "Summary content of Refactoring UI book in Vietnamese  - Part 1 (processing)",
         "tags": [
             "UI",
@@ -78,7 +89,7 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on August 02, 2019"
+        "posted_at": "Posted at August 02, 2019"
     },
     "ant_design": {
         "title": "Ant Design (Quick note)",

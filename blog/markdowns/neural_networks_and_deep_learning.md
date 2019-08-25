@@ -425,3 +425,72 @@ Ta sử dụng giá trị 0.01 là vì nếu sử dụng các giá trị lớn n
 
 Tuy nhiên nếu train những neural network lớn hơn thì nên chọn các giá trị khác 0.01 (vốn dùng cho neural network với 1 hidden layer)
 
+## Deep L-layer neural network
+
+L (#number of layers)
+n[l]: số lượng units tại layer l
+a[l]: actiovation function tại layer l
+a[l] = g[l](z[l])
+w[l]: weights for z[l]
+b[l]: bias
+
+X = a[0]
+y^ = a[2]
+
+**General rules**
+> Z[l] = W[l] * A[l - 1] + b[l]
+> A[l] = g[l](Z[l])
+
+X là ma trận của các ví dụ huấn luyện được stacked theo cột
+
+Khi triển khai **forward propagation** thì việc sử dụng **vòng lặp for** cũng không phải là sự lựa chọn quá tồi
+
+<img src="https://user-images.githubusercontent.com/15076665/63645445-6f8bb180-c739-11e9-8c70-6210f3731abc.png" width="720">
+
+## Getting your matrix dimensions right
+
+Parameters W[l], b[l]
+
+Dimension of W[l] = (n[l], n[l - 1]), b[l] = (n[l], 1)
+dw[l] có cùng dimension với w[l], db[l] có cùng dimension với b[l]
+
+<img src="https://user-images.githubusercontent.com/15076665/63647271-92c65900-c759-11e9-818f-fd34062c1632.png" width="720">
+
+Do
+> z[l] = g[l](a[l])
+
+nên z[l] và a[l] có cùng dimension
+
+Trong hình bên dưới m là kích cỡ tập dữ liệu đầu vào
+
+<img src="https://user-images.githubusercontent.com/15076665/63647347-a32b0380-c75a-11e9-8180-5d8466040041.png" width="720">
+
+## Why deep representations?
+
+Ta xét một mạng neural dùng để nhận diện khuôn mặt, ban đầu đi từ những **edges detector** sau đó là **eye detector**, **nose detector** và cuối cùng là toàn bộ khuộn mặt, chúng ta kết hợp những yếu tố đơn giản này thành những yếu tố phức tạp hơn
+
+Với audo ta còn có các yếu tố khác như: **phonemes**, **word**, **sentence**, **phrase** recognization
+
+<img src="https://user-images.githubusercontent.com/15076665/63647429-43355c80-c75c-11e9-90f4-43036694804f.png" width="720">
+
+Hình dưới đây sẽ minh hoạ cho việc sử dụng **deep network** so với **shallower network**
+
+Khi sử dụng **shallower network** ta cần nhiều hidden units hơn cho 1 hidden layer qua đó dẫn đến chi phí tính toán sẽ **cao hơn** khi sử dụng **deep network**
+
+<img src="https://user-images.githubusercontent.com/15076665/63647608-c8ba0c00-c75e-11e9-9ce5-b6eca5af9a8f.png" width="720">
+
+Trong hình phía dưới, block phía trên là **forward function**, block phía dưới là **backward function**
+
+<img src="https://user-images.githubusercontent.com/15076665/63650531-7391f080-c786-11e9-9377-5f163a0b554d.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/63650676-34649f00-c788-11e9-8e3b-98f22910f4bf.png" width="720">
+
+## Backward propagation for layer l
+
+Bên phải là trường hợp **vectorization**
+
+<img src="https://user-images.githubusercontent.com/15076665/63657375-090b9f80-c7dc-11e9-8cf2-32e589d65624.png" width="720">
+
+Dưới đây là quá trình triển khai back-pro và for-pro với mạng neural thực hiện **binary classification**
+
+<img src="https://user-images.githubusercontent.com/15076665/63657426-d615db80-c7dc-11e9-8f1a-c761d476d2d6.png" width="720">
