@@ -268,5 +268,14 @@
             "vietnamese"
         ],
         "posted_at": "Posted on July 05, 2019"
+    },
+    "es_basic": {
+        "title": "Elasticsearch basic",
+        "description": "Basic knowledge about Elasticsearch",
+        "tags": [
+            "Elasticsearch",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at August 29, 2019"
     }
 }

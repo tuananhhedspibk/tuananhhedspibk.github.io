@@ -494,3 +494,14 @@ Bên phải là trường hợp **vectorization**
 Dưới đây là quá trình triển khai back-pro và for-pro với mạng neural thực hiện **binary classification**
 
 <img src="https://user-images.githubusercontent.com/15076665/63657426-d615db80-c7dc-11e9-8f1a-c761d476d2d6.png" width="720">
+
+
+## Parameters vs Hyper-parameters
+
+### What are hyper-parameters
+
+Trong model **parameters** là W, b
+
+**hyper-parameters** : số vòng lặp, learning rate alpha, hidden layer L, hidden units, ... Các yếu tố này đều điều khiển W, b
+
+Ngoài ra còn có: momentum, mini-batch size, ...
