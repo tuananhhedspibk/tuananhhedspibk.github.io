@@ -16,7 +16,7 @@ function genPostsPreviewFromSource(fileURL) {
                 var classOfTag = 'tech-tag';
 
                 if (languagesTagValues.indexOf(tagValue) !== -1) {
-                    const flagCSSClass = '';
+                    let flagCSSClass = '';
 
                     if (tagValue == 'japanese') {
                         flagCSSClass = ' border-flag';
