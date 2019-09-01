@@ -1,4 +1,16 @@
 {
+    "hyper_regular_optimize": {
+        "title": "Summary content of Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization course on Coursera",
+        "description": "Content is going to be updated day by day",
+        "tags": [
+            "Deep Learning",
+            "Hyperparameter",
+            "Regularization",
+            "Optimization",
+            "english"
+        ],
+        "posted_at": "Posted at September 01, 2019"
+    },
     "es_basic": {
         "title": "Elasticsearch basic",
         "description": "Basic knowledge about Elasticsearch",
@@ -47,6 +59,16 @@
         ],
         "posted_at": "Posted at August 24, 2019"
     },
+    "neural_networks_and_deep_learning": {
+        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
+        "description": "Content is going to be updated day by day",
+        "tags": [
+            "Neural network",
+            "Deep Learning",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on August 23, 2019"
+    },
     "mobile_design": {
         "title": "MobileDesign",
         "description": "Basic Mobile App Design Knowledge",
@@ -68,16 +90,6 @@
             "vietnamese"
         ],
         "posted_at": "Posted at August 10, 2019"
-    },
-    "neural_networks_and_deep_learning": {
-        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
-        "description": "Content is going to be updated day by day",
-        "tags": [
-            "Neural network",
-            "Deep Learning",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on August 06, 2019"
     },
     "deep_learning_coding_note": {
         "title": "Deep Learning Coding Note",
