@@ -4,7 +4,7 @@ Tham khảo từ [sách](https://www.amazon.co.jp/Elasticsearch%E5%AE%9F%E8%B7%B
 
 Tham khảo từ [nguồn 1](http://ktmt.github.io/blog/2013/10/27/full-text-search-engine/), [nguồn 2](https://ktmt.github.io/blog/2013/11/03/full-text-search/) cho **inverted index** và **n-gram**
 
-**2.1. Concepts cơ bản**
+## 2.1. Concepts cơ bản
 
 - Đơn vị lưu trữ cơ bản là **document** ~= **record** trong **table**, nhưng lưu dưới dạng JSON
 Khi đưa vào ElasticSearch các document đều được thêm 1 trường để quản lí đó là **ID**
@@ -53,7 +53,7 @@ Mô hình của 1 cluster:
 
 <img src="https://user-images.githubusercontent.com/43769314/63745567-80752800-c8dd-11e9-8f76-9f5758cd8e52.png" width="720">
 
-**2.2. Cấu trúc hệ thống**
+## 2.2. Cấu trúc hệ thống
 
 ES có cấu trúc phân tán, các clusters chứa các nodes (các nodes sẽ liên kết, liên lạc, gửi tin cho nhau cũng như có vai trò kế thừa nhau)
 
@@ -204,17 +204,18 @@ Việc thiết lập **số lượng shards** cũng như **số lượng replica
 
 Thực tế là nếu thiết lập số lượng shards nhiều (**overallocation**) thì có thể dẫn đến **overhead** vì khi đó sẽ có 1 số lượng các nodes tồn tại trên nhiều shards dẫn đến khi truy vấn sẽ phải tiến hành trên nhiều shards (có thể overhead nhưng không quá nghiêm trọng) so với việc thiết lập ít shards dẫn đến **underallocation** nghĩa là sẽ không thể phân tán tải khi lượng dữ liệu tăng lên
 
-**2.3.REST API**
+## 2.3.REST API
 
 <img src="https://user-images.githubusercontent.com/43769314/63828422-58e79380-c9a1-11e9-9199-398b741b15fa.png" width="720">
 
 
-**3. Query Language**
+## 3. Query Language
 
-**4. Analyzer, Aggregation**
-**4.1. Analyzer and Full text search**
+## 4. Analyzer, Aggregation
+## 4.1. Analyzer and Full text search
 
-- **Analyzer** là tính năng xử lí tách các đoạn văn thành các từ đơn để phục vụ cho mục đích **full text search**
+### Analyze
+Là tính năng xử lí tách các đoạn văn thành các từ đơn để phục vụ cho mục đích **full text search**
 
 Xét ví dụ, trong văn bản có câu
 
@@ -492,8 +493,71 @@ GET /bank/_search
 
 - Có 2 kiểu dữ liệu văn bản đó là **text** và **keyword**. Tuy nhiên chỉ có **keyword** là sử dụng cho **Aggregation**, nguyên nhân là vì **text** sử dụng cho quá trình **Analyzer**, khi đó có thể các **phrase** gốc sẽ không được giữ lại nguyên trạng ("New York" => ["new", "york"]), nếu **keyword** cũng bị như vậy thì khi tạo **Buckets** sẽ dẫn đến các kết quả không chính xác
 
-##5. Sử dụng Logstash
+### Kết hợp Metrics và Buckets
 
-Sử dụng để import, đánh index dữ liệu từ 1 nguồn khác vào ES (1 dạng pipeline tool)
+Ví dụ:
 
-Nguồn tham khảo với MySQL (java, sử dụng JDBC để kết nối với database) - [Logstash MySQL](https://medium.com/veltra-engineering/logstash-mysql-elasticsearch-f2c1165801d)
+```javascript
+GET /bank/_search
+{
+  "size": 0,
+  "aggs": {
+    "my_state_buckets": {
+      "terms": {"field": "state.keyword"},
+      "aggs": {
+        "my_balance_avg": {
+          "avg": {"field": "balance"}
+        }
+      }
+    }
+  }
+}
+```
+
+### Kết hợp nhiều buckets
+
+Tổ chức các buckets theo cấu trúc lồng (nested)
+
+<img src="https://user-images.githubusercontent.com/43769314/64085530-4b9a2280-cd6e-11e9-8c6d-601f79f3adfa.png" width="720">
+
+```javascript
+GET /bank/_search
+{
+  "size": 0,
+  "aggs": {
+    "my_state_buckets": {
+      "terms": {"field": "state.keyword"},
+      "aggs": {
+        "my_balance_buckets": {
+          "range": {
+            "field": "balance",
+            "ranges": [
+              {
+                "to": 1000
+              },
+              {
+                "from": 1000,
+                "to": 2000
+              },
+              {
+                "from": 2000,
+                "to": 3000
+              },
+              {
+                "from": 3000
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## 5. Vận hành, quản lí cluster
+
+Index có 3 trạng thái
+- **green**: Mọi primary và replica shards đều ở trạng thái sẵn sàng
+- **yellow**: Mọi primary shards đều đã sẵn sàng, nhưng vẫn còn replica shards chưa sẵn sàng
+- **red**: Có những primary shards chưa sẵn sàng (những có 1 phần cluster vẫn hoạt động được)

@@ -9,7 +9,7 @@ function genPostsPreviewFromSource(fileURL) {
         var postsList = [];
         var counter = 0;
         $.each(data, function (key, val){
-            var representClassName = counter <= 4 ? '' : ' hide-element';
+            var representClassName = counter <= 7 ? '' : ' hide-element';
             var valuesOfTags = val['tags'];
             var tagElements = [];
             valuesOfTags.forEach(tagValue => {

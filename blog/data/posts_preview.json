@@ -1,4 +1,25 @@
 {
+    "syn_token_filter": {
+        "title": "Synonym Token Filter",
+        "description": "Elasticsearch Synonym token filter translation",
+        "tags": [
+            "Elasticsearch",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at September 03, 2019"
+    },
+    "query_types_es": {
+        "title": "Query types are commonly used in Elasticsearch",
+        "description": "Summary query types are commonly used in Elasticsearch",
+        "tags": [
+            "Elasticsearch",
+            "QueryTypes",
+            "Summary",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at September 03, 2019"
+    },
     "hyper_regular_optimize": {
         "title": "Summary content of Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization course on Coursera",
         "description": "Content is going to be updated day by day",
@@ -9,16 +30,35 @@
             "Optimization",
             "english"
         ],
-        "posted_at": "Posted at September 01, 2019"
+        "posted_at": "Posted at September 03, 2019"
     },
-    "es_basic": {
-        "title": "Elasticsearch basic",
-        "description": "Basic knowledge about Elasticsearch",
+    "es_basic_2": {
+        "title": "Elasticsearch basic (Part 2)",
+        "description": "Basic knowledge about Elasticsearch (Part 2)",
         "tags": [
             "Elasticsearch",
             "vietnamese"
         ],
-        "posted_at": "Posted at August 31, 2019"
+        "posted_at": "Posted at September 03, 2019"
+    },
+    "es_basic_1": {
+        "title": "Elasticsearch basic (Part 1)",
+        "description": "Basic knowledge about Elasticsearch (Part 1)",
+        "tags": [
+            "Elasticsearch",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at September 03, 2019"
+    },
+    "neural_networks_and_deep_learning": {
+        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
+        "description": "Course finished",
+        "tags": [
+            "Neural network",
+            "Deep Learning",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on August 31, 2019"
     },
     "refactoring_ui_1_ja": {
         "title": "リファクタリングUI - パート1",
@@ -58,16 +98,6 @@
             "english"
         ],
         "posted_at": "Posted at August 24, 2019"
-    },
-    "neural_networks_and_deep_learning": {
-        "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
-        "description": "Content is going to be updated day by day",
-        "tags": [
-            "Neural network",
-            "Deep Learning",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on August 23, 2019"
     },
     "mobile_design": {
         "title": "MobileDesign",
