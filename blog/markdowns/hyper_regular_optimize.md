@@ -83,7 +83,7 @@ we can omit b because in practice w is a high-dimension parameter while b **is j
 
 If we use L1 regularization, w will be sparse that means, w vector will have a lot of zeros in it
 
-<img src="https://user-images.githubusercontent.com/15076665/64119107-04df1380-cdd4-11e9-9c5c-713006716731.png" width="720">
+<img src="https://user-images.githubusercontent.com/15076665/64532760-1cc31400-d34d-11e9-9a32-57257cf4785f.png" width="720">
 
 **Lambda is another hyper-parameter**
 
@@ -128,3 +128,108 @@ If implement dropout at the test time, you just add noise to your predictions
 In theory, run prediction many times with different hidden units randomly dropped out and have it across them. but it will give you very similar results as well
 
 <img src="https://user-images.githubusercontent.com/15076665/64180165-4be60b00-ce9f-11e9-9e75-0dac99a2f17a.png" width="720">
+
+## Understanding Dropout
+
+Intuition: Can't rely on any one features because with dropout the inputs can get randomly eliminated, any feature can go away random
+
+Dropout has similar effect to L2 regularization
+
+We have the parameter **keep_prob** - which has a change of keeping a unit in each layer.
+
+W[2] is the biggest matrix - to prevent over-fitting, we make **keep_prob** relative low (0.5), with different layers, we have less worry about over-fitting, maybe set **keep_prob** to 0.7, 1.0, ... (1.0 - means that we don't drop any units so we **do not use DropOut** for this layer)
+
+Keep dropout of input layer **close to 1.0**
+
+> Summarize: If you more worried about one layer than other layers, set keep_prob of that layer smaller than others
+
+In computer vision, the input size is so big, inputting all these pixels that you almost never have enough data, so drop out is frequently used by Computer vision
+
+> Dropout is a regularization technique, so it helps prevent over-fitting
+
+Big downside of drop-out is the cost function J is no longer well-defined, hard to calculate so we lose debugging tool (graph of J)
+
+<img src="https://user-images.githubusercontent.com/15076665/64472377-4dae1800-d198-11e9-9178-fa9fa3ab9eac.png" width="720">
+
+## Other regularization method
+
+**Data augmentation** - When we don't have enough data to train, but we want prevent over-fitting, **data augmentation** could be a good choice
+- Flipping image
+- Cropping image
+- Random rotation
+
+<img src="https://user-images.githubusercontent.com/15076665/64482470-80562000-d22d-11e9-88b9-c0182a9693d2.png" width="720">
+
+**Early stopping** - Randomly initialize parameters, its value is small, but after runnning a lot of iterations, w values will be bigger, **early stopping** will stop halfway , you have only mid-size rate w
+
+> Early stopping: early stop training your neural network
+
+With early stopping you no longer can work on these two problems (not overfit and Optimize cost function J) independently because stop gradient descent early, you're sort of breaking whatever you're doing to optimize cost function J
+
+With L2 regularization, you just train your neural network as long as possible => this makes the search space of hyper parameters easier to decompose. But the downside is you must try a lot of values for the regularization parameter **lambda** => expensive for computation
+
+The advantage of early stopping is that **running the gradient descent process just once**, you get to try out values of small w, mid-size w, large w without needing to try a lot of values of the L2 regularization parameter lambda
+
+<img src="https://user-images.githubusercontent.com/15076665/64482650-e1332780-d230-11e9-8add-e8d143e75db2.png" width="720">
+
+## Normalizing input
+
+**Normalizing training sets** - Corresponds to two steps
+- Step 1: Substract out (Zero out) mean
+- Step 2: Normalize variance
+
+In the below picture, instead of dividing to sigma^2, we just using **sigma**
+
+<img src="https://user-images.githubusercontent.com/15076665/64482899-09248a00-d235-11e9-817a-d96d0d9aab59.png" width="720">
+
+**Why normalize inputs** 
+
+If we normalize inputs, our cost function will look more symmetric
+
+When using unnormalized inputs, our cost function will look like a very squished out bowl, it turns out that parameters w1, w2, ... will end up taking on very different values
+
+Cost function contour is a very elongated function 
+
+With cost function on the left, we must use gradient descent with **small learning rate** (a lot of steps to end up minimum  point) but after normalizing inputs (spherical contour), it makes us easier to find global minimum value (our cost function is more round, easier to optimize when our features are all on similar scales)
+
+> It helps your learning algorithm run faster
+
+<img src="https://user-images.githubusercontent.com/15076665/64483198-222f3a00-d239-11e9-945e-49cc64edbf73.png" width="720">
+
+## Vanishing/ exploding gradients
+
+Activation values will decrease exponentially. So in the very deep network, the activations end up decreasing exponentially
+
+I: identity matrix
+
+<img src="https://user-images.githubusercontent.com/15076665/64483607-227f0380-d240-11e9-9e06-d992c2475784.png" width="720">
+
+## Weight initialization for Deep Networks
+
+With ReLU activation function, Variance (wi) = 2/n
+
+<img src="https://user-images.githubusercontent.com/15076665/64488343-bd4c0200-d281-11e9-9778-72ee444d753f.png" width="720">
+
+## Numerical approximation of gradients
+
+**Checking your derivative computation**
+
+<img src="https://user-images.githubusercontent.com/15076665/64488824-487bc680-d287-11e9-927f-74a05ed9c593.png" width="720">
+
+## Gradient checking
+
+dW[l] has same dimension with W[l]
+
+<img src="https://user-images.githubusercontent.com/15076665/64530101-4d07b400-d347-11e9-959f-3f9c9dc6abd2.png" width="720">
+
+|| ||2 is euclidean lengths, have to take care with checked value (10^-5), and start worrying about value (10^-3) but great with (10^-7)
+
+<img src="https://user-images.githubusercontent.com/15076665/64530532-55142380-d348-11e9-985b-a4c2b7418424.png" width="720">
+
+> Gradient checking helps up finding the bug
+
+## Gradient checking implementation notes
+
+In practice, turn off dropout and double check with gradient checking and after that turn on dropout
+
+<img src="https://user-images.githubusercontent.com/15076665/64531163-c4d6de00-d349-11e9-9976-daee51c5c71e.png" width="720">
