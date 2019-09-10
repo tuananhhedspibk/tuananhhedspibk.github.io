@@ -27,3 +27,7 @@ The main steps for building a Neural Network are:
   - Calculate current loss (forward propagation)
   - Calculate current gradient (backward propagation)
   - Update parameters (gradient descent)
+
+- The weights W[l] should be initialized randomly to break symmetry.
+- It is however okay to initialize the biases b[l] to zeros. Symmetry is still broken so long as W[l] is initialized randomly.
+- Initializing weights to very large random values does not work well.
