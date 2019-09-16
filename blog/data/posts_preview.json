@@ -1,4 +1,14 @@
 {
+    "redux_from_scratch": {
+        "title": "Redux from scratch",
+        "description": "Implement Redux by plain javascript",
+        "tags": [
+            "Redux",
+            "Javascript",
+            "english"
+        ],
+        "posted_at": "Posted at September 15, 2019"
+    },
     "aws_quick_note": {
         "title": "AWS Quick Note",
         "description": "Content is going to be updated everyday",
