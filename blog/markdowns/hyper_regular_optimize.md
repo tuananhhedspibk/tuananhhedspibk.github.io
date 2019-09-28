@@ -233,3 +233,42 @@ dW[l] has same dimension with W[l]
 In practice, turn off dropout and double check with gradient checking and after that turn on dropout
 
 <img src="https://user-images.githubusercontent.com/15076665/64531163-c4d6de00-d349-11e9-9976-daee51c5c71e.png" width="720">
+
+## Mini-batch gradient descent
+
+### Batch vs mini-batch gradient descent
+
+If m - the size of the training set is large, our algorithm will be slow
+
+We can handle by split training set to *baby training sets* - *mini-batches* and we split y set accordingly
+
+<img src="https://user-images.githubusercontent.com/15076665/65812419-cd605d00-e201-11e9-8d58-749a83467a30.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/65812530-35637300-e203-11e9-9f58-16fccf7e8422.png" width="720">
+
+## Understanding mini-batch gradient descent
+
+### Training with mini-batch gradient descent
+
+With mini-batch gradient descent if we plot the function J, it will be a litte nosiser. Because with X{1}, Y{1} maybe it just easier so we have a low cost, but with X{2}, Y{2} it become harder (more missing label examples), with X{2} and Y{2} we have a higher cost
+
+<img src="https://user-images.githubusercontent.com/15076665/65812715-4feb1b80-e206-11e9-826b-940f4220f90e.png" width="720">
+
+### Choosing your mini-batch size
+
+In here we have m is the size of training set. Stochastic gradient descent can be extremely noisy, It'll always just kind of oscillate and wonder around the region of the minimum, it won't ever just head to the minimum and stay there
+
+<img src="https://user-images.githubusercontent.com/15076665/65812910-d43e9e00-e208-11e9-8b61-f5bb69465122.png" width="720">
+
+Sometimes your code runs faster if your mini-batch size is a power of 2.
+The common mini-batch size: 64, 128, 256, 512
+
+<img src="https://user-images.githubusercontent.com/15076665/65812960-92622780-e209-11e9-9618-29fab510bb56.png" width="720">
+
+## Exponentially weighted averages
+
+<img src="https://user-images.githubusercontent.com/15076665/65813095-647de280-e20b-11e9-854d-61177c824bf0.png" width="720">
+
+In the below image, green line is accordingly with beta = 0.98, with larger window (beta = 0.98 ~ 50 days) the curve will adapt slowly (when beta is so large)
+
+<img src="https://user-images.githubusercontent.com/15076665/65813165-52e90a80-e20c-11e9-8087-bb53f995252f.png" width="720">
