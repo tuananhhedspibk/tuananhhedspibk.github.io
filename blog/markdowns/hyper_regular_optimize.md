@@ -272,3 +272,35 @@ The common mini-batch size: 64, 128, 256, 512
 In the below image, green line is accordingly with beta = 0.98, with larger window (beta = 0.98 ~ 50 days) the curve will adapt slowly (when beta is so large)
 
 <img src="https://user-images.githubusercontent.com/15076665/65813165-52e90a80-e20c-11e9-8087-bb53f995252f.png" width="720">
+
+In the below image, epsilon is the number of the days temperature
+
+<img src="https://user-images.githubusercontent.com/15076665/65825344-de1bdc00-e2b0-11e9-9e18-247c3d25115b.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/65825402-5d111480-e2b1-11e9-92e7-d9af0d07b5bf.png" width="720">
+
+## Bias correction in exponentially weighted average
+
+The purple curve starts very low, bias correction will help you go from the **purple line** to **green line**, and help you obtain better estimate for temperature
+
+<img src="https://user-images.githubusercontent.com/15076665/65825633-43250100-e2b4-11e9-9ef8-d1afa7086ec7.png" width="720">
+
+## Gradient descent with momentum
+
+Almost works faster than normal gradient descent. The basic idea is to compute an exponentially weighted average of gradients and then use that gradient to update your weights instead.
+
+Purple line is when you use a large learning rate. On the vertical direction, averange will closer to zero and the averange in the horizontal direction will still be pretty big
+
+Gradient descent with momentum take steps that are much smaller oscillation in vertical direction and just moving quickly in the horizontal direction (red direction in the below picture)
+
+<img src="https://user-images.githubusercontent.com/15076665/65826133-c9444600-e2ba-11e9-9ec7-bdc1dc633fdf.png" width="720">
+
+We should use the left version of formula (with (1 - beta))
+
+<img src="https://user-images.githubusercontent.com/15076665/65826189-75862c80-e2bb-11e9-8010-ebb01bfed158.png" width="720">
+
+## RMSprop (Root means square prop)
+
+It damps out the oscillations in gradient descent
+
+<img src="https://user-images.githubusercontent.com/15076665/65827116-dcaadd80-e2c9-11e9-8e44-4c3fb66a49bc.png" width="720">
