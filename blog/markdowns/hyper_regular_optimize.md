@@ -304,3 +304,50 @@ We should use the left version of formula (with (1 - beta))
 It damps out the oscillations in gradient descent
 
 <img src="https://user-images.githubusercontent.com/15076665/65827116-dcaadd80-e2c9-11e9-8e44-4c3fb66a49bc.png" width="720">
+
+## Adam optimization algorithm
+
+Basically taking **momentum** and **rms prop** and putting them together
+
+<img src="https://user-images.githubusercontent.com/15076665/65833400-07695600-e30b-11e9-8506-837d6195903b.png" width="720">
+
+Hyper-parameter choice:
+- alpha: try a range of values - need to be tunes
+- beta1: default (common) choice is 0.9 (dw)
+- beta2: default is 0.999 (dw^2)
+- epsilon: 10^-8
+
+When implementing Adam, usually use the **default value** for **beta1**, **beta2** and **epsilon**
+
+<img src="https://user-images.githubusercontent.com/15076665/65833455-8a8aac00-e30b-11e9-8cae-4fa158fe215a.png" width="720">
+
+## Learning rate decay
+
+Slowly reduce your learning rate overtime
+
+Blue-line in the below is the noisy case - just some noise in different mini-bathces
+
+Slowly reduce alpha, when alpha gets smaller, your steps you take will be slower and smaller (green-line)
+
+<img src="https://user-images.githubusercontent.com/15076665/65833593-f3beef00-e30c-11e9-9597-b25e1644845e.png" width="720">
+
+Epoch 1: alpha 0.1
+Epoch 2: alpha 0.067
+Epoch 3: alpha 0.05
+Epoch 4: alpha 0.04
+
+<img src="https://user-images.githubusercontent.com/15076665/65882990-1e727b80-e3d1-11e9-8726-9ab4d10412cd.png" width="720">
+
+t is mini-batch number t
+
+<img src="https://user-images.githubusercontent.com/15076665/65884045-19163080-e3d3-11e9-943b-a06b2723d479.png" width="720">
+
+## The problem of local optimal
+
+Most points of zero gradient in a cost function (local optimal points) are saddle points
+
+<img src="https://user-images.githubusercontent.com/15076665/65885617-ecafe380-e3d5-11e9-9fbc-604afc0493c6.png" width="720">
+
+Plateau is a region where the derivative is close to zero for a long time
+
+<img src="https://user-images.githubusercontent.com/15076665/65886022-8c6d7180-e3d6-11e9-9404-743d1d800081.png" width="720">
