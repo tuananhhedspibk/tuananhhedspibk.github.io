@@ -351,3 +351,76 @@ Most points of zero gradient in a cost function (local optimal points) are saddl
 Plateau is a region where the derivative is close to zero for a long time
 
 <img src="https://user-images.githubusercontent.com/15076665/65886022-8c6d7180-e3d6-11e9-9404-743d1d800081.png" width="720">
+
+## Tuning Process
+
+The Order of tuning:
+1. Red
+2. Yellow
+3. Purple
+
+<img src="https://user-images.githubusercontent.com/15076665/66050415-257fc200-e568-11e9-8eb2-51188d843385.png" width="720">
+
+With two hyper-parameters it was common practice to sample the points in a grid and systemmatically explore values and pick whichever hyper-parameter works best
+
+In deep learning we should choose the points as random
+
+In above images we could understand that some hyper-parameters are important than the others
+
+In random case we must try all random values for hyper-parameter 1. In constrast we try out maybe (5 values of hyper-parameter 1)
+
+<img src="https://user-images.githubusercontent.com/15076665/66051125-5ad8df80-e569-11e9-8c1a-23ad9563601c.png" width="720">
+
+Zoom in a region that has **best points** and then sample more density within this space
+
+Coarse to fine helps you focus on a smaller square and then you can sample more in smaller square
+
+<img src="https://user-images.githubusercontent.com/15076665/66051759-64167c00-e56a-11e9-947f-2b1eb60bc71f.png" width="720">
+
+## Using an appropriate scale to pick hyper-parameter
+
+n[l]: number of hidden units
+
+We can choose randomly
+
+<img src="https://user-images.githubusercontent.com/15076665/66052142-12222600-e56b-11e9-98a1-adf276cb0bcb.png" width="720">
+
+90% the values you random are in [0.1, 1]
+
+<img src="https://user-images.githubusercontent.com/15076665/66053344-1d765100-e56d-11e9-9aec-687b9e0a6a10.png" width="720">
+
+10, 1000 are averaging over the last 10, 1000 values
+
+beta from 0.999 -> 0.9995 will be a big impact on exactly what your algorithm are doing
+
+<img src="https://user-images.githubusercontent.com/15076665/66054153-87432a80-e56e-11e9-8b95-ec3b473189df.png" width="720">
+
+## Hyper-parameter tuning in practice: Pandas vs Caviar
+
+day0: init params. Try increasing learning rate and have some good results but in one day you find that learning rate is big and go back to previous model. Babysitting one model is usually used when we don't have enough resource to train models parallel
+
+Training many models parallel. After training all models we just pick the best model
+
+<img src="https://user-images.githubusercontent.com/15076665/66134109-bf13a600-e632-11e9-9c41-4082ba9bbc79.png" width="720">
+
+## Normalizing activations in a network
+
+Normalizing changes something that might very elongated to something that ismore round -> make it easier for gradient descent to optimize
+
+Can we normalize a[2] so as to train w[3], b[3] faster? -> this is what **batch normalization** does. In technically we normalize z[2] not a[2]
+
+<img src="https://user-images.githubusercontent.com/15076665/66249562-38fd7980-e770-11e9-9eee-7506e71b4eaf.png" width="720">
+
+z(1), ..., z(m) are values of hidden layer l (z[l]). Take value z, normalize them to have mean 0 and standard unit variance, so every components of z have mean 0 and variance 1
+
+But we don't want always hidden units have mean 0 and variance 1
+
+Make sense for hidden unit to have different distribution
+
+gamma and beta help you to set the mean of z~ (tilde) to be whatever you want it to be
+
+We can apply batch normalization to hidden units. variance and mean are controlled by gamma and beta 
+
+<img src="https://user-images.githubusercontent.com/15076665/66250758-afef3e00-e781-11e9-9347-46df92a9e060.png" width="720">
+
+## Fitting a batch norm into a neural network
