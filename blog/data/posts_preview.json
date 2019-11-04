@@ -1,4 +1,25 @@
 {
+    "structuring_machine_learning_projects": {
+        "title": "Structuring Machine Learning Projects",
+        "description": "Summary content of Structuring Machine Learning Projects course on Coursera",
+        "tags": [
+            "Machine Learning",
+            "english"
+        ],
+        "posted_at": "Posted at November 04, 2019"
+    },
+    "hyper_regular_optimize": {
+        "title": "Summary content of Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization course on Coursera",
+        "description": "Content is going to be updated day by day",
+        "tags": [
+            "Deep Learning",
+            "Hyperparameter",
+            "Regularization",
+            "Optimization",
+            "english"
+        ],
+        "posted_at": "Posted at November 04, 2019"
+    },
     "redux_from_scratch": {
         "title": "Redux from scratch",
         "description": "Implement Redux by plain javascript",
@@ -47,18 +68,6 @@
             "QueryTypes",
             "Summary",
             "vietnamese"
-        ],
-        "posted_at": "Posted at September 03, 2019"
-    },
-    "hyper_regular_optimize": {
-        "title": "Summary content of Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization course on Coursera",
-        "description": "Content is going to be updated day by day",
-        "tags": [
-            "Deep Learning",
-            "Hyperparameter",
-            "Regularization",
-            "Optimization",
-            "english"
         ],
         "posted_at": "Posted at September 03, 2019"
     },
