@@ -395,7 +395,7 @@ beta from 0.999 -> 0.9995 will be a big impact on exactly what your algorithm ar
 
 <img src="https://user-images.githubusercontent.com/15076665/66054153-87432a80-e56e-11e9-8b95-ec3b473189df.png" width="720">
 
-## Hyper-parameter tuning in practice: Pandas vs Caviar
+## Hyper-parameter tuning in practice: Panda vs Caviar
 
 day0: init params. Try increasing learning rate and have some good results but in one day you find that learning rate is big and go back to previous model. Babysitting one model is usually used when we don't have enough resource to train models parallel
 
@@ -424,3 +424,99 @@ We can apply batch normalization to hidden units. variance and mean are controll
 <img src="https://user-images.githubusercontent.com/15076665/66250758-afef3e00-e781-11e9-9347-46df92a9e060.png" width="720">
 
 ## Fitting a batch norm into a neural network
+
+Batch norm happens between computing Z and computing A, we have Z is un-normalize and Z~ (Z tilde) is normalize value
+
+<img src="https://user-images.githubusercontent.com/15076665/67862314-3d496680-fb65-11e9-9ebe-3386c7f4b0fd.png" width="720">
+
+In practice, Batch norm is usually applied with mini-batches
+
+Batch-norm is going to look at the mini-batch and normalize Zl to first of mean 0 and standard variance and then re-scale by gamma and beta
+
+During batch-normalization step we are going to compute the means of the Zl and then substract the mean, so adding any constant to all of the examples in the mini-batch, it doesn't change anything, because any constant that we added will get cancelled out by the mean substraction step
+
+n[l] is number of hidden unit
+
+<img src="https://user-images.githubusercontent.com/15076665/67867149-4d654400-fb6d-11e9-8105-ddb9166d517e.png" width="720">
+
+<img src="https://user-images.githubusercontent.com/15076665/67867188-5fdf7d80-fb6d-11e9-8cf9-3c8c78f567d9.png" width="720">
+
+## Why does batch-norm work
+
+### Learning on shifting input distribution
+
+Let take a look at cat and not-cat classifier neural network, if we train our network with only "black cat" and testing with "colored cat" maybe it won't do very well
+
+Covariate shift: if you learn X -> Y mapping, if X's distribution changes, you have to re-train your model
+
+In the below image: o is **positive example**, x is **negative example**
+
+<img src="https://user-images.githubusercontent.com/15076665/67950092-5ff28280-fc2c-11e9-9e39-0487e149778a.png" width="720">
+
+When w[2], b[2] change, a[2][1], a[2][2], ... may change
+
+Batch norm reduces the amount that the distribution of these hidden unit values shifts around
+
+In the below pic, batch-norm ensures that when z1[2], z2[2] change, its means and variance will remain the same.
+
+It limits the amount to which updating the parameters in the ealier layers can effect the distribution of values that the third layer now sees and therefore has to learn on
+
+Make the job of learning on the next layers easier
+
+<img src="https://user-images.githubusercontent.com/15076665/67951170-5833dd80-fc2e-11e9-8536-3a5f938d7c92.png" width="720">
+
+By using mini-batch with bigger size we can reduce regularization effect
+
+<img src="https://user-images.githubusercontent.com/15076665/67951947-d3e25a00-fc2f-11e9-8668-df18df0e1052.png" width="720">
+
+
+## Batch-norm at test time
+
+μ, σ^2 are computed on the entire mini-batch
+
+l is layer l. Use a exponentially weighted average to compute the mean of Theta 1, Theta 2 
+
+<img src="https://user-images.githubusercontent.com/15076665/68079817-13c55f00-fe33-11e9-8802-5265ffba185e.png" width="720">
+
+
+## Softmax Regression
+
+<img src="https://user-images.githubusercontent.com/15076665/68080305-d74a3100-fe3b-11e9-88ec-afaa0c7ad82d.png" width="720">
+
+t is a temporary variable
+
+<img src="https://user-images.githubusercontent.com/15076665/68080533-da93eb80-fe40-11e9-9118-5046852b9633.png" width="720">
+
+Softmax examples:
+<img src="https://user-images.githubusercontent.com/15076665/68080549-60179b80-fe41-11e9-87ab-1f8358409c04.png" width="720">
+
+## Training a softmax classifier
+
+Understand softmax:
+
+<img src="https://user-images.githubusercontent.com/15076665/68081628-8f83d380-fe54-11e9-9a1d-04a63aa7231f.png" width="720">
+
+
+Loss function:
+
+<img src="https://user-images.githubusercontent.com/15076665/68081718-dcb47500-fe55-11e9-8c92-7ae47bf333b3.png" width="720">
+
+GD with softmax:
+
+<img src="https://user-images.githubusercontent.com/15076665/68081768-6e23e700-fe56-11e9-9478-637eea0b7653.png" width="720">
+
+## Deep learning frameworks
+
+<img src="https://user-images.githubusercontent.com/15076665/68081911-d8d62200-fe58-11e9-848d-274ebd995d24.png" width="720">
+
+## Tensorflow
+
+> The heart of the tensorflow programs is **the cost function**
+
+Writing and running programs in TensorFlow has the following steps:
+
+1. Create Tensors (variables) that are not yet executed/evaluated.
+2. Write operations between those Tensors.
+3. Initialize your Tensors.
+4. Create a Session.
+5. Run the Session. This will run the operations you'd written above.
