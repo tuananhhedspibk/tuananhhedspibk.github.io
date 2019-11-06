@@ -34,3 +34,19 @@ Sometimes, we should use **Average** number together
 Satisficing: good enough
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/68213516-1389b700-001f-11ea-8657-7ff394a799cb.png">
+
+## Train/dev/test distributions
+
+Make your dev and test sets come from the same region. In case dev and test set are from different region, we optimize our model on dev set but it doesn't work good on test set.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68302723-e7853900-00e5-11ea-9ba0-48b4e6e0e1c2.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68302916-37fc9680-00e6-11ea-8c99-291dfb1f5bf9.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68303632-95ddae00-00e7-11ea-9212-59a4b3e44fb7.png">
+
+## Size of the dev and test sets
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68304028-506db080-00e8-11ea-86a8-94ab248d8022.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68304262-bfe3a000-00e8-11ea-855e-484c619ca46b.png">
