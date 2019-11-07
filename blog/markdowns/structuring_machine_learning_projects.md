@@ -50,3 +50,27 @@ Make your dev and test sets come from the same region. In case dev and test set 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/68304028-506db080-00e8-11ea-86a8-94ab248d8022.png">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/68304262-bfe3a000-00e8-11ea-855e-484c619ca46b.png">
+
+## When to change dev/test sets and metrics
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68389815-2e873300-01a7-11ea-931c-afe7ccbf893e.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68390063-d1d84800-01a7-11ea-88b1-2badb6e77b07.png">
+
+In practice, algorithm B is better
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68390331-62168d00-01a8-11ea-9f8b-8bfeae4519a7.png">
+
+## Why human-level performance?
+
+Progress is ofter quite fast, until you surpass human level performance, sometimes it slows down after surpass human level performance. And the reasons are:
+- Human-level performace for many tasks that not far from Bayes's optimal error
+- With the tools those could help us improve performace maybe do not work good after surpassing the human-level performance
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68391470-10233680-01ab-11ea-8bae-c9c842a41be4.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68392806-f800e680-01ad-11ea-8f60-1c5c66c496db.png">
+
+## Avoidable bias
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68393462-7447f980-01af-11ea-87ac-a45b833af485.png">
