@@ -139,3 +139,27 @@ If training set and dev set have the **same distribution**, we can see that we a
 <img width="720" src="https://user-images.githubusercontent.com/15076665/68529887-6a0c3380-0346-11ea-9abb-2077b2c1c6a5.png">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/68530094-785b4f00-0348-11ea-8f6b-b9276efdf2a5.png">
+
+## Addressing data mismatch
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68544020-f3cd0700-0401-11ea-9e54-6a5d62a33d77.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68544090-bae16200-0402-11ea-84d2-316fc736ed93.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68544168-b9646980-0403-11ea-8dc8-5cb50d60e49c.png">
+
+## Transfer learning
+
+Transfer learning is apply a knowledge to a neural network for changing from one task to another task
+
+Radiology diagnosis: X-ray scan
+
+If we only have a small data set of Radiology diagnosis, we can retrain the last layer, if we have enough data we can retrain all of the layers, all the parameters in neural network
+
+fine-tuning parameters of neural network
+
+wake words/ trigger words are words that can turn on some kind of devices just like: amazon alexa (ALEXA!)
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68544784-1400c400-040a-11ea-9e8f-8b9a3d7f99e0.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68544913-292a2280-040b-11ea-8b07-f0551e17abf1.png">
