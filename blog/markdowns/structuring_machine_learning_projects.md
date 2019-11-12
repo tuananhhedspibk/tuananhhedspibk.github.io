@@ -163,3 +163,39 @@ wake words/ trigger words are words that can turn on some kind of devices just l
 <img width="720" src="https://user-images.githubusercontent.com/15076665/68544784-1400c400-040a-11ea-9e8f-8b9a3d7f99e0.png">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/68544913-292a2280-040b-11ea-8b07-f0551e17abf1.png">
+
+## Multi-task learning
+
+In Multi-task learning you start off simultanously, trying to have one neural network do several things at the same time. Each of these tasks helps hopefully all of the other task.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68590600-5097f280-04d2-11ea-8ab3-162aac803cc5.png">
+
+The thing that you can do is train the neural network to predict y's value
+
+One image can have multiple labels
+
+Training one neural network to do four things results in better performance than training four completely separate neural networks to do four task separately
+
+Question mark means **un-labeled**
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68591346-de281200-04d3-11ea-9691-a210fb207cb6.png">
+
+## What is end-to-end deep learning?
+
+That is some data processing system or learning system that require multiple stages of processing
+
+End-to-end deep learning takes all those multiple stages and replace it usually with just a single neural network
+
+MFCC is the algorithm that extract a certain set of hand design features for audio
+
+Phoneme is the basic unit of the word
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68675558-7c32df80-059b-11ea-967f-37df9284b33a.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68676441-62929780-059d-11ea-9e03-2a1a485205b0.png">
+
+## Whether to use end-to-end deep learning
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68677874-31679680-05a0-11ea-99ca-41b8adbf86a4.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/68678331-1b0e0a80-05a1-11ea-82ea-a877d601f381.png">
