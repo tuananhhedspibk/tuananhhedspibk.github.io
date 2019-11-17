@@ -1,4 +1,13 @@
 {
+    "cnn_coursera": {
+        "title": "Convolutional Neural Networks",
+        "description": "Convolutional Neural Networks course on Coursera 's content",
+        "tags": [
+            "CNN",
+            "deep learning"
+        ],
+        "posted_at": "Posted at November 14, 2019"
+    },
     "structuring_machine_learning_projects": {
         "title": "Structuring Machine Learning Projects",
         "description": "Summary content of Structuring Machine Learning Projects course on Coursera",
@@ -6,7 +15,7 @@
             "Machine Learning",
             "english"
         ],
-        "posted_at": "Posted at November 04, 2019"
+        "posted_at": "Posted at November 13, 2019"
     },
     "hyper_regular_optimize": {
         "title": "Summary content of Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization course on Coursera",
