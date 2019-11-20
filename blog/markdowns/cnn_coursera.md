@@ -76,3 +76,31 @@ The corners pixel of the image are use much less in the output so we are throwin
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69059521-0cb86680-0a59-11ea-9a69-fce314c4eae4.png">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69059791-923c1680-0a59-11ea-8870-afe40ed3901a.png">
+
+## CNN Example
+
+Pooling layer doesn't have any weights or parameters, just have hyper-parameter
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69242054-664c9c80-0be3-11ea-85fe-ce8c295f4641.png">
+
+
+W[3]: weight matrix of fully connected layer
+FC3: just a "fully connected" layer
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69243134-bb89ad80-0be5-11ea-86af-aaf970a59e31.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69243317-2aff9d00-0be6-11ea-82f4-7bb0746d196b.png">
+
+## Why Convolutions?
+
+Plus 1 (25 + 1 = 26) - bias parameter
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69244092-af065480-0be7-11ea-8eb8-2bd77faa22b3.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69245102-8d0dd180-0be9-11ea-825d-ef2e73761e56.png">
+
+W, b are parameters of Conv and Pool layers
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69245334-fee61b00-0be9-11ea-8938-172522ad838d.png">
+
+<img width="482" src="https://user-images.githubusercontent.com/15076665/69245831-ec201600-0bea-11ea-9374-e2830a2b02f3.png">
