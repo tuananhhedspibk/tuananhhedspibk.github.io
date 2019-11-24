@@ -104,3 +104,21 @@ W, b are parameters of Conv and Pool layers
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69245334-fee61b00-0be9-11ea-8938-172522ad838d.png">
 
 <img width="482" src="https://user-images.githubusercontent.com/15076665/69245831-ec201600-0bea-11ea-9374-e2830a2b02f3.png">
+
+## Why look at case studies?
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69489350-3ee32180-0eba-11ea-9424-520c951cc898.png">
+
+## Classic Networks
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69489641-b9ae3b80-0ebe-11ea-93ac-bf072ebe60da.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69489704-acde1780-0ebf-11ea-848a-8546d94dbba2.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69489807-a355af00-0ec1-11ea-9e1d-f9f739548b03.png">
+
+## ResNet
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69490843-9ab8a500-0ed0-11ea-90eb-0361e576a839.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69490875-0ef34880-0ed1-11ea-9361-ed372c7987b9.png">
