@@ -122,3 +122,19 @@ W, b are parameters of Conv and Pool layers
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69490843-9ab8a500-0ed0-11ea-90eb-0361e576a839.png">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69490875-0ef34880-0ed1-11ea-9361-ed372c7987b9.png">
+
+> Padding = Same: means the input image ought to have zero padding so that the output in convolution doesnt differ in size as input
+
+> Padding = Valid: means we don't add the zero pixel padding around the input matrix, and its like saying, we are ready to loose some information
+
+## Why ResNets Work
+
+Add these two layers really doesn't hurt your neural network's ability to do as well as this simpler network without these two extra layers because it's quite easy for it to learn the identity function to just copy a[l] to a[l+2] using despite the addition of these two layers
+
+The reason is it's so easy for these extra layers to learn the identity function that it's doesn't hurt the performance
+
+Add one addition matrix Ws when input and output have different dimension
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69495701-35cf7000-0f0d-11ea-9d44-2c571232c741.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69495745-aa0a1380-0f0d-11ea-9497-f477a57d5282.png">
