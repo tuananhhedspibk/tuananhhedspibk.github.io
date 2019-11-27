@@ -1,4 +1,16 @@
 {
+    "aws_ml_certificate_note": {
+        "title": "AWS ML Certificate Note",
+        "description": "Required knowledge for taking AWS ML Certificate",
+        "tags": [
+            "AWS",
+            "Machine Learning",
+            "Certificate",
+            "Note",
+            "english"
+        ],
+        "posted_at": "Posted at November 27, 2019"
+    },
     "cnn_coursera": {
         "title": "Convolutional Neural Networks",
         "description": "Convolutional Neural Networks course on Coursera 's content",
@@ -7,7 +19,7 @@
             "Deep learning",
             "english"
         ],
-        "posted_at": "Posted at November 24, 2019"
+        "posted_at": "Posted at November 27, 2019"
     },
     "structuring_machine_learning_projects": {
         "title": "Structuring Machine Learning Projects",
