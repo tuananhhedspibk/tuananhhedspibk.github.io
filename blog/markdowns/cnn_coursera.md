@@ -138,3 +138,32 @@ Add one addition matrix Ws when input and output have different dimension
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69495701-35cf7000-0f0d-11ea-9d44-2c571232c741.png">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69495745-aa0a1380-0f0d-11ea-9497-f477a57d5282.png">
+
+## Networks in Networks and 1x1 Convolutions
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69634789-54ad3e00-1096-11ea-86e8-5e295c0257ad.png">
+
+Number channels of filter have to match with number channels of input
+We use 1x1 conv to shrink nc (number channels) of the input
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69635031-d8ffc100-1096-11ea-8b0d-a364f015e588.png">
+
+## Inception Network Motivation
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69636733-97711500-109a-11ea-8bf4-c062dfca0642.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69637170-76f58a80-109b-11ea-865e-9f6dd520403c.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69638299-c341ca00-109d-11ea-90d3-7bd8ff7cb9b3.png">
+
+## Inception Network
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69727662-55150a00-1166-11ea-8c1f-65ceeb38971c.png">
+
+Last layer in Inception network is fully-connected layer with softmax for the output
+
+Side branches of Inception network will take some hidden layer and try to use that for making a prediction
+
+It helps to ensure that the features computed even in the hidden units, even at intermediate layers, that they're not too bad for protecting the output case of the image, it appears to have a regularizing effect on the inception network and help prevent network from over-fitting
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69728556-fd779e00-1167-11ea-9f4c-ee4da7368f21.png">
