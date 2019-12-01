@@ -1,3 +1,5 @@
+- Tất cả hình ảnh và nội dung trong bài viết đều được dẫn từ [sách Refactoring UI](https://refactoringui.com/book/)
+
 ## You don’t have to fill the whole screen
 
 Hiện nay chúng ta thường sử dụng những công cụ thiết kế có độ phân giải cao, chiều rộng lớn (1200 - 1400px)
@@ -202,5 +204,3 @@ Dưới đây là một ví dụ về một hệ thống scale được sử d�
 <img src="https://user-images.githubusercontent.com/43769314/62756782-01e25300-bab4-11e9-87e2-74bc70b0e80b.png" width="720">
 
 <img src="https://user-images.githubusercontent.com/43769314/62756835-25a59900-bab4-11e9-9897-3edfd7dd70dc.png" width="720">
-
-#### Avoid em units
