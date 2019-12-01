@@ -167,3 +167,21 @@ Side branches of Inception network will take some hidden layer and try to use th
 It helps to ensure that the features computed even in the hidden units, even at intermediate layers, that they're not too bad for protecting the output case of the image, it appears to have a regularizing effect on the inception network and help prevent network from over-fitting
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69728556-fd779e00-1167-11ea-9f4c-ee4da7368f21.png">
+
+## Transfer Learning
+
+If we use built-in neural network from the internet, you just need build your own softmax-layer for classification purpose and you should **freeze your networks weight**
+
+One of the trick that could help you speed-up training is we just pre-compute the last layer (the layer before softmax layer) and save to disk
+
+What you are doing is using fixed function in first part of the neural network, take some input image X and compute some feature vectors for it and the you are training the shallow softmax model from this feature vector to make a prediction
+
+--> don't need to re-compute those activations everytime you take a epoch, but we can only do this for **small dataset**
+
+With larger training dataset, we freeze fewer layers and then train the later layers
+
+--> number freeze layers will be smaller, number layers on top will be greater
+
+If we have a lot of data, we should re-train the whole network
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69806747-f5cafe80-1226-11ea-9cdc-6f07e3de175b.png">
