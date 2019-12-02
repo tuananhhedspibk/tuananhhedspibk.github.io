@@ -185,3 +185,13 @@ With larger training dataset, we freeze fewer layers and then train the later la
 If we have a lot of data, we should re-train the whole network
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69806747-f5cafe80-1226-11ea-9cdc-6f07e3de175b.png">
+
+## Data Augmentation
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69963245-237bb480-1553-11ea-9b8b-12d1be0a8daa.png">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69963527-b87ead80-1553-11ea-9696-455291235268.png">
+
+Distortions: implement data augmentation (mirroring, color shifting, ...)
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69963776-478bc580-1554-11ea-8634-a7e3d7e1641c.png">
