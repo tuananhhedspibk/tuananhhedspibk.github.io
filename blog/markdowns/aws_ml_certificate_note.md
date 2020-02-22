@@ -72,3 +72,53 @@ Dataset that capture changes on the time
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69915190-b7844800-148f-11ea-981f-94d95a9302a4.png">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/69915207-e7335000-148f-11ea-9e08-729cc05b706f.png">
+
+### AWS Data Stores
+
+- Use S3 to store data for machine learning, because the data of S3 is easy to stream, read, ...
+
+AWS provides virtual host style:
+Ex: https://machinelearning.s3.amazonaws.com/
+
+- Use RDS (Relational Database Service)
+- Use DynamoDB - for storing schema-less data
+- Use RedShift - allow us to storage mass amount of realtional or non-realtion data to create data-ware house solution
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69964987-b8cc7800-1556-11ea-91d9-0441ceff6965.png">
+
+Use **QuickSight** to visualize the data
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69965311-52942500-1557-11ea-8253-09bf2e8066f2.png">
+
+- Use Timestream - manage time series database service, run sql on Time series data
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69965410-8e2eef00-1557-11ea-91e7-5d9e46222ccd.png">
+
+- Use DocumentDB - migrate mongodb data to AWS, provide better performance than traditional mongodb, run on EC2
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/69965565-dbab5c00-1557-11ea-8e18-aaa57c8d9998.png">
+
+### AWS Migration Tools
+
+- Data pipeline: allow us move and process data between different AWS compute and storage services, transfer data from on-premise data source onto AWS 
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/70054923-d6174a00-161b-11ea-8841-c3f28a224b14.png">
+
+- DMS (Database Migration Service): allow us to migrate data from different platforms, use for transfering data
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/70055104-38704a80-161c-11ea-98e0-1f09c81d8824.png">
+
+DMS heterogeneous and homogenous migrations
+
+- AWS Glue: load data from one data source to another by crawling and classifying
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/70055728-7fab0b00-161d-11ea-996d-a1c9565eebfc.png">
+
+### AWS Helper tools
+
+- EMR (Elastic Map Reduce)
+- Athena: run SQL queries on S3 data
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/70056554-001e3b80-161f-11ea-803d-7c4259e794cf.png">
+
+### Exam tips

@@ -1,4 +1,14 @@
 {
+    "aws_certificated_solution_architect": {
+        "title": "AWS Certificated Solution Architect Translation to Vietnamese (processing)",
+        "description": "Content is going to be updated day by day",
+        "tags": [
+            "AWS",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on February 22, 2020"
+    },
     "readable_code_5": {
         "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
         "description": "This chapter is about writing comment when coding",
@@ -301,16 +311,6 @@
             "vietnamese"
         ],
         "posted_at": "Posted on July 12, 2019"
-    },
-    "aws_certificated_solution_architect": {
-        "title": "AWS Certificated Solution Architect Translation to Vietnamese (processing)",
-        "description": "Content is going to be updated day by day",
-        "tags": [
-            "AWS",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on July 11, 2019"
     },
     "git_merged_commit_revert": {
         "title": "Git merged commit revert",
