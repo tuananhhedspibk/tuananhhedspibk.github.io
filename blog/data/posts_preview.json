@@ -1,4 +1,14 @@
 {
+    "readable_code_5": {
+        "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
+        "description": "This chapter is about writing comment when coding",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on February 22, 2020"
+    },
     "tao_of_microservices": {
         "title": "The Tao of microservices ",
         "description": "Summary content of \"The Tao of microservices\" book",
@@ -308,16 +318,6 @@
         "tags": [
             "Git",
             "Tip & Trick",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on July 11, 2019"
-    },
-    "readable_code_5": {
-        "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
-        "description": "This chapter is about writing comment when coding",
-        "tags": [
-            "Clean code",
             "Translation",
             "vietnamese"
         ],
