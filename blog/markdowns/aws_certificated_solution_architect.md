@@ -78,7 +78,15 @@ Instead upload an object directly to the S3 bucket, you can use a distinct URL t
 
 Web services that provide resizable compute capacity
 
-Root volume type of EC2 can only launch on GP2 or Magnetic (Standard)
+Root volume type of EC2 can only launch on GP2 or Magnetic (Standard), is where our OS will be installed
+
+IOPS: Input Output per seconds - it's how fast your hard disk drive is
+
+Volume type:
+- Cold HDD
+- Throughput Optimized HDD: suitable for data warehouse
+
+If our addtional volume (not ticked in Delete on Termination), even if **Root** volume type is deleted but additional volume is still there
 
 <img width="230" src="https://user-images.githubusercontent.com/15076665/75091995-b1959300-55b6-11ea-92b3-139f920fbbf7.png">
 
@@ -95,6 +103,17 @@ We need to install **Apache** to turn our EC2 to a web-server
 ```shell
 $chkconfig on # start httpd service if our EC2 meets an acident and reboot, we don't have to manually go and turn it on
 ```
+
+**Security group** is state-full. If we create **Inbound rule**, an **Outbound rule** is created automatically.
+
+You can't block IP address by **Security group**. But you can attach two more security groups to EC2
+
+- All **Inbound traffic** is blocked by default
+- All **Outbound traffic** is allowed
+
+### EBS
+
+Essentially is a virtual hard disk in the cloud, provides persistent block storage volumes to use with ECS
 
 ### CloudFront
 
