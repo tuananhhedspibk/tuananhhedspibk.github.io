@@ -111,9 +111,12 @@ You can't block IP address by **Security group**. But you can attach two more se
 - All **Inbound traffic** is blocked by default
 - All **Outbound traffic** is allowed
 
+Volume will be in the same region with EC2
+Snapshot is a photograph of the disk
+
 ### EBS
 
-Essentially is a virtual hard disk in the cloud, provides persistent block storage volumes to use with ECS
+Essentially is a virtual hard disk in the cloud, provides persistent block storage volumes to use with EC2
 
 ### CloudFront
 
@@ -136,3 +139,14 @@ DNS is actually on the port 53 -- Route 53 get this name
 DNS is used to convert human friendly domain names into an IP address
 
 Ex: https://google.com ===> https://82.124.53.1
+
+- **Domain Registrars** is an authority that can assign domain names directly under one or more top level domains
+- SOA (Start of Authority Record) stores information about
+- - The name of the server that supplied the data for the zone
+- - TTL
+- NS stands for **Name server records**
+- A records: A is stand for "Address", is used by a computer to translate the name of the domain to an IP address
+- CName: Canoncial name. Ex: mobile.aws.com -> m.aws.com -> 123.10.10.108
+simply saying it's just giving another reference that we can then go up and look
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/75133448-2fc07980-571e-11ea-9222-f59a95fee8f1.png">
