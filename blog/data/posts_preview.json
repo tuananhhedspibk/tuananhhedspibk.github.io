@@ -419,5 +419,14 @@
             "vietnamese"
         ],
         "posted_at": "Posted on July 05, 2019"
+    },
+    "want_to_know_layout_design": {
+        "title": "Want to know Layout Design Summary",
+        "description": "The Summary of The book \"Want to know layout design\"",
+        "tags": [
+            "vietnamese",
+            "design"
+        ],
+        "posted_at": "Posted at July 17, 2020"
     }
 }
