@@ -2,8 +2,12 @@
   text-align: center;
 }
 
+.title {
+  margin-top: 35px;
+}
+
 #tags-list {
-  margin: 20px auto;
+  margin: 30px auto;
   width: 405px;
 }
 
