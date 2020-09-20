@@ -1,5 +1,7 @@
 function listTags() {
-  const rawFile = new XMLHttpRequest("https://tuananhhedspibk.github.io/knowledges/data/tags.json");
+  const fileURL = 'https://tuananhhedspibk.github.io/knowledges/data/tags.json';
+  const rawFile = new XMLHttpRequest(fileURL);
+
   rawFile.open('GET', fileURL, false);
 
   rawFile.onreadystatechange = function () {
