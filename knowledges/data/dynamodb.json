@@ -1,0 +1,39 @@
+{
+  "data": {
+    "id": 1,
+    "name": "Animals",
+    "type": "Root",
+    "description": "A living organism that feeds on organic matter",
+    "children": [
+      {
+        "id": 2,
+        "name": "Carnivores",
+        "type": "Type",
+        "description": "Diet consists solely of animal materials",
+        "children": [
+          {
+            "id": 3,
+            "name": "Javanese Cat",
+            "type": "Organism",
+            "description": "Domestic breed of cats, of oriental origin",
+            "children": []
+          },
+          {
+            "id": 4,
+            "name": "Polar Bear",
+            "type": "Organism",
+            "description": "White bear native to the Arctic Circle",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "Panda Bear",
+            "type": "Organism",
+            "description": "Spotted bear native to South Central China",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
