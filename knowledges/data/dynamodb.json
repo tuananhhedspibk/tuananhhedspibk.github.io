@@ -1,36 +1,80 @@
 {
   "data": {
     "id": 1,
-    "name": "Animals",
+    "name": "DynamoDB",
     "type": "Root",
-    "description": "A living organism that feeds on organic matter",
     "children": [
       {
         "id": 2,
-        "name": "Carnivores",
+        "name": "NoSQL",
         "type": "Type",
-        "description": "Diet consists solely of animal materials",
+        "description": "Non-realtional database",
         "children": [
           {
             "id": 3,
-            "name": "Javanese Cat",
+            "name": "Scale",
             "type": "Organism",
-            "description": "Domestic breed of cats, of oriental origin",
+            "description": "Scale Horizontally",
             "children": []
           },
           {
             "id": 4,
-            "name": "Polar Bear",
+            "name": "Distributed",
             "type": "Organism",
-            "description": "White bear native to the Arctic Circle",
+            "description": "Distributed database",
             "children": []
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Basics",
+        "type": "Type",
+        "description": "",
+        "children": [
+          {
+            "id": 6,
+            "name": "Keys",
+            "type": "Type",
+            "description": "",
+            "children": [
+              {
+                "id": 7,
+                "name": "Primary Key",
+                "type": "Type",
+                "description": "",
+                "children": []
+              }
+            ]
           },
           {
-            "id": 5,
-            "name": "Panda Bear",
-            "type": "Organism",
-            "description": "Spotted bear native to South Central China",
-            "children": []
+            "id": 8,
+            "name": "Supported Data Types",
+            "type": "Type",
+            "description": "",
+            "children": [
+              {
+                "id": 9,
+                "name": "Scalar Types",
+                "type": "Type",
+                "description": "String, Number, Binary, Boolean, Null",
+                "children": []
+              },
+              {
+                "id": 10,
+                "name": "Document Types",
+                "type": "Type",
+                "description": "List, Map",
+                "children": []
+              },
+              {
+                "id": 11,
+                "name": "Set Types",
+                "type": "Type",
+                "description": "String Set, Number Set, Binary Set",
+                "children": []
+              }
+            ]
           }
         ]
       }
