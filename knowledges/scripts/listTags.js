@@ -7,7 +7,10 @@ function listTags() {
   rawFile.onreadystatechange = function () {
     if(rawFile.readyState === 4) {
       if (rawFile.status === 200 || rawFile.status == 0) {
-        console.log(rawFile);
+        const tags = JSON.parse(rawFile.responseText).tags;
+        tags.forEach(tag => {
+          $('#main').append(`<a class="label" id="${tag.label}" href="${tag.url}" target="_blank">${tag.label}</a>`);
+        });
       }
     }
   }
