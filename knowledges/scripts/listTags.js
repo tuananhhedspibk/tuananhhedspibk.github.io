@@ -9,7 +9,7 @@ function listTags() {
       if (rawFile.status === 200 || rawFile.status == 0) {
         const tags = JSON.parse(rawFile.responseText).tags;
         tags.forEach(tag => {
-          $('#main').append(`<a class="label" id="${tag.label}" href="${tag.url}" target="_blank">${tag.label}</a>`);
+          $('#tags-list').append(`<a class="label" id="${tag.label}" href="${tag.url}" target="_blank">${tag.label}</a>`);
         });
       }
     }
