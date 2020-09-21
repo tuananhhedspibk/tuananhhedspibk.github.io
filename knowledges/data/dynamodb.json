@@ -3,6 +3,7 @@
     "id": 1,
     "name": "DynamoDB",
     "type": "Root",
+    "description": "DynamoDB fundamental",
     "children": [
       {
         "id": 2,
@@ -15,7 +16,30 @@
             "name": "Scale",
             "type": "Organism",
             "description": "Scale Horizontally",
-            "children": []
+            "children": [
+              {
+                "id": 12,
+                "name": "Supplement",
+                "type": "Organism",
+                "description": "Horizontally Scale vs Vertically Scale",
+                "children": [
+                  {
+                    "id": 13,
+                    "name": "Horizontally Scale (Scale out)",
+                    "type": "Organism",
+                    "description": "Performed by adding, creating, increasing more database nodes or clusters",
+                    "children": []
+                  },
+                  {
+                    "id": 14,
+                    "name": "Vertically Scale (Scale up)",
+                    "type": "Organism",
+                    "description": "Performed by adding more resources (CPU, Memory, Disk) for current database node",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "id": 4,
