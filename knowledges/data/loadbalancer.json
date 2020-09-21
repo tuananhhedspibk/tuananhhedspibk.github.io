@@ -1,0 +1,151 @@
+{
+  "data": {
+    "id": 1,
+    "name": "LoadBalancer",
+    "type": "Root",
+    "description": "LoadBalancer fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "What is load balancer?",
+        "type": "Type",
+        "description": "The servers that forward requests to EC2 instances downstream",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "Why use load balancer?",
+        "type": "Type",
+        "description": "",
+        "children": [
+          {
+            "id": 4,
+            "name": "Spread load accross multiple instances",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "Expose single DNS to your app",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 6,
+            "name": "Give health check to your instances",
+            "type": "Type",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "LoadBalancer types",
+        "type": "Type",
+        "description": "Classic (v1), Application (v2 - Better), Network (v2 - Better)",
+        "children": [
+          {
+            "id": 8,
+            "name": "Application LoadBalancer",
+            "type": "Type",
+            "description": "",
+            "children": [
+              {
+                "id": 9,
+                "name": "Allow load balancing to mutiple target groups (apps across machines)",
+                "type": "Type",
+                "description": "",
+                "children": []
+              },
+              {
+                "id": 10,
+                "name": "X-Forwarded-For header: client Public IP - app servers don't see it directly",
+                "type": "Type",
+                "description": "Also can get X-Forwarded-Port, X-Forwarded-Proto",
+                "children": []
+              },
+              {
+                "id": 11,
+                "name": "Support for",
+                "type": "Type",
+                "description": "HTTP, HTTPs, Websocket",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "name": "Network LoadBalancer",
+            "type": "Type",
+            "description": "Forward TCP traffic to instances, can see client public IP directly",
+            "children": []
+          },
+          {
+            "id": 13,
+            "name": "Good to know",
+            "type": "Type",
+            "description": "",
+            "children": [
+              {
+                "id": 14,
+                "name": "CLB and ALB support SSL certificates, provide SSL termination",
+                "type": "Type",
+                "description": "",
+                "children": []
+              },
+              {
+                "id": 15,
+                "name": "ALB is a good fit for ECS",
+                "type": "Type",
+                "description": "",
+                "children": []
+              },
+              {
+                "id": 16,
+                "name": "Errors from LoadBalancer (LB)",
+                "description": "",
+                "children": [
+                  {
+                    "id": 17,
+                    "name": "4xx errors are client induced errors",
+                    "description": "",
+                    "children": []
+                  },
+                  {
+                    "id": 18,
+                    "name": "5xx errors are app induced errors",
+                    "description": "",
+                    "children": [
+                      {
+                        "id": 19,
+                        "name": "504 error means: Gateway has timed out",
+                        "description": "Application layer or Database layer can have some problems",
+                        "children": []
+                      },
+                      {
+                        "id": 20,
+                        "name": "503 error",
+                        "description": "At capacity or no registered targets",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 21,
+                "name": "At least 2 subnets must be specified when create LB",
+                "type": "Type",
+                "description": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

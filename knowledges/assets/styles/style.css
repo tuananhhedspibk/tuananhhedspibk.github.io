@@ -26,5 +26,9 @@
 }
 
 #EC2 {
+  background-color: #eba300;
+}
+
+#LoadBalancer {
   background-color: #ed7125;
 }

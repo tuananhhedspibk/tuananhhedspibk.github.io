@@ -7,6 +7,10 @@
     {
       "label": "EC2",
       "url": "https://tuananhhedspibk.github.io/knowledges/pages/ec2.html"
+    },
+    {
+      "label": "LoadBalancer",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/loadbalancer.html"
     }
   ]
 }

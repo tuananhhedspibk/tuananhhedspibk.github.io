@@ -250,6 +250,28 @@
             ]
           }
         ]
+      },
+      {
+        "id": 35,
+        "name": "AMI",
+        "type": "Type",
+        "description": "The image is used to create our custom EC2 instances",
+        "children": [
+          {
+            "id": 36,
+            "name": "AWS comes with base images",
+            "type": "Type",
+            "description": "Ubuntu, Fedora, RedHat, ...",
+            "children": []
+          },
+          {
+            "id": 37,
+            "name": "AMIs are built for specific region",
+            "type": "Type",
+            "description": "",
+            "children": []
+          }
+        ]
       }
     ]
   }
