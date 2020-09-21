@@ -3,6 +3,10 @@
     {
       "label": "DynamoDB",
       "url": "https://tuananhhedspibk.github.io/knowledges/pages/dynamodb.html"
+    },
+    {
+      "label": "EC2",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/ec2.html"
     }
   ]
 }

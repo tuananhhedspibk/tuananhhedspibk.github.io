@@ -1,0 +1,256 @@
+{
+  "data": {
+    "id": 1,
+    "name": "EC2",
+    "type": "Root",
+    "description": "EC2 fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "Security Group",
+        "type": "Type",
+        "description": "Like a firewall of EC2",
+        "children": [
+          {
+            "id": 3,
+            "name": "Controll Inbound and Outbound network",
+            "type": "Type",
+            "description": "",
+            "children": [
+              {
+                "id": 5,
+                "name": "Supplement",
+                "type": "Type",
+                "description": "About IP address",
+                "children": [
+                  {
+                    "id": 6,
+                    "name": "127.0.0.1",
+                    "type": "Type",
+                    "description": "'fake' network adapter that can only communicate within the same host",
+                    "children": []
+                  },
+                  {
+                    "id": 7,
+                    "name": "0.0.0.0",
+                    "type": "Type",
+                    "description": "Listen on every available network interface",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Authorised IP or IP range or Port",
+            "type": "Type",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Placement Groups",
+        "type": "Type",
+        "description": "Three types of placement groups",
+        "children": [
+          {
+            "id": 9,
+            "name": "Clustered Placement Group",
+            "type": "Type",
+            "description": "Three types of placement groups",
+            "children": [
+              {
+                "id": 10,
+                "name": "Group of instances within single AZ",
+                "type": "Type",
+                "description": "Recommend for low network latency or high throughput",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "Spread Placement Group",
+            "type": "Type",
+            "description": "Placed on distinct underlying hardware",
+            "children": [
+              {
+                "id": 12,
+                "name": "Small number of instances - maximum is 7",
+                "type": "Type",
+                "description": "Should be kept spread from each other",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "name": "Partitioned Placement Group",
+            "type": "Type",
+            "description": "Divide EC2 instances to segments called partitions",
+            "children": [
+              {
+                "id": 14,
+                "name": "Each partition has its own rack",
+                "type": "Type",
+                "description": "Rack has its own network, resource",
+                "children": []
+              },
+              {
+                "id": 15,
+                "name": "Isolate the impact of one partition to each other",
+                "type": "Type",
+                "description": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "EC2 storage",
+        "type": "Type",
+        "description": "Root volume of EC2 will be deleted after termination",
+        "children": [
+          {
+            "id": 17,
+            "name": "Instace storage - Ephemeral storage",
+            "type": "Type",
+            "description": "Cannot be stopped, if underlying host fail ==> lose data",
+            "children": []
+          },
+          {
+            "id": 18,
+            "name": "EBS",
+            "type": "Type",
+            "description": "Can be stopped, NOT lose data",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "IP",
+        "type": "Type",
+        "description": "Private, Public, Elastic IP",
+        "children": [
+          {
+            "id": 20,
+            "name": "Private IP",
+            "type": "Type",
+            "description": "Go out to Internet by Internet gateway",
+            "children": []
+          },
+          {
+            "id": 21,
+            "name": "Elastic IP",
+            "type": "Type",
+            "description": "Stop -> Start EC2 instance, instances Public IP will be changed",
+            "children": [
+              {
+                "id": 22,
+                "name": "Solution for fixed EC2 Public IP",
+                "type": "Type",
+                "description": "",
+                "children": []
+              },
+              {
+                "id": 23,
+                "name": "Maximum 5 Elastic IPs for each AWS account",
+                "type": "Type",
+                "description": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 24,
+            "name": "EC2 instance has public and private IP",
+            "type": "Type",
+            "description": "private for AWS internal network, public for www",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "EC2 User data",
+        "type": "Type",
+        "description": "Use to bootstraping EC2",
+        "children": [
+          {
+            "id": 26,
+            "name": "Bootstraping EC2",
+            "type": "Type",
+            "description": "Means launching commands when EC2 starts",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "name": "EC2 Launch Modes",
+        "type": "Type",
+        "description": "On Demand, Reserved, Spot, Dedicated Hosts",
+        "children": [
+          {
+            "id": 28,
+            "name": "On Demand",
+            "type": "Type",
+            "description": "Pay for what you use - no upfront payment",
+            "children": [
+              {
+                "id": 32,
+                "name": "Recommend for",
+                "type": "Type",
+                "description": "short-term, un-interrupted worloads, can not predict how app will behave",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 29,
+            "name": "Reserved",
+            "type": "Type",
+            "description": "Discount 75% to On demand. Pay upfront, for period 1 - 3 years",
+            "children": []
+          },
+          {
+            "id": 30,
+            "name": "Spot",
+            "type": "Type",
+            "description": "Discount 90% to On demand",
+            "children": [
+              {
+                "id": 33,
+                "name": "Bid price and get instnace as long as its under than price",
+                "type": "Type",
+                "description": "For batch job, data analysis, not database job",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "name": "Dedicated host",
+            "type": "Type",
+            "description": "Physical dedicated EC2 server",
+            "children": [
+              {
+                "id": 34,
+                "name": "Full control of EC2 instace placement",
+                "type": "Type",
+                "description": "More expensive, allocate for 3 year reserve",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
