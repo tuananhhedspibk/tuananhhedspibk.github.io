@@ -1,0 +1,9 @@
+{
+  "data": {
+    "id": 1,
+    "name": "Auto Scaling",
+    "type": "Root",
+    "description": "Auto Scaling fundamental",
+    "children": []
+  }
+}

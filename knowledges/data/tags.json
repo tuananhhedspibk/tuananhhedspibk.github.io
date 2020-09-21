@@ -11,6 +11,10 @@
     {
       "label": "LoadBalancer",
       "url": "https://tuananhhedspibk.github.io/knowledges/pages/loadbalancer.html"
+    },
+    {
+      "label": "AutoScaling",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/autoscaling.html"
     }
   ]
 }
