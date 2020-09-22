@@ -272,6 +272,13 @@
             "children": []
           }
         ]
+      },
+      {
+        "id": 38,
+        "name": "EC2 root volume",
+        "description": "Will be losed when EC2 be terminated",
+        "type": "Type",
+        "children": []
       }
     ]
   }
