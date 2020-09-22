@@ -4,6 +4,225 @@
     "name": "EBS",
     "type": "Root",
     "description": "EBS fundamental",
-    "children": []
+    "children": [
+      {
+        "id": 2,
+        "name": "What is EBS ?",
+        "type": "Type",
+        "description": "EBS: Elastic Block Store Volume",
+        "children": [
+          {
+            "id": 3,
+            "name": "Network drive",
+            "type": "Type",
+            "description": "Can be attached to instance",
+            "children": []
+          },
+          {
+            "id": 4,
+            "name": "Allow to persist data",
+            "type": "Type",
+            "description": "Size in GBs, IOPS - provisioned capacity",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "Locked to an AZ",
+            "type": "Type",
+            "description": "Need to take snapshot when move accross AZs",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Volume types",
+        "type": "Type",
+        "description": "GP2, IOI, STI, SCI",
+        "children": [
+          {
+            "id": 7,
+            "name": "GP2 (SSD)",
+            "type": "Type",
+            "description": "Balance price and performance - wide variety workloads",
+            "children": []
+          },
+          {
+            "id": 8,
+            "name": "IOI (SSD)",
+            "type": "Type",
+            "description": "Highest performance - low latency, hight, throughput",
+            "children": []
+          },
+          {
+            "id": 9,
+            "name": "STI (HDD)",
+            "type": "Type",
+            "description": "Low cost, frequently accessed, intensive workload",
+            "children": []
+          },
+          {
+            "id": 10,
+            "name": "SCI (HDD)",
+            "type": "Type",
+            "description": "Lowest cost, less frequently accessed workload",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "EBS Snapshots",
+        "description": "Used to backup EBS volume",
+        "type": "Type",
+        "children": [
+          {
+            "id": 12,
+            "name": "Snapshot only takes actual space of blocks",
+            "description": "",
+            "type": "Type",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "EBS Encryption",
+        "description": "",
+        "type": "Type",
+        "children": [
+          {
+            "id": 14,
+            "name": "In Encrypted EBS",
+            "description": "Data (inside EBS, move between EC2 & EBS), Snapshot is encrypted",
+            "type": "Type",
+            "children": []
+          },
+          {
+            "id": 15,
+            "name": "Leverage KMS keys (AES-256)",
+            "description": "",
+            "type": "Type",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "EBS vs Instace store (Ephemeral Storage)",
+        "description": "Instance store: physically attached to machine",
+        "type": "Type",
+        "children": [
+          {
+            "id": 17,
+            "name": "Pros",
+            "description": "",
+            "type": "Type",
+            "children": [
+              {
+                "id": 28,
+                "name": "Pros",
+                "description": "Better IO performance - EBS use network => Can have latency",
+                "type": "Type",
+                "children": []
+              },
+              {
+                "id": 29,
+                "name": "Can not be stopped",
+                "description": "Lose data after stopped",
+                "type": "Type",
+                "children": []
+              },
+              {
+                "id": 30,
+                "name": "Can re-boot EBS, Instance store",
+                "description": "Not lose data in this case",
+                "type": "Type",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 18,
+            "name": "Cons",
+            "description": "",
+            "type": "Type",
+            "children": [
+              {
+                "id": 19,
+                "name": "Lost on termination",
+                "description": "",
+                "type": "Type",
+                "children": []
+              },
+              {
+                "id": 20,
+                "name": "Can not resize",
+                "description": "",
+                "type": "Type",
+                "children": []
+              },
+              {
+                "id": 21,
+                "name": "Must be backed-up by user",
+                "description": "",
+                "type": "Type",
+                "children": []
+              },
+              {
+                "id": 31,
+                "name": "Instance store ROOT volumes are deleted on termination",
+                "description": "",
+                "type": "Type",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "EBS BrainDump",
+        "description": "",
+        "type": "Type",
+        "children": [
+          {
+            "id": 23,
+            "name": "Can be attached to 1 instance at a time",
+            "description": "",
+            "type": "Type",
+            "children": []
+          },
+          {
+            "id": 24,
+            "name": "Backup process",
+            "description": "Take snapshot -> Re-create",
+            "type": "Type",
+            "children": []
+          },
+          {
+            "id": 25,
+            "name": "EBS backup use IO",
+            "description": "Should not do it while app has a lot of traffic",
+            "type": "Type",
+            "children": []
+          },
+          {
+            "id": 26,
+            "name": "Root EBS Volumes are terminated",
+            "description": "When EC2 instances terminated by default - but can disable",
+            "type": "Type",
+            "children": []
+          },
+          {
+            "id": 27,
+            "name": "Default - the DeleteOnTermination attribute for root volumes is set to 'true'",
+            "description": "",
+            "type": "Type",
+            "children": []
+          }
+        ]
+      }
+    ]
   }
 }
