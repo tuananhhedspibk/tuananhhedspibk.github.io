@@ -4,6 +4,80 @@
     "name": "Auto Scaling",
     "type": "Root",
     "description": "Auto Scaling fundamental",
-    "children": []
+    "children": [
+      {
+        "id": 2,
+        "name": "True purpose",
+        "type": "Type",
+        "description": "4 purposes",
+        "children": [
+          {
+            "id": 3,
+            "name": "Scale out",
+            "type": "Type",
+            "description": "Add instances",
+            "children": []
+          },
+          {
+            "id": 4,
+            "name": "Scale in",
+            "type": "Type",
+            "description": "Decrease instances number",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "Ensure max, min instances number",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 6,
+            "name": "Auto register new instance to LB",
+            "type": "Type",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Auto Scaling Group (ASG) with Alarm",
+        "type": "Type",
+        "description": "Alarm monitor a metric (usually Average CPU)",
+        "children": [
+          {
+            "id": 8,
+            "name": "Metrics are computed overall ASG instances",
+            "type": "Type",
+            "description": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Supplements",
+        "type": "Type",
+        "description": "ASG Supplements",
+        "children": [
+          {
+            "id": 9,
+            "name": "Instances under ASG will be restarted",
+            "description": "Restarted by ASG when terminated by any reasons",
+            "type": "Type",
+            "children": []
+          },
+          {
+            "id": 10,
+            "name": "ASG can terminate instance",
+            "description": "If instance is marked 'unhealthy' by ELB",
+            "type": "Type",
+            "children": []
+          }
+        ]
+      }
+    ]
   }
 }
