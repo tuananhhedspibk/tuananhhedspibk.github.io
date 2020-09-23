@@ -5,7 +5,167 @@
     "type": "Root",
     "description": "Route53 fundamental",
     "children": [
-      {}
+      {
+        "id": 2,
+        "name": "Most common records",
+        "type": "Type",
+        "description": "A, AAAA, CNAME, Alias",
+        "children": [
+          {
+            "id": 3,
+            "name": "A record",
+            "type": "Type",
+            "description": "URL -> IPv4",
+            "children": []
+          },
+          {
+            "id": 4,
+            "name": "AAAA record",
+            "type": "Type",
+            "description": "URL -> IPv6",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "CNAME record",
+            "type": "Type",
+            "description": "URL -> URL",
+            "children": []
+          },
+          {
+            "id": 6,
+            "name": "Alias record",
+            "type": "Type",
+            "description": "URL -> AWS resource",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Route53 can use public, private domain names",
+        "type": "Type",
+        "description": "Advance feature: routing policies",
+        "children": [
+          {
+            "id": 12,
+            "name": "Simple routing",
+            "type": "Type",
+            "description": "Use when to redirect to single resource",
+            "children": [
+              {
+                "id": 18,
+                "name": "No healthcheck",
+                "type": "Type",
+                "description": "",
+                "children": []
+              },
+              {
+                "id": 19,
+                "name": "When return multi values",
+                "type": "Type",
+                "description": "Client will choose one in randaom way",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "name": "Weighted routing policy",
+            "type": "Type",
+            "description": "Control the % of the requests to endpoints",
+            "children": [
+              {
+                "id": 20,
+                "name": "Can be attached with healthcheck",
+                "type": "Type",
+                "description": "",
+                "children": []
+              },
+              {
+                "id": 21,
+                "name": "Helpful for apps new version",
+                "type": "Type",
+                "description": "Set 1% requests to new version",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "name": "Failover Routing Policy",
+            "type": "Type",
+            "description": "Redirect to recovery endpoint when once meets disaster",
+            "children": []
+          },
+          {
+            "id": 15,
+            "name": "Geo Location Routing Policy",
+            "type": "Type",
+            "description": "Based on Location",
+            "children": [
+              {
+                "id": 24,
+                "name": "Should create default policy",
+                "type": "Type",
+                "description": "When no match location",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "name": "Multi-Values Routing Policy - Routing traffic to multi resources",
+            "type": "Type",
+            "description": "If once Route is 'unhealthy', request will be redirected to 'healthy' once",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "DNS Records TTL",
+        "type": "Type",
+        "description": "High TTL, Low TTL",
+        "children": [
+          {
+            "id": 9,
+            "name": "High TTL",
+            "type": "Type",
+            "description": "Less traffic on DNS, Maybe outdated record",
+            "children": []
+          },
+          {
+            "id": 10,
+            "name": "DNS Records TTL",
+            "type": "Type",
+            "description": "More traffic on DNS, records outdated for less time",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "CNAME vs Alias",
+        "type": "Type",
+        "description": "CNAME (on non-root domain), ALias (non-root, root)",
+        "children": []
+      },
+      {
+        "id": 22,
+        "name": "Health check",
+        "type": "Type",
+        "description": "Health-Check duration: 30s",
+        "children": [
+          {
+            "id": 23,
+            "name": "15 checkers check endpoint",
+            "type": "Type",
+            "description": "On averange: 2s - 1 req",
+            "children": []
+          }
+        ]
+      }
     ]
   }
 }
