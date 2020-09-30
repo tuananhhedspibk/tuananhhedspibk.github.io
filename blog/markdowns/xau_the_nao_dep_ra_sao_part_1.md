@@ -44,7 +44,7 @@ Xét ví dụ dưới đây
 
 <img src="https://user-images.githubusercontent.com/15076665/94341630-e9c9ec00-0045-11eb-92bb-73e71066e403.jpg" width="600">
 
-*Ảnh được dẫn từ [sách](https://user-images.githubusercontent.com/15076665/94341630-e9c9ec00-0045-11eb-92bb-73e71066e403.jpg)*
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
 
 - Ở hình 1: Nổi bật hơn cả là "Grand Opening"
 - Ở hình 2: Nổi bật hơn cả là "-50% cho mọi sản phẩm"
