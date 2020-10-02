@@ -449,5 +449,15 @@
             "vietnamese"
         ],
         "posted_at": "Posted on July 05, 2019"
+    },
+    "grid_layout_flexbox_components": {
+        "title": "Grid for layout, Flexbox for components",
+        "description": "Translation of Grid for layout, Flexbox for components blog",
+        "tags": [
+            "CSS",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at October 2, 2020"
     }
 }
