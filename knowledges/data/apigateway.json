@@ -1,0 +1,46 @@
+{
+  "data": {
+    "id": 1,
+    "name": "API-Gateway",
+    "type": "Root",
+    "description": "API-Gateway fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "API-Gateway purpose",
+        "type": "Type",
+        "description": "Create, publish, maintain, monitor, and secure APIs at any scale",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "Enable CORS for crossing domain request",
+        "type": "Type",
+        "description": "Need these things in the header of the OPTIONS pre-flight request",
+        "children": [
+          {
+            "id": 4,
+            "name": "Access-Control-Allow-Methods",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "Access-Control-Allow-Headers",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 6,
+            "name": "Access-Control-Allow-Origin",
+            "type": "Type",
+            "description": "",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
