@@ -26,7 +26,11 @@
     },
     {
       "label": "Lambda",
-      "url": "https://tuananhhedspibk.github.io/knowledges/pages/route53.html"
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/lambda.html"
+    },
+    {
+      "label": "Amplify",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/amplify.html"
     }
   ]
 }

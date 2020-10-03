@@ -1,0 +1,47 @@
+{
+  "data": {
+    "id": 1,
+    "name": "Amplify",
+    "type": "Root",
+    "description": "Amplify fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "Amplify service",
+        "type": "Root",
+        "description": "Use to deploy full stack mobile, web app",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "Amplify framework",
+        "type": "Root",
+        "description": "Use to create a serverless app",
+        "children": [
+          {
+            "id": 4,
+            "name": "Can add these things to your app",
+            "type": "Root",
+            "description": "Cognito, DynamoDB, API-Gateway, Lambda",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "Create App-Sync",
+            "type": "Root",
+            "description": "Use to get data via GraphQL console",
+            "children": [
+              {
+                "id": 6,
+                "name": "AppSync",
+                "type": "Root",
+                "description": "Combine data from one or more data sources",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
