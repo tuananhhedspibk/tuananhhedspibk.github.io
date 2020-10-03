@@ -7,8 +7,8 @@
 }
 
 #tags-list {
+  display: inline;
   margin: 30px auto;
-  width: 405px;
 }
 
 .label {
