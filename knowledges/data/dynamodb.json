@@ -9,7 +9,7 @@
         "id": 2,
         "name": "NoSQL",
         "type": "Type",
-        "description": "Non-realtional database",
+        "description": "Non-relational database",
         "children": [
           {
             "id": 3,

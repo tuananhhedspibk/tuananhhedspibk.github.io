@@ -1,0 +1,68 @@
+{
+  "data": {
+    "id": 1,
+    "name": "Lambda",
+    "type": "Root",
+    "description": "Lambda fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "Serverless",
+        "type": "Type",
+        "description": "FaaS (Function as a Service)",
+        "children": [
+          {
+            "id": 3,
+            "name": "Serverless",
+            "type": "Type",
+            "description": "You don't see, provision server, someone manages server for you",
+            "children": []
+          },
+          {
+            "id": 4,
+            "name": "We just implement the code",
+            "type": "Type",
+            "description": "We leave more of the management of the architect and infrastructure to AWS",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Concurency",
+        "type": "Type",
+        "description": "The number of the lambda functions will be executed together",
+        "children": []
+      },
+      {
+        "id": 6,
+        "name": "Retry",
+        "type": "Type",
+        "description": "If lambdas async invocation fails, it will be retried",
+        "children": []
+      },
+      {
+        "id": 7,
+        "name": "Version",
+        "type": "Type",
+        "description": "We work on $LATEST version (mutable)",
+        "children": [
+          {
+            "id": 8,
+            "name": "$LATEST version",
+            "type": "Type",
+            "description": "Be a pointer to lastest using version",
+            "children": []
+          },
+          {
+            "id": 9,
+            "name": "Also have v1, v2 version (Immutable) - can be accessed",
+            "type": "Type",
+            "description": "When publish lambda function, we create a version",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
