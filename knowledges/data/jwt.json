@@ -10,14 +10,89 @@
         "name": "JWT concepts",
         "type": "Type",
         "description": "",
-        "children": []
+        "children": [
+          {
+            "id": 4,
+            "name": "Structure",
+            "type": "Type",
+            "description": "Header.Payload.Signature",
+            "children": [
+              {
+                "id": 5,
+                "name": "Header - Encrypted by base64url",
+                "type": "Type",
+                "description": "Infor about encrypt-algo for signature and type",
+                "children": [
+                  {
+                    "id": 6,
+                    "name": "Example",
+                    "type": "Type",
+                    "description": "{'type': 'JWT', 'algo': 'HMAC256'}",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "name": "Payload - Encrypted by base64url",
+                "type": "Type",
+                "description": "Reserved, Public, Private",
+                "children": []
+              },
+              {
+                "id": 8,
+                "name": "Signature - Encrypted by algo that is defined in Header",
+                "type": "Type",
+                "description": "Encrpyt(Encoded-Header.Encoded-Payload)",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": 3,
         "name": "AWS-JWT",
         "type": "Type",
-        "description": "",
-        "children": []
+        "description": "ID Token, Access Token, Refresh Token",
+        "children": [
+          {
+            "id": 9,
+            "name": "ID Token - JWT",
+            "type": "Type",
+            "description": "Used to identify user (username, email, ...), expired after one hour",
+            "children": []
+          },
+          {
+            "id": 10,
+            "name": "Access Token - JWT",
+            "type": "Type",
+            "description": "Used to authorize user (users scope, group), expired after one hour",
+            "children": []
+          },
+          {
+            "id": 11,
+            "name": "Refresh Token",
+            "type": "Type",
+            "description": "Used to retrieve new ID and Access Token, expired after 30 days (default)",
+            "children": [
+              {
+                "id": 12,
+                "name": "Expired time can be set in User Pools console",
+                "type": "Type",
+                "description": "",
+                "children": []
+              },
+              {
+                "id": 13,
+                "name": "Use GlobalSignOut or AdminUser-GlobalSignOut",
+                "type": "Type",
+                "description": "To signout from all devices, after call this all tokens will be revoked",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }
