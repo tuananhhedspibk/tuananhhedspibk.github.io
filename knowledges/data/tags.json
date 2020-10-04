@@ -35,6 +35,14 @@
     {
       "label": "APIGateway",
       "url": "https://tuananhhedspibk.github.io/knowledges/pages/apigateway.html"
+    },
+    {
+      "label": "Cognito",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/cognito.html"
+    },
+    {
+      "label": "JWT",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/jwt.html"
     }
   ]
 }

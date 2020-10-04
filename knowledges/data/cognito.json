@@ -1,0 +1,81 @@
+{
+  "data": {
+    "id": 1,
+    "name": "Cognito",
+    "type": "Root",
+    "description": "Cognito fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "Cognito User Pool",
+        "type": "Type",
+        "description": "Sign in functionality for application",
+        "children": [
+          {
+            "id": 4,
+            "name": "Provide serverless users database",
+            "type": "Type",
+            "description": "Send back JWT to client after authenticating",
+            "children": [
+              {
+                "id": 6,
+                "name": "Check here for JWT details",
+                "type": "Type",
+                "description": "https://tuananhhedspibk.github.io/knowledges/pages/jwt.html",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Can be intergrated with APIGateway",
+            "type": "Type",
+            "description": "For authentication",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Cognito Identity Provider (Federated Identity)",
+        "type": "Type",
+        "description": "Authorization for accessing AWS resources through credentials",
+        "children": [
+          {
+            "id": 7,
+            "name": "Federated Identity Pools - Goal",
+            "type": "Type",
+            "description": "Provide temp AWS credentials for client to access AWS resources",
+            "children": []
+          },
+          {
+            "id": 8,
+            "name": "Federated Identity Pools - How",
+            "type": "Type",
+            "description": "https://user-images.githubusercontent.com/15076665/95005117-e8448900-062e-11eb-9a39-930d95ccbf27.png",
+            "children": [
+              {
+                "id": 9,
+                "name": "Login to Federated Identity Provider",
+                "type": "Type",
+                "description": ""
+              },
+              {
+                "id": 10,
+                "name": "Get temp AWS credentials for accessing AWS resources from Federation Identity Pool",
+                "type": "Type",
+                "description": ""
+              },
+              {
+                "id": 11,
+                "name": "These credentials come with pre-defined policy stating their permissions",
+                "type": "Type",
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
