@@ -1,0 +1,24 @@
+{
+  "data": {
+    "id": 1,
+    "name": "JWT",
+    "type": "Root",
+    "description": "JWT fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "JWT concepts",
+        "type": "Type",
+        "description": "",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "AWS-JWT",
+        "type": "Type",
+        "description": "",
+        "children": []
+      }
+    ]
+  }
+}
