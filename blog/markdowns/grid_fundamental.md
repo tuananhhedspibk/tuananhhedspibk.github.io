@@ -7,7 +7,9 @@
 - https://ehkoo.com/bai-viet/can-ban-css-grid-phan-1
 - https://ehkoo.com/bai-viet/can-ban-css-grid-phan-2
 
-※ Code được tham khảo từ [nguồn](https://ehkoo.com/bai-viet/can-ban-css-grid-phan-1)
+※ Code được tham khảo từ:
+- https://ehkoo.com/bai-viet/can-ban-css-grid-phan-1
+- https://ehkoo.com/bai-viet/can-ban-css-grid-phan-2
 
 ### Sơ lược về grid
 
@@ -118,3 +120,79 @@ Tương ứng là hai thuộc tính `grid-column-gap` và `grid-row-gap` để t
 ```
 
 - Hoàn toàn tương tự với `grid-row-start` và `grid-row-end`
+
+### Đơn vị fr trong CSS
+
+`1fr` tương tự với 1 **không gian trống** của `grid container` - được thiết kế riêng dành cho grid
+
+Ví dụ 1:
+
+```css
+.wrapper {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+}
+```
+Ở ví dụ trên `1fr` = `300 / 3` = `100px`
+
+Ví dụ 2:
+
+```css
+.wrapper {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  grid-template-rows: 100px 100px;
+}
+```
+
+Ở ví dụ này phần **không gian trống** chỉ có chiều rộng là `500 - 50` = `450px` vì ta đã quy định chiều rộng của cột thứ 2 là 50px, nên `1fr` = `450 / 2` = `225px`
+
+### repeat()
+
+- Dùng khi grid có nhiều hàng, cột giống nhau
+
+VD:
+
+```css
+.wrapper {
+  display: grid;
+  grid-gap: 1rem 1rem;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 100px);
+}
+```
+
+Ở ví dụ trên ta định nghĩa grid với 10 cột, mỗi cột có chiều rộng `1fr`, 2 hàng - mỗi hàng có chiều cao 100px
+
+### Căn chỉnh grid items
+
+- Sử dụng các thuộc tính `align-items` (block axes - trục tung) và `justify-items` (inline axes - trục hoành)
+- Các giá trị: `start`, `end`, `center`, `stretch` (mặc định)
+
+```css
+.wrapper {
+  place-items: <align-items> <justify-items>; /* gộp chung 2 thuộc tính */
+}
+```
+
+```css
+.wrapper {
+  width: 600px;
+  height: 200px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+}
+```
+
+Trong trường hợp grid items không lấp đầy hết container, ta sử dụng `align-content` và `justify-content` để căn chỉnh (lần lượt theo trục tung và hoành)
+
+```css
+.wrapper {
+  place-content: <align-content> <justify-content>;
+}
+```
+
+Ta sử dụng `align-self` và `justify-self` để căn chỉnh cho từng item.
