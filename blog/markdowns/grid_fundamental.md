@@ -7,6 +7,8 @@
 - https://ehkoo.com/bai-viet/can-ban-css-grid-phan-1
 - https://ehkoo.com/bai-viet/can-ban-css-grid-phan-2
 
+※ Code được tham khảo từ [nguồn](https://ehkoo.com/bai-viet/can-ban-css-grid-phan-1)
+
 ### Sơ lược về grid
 
 - Là một layout ở dạng lưới
@@ -19,7 +21,7 @@
 ### Grid alignment
 
 - Grid items được căn gióng (align) dựa theo `Grid Container` hoặc `Grid Area`
-- Ở ảnh bên dưới `Grid Container` là toàn bộ khung hùng, `Grid Area` là vùng được highlight.
+- Ở ảnh bên dưới `Grid Container` là toàn bộ khung hình, `Grid Area` là vùng được highlight.
 
 <img src="https://user-images.githubusercontent.com/15076665/95079593-cdb70080-0751-11eb-9e81-a1c4737b2f1f.png" width="360">
 
@@ -37,8 +39,6 @@
     <div class="item item6">6</div>
   </div>
 ```
-
-*Code được tham khảo từ [nguồn](https://ehkoo.com/bai-viet/can-ban-css-grid-phan-1)*
 
 Ở đây wrapper sẽ đóng vai trò như `Grid Container`, chỉ cần thay đổi thuộc tính `display` thành `grid` hoặc `inline-grid`, `subgrid` là xong
 
@@ -81,8 +81,40 @@ Tương ứng là hai thuộc tính `grid-column-gap` và `grid-row-gap` để t
   grid-row-gap: 30px;
 }
 
-
 .wrapper {
   grid-gap: 50px 30px; /* <grid-column-gap>, <grid-row-gap> */
 }
 ```
+
+### Grid lines
+
+- Trong Grid, các đường nằm giữa các cột gọi là `column-line`, các đường nằm giữa các hàng gọi là `row-line`. 
+- Ảnh dưới đây là ví dụ cho grid 3x3
+
+<img width="500" src="https://user-images.githubusercontent.com/15076665/95145577-96c70600-07b6-11eb-9ff8-473807662163.png">
+
+*Ảnh lấy từ [nguồn](https://ehkoo.com/bai-viet/can-ban-css-grid-phan-1)*
+
+- Với 2 thuộc tính `grid-column` và `grid-row` ta có thể thay đổi kích thước cũng như vị trí của các items trong grid
+
+```css
+.item1 {
+  grid-column-start: 1; /* Start Grid Line */
+  grid-column-end: 4; /* End Grid Line */
+}
+
+.item1 {
+  grid-column: 1 / 4; /* Cách viết tương đương */
+}
+
+.item1 {
+  grid-column-start: 1; /* Cách viết tương đương */
+  grid-column-end: span 3 /* Giãn ra 3 cột */
+}
+
+.item1 {
+  grid-column: 1 / span 3; /* Cách viết tương đương */
+}
+```
+
+- Hoàn toàn tương tự với `grid-row-start` và `grid-row-end`
