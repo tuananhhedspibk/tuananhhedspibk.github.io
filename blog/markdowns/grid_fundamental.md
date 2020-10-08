@@ -169,7 +169,7 @@ VD:
 
 ### Căn chỉnh grid items
 
-- Sử dụng các thuộc tính `align-items` (block axes - trục tung) và `justify-items` (inline axes - trục hoành)
+- Sử dụng các thuộc tính `align-items` (block axis - trục tung) và `justify-items` (inline axis - trục hoành)
 - Các giá trị: `start`, `end`, `center`, `stretch` (mặc định)
 
 ```css
