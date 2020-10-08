@@ -1,8 +1,20 @@
 {
+    "flexbox_fundamental": {
+        "title": "Flexbox fundamental",
+        "description": "Basics knowledges about Flexbox",
+        "tags": [
+            "Flexbox",
+            "CSS",
+            "UI",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at October 8, 2020"
+    },
     "grid_fundamental": {
         "title": "Grid Fundamental",
         "description": "Basics knowledge about Grid",
         "tags": [
+            "Grid",
             "CSS",
             "UI",
             "vietnamese"
