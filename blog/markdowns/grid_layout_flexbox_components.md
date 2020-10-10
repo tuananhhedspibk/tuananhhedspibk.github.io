@@ -151,7 +151,92 @@ Khoảng 90% các website navigation sẽ sử dụng `flexbox`. Template chung 
 
 *Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
 
-
 <img src="https://user-images.githubusercontent.com/15076665/95559120-38b64f00-0a52-11eb-848d-ffbcbe3dbb4f.png" width="560">
 
 *Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Chú ý rằng, dù cấu trúc của navigation có thể khác biệt, nhưng khoảng cách giữa các phần tử vẫn được đảm bảo với thuộc tính `justify-content`.
+
+2. Actions list
+
+Khi bạn nghe đến list, điều đầu tiên bạn nghĩ tới đó là một danh sách dọc. Thế nhưng, một list có thể hiển thị `inline`, nên ở đây tôi chỉ muốn nhấn mạnh điều này mà thôi.
+
+An example of an action list is something that we can borrow from Facebook or Twitter. The action list consists of action buttons that the user can take. See the screenshots below:
+
+Các ví dụ về actions list có thế thấy một cách dễ dàng qua Facebook hoặc Twitter. Actions list bao gồm action buttons mà user có thể sử dụng dụng. Hãy xem ví dụ dưới đây
+
+<img src="https://user-images.githubusercontent.com/15076665/95649871-db3a0500-0b1a-11eb-81e2-36b0ef6af562.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+As you see, the items are displayed next to each other, and they are distributed horizontally. Flexbox is perfect for that! That’s one of the core uses of it.
+
+Như bạn thấy, các items được hiển thị kế tiếp nhau, và chúng được phân bố theo chiều ngang. Flexbox là một sự lựa chọn hoàn hảo cho nó! Đây là một ví dụ điển hình cho việc sử dụng flexbox
+
+```css
+.wrapper {
+  display: flex;
+}
+
+.wrapper-item {
+  flex: 1; /* Mở rộng items để chúng chiếm các không gian bằng nhau */
+}
+```
+
+Ta có kết quả như sau:
+
+<img src="https://user-images.githubusercontent.com/15076665/95650019-d6c21c00-0b1b-11eb-94ff-ae2256ffe32f.png" width="560">
+
+Một ví dụ khác đó là modal action button hoặc modal header
+
+<img src="https://user-images.githubusercontent.com/15076665/95650066-138e1300-0b1c-11eb-8140-c15659f76afe.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Với modal-header ta sẽ có như sau:
+
+```css
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+And for the footer, it’s a bit different. The “Cancel” action uses an auto margin to push itself to the right. I wrote a detailed article about that.
+
+Với footer sẽ có một chút khác biệt. "Cancel" action sử dụng auto margin để đẩy chính nó sang phải. Tôi cũng đã biết một [bài viết chi tiết](https://ishadeed.com/article/auto-css/) về điều này.
+
+```css
+.cancel__action {
+  margin-left: auto;
+}
+```
+
+Cái tên `.cancel__action` có thể không được tốt cho lắm, nhưng tôi không muốn đi sâu vào CSS naming conventions trong bài viết này.
+
+3. Form Elements
+
+A combination of an input field with a button next to it is a perfect use-case for Flexbox. Consider the figure below:
+
+Sự kết hợp giữa input field với button cạnh nó là một use-case hoàn hảo cho Flexbox. Cùng xem ví dụ dưới đây:
+
+<img src="https://user-images.githubusercontent.com/15076665/95650455-ca8b8e00-0b1e-11eb-9d7d-aa9d1e9bccc0.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Ở form đầu tiên, input chiếm toàn bộ không gian còn lại, khiến nó có dynamic width. Áp dụng tương tự cho form thứ hai (Facebook messenger), text field sẽ chiếm toàn bộ không gian thừa còn lại. Hãy cùng xem kĩ hơn
+
+
+```css
+.input {
+  flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis (initial length) */
+}
+```
+
+<img src="https://user-images.githubusercontent.com/15076665/95650867-60c0b380-0b21-11eb-8310-e44d83100620.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Chú ý rằng, nếu không sử dụng `flex: 1 1 auto` ở text field, nó sẽ không tự mở rộng để chiếm phần không gian còn lại.
+
+4. Thread and comments
