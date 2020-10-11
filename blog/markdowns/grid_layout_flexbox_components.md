@@ -6,7 +6,7 @@
 
 ※ Bài viết chủ động giữ nguyên các thuật ngữ bằng tiếng Anh
 
-※ Code cũng được tham khảo từ [nguồn](https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412)
+※ Code cũng được tham khảo từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)
 
 Em trai tôi mới tốt nghiệp ngành kĩ thuật máy tính, cậu ta hiện tại đang hoàn thành quá trình thực tập của mình với công việc front-end development. Cậu ấy đã học được về CSS grid và flexbox, nhưng tôi nhận thấy một vấn đề mà cậu ấy đang gặp phải (vấn đề này cũng đã được đề cập trên nhiều trang web). Cậu ta không thể quyết định khi nào sử dụng grid, khi nào sử dụng flexbox. Một ví dụ là khi cậu ấy sử dụng CSS grid để layout cho header của trang web và thấy rằng nó trông không "mượt" như khi cậu ấy sử dụng `grid-column` và cố gẳng chỉnh sửa cho đến khi trông giống với thiết kế mẫu.
 
@@ -72,7 +72,7 @@ Trong phần này, tôi sẽ nói chi tiết về các use-cases đối với fl
 
 #### CSS Grid
 
-1. Main and Sidebar
+**1. Main and Sidebar**
 
 Khi bạn có main và sidebar `CSS-grid` là sự lựa chọn hoàn hảo.
 
@@ -92,7 +92,7 @@ aside {
 }
 ```
 
-2. Cards Grid
+**2. Cards Grid**
 
 Sử dụng `CSS-grid` để layout Cards grid là một sự lựa chọn tuyệt vời
 
@@ -112,7 +112,7 @@ Ta có kết quả như sau:
 
 <img src="https://user-images.githubusercontent.com/15076665/95540819-b6676400-0a2c-11eb-960f-df82d8f56909.png" width="560">
 
-3. Section layout
+**3. Section layout**
 
 Trong thiết kế bên dưới, chúng ta sử dụng grid ở 2 chỗ.
 - `sidebar` và `form`
@@ -143,7 +143,7 @@ aside {
 
 #### Flexbox
 
-1. Website navigation
+**1. Website navigation**
 
 Khoảng 90% các website navigation sẽ sử dụng `flexbox`. Template chung sẽ là logo bên trái và navigation bên phải
 
@@ -157,7 +157,7 @@ Khoảng 90% các website navigation sẽ sử dụng `flexbox`. Template chung 
 
 Chú ý rằng, dù cấu trúc của navigation có thể khác biệt, nhưng khoảng cách giữa các phần tử vẫn được đảm bảo với thuộc tính `justify-content`.
 
-2. Actions list
+**2. Actions list**
 
 Khi bạn nghe đến list, điều đầu tiên bạn nghĩ tới đó là một danh sách dọc. Thế nhưng, một list có thể hiển thị `inline`, nên ở đây tôi chỉ muốn nhấn mạnh điều này mà thôi.
 
@@ -208,7 +208,7 @@ Với footer sẽ có một chút khác biệt. "Cancel" action sử dụng auto
 
 Cái tên `.cancel__action` có thể không được tốt cho lắm, nhưng tôi không muốn đi sâu vào CSS naming conventions trong bài viết này.
 
-3. Form Elements
+**3. Form Elements**
 
 > Sự kết hợp giữa input field với button cạnh nó là một use-case hoàn hảo cho Flexbox.
 
@@ -233,7 +233,7 @@ Cùng xem ví dụ dưới đây:
 
 Chú ý rằng, nếu không sử dụng `flex: 1 1 auto` ở text field, nó sẽ không tự mở rộng để chiếm phần không gian còn lại.
 
-4. Thread and comments
+**4. Thread and comments**
 
 > Một use-case điển hình khác cho flexbox đó là comment threads.
 
@@ -245,7 +245,7 @@ Cùng xem ví dụ sau:
 
 Chúng ta có user photo, và comment. Comment sẽ chiếm phần không gian còn lại trong parent element. Đây là điều kiện tốt để ta sử dụng flexbox.
 
-5. Card components
+**5. Card components**
 
 Một card component sẽ có rất nhiều kiểu thiết kế, nhưng các thiết kế điển hình nhất sẽ trông như trong mockup dưới đây.
 
@@ -273,7 +273,7 @@ Chú ý cách icon và text label được căn giữa theo chiều dọc và ng
 
 Inline style sẽ là mặc định, chúng ta chỉ cần bỏ đi `flex-direction: column` và để cho nó giá trị mặc định (row).
 
-5. Tabs / Bottom Menus
+**6. Tabs / Bottom Menus**
 
 > Với các elements có chiều dài chiếm toàn bộ độ rộng của màn hình và có các items con chiếm toàn bộ không gian bên trong nó, flexbox sẽ là một công cụ hoàn hảo ở đây.
 
@@ -308,7 +308,7 @@ export default FlexDirectionBasics = () => {
 };
 ```
 
-6. Features List
+**7. Features List**
 
 Điều tôi thích nhất ở flexbox đó là khả năng đảo hướng của các elements. flexbox direction mặc định là row, nhưng chúng ta có thể đảo ngược nó như dưới đây.
 
@@ -325,7 +325,7 @@ export default FlexDirectionBasics = () => {
 
 *Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
 
-7. Centering A Section’s Content
+**8. Centering A Section’s Content**
 
 Giả sử rằng, chúng ta có một hero section, nội dung cần được căn giữa theo cả hai chiều. Chiều ngang có thể dễ dàng thực hiện nhờ text alignment.
 
@@ -352,3 +352,219 @@ Với flexbox, bằng cách nào ta có thể căn giữa theo chiều dọc ? �
 ```
 
 ### Combining CSS Grid And Flexbox
+
+Không chỉ mỗi layout module có các use-cases của riêng nó, chúng ta còn có thể kết hợp chúng lại với nhau. Khi tôi nghĩ về vấn đề này, use-case đầu tiên mà tôi nghĩ tới đó là danh sách các cards. Grid được sử dụng cho layout, flexbox được sử dụng cho card.
+
+<img src="https://user-images.githubusercontent.com/15076665/95671978-b8215b00-0bd7-11eb-87b9-a90f7b819af2.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Đây là các yêu cầu cho layout:
+- Chiều cao của cards trong mỗi dòng là như nhau.
+- Read more link nên được đặt ở dưới cùng của card, bất kể chiều cao của card.
+- Grid nên sử dụng `minmax()` function.
+
+```html
+<div class="wrapper">
+  <aside class="card">
+    <img src="./pic.jpg">
+    <div class="card__content">
+      <h2>Title</h2>
+      <p>Description</p>
+      <p class="card__link"><a href="#">Read more</a></p>
+    </div>
+  </aside>
+</div>
+```
+
+```css
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__link {
+  margin-top: auto;
+}
+```
+
+Hãy cùng phân tích đoạn code CSS phía trên:
+- Làm cho card trở thành 1 flexbox wrapper.
+- Direction ở đây là column, nghĩa là các cards sẽ xếp chồng lên nhau.
+- Để cho card content mở rộng và chiếm phần không gian còn lại.
+- Làm cho card content trở thành một flexbox wrapper.
+- Cuối cùng, sử dụng `margin-top: auto` để đẩy link xuống. Nó sẽ giữ cho vị trí của link ở dưới cùng bất kể chiều cao của card.
+
+> Như bạn thấy, việc kết hợp CSS grid và flexbox không hề khó. Hai công cụ này đem đến cho chugns ta rất nhiều cách để triển khai layouts trên web. Sử dụng chúng một cách chính xác, và kết hợp chúng chỉ khi nào thực sự cần thiết như ví dụ trên.
+
+### Fallback And Supporting Old Browsers
+
+**1. Using CSS** `@support`
+
+Khoảng hai tháng trước, tôi có nhận được 1 tweet nói rằng website của tôi không hoạt động như ý đối với IE11. Sau khi kiểm tra nó, tôi nhận ra mọi thứ thật kì lạ. Mọi nội dung của website đều bị chồng chéo lên khu vực top left. Website của tôi hoàn toàn không sử dụng được!
+
+<img src="https://user-images.githubusercontent.com/15076665/95672559-bf973300-0bdc-11eb-9b14-19245967e0cc.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Đúng vậy, đây là website của tôi - website của một front-end developer, trên IE11. Đầu tiên, tôi đã khá bối rối, tại sao nó lại xảy ra? Tôi nhớ rằng CSS grid được hỗ trợ trên IE11, nhưng đó là version cũ của IE11 được release bởi Microsoft. Giải pháp khá đơn giản, đó là sử dụng `@supports` để chỉ sử dụng CSS grid cho các trình duyệt thế hệ mới.
+
+```css
+@supports (grid-area: auto) {
+  body {
+    display: grid;
+  }
+}
+```
+
+Ở đây tôi sử dụng `grid-area` là bởi vì nó chỉ được hỗ trợ với CSS grid spec mới, từ tháng 3 năm 2017 cho tới nay. Vì IE không hỗ trợ `@supports` query, mọi rule ở trong đây sẽ bị bỏ qua. Như kết quả, CSS grid chỉ được sử dụng bởi các trình duyệt hỗ trợ grid.
+
+**2. Using Flexbox As A Fallback For CSS Grid**
+
+Nếu flexbox không phù hợp cho việc hiển thị grid layout, không có nghĩa là nó không có ý nghĩa cho việc dự phòng. Bạn có thể sử dụng flexbox như là một phương án dự phòng cho CSS grid đối với các trình duyệt không hỗ trợ grid. Tôi có làm một [tool](https://shadeed.github.io/grid-to-flex/) để giải quyết vấn đề này.
+
+```scss
+@mixin grid() {
+  display: flex;
+  flex-wrap: wrap;
+
+  @supports (grid-area: auto) {
+    display: grid;
+    grid-gap: 16px 16px;
+  }
+}
+
+@mixin gridAuto() {
+  margin-left: -16px;
+
+  > * {
+    margin-bottom: 16px;
+    margin-left: 16px;
+  }
+
+  @media (min-width: 320px) {
+    > * {
+      width: calc((99% / #{2}) - 16px);
+      flex: 0 0 calc((99% / #{2}) - 16px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    > * {
+      width: calc((99% / #{3}) - 16px);
+      flex: 0 0 calc((99% / #{3}) - 16px);
+    }
+  }
+
+  @supports (grid-area: auto) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left: 0;
+
+    > * {
+      width: auto;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+```
+
+Fallback code hoạt động như sau:
+- Thêm `display: flex` và `flex-wrap: wrap` vào wrapper element.
+- Kiểm tra CSS grid có được hỗ trợ hay không, nếu có thì `display: grid` sẽ được dùng thay thế.
+- Bằng việc sử dụng selector `> *`, chúng ta có thể chọn các child elements trực tiếp của wrapper. Sau đó thêm width, size cho mỗi phần tử.
+- Dĩ nhiên, margin giữa các phần từ là cần thiết và sẽ được thay bằng `grid-gap` nếu CSS grid được hỗ trợ.
+
+Đây là ví dụ cho việc sử dụng Sass mixin
+
+```scss
+.wrapper {
+  @include grid();
+  @include gridAuto();
+}
+```
+
+[Demo](https://codepen.io/shadeed/pen/XWrLmYe)
+
+### When Things Go Wrong For Both Grid And Flexbox
+
+Khi tôi review code cho em trai mình, tôi nhận thấy một vài lỗi khi sử dụng CSS grid hoặc là flexbox, tôi nghĩ rằng nhắc lại chúng là một việc ít nhiều có ý nghĩa ở đây.
+
+**1. Using CSS Grid For A Website Header**
+
+Một trong những động lực cho bài viết này chính là lỗi sử dụng CSS grid cho header. Tôi thấy rằng em trai mình sử dụng CSS grid cho header.
+
+Cậu ấy than phiền rằng "nó quá phức tạp, css grid thật khó, ...". Với kết quả của việc sử dụng sai layout method, cậu ta thấy rằng CSS grid rất phức tạp. Thực sự thì nó không hề, mọi sự bối rối của cậu ấy đến từ việc sử dụng CSS grid một cách thiếu chính xác.
+
+Cùng xem xét ví dụ đưới đây:
+
+<img src="https://user-images.githubusercontent.com/15076665/95673493-e311ac00-0be3-11eb-8c27-0dfe964819c8.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+```css
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.site-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+```
+
+CSS grid was used twice, the first time is for the whole header, and the second one is for the navigation. He used grid-column to fine-tune the spacing between the elements, and other weird things that I can’t remember, but you got the point!
+
+CSS grid được sử dụng 2 lần, lần đầu tiên là cho toàn bộ header, lần thứ hai là cho navigation. Cậu ta sử dụng `grid-column` để chỉnh khoảng cách giữa các elements, và một vài thứ kì lạ khác mà tôi không thể nhớ, bạn cũng nên chú ý về điều này!
+
+**2. Using CSS Grid For Tabs**
+
+Another incorrect usage for CSS grid is applying it on a tabs component. Consider the following mockup.
+
+Một lỗi sai khác khi sử dụng CSS grid đó là áp dụng nó cho tabs component. Xem ví dụ sau:
+
+<img src="https://user-images.githubusercontent.com/15076665/95673802-f96d3700-0be6-11eb-9954-5c7263457cbd.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Code CSS cho phần trên như sau:
+
+```css
+.tabs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+```
+
+Từ đoạn code trên, tôi thấy rằng người code gỉa sử tabs count chỉ có 3, anh ấy đã dùng `1fr 1fr 1fr` cho layout columns. Đoạn code này có thể bị lỗi nếu số lượng cột thay đổi.
+
+**3. Overusing Flexbox Or Grid**
+
+Hãy nhớ rằng, layout kiểu cũ có thể hữu ích cho bạn. Lạm dụng flexbox hoặc grid có thể tăng độ phức tạp cho code CSS của bạn theo thời gian. Tôi không có ý là CSS grid hay flexbox phức tạp, nhưng sử dụng chúng **đúng cách** trong **đúng ngữ cảnh** như đã nói ở trên thì sẽ tốt hơn.
+
+Ví dụ, bạn có hero section như dưới đây với yêu cầu căn giữa theo chiều ngang toàn bộ nội dung của nó.
+
+<img src="https://user-images.githubusercontent.com/15076665/95674115-0ee36080-0be9-11eb-92d0-f1d781318480.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Sử dụng `text-align: center` là có thể giải quết được vấn đề. Vậy tại sao sử dụng lại phải sử dụng flexbox ở đây?
+
+### Conclusion
+
+Phù, đó là tất cả những gì về sự khác biệt khi sử dụng CSS grid và flexbox. Chủ đề này tôi đã quan tâm từ rất lâu, và tôi thấy thật vui khi có cơ hội viết về nó. Đừng ngại khi gửi những phản hồi của bạn bằng email hoặc twitter [@shadeed9](https://twitter.com/shadeed9) cho tôi nhé!
+
+Cảm ơn vì đã đọc.
