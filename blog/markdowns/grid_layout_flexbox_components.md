@@ -161,17 +161,13 @@ Chú ý rằng, dù cấu trúc của navigation có thể khác biệt, nhưng 
 
 Khi bạn nghe đến list, điều đầu tiên bạn nghĩ tới đó là một danh sách dọc. Thế nhưng, một list có thể hiển thị `inline`, nên ở đây tôi chỉ muốn nhấn mạnh điều này mà thôi.
 
-An example of an action list is something that we can borrow from Facebook or Twitter. The action list consists of action buttons that the user can take. See the screenshots below:
-
-Các ví dụ về actions list có thế thấy một cách dễ dàng qua Facebook hoặc Twitter. Actions list bao gồm action buttons mà user có thể sử dụng dụng. Hãy xem ví dụ dưới đây
+Các ví dụ về actions list có thế thấy một cách dễ dàng qua Facebook hoặc Twitter. Actions list bao gồm action buttons mà user có thể sử dụng dụng. Hãy xem ví dụ dưới đây:
 
 <img src="https://user-images.githubusercontent.com/15076665/95649871-db3a0500-0b1a-11eb-81e2-36b0ef6af562.png" width="560">
 
 *Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
 
-As you see, the items are displayed next to each other, and they are distributed horizontally. Flexbox is perfect for that! That’s one of the core uses of it.
-
-Như bạn thấy, các items được hiển thị kế tiếp nhau, và chúng được phân bố theo chiều ngang. Flexbox là một sự lựa chọn hoàn hảo cho nó! Đây là một ví dụ điển hình cho việc sử dụng flexbox
+> Như bạn thấy, các items được hiển thị kế tiếp nhau, và chúng được phân bố theo chiều ngang. Flexbox là một sự lựa chọn hoàn hảo cho nó! Đây là một ví dụ điển hình cho việc sử dụng flexbox.
 
 ```css
 .wrapper {
@@ -202,8 +198,6 @@ Với modal-header ta sẽ có như sau:
 }
 ```
 
-And for the footer, it’s a bit different. The “Cancel” action uses an auto margin to push itself to the right. I wrote a detailed article about that.
-
 Với footer sẽ có một chút khác biệt. "Cancel" action sử dụng auto margin để đẩy chính nó sang phải. Tôi cũng đã biết một [bài viết chi tiết](https://ishadeed.com/article/auto-css/) về điều này.
 
 ```css
@@ -216,9 +210,9 @@ Cái tên `.cancel__action` có thể không được tốt cho lắm, nhưng t�
 
 3. Form Elements
 
-A combination of an input field with a button next to it is a perfect use-case for Flexbox. Consider the figure below:
+> Sự kết hợp giữa input field với button cạnh nó là một use-case hoàn hảo cho Flexbox.
 
-Sự kết hợp giữa input field với button cạnh nó là một use-case hoàn hảo cho Flexbox. Cùng xem ví dụ dưới đây:
+Cùng xem ví dụ dưới đây:
 
 <img src="https://user-images.githubusercontent.com/15076665/95650455-ca8b8e00-0b1e-11eb-9d7d-aa9d1e9bccc0.png" width="560">
 
@@ -240,3 +234,121 @@ Sự kết hợp giữa input field với button cạnh nó là một use-case h
 Chú ý rằng, nếu không sử dụng `flex: 1 1 auto` ở text field, nó sẽ không tự mở rộng để chiếm phần không gian còn lại.
 
 4. Thread and comments
+
+> Một use-case điển hình khác cho flexbox đó là comment threads.
+
+Cùng xem ví dụ sau:
+
+<img src="https://user-images.githubusercontent.com/15076665/95668619-80072180-0bb1-11eb-8a60-b7bbfa673e9d.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Chúng ta có user photo, và comment. Comment sẽ chiếm phần không gian còn lại trong parent element. Đây là điều kiện tốt để ta sử dụng flexbox.
+
+5. Card components
+
+Một card component sẽ có rất nhiều kiểu thiết kế, nhưng các thiết kế điển hình nhất sẽ trông như trong mockup dưới đây.
+
+<img src="https://user-images.githubusercontent.com/15076665/95668672-1fc4af80-0bb2-11eb-91a5-8989a2e7649a.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Ở bên trái, card child items được xếp theo chiều dọc do flex wrapper direction là `column`. Trong khi đó ở bên phải thì ngược lại. Sử dụng direction là `row`, và hãy nhớ rằng `row` là chiều (direction) mặc định của `flexbox`.
+
+Một ví dụ khác đó là card có icon và text label ở bên dưới nó. Có thể là button, link hoặc chỉ thuần tuý là trang trí. Hãy tham khảo ở mockup dưới đây:
+
+<img src="https://user-images.githubusercontent.com/15076665/95668763-46cfb100-0bb3-11eb-83cb-20826cfadfaa.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Chú ý cách icon và text label được căn giữa theo chiều dọc và ngang. Ta có thể thực hiện dễ dàng nhờ có flexbox.
+
+```css
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+```
+
+Inline style sẽ là mặc định, chúng ta chỉ cần bỏ đi `flex-direction: column` và để cho nó giá trị mặc định (row).
+
+5. Tabs / Bottom Menus
+
+> Với các elements có chiều dài chiếm toàn bộ độ rộng của màn hình và có các items con chiếm toàn bộ không gian bên trong nó, flexbox sẽ là một công cụ hoàn hảo ở đây.
+
+<img src="https://user-images.githubusercontent.com/15076665/95669073-3a4d5780-0bb7-11eb-9f09-7803febdee06.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+Ở ví dụ trên, mỗi item sẽ chiếm các không gian nhất định và chúng nên có độ rộng như nhau. Bằng việc thiết lập wrapper display có giá trị `flex`, điều này có thể thực hiện một cách dễ dàng.
+
+```css
+.wrapper-item {
+  flex-grow: 1;
+}
+```
+
+That technique is used in React Native framework to build the tab bar for mobile applications. Here is a code example that does the same as above in React Native. The code is borrowed from this resource.
+
+Kĩ thuật này được sử dụng trong React Native framework để xây dựng tab bar cho ứng dụng mobile. Đây là code mẫu triển khai giao diện như trên trong React Native. Code được tham khảo từ [nguồn](https://reactnative.dev/docs/flexbox)
+
+```typescript
+import React from 'react';
+import { View } from 'react-native';
+
+export default FlexDirectionBasics = () => {
+  return (
+    <View style=>
+      <View style= />
+      <View style= />
+      <View style= />
+    </View>
+  );
+};
+```
+
+6. Features List
+
+Điều tôi thích nhất ở flexbox đó là khả năng đảo hướng của các elements. flexbox direction mặc định là row, nhưng chúng ta có thể đảo ngược nó như dưới đây.
+
+```css
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+```
+
+Ở mockup dưới đây, các phần tử có thứ tự lẻ sẽ bị đảo ngược lại, điều này có được là nhờ kĩ thuật phía trên.
+
+<img src="https://user-images.githubusercontent.com/15076665/95669393-463b1880-0bbb-11eb-954d-7b0c4365836e.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+7. Centering A Section’s Content
+
+Giả sử rằng, chúng ta có một hero section, nội dung cần được căn giữa theo cả hai chiều. Chiều ngang có thể dễ dàng thực hiện nhờ text alignment.
+
+<img src="https://user-images.githubusercontent.com/15076665/95669584-5a801500-0bbd-11eb-8738-cf05cdc587cd.png" width="560">
+
+*Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
+
+```css
+.hero {
+  text-align: center;
+}
+```
+
+Với flexbox, bằng cách nào ta có thể căn giữa theo chiều dọc ? Đây chính là giải pháp
+
+```css
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontal alignment */
+  justify-items: center; /* vertical alignment */
+  text-align: center;
+}
+```
+
+### Combining CSS Grid And Flexbox
