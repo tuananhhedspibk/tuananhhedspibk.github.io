@@ -64,7 +64,7 @@ Nếu bạn thấy sự xuât hiện của hàng và cột thì `CSS-Grid` là g
 
 *Ảnh được lấy từ [nguồn](https://ishadeed.com/article/grid-layout-flexbox-components/)*
 
-Vậy là tôi đã giới thiệ sự khác biệt chính giữa chúng, bây giờ hãy chuyển qua các ví dụ cụ thể hơn và học cách phân biệt một cách cẩn thận hơn.
+Vậy là tôi đã giới thiệu sự khác biệt chính giữa chúng, bây giờ hãy chuyển qua các ví dụ cụ thể hơn và học cách phân biệt một cách cẩn thận hơn.
 
 ### Use-Case và các ví dụ
 
