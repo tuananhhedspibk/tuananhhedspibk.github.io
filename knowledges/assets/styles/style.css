@@ -7,6 +7,7 @@
 }
 
 #tags-list {
+  align-items: space-between;
   display: flex;
   flex-wrap: wrap;
   margin: 30px auto;
@@ -68,4 +69,8 @@
 
 #CloudFront {
   background-color: #d5523c;
+}
+
+#VPC {
+  background-color: #eba300;
 }
