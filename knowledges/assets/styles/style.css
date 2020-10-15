@@ -7,7 +7,8 @@
 }
 
 #tags-list {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
   margin: 30px auto;
 }
 
@@ -63,4 +64,8 @@
 
 #JWT {
   background-color: #16baac;
+}
+
+#CloudFront {
+  background-color: #d5523c;
 }

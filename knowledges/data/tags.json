@@ -43,6 +43,14 @@
     {
       "label": "JWT",
       "url": "https://tuananhhedspibk.github.io/knowledges/pages/jwt.html"
+    },
+    {
+      "label": "VPC",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/vpc.html"
+    },
+    {
+      "label": "CloudFront",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/cloudfront.html"
     }
   ]
 }

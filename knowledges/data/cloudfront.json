@@ -1,0 +1,150 @@
+{
+  "data": {
+    "id": 1,
+    "name": "CloudFront",
+    "type": "Root",
+    "description": "CloudFront fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "CDN service - improve read performance",
+        "type": "Type",
+        "description": "Content is cached at edges (globally)",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "Origins",
+        "type": "Type",
+        "description": "S3 bucket, Custom origin (HTTP)",
+        "children": [
+          {
+            "id": 4,
+            "name": "S3 bucket",
+            "type": "Type",
+            "description": "Distributing files and cache them at the edges",
+            "children": [
+              {
+                "id": 5,
+                "name": "Enhanced Security with OAI",
+                "type": "Type",
+                "description": "OAI - Origin access identity",
+                "children": []
+              },
+              {
+                "id": 6,
+                "name": "Can be used as an ingress",
+                "type": "Type",
+                "description": "To upload files to S3",
+                "children": []
+              },
+              {
+                "id": 8,
+                "name": "Illustration - S3 as an origin",
+                "type": "Type",
+                "description": "https://user-images.githubusercontent.com/15076665/82114449-cfc6f580-9797-11ea-87ef-ce9b679dd8cb.png",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "Custom Origin",
+            "type": "Type",
+            "description": "ALB, EC2, S3 static website, ...",
+            "children": [
+              {
+                "id": 9,
+                "name": "Illustration - ALB as an origin",
+                "type": "Type",
+                "description": "https://user-images.githubusercontent.com/15076665/82114585-85924400-9798-11ea-9897-a24f6af6e0d5.png",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Illustration at a high level",
+        "type": "Type",
+        "description": "https://user-images.githubusercontent.com/15076665/82114395-97271c00-9797-11ea-9e72-34b92fedfdfe.png",
+        "children": []
+      },
+      {
+        "id": 10,
+        "name": "CloudFront vs S3 cross region replication",
+        "type": "Type",
+        "description": "",
+        "children": [
+          {
+            "id": 11,
+            "name": "CloudFront - Files are cache for TTL (maybe a day)",
+            "type": "Type",
+            "description": "Greate for static content that must be available every where",
+            "children": []
+          },
+          {
+            "id": 12,
+            "name": "S3 cross region replication",
+            "type": "Type",
+            "description": "Must be setup for each region that we want to be replication",
+            "children": [
+              {
+                "id": 13,
+                "name": "Read only, updated in near real-time",
+                "type": "Type",
+                "description": "Greate for dynamic content (with low-latency)",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "CloudFront caching",
+        "type": "Type",
+        "description": "https://user-images.githubusercontent.com/15076665/96074120-d8f0f580-0ee2-11eb-981d-9fae14beabdf.png",
+        "children": [
+          {
+            "id": 15,
+            "name": "Cache based on",
+            "type": "Type",
+            "description": "Headers, Session Cookies, Query String parameters",
+            "children": [
+              {
+                "id": 16,
+                "name": "Cache live",
+                "type": "Type",
+                "description": "On CloudFront Edge location",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 17,
+            "name": "TTL (0 seconds - 1 year)",
+            "type": "Type",
+            "description": "Can be set by origin by using Cache-Control-Header",
+            "children": []
+          },
+          {
+            "id": 18,
+            "name": "Maximize cache hits",
+            "type": "Type",
+            "description": "https://user-images.githubusercontent.com/15076665/82115799-fab54780-979f-11ea-8f06-a7880625a7e5.png",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "In the first 3 hours",
+        "type": "Type",
+        "description": "CloudFront-Domain will re-direct to the origin URL",
+        "children": []
+      }
+    ]
+  }
+}
