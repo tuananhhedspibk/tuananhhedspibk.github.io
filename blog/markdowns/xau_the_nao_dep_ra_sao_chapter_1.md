@@ -17,7 +17,7 @@ Trước khi đánh giá tính xấu đẹp, hãy tự trả lời cho mình 3 c
 2. Thiết kế của ấn phẩm đã truyền tải được bao nhiêu thông điệp và cảm giác mà bạn mong muốn ?
 3. Vì sao chưa thể truyền tải được hết thông điệp, có vấn đề gì không ổn ở thiết kế ?
 
-## Chương I: Bí kíp thẩm định thiết kế
+## Chương 1: Bí kíp thẩm định thiết kế
 
 ### Khách hàng đọc như thế nào
 	
