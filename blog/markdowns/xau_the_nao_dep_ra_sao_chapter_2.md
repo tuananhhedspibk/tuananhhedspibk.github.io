@@ -39,6 +39,6 @@ Ta lấy ví dụ với trang profile của một sản phẩm (landing page). C
 - Khoảng trống giúp trang trở nên tĩnh, có điểm nghỉ để người đọc tự hệ thống lại nội dung trong đầu.
 - Khoảng trống giúp trang thông thoáng, dễ theo dõi trong quá trình đọc tin (người đọc phải tiếp nhận một lượng thông tin dồn dập).
 
-<img src="https://user-images.githubusercontent.com/15076665/96337106-638e4c00-10bf-11eb-9e54-539d8aa65dfd.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/15076665/96337887-39d82380-10c5-11eb-9760-59e926a995ea.jpg" width="600">
 
 *Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
