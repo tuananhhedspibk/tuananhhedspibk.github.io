@@ -1,4 +1,14 @@
 {
+    "xau_the_nao_dep_ra_sao_chapter_5": {
+        "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 5",
+        "description": "Summary \"Xau the nao, dep ra sao\" - Chapter 5",
+        "tags": [
+            "UI",
+            "UX",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at October 25, 2020"
+    },
     "xau_the_nao_dep_ra_sao_chapter_4": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 4",
         "description": "Summary \"Xau the nao, dep ra sao\" - Chapter 4",
@@ -92,44 +102,6 @@
         ],
         "posted_at": "Posted at September 18, 2020"
     },
-    "want_to_know_layout_design": {
-        "title": "Want to know Layout Design Summary",
-        "description": "The Summary of The book \"Want to know layout design\"",
-        "tags": [
-            "design",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at July 17, 2020"
-    },
-    "dont_make_me_think": {
-        "title": "Don't make me think",
-        "description": "Summary of [Don't make me think] book in vietnamese",
-        "tags": [
-            "UI",
-            "UX",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at March 15, 2020"
-    },
-    "coding_interview_bootcamp": {
-        "title": "Coding Interview BootCamp",
-        "description": "Experience, Knowledge for Interviewing",
-        "tags": [
-            "Interview",
-            "english"
-        ],
-        "posted_at": "Posted at February 22, 2020"
-    },
-    "aws_certificated_solution_architect": {
-        "title": "AWS Certificated Solution Architect Translation to Vietnamese (processing)",
-        "description": "Content is going to be updated day by day",
-        "tags": [
-            "AWS",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on February 22, 2020"
-    },
     "readable_code_5": {
         "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
         "description": "This chapter is about writing comment when coding",
@@ -139,16 +111,6 @@
             "vietnamese"
         ],
         "posted_at": "Posted on February 22, 2020"
-    },
-    "tao_of_microservices": {
-        "title": "The Tao of microservices ",
-        "description": "Summary content of \"The Tao of microservices\" book",
-        "tags": [
-            "Microservice",
-            "Nodejs",
-            "english"
-        ],
-        "posted_at": "Posted at December 7, 2019"
     },
     "graphql_with_react": {
         "title": "GraphQL with React",
@@ -169,18 +131,6 @@
             "vietnamese"
         ],
         "posted_at": "Posted at December 1, 2019"
-    },
-    "aws_ml_certificate_note": {
-        "title": "AWS ML Certificate Note",
-        "description": "Required knowledge for taking AWS ML Certificate",
-        "tags": [
-            "AWS",
-            "Machine Learning",
-            "Certificate",
-            "Note",
-            "english"
-        ],
-        "posted_at": "Posted at November 27, 2019"
     },
     "cnn_coursera": {
         "title": "Convolutional Neural Networks",
@@ -222,16 +172,6 @@
             "english"
         ],
         "posted_at": "Posted at September 15, 2019"
-    },
-    "aws_quick_note": {
-        "title": "AWS Quick Note",
-        "description": "Content is going to be updated everyday",
-        "tags": [
-            "AWS",
-            "Note",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on September 10, 2019"
     },
     "deep_learning_coding_note": {
         "title": "Deep Learning Coding Note",
@@ -291,17 +231,6 @@
             "vietnamese"
         ],
         "posted_at": "Posted on August 31, 2019"
-    },
-    "refactoring_ui_1_ja": {
-        "title": "リファクタリングUI - パート1",
-        "description": "「Refactoring UI」という本のまとめ内容（日本語版）パート1",
-        "tags": [
-            "UI",
-            "UX",
-            "Translation",
-            "japanese"
-        ],
-        "posted_at": "Posted at August 25, 2019"
     },
     "cnn_basic": {
         "title": "CNN",
@@ -394,16 +323,6 @@
         ],
         "posted_at": "Posted on July 17, 2019"
     },
-    "gan_with_python": {
-        "title": "GAN with python",
-        "description": "Content is going to be updated everyday",
-        "tags": [
-            "GAN",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on July 16, 2019"
-    },
     "quick_eng_note": {
         "title": "Quick note about English knowledges",
         "description": "The content is going to be updated everyday",
@@ -419,17 +338,6 @@
         "tags": [
             "english",
             "Grammar"
-        ],
-        "posted_at": "Posted on July 12, 2019"
-    },
-    "distributed_system_design_pattern": {
-        "title": "Distributed System Design Pattern Translation to Vietnamese (processing)",
-        "description": "Content is going to be updated day by day",
-        "tags": [
-            "Design Pattern",
-            "Distibuted System",
-            "Translation",
-            "vietnamese"
         ],
         "posted_at": "Posted on July 12, 2019"
     },
