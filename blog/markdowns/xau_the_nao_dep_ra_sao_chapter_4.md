@@ -53,3 +53,31 @@ Các font viết tay và font trang trí thường có đường nét thoáng, p
 <img src="https://user-images.githubusercontent.com/15076665/97098561-858c5d80-16c1-11eb-9f5e-94d970626c6c.jpg" width="600">
 
 *Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
+
+### Font chữ và lĩnh vực, ngành hàng
+
+Các thương hiệu đồ ăn nhanh nổi tiếng hiện nay như *McDonald*, *Lotteria*, *KFC* đều sử dụng font chữ không chân vì nó hội tụ đủ các yếu tố: `nhanh` - `năng động` - `trẻ trung`. Rất phù hợp với mục tiêu của các nhãn hàng này.
+
+<img src="https://user-images.githubusercontent.com/15076665/97100899-e6289400-16db-11eb-97c1-43369f9f7f45.jpg" width="600">
+
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
+
+Các hãng cafe-takeaway cũng sử dụng các `font không chân`.
+
+Tính tạo hình của font chữ cũng đem lại những hiệu quả về mặt cảm giác:
+- Font không chân đậm nét có thể tạo nên cảm giác vững chãi, nhưng cũng gây ra sự "nặng nề" cho thiết kế.
+- Font không chân mảnh cũng có thể tạo ra sự nhẹ nhàng cho thiết kế.
+
+`Font không chân bo tròn góc` thường dùng cho các thương hiệu:
+- Cho trẻ em, gia đình: tạo cảm giác dễ thương, gần gũi, an toàn.
+- Đồ ăn: lí do tương tự trên.
+
+<img src="https://user-images.githubusercontent.com/15076665/97101016-060c8780-16dd-11eb-83f1-291b7e0a8b88.jpg" width="600">
+
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
+
+Các font chữ gai góc thường tạo ra cảm giác huyền bí, bí hiểm. Bằng chứng là bộ phim Harry Potter đình đám, sử dụng font chữ nhọn, gai góc kết hợp với màu sắc u tối ==> đúng với ấn tượng về pháp thuật.
+
+> Chữ đóng vai trò quan trọng trong việc cung cấp thông tin, dẫn dắt người xem về mặt nội dung
+
+Chữ cũng được sử dụng cho mục đích trang trí, hãy chú ý tới `cảm xúc` mà nó mang lại trong tổng thể.
