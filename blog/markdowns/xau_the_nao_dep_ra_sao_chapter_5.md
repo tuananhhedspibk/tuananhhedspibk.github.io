@@ -37,3 +37,20 @@ Xét case-study sau: lookbook cho nhãn hiệu thời trang:
 > Nội dung nên được ưu tiên về không gian để đảm bảo người đọc có thể tiếp nhận rõ ràng, nên giảm thiểu hoặc đơn giản hoá các yếu tố trang trí đi kèm (nếu có)
 
 ### Nổi bật font tiêu đề, mạch lạc font nội dung
+
+Trong một sản phẩm truyền thông chỉ nên sử dụng tối đa 3 font chữ.
+
+Có những trường hợp chỉ sử dụng duy nhất một font chữ. Tuy nhiên nhờ vào sự `tương phản`, ta hoàn toàn có thể tạo ra những biến thể khác nhau cho font chữ:
+- Tương phản về kích cỡ chữ
+- Tương phản đậm, nhạt
+- Tương phản in thường, in hoa
+
+Trong sản phẩm thiết kế, thường chia chữ thành 2 loại
+- Chữ tiêu đề
+- Chữ nội dung
+
+*Phần tiêu đề*: thường được làm nổi bật bằng tỉ lệ, hiệu ứng, vì nó thể hiện `tinh thần chính` của sản phẩm.
+
+*Phần nội dung*: thường dùng để cung cấp thông tin, nên cần đến sự mạch lạc, rõ ràng. Không nên nhấn nhá vì sẽ khiến cụm chữ bị loạn trong tổng thể. Các font chữ sư dụng cũng nên đơn giản (font có chân, font không chân).
+
+> Hãy chắc chắn rằng font cho tiêu đề cần nổi bật, font cho nội dung cần mạch lạc. Các font chữ trong tổng thể không bị tranh chấp về đường nét, tính chất.
