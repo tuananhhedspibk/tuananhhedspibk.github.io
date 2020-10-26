@@ -38,3 +38,25 @@ Cùng lấy ví dụ:
 - TP Bank - thay vì sử dụng màu xanh dương và đỏ dành cho ngân hàng, TP Bank sử dụng hai màu đối nghịch là `màu cam` và `màu tím` - tạo ra nét độc đáo và nhận diện thương hiệu riêng
 
 ### Nhận diện thương hiệu bằng màu
+
+Các thương hiệu nên có một màu hoặc một gam màu để tăng tính nhận diện (thống nhất từ logo, thiết kế, sản phẩm, ...).
+
+> Màu sắc giúp tăng khả năng nhận diện thương hiệu lên đến 80%
+
+Việc lặp lại màu sắc và các yếu tố nhận diện trên các phương tiện truyền thông sẽ giúp khách hàng lưu nhớ và có sự kết nối mạnh mẽ với thương hiệu.
+
+Cảm xúc màu sắc mang tới sẽ giúp gợi nhớ về tính cách của thương hiệu.
+
+<img src="https://user-images.githubusercontent.com/15076665/97151025-4d187c80-17b2-11eb-83cd-282cae5d30b1.jpg" width="600">
+
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
+
+Nên đảm bảo yếu tố chính phụ:
+- Có một màu chính làm màu nhận diện (xuất hiện nhiều trong thiết kế, thể hiện đúng cá tính của sản phẩm)
+- Các màu phụ trợ đi kèm
+
+> Khi màu sắc đã gắn liền với thương hiệu màu sắc sẽ là nhận diện cũng như thể hiện tính cách, cảm xúc của thương hiệu
+
+<img src="https://user-images.githubusercontent.com/15076665/97151479-e5aefc80-17b2-11eb-98d3-1522a14f020a.jpg" width="600">
+
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
