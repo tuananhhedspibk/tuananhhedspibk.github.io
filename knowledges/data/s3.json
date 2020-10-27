@@ -9,7 +9,7 @@
         "id": 2,
         "name": "Nature",
         "type": "Type",
-        "description": "Durable storage service with unlimited capacity",
+        "description": "Durable storage service with unlimited capacity - but pay-per-use service",
         "children": []
       },
       {
@@ -119,6 +119,28 @@
                 "children": []
               }
             ]
+          },
+          {
+            "id": 18,
+            "name": "Expiration Date",
+            "type": "Type",
+            "description": "Delete S3 object base on its expiration date",
+            "children": [
+              {
+                "id": 19,
+                "name": "Illustration",
+                "type": "Type",
+                "description": "https://user-images.githubusercontent.com/15076665/97264879-10f42300-1869-11eb-99d8-fd348577cadb.png",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "name": "Static web hosting",
+            "type": "Type",
+            "description": "Bucket name must be the same with Route53 domain name",
+            "children": []
           }
         ]
       }
