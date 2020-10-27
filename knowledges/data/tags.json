@@ -51,6 +51,10 @@
     {
       "label": "CloudFront",
       "url": "https://tuananhhedspibk.github.io/knowledges/pages/cloudfront.html"
+    },
+    {
+      "label": "S3",
+      "url": "https://tuananhhedspibk.github.io/knowledges/pages/s3.html"
     }
   ]
 }

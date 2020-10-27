@@ -1,0 +1,127 @@
+{
+  "data": {
+    "id": 1,
+    "name": "S3",
+    "type": "Root",
+    "description": "S3 fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "Nature",
+        "type": "Type",
+        "description": "Durable storage service with unlimited capacity",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "S3 Structure",
+        "type": "Type",
+        "description": "Created from: Object, Bucket, Meta-data",
+        "children": [
+          {
+            "id": 4,
+            "name": "Bucket",
+            "type": "Type",
+            "description": "Used to store object, must have unique name (global in AWS)",
+            "children": []
+          },
+          {
+            "id": 5,
+            "name": "Object",
+            "type": "Type",
+            "description": "Has unique name (Bucket-Name + Object-Key + Version)",
+            "children": [
+              {
+                "id": 7,
+                "name": "Object-Key",
+                "type": "Type",
+                "description": "Granted by AWS",
+                "children": []
+              },
+              {
+                "id": 8,
+                "name": "Unlimited number of objects in Bucket",
+                "type": "Type",
+                "description": "Max size of object is 5TB",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Meta-data",
+            "type": "Type",
+            "description": "Used to manage object, include object's system infor and object's app infor",
+            "children": []
+          },
+          {
+            "id": 9,
+            "name": "Storage classes",
+            "type": "Type",
+            "description": "5 types",
+            "children": [
+              {
+                "id": 10,
+                "name": "STANDARD",
+                "type": "Type",
+                "description": "Low-Latency, High throughput",
+                "children": []
+              },
+              {
+                "id": 11,
+                "name": "STANDARD-IA",
+                "type": "Type",
+                "description": "Use for the data that isn't usually accessed",
+                "children": []
+              },
+              {
+                "id": 12,
+                "name": "ONEZONE-IA",
+                "type": "Type",
+                "description": "Store in 1 ZONE only, data can be lost if zone has crashed",
+                "children": []
+              },
+              {
+                "id": 13,
+                "name": "INTELLIGENT-TIERING",
+                "type": "Type",
+                "description": "High cost, for the data that we don't know about access frequency",
+                "children": []
+              },
+              {
+                "id": 14,
+                "name": "Glacier",
+                "type": "Type",
+                "description": "Stored in AWS Glacier but managed by S3, used for archive data",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Manage Lifecycle",
+        "type": "Type",
+        "description": "Can be set base on frequency of using object",
+        "children": [
+          {
+            "id": 16,
+            "name": "Migrate action",
+            "type": "Type",
+            "description": "Change storage class base on frequency of use",
+            "children": [
+              {
+                "id": 17,
+                "name": "Illustration",
+                "type": "Type",
+                "description": "https://user-images.githubusercontent.com/15076665/97254075-f31ac400-1850-11eb-8acf-90f437ad250f.png",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
