@@ -1,0 +1,134 @@
+{
+  "data": {
+    "id": 1,
+    "name": "Aurora",
+    "type": "Root",
+    "description": "Aurora fundamental",
+    "children": [
+      {
+        "id": 2,
+        "name": "Relation database - MySQL, Postgress compatible edition",
+        "type": "Type",
+        "description": "With performance that bettern than MySQL and PostgreSQL 's one",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "Very cost effective",
+        "type": "Type",
+        "description": "",
+        "children": []
+      },
+      {
+        "id": 4,
+        "name": "Start with 10GB",
+        "type": "Type",
+        "description": "Increments to 64TB - Storage Autoscaling",
+        "children": []
+      },
+      {
+        "id": 5,
+        "name": "2 copies of data (cluster volume) in each AZ",
+        "type": "Type",
+        "description": "With minimum is 3 AZs",
+        "children": [
+          {
+            "id": 13,
+            "name": "DB cluster will be created when DB instance is created",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 14,
+            "name": "DB instances reference to data storage (cluster volume)",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 15,
+            "name": "Illustration",
+            "type": "Type",
+            "description": "https://user-images.githubusercontent.com/15076665/97654432-3326b480-1aa6-11eb-8d3c-c4f853c7dfc3.png",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Replicas up to 15",
+        "type": "Type",
+        "description": "",
+        "children": []
+      },
+      {
+        "id": 7,
+        "name": "Automated backup",
+        "type": "Type",
+        "description": "Can take a snapshot for database (not impact performance)",
+        "children": []
+      },
+      {
+        "id": 8,
+        "name": "Aurora Serverless",
+        "type": "Type",
+        "description": "MySQL, PostgresSQL compatible",
+        "children": [
+          {
+            "id": 9,
+            "name": "On-demand, autoscaling configuration",
+            "type": "Type",
+            "description": "",
+            "children": []
+          },
+          {
+            "id": 10,
+            "name": "Aurora Serverless DB cluster automatically",
+            "type": "Type",
+            "description": "Starts up, shuts down, scale up, down",
+            "children": [
+              {
+                "id": 11,
+                "name": "Based on application's needs",
+                "type": "Type",
+                "description": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "name": "Simple, cost-effective options for",
+            "type": "Type",
+            "description": "Infrequent, Intermittent, Un-predictable workloads",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Aurora Replica",
+        "type": "Type",
+        "description": "Doesn't have multi AZ option",
+        "children": [
+          {
+            "id": 17,
+            "name": "In Aurora cluster, Can create replica for reading",
+            "type": "Type",
+            "description": "Aurora Replica can fail-over",
+            "children": [
+              {
+                "id": 18,
+                "name": "If primary instance has failure",
+                "type": "Type",
+                "description": "Replica will become primary instance",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
