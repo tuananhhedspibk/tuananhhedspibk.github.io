@@ -75,3 +75,38 @@ Các sản phẩm truyền thông cần đảm bảo tính thống nhất trong 
 - Cùng lấy ví dụ về chiến dịch truyền thông "Taste the feeling" của Coca-cola. 
 
 Được triển khai ở nhiều quốc gia khác nhau. Tại mỗi quốc gia Coca-cola cũng sẽ có sự tuỳ biến để phù hợp với văn hoá từng đất nước. Tuy nhiên ta có thể thấy thông điệp mà họ muốn truyền tải là: Dù ở bất cứ đâu, bất cứ ai đi nữa thì họ đều có một điểm chung là có những giây phút tuyệt vời cùng Coca-cola.
+
+#### Đồng bộ trong màu sắc
+
+Màu sắc khi đứng một mình thì sẽ không đem lại bất kì cảm xúc nào nhưng khi nó gắn liền với trải nghiệm, thông điệp thì cảm xúc hàm chứa trong nó sẽ dần được hình thành.
+
+> Màu sắc sử dụng ở các ấn phẩm truyền thông nên đồng bộ, vì nó sẽ tăng khả năng nhận diện thương hiệu lên đến 80%
+
+#### Đồng bộ trong font chữ
+
+Font chữ cũng như màu sắc, có khả năng gợi nên những cảm nhận khác nhau.
+
+Việc sử dụng font chữ đồng nhất cũng được coi là một yếu tố quan trọng trong nhận diện thương hiệu. Cần thống nhất các quy định:
+- Đâu là font chữ dùng cho tiêu đề
+- Đâu là font chữ dùng cho phần nội dung
+
+<img src="https://user-images.githubusercontent.com/15076665/97825050-ebe83000-1d00-11eb-8c9c-6c31c0eb1fd3.jpg" width="600">
+
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
+
+#### Đồng bộ trong hình ảnh
+
+Hình ảnh có sức truyền tải mạnh mẽ mà không cần dùng tới ngôn từ, do đó hình ảnh cũng cần thống nhất để tạo sự đồng bộ.
+
+Có thể không phải là các ảnh giống hệt nhau. Nhưng nên giống nhau ở:
+- Concept của ảnh (đen trắng, màu tươi sáng)
+- Đối tượng chụp
+- Chân dung, ảnh nghiêng, ...
+
+Hình ảnh có thể là hình vẽ, biểu đồ, ... Hình ảnh nên phối hợp với chữ trong truyền tải thông điệp của thương hiệu
+
+<img src="https://user-images.githubusercontent.com/15076665/97825050-ebe83000-1d00-11eb-8c9c-6c31c0eb1fd3.jpg" width="600">
+
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
+
+#### Đồng bộ trong hoạ tiết nhận diện
