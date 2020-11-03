@@ -90,7 +90,7 @@ Việc sử dụng font chữ đồng nhất cũng được coi là một yếu 
 - Đâu là font chữ dùng cho tiêu đề
 - Đâu là font chữ dùng cho phần nội dung
 
-<img src="https://user-images.githubusercontent.com/15076665/97825050-ebe83000-1d00-11eb-8c9c-6c31c0eb1fd3.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/15076665/97933225-725e4980-1db5-11eb-9800-159be541f77c.jpg" width="600">
 
 *Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
 
@@ -105,7 +105,7 @@ Có thể không phải là các ảnh giống hệt nhau. Nhưng nên giống n
 
 Hình ảnh có thể là hình vẽ, biểu đồ, ... Hình ảnh nên phối hợp với chữ trong truyền tải thông điệp của thương hiệu
 
-<img src="https://user-images.githubusercontent.com/15076665/97825050-ebe83000-1d00-11eb-8c9c-6c31c0eb1fd3.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/15076665/97933228-74280d00-1db5-11eb-976b-46d00b3f5f45.jpg" width="600">
 
 *Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
 
