@@ -110,3 +110,14 @@ Hình ảnh có thể là hình vẽ, biểu đồ, ... Hình ảnh nên phối 
 *Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
 
 #### Đồng bộ trong hoạ tiết nhận diện
+
+Hoạ tiết được thiết kế dựa trên màu sắc, đặc tính của sản phẩm nên nó sẽ mang nét riêng, không bị nhầm lẫn với các thương hiệu khác. Hoạ tiết cũng có khả năng biến đổi linh hoạt để tạo nên sự thu hút và phá cách cho thiết kế.
+
+Hoạ tiết có thể được tạo ra từ:
+- Biến đổi chữ
+- Biến đổi hình khối
+- Tận dụng yếu tố có trong logo
+
+<img src="https://user-images.githubusercontent.com/15076665/97938853-dc7eea80-1dc5-11eb-8d46-f76e7a866a79.jpg" width="600">
+
+*Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
