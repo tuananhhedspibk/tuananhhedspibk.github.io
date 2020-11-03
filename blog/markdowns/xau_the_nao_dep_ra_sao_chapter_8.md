@@ -118,6 +118,6 @@ Hoạ tiết có thể được tạo ra từ:
 - Biến đổi hình khối
 - Tận dụng yếu tố có trong logo
 
-<img src="https://user-images.githubusercontent.com/15076665/97938853-dc7eea80-1dc5-11eb-8d46-f76e7a866a79.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/15076665/97941702-56fc3a00-1dc7-11eb-8844-68bd13b6d3c3.jpg" width="600">
 
 *Ảnh được dẫn từ [sách](https://tiki.vn/xau-the-nao-dep-ra-sao-bi-kip-tham-dinh-thiet-ke-trong-marketing-tai-ban-lan-thu-tu-p8274320.html)*
