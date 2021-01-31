@@ -1,4 +1,14 @@
 {
+    "summary_nhan_dien_thuong_hieu_1": {
+        "title": "Summary Nhan Dien Thuong Hieu - Chapter 1",
+        "description": "Summary Nhan Dien Thuong Hieu - Chapter 1",
+        "tags": [
+            "UI",
+            "UX",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at January 31, 2021"
+    },
     "xau_the_nao_dep_ra_sao_chapter_8": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 8",
         "description": "Summary \"Xau the nao, dep ra sao\" - Chapter 8",
@@ -129,16 +139,6 @@
             "vietnamese"
         ],
         "posted_at": "Posted at October 2, 2020"
-    },
-    "summary_nhan_dien_thuong_hieu_1": {
-        "title": "Summary Nhan Dien Thuong Hieu - Part 1",
-        "description": "Summary Nhan Dien Thuong Hieu - Part 1",
-        "tags": [
-            "UI",
-            "UX",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at September 25, 2020"
     },
     "refactoring_ui_4": {
         "title": "Refactoring UI (part 4)",
