@@ -104,3 +104,35 @@ Mỗi lần tiếp xúc với các mẫu quảng cáo, bao bì là một lần t
 ### 3. Quản trị Hệ thống nhận diện thương hiệu
 
 > Để quản trị hệ thống này bạn cần: bám sát quy chuẩn, thực trạng doanh nghiệp, chiến lược định vị thương hiệu trong dài hạn
+
+Hệ thống nhận diện thương hiệu gồm 2 cấp độ:
+- Cơ bản: logo, slogan, bộ màu chuẩn, ...
+- Mở rộng: tài liệu, vật phẩm truyền thông marketing, ...
+
+Với các tập đoàn đa quốc gia, họ cần giải quyết 2 vấn đề:
+- Kế thừa được sức mạnh vốn có của thương hiệu
+- Linh hoạt để thích ứng với nhiều môi trường kinh doanh
+
+Để có thể linh hoạt thích ứng được, việc thay đổi thiết kế, màu sắc, ... là cần thiết.
+
+VD:
+- Các doanh nghiệp rượu của phương Tây khi thâm nhập thị trường châu Á (VN, TQ, ...) thường thêm sắc đỏ, vàng để tạo cảm giác sang trọng, ... cho phù hợp với văn hoá Á Đông.
+- Các nhãn hàng như Coca-cola khi thâm nhập thị trường Việt Nam, thường tập trung vào yếu tố gia đình.
+
+> Thấu hiểu thị trường và hệ thống nhận diện thương hiệu chính là hai yếu tố quan trọng giúp doanh nghiệp dễ dàng thông hành hơn trên còn đường định vị bản thân
+
+Một tập đoàn đa nhánh, được phát triển dựa trên một nhánh chính, từ đó mở rộng sang các nhánh khác để tiếp xúc với một tập khách hàng mới.
+
+Xét về phương diện truyền thông, thành công của các thương hiệu nhánh cũng sẽ tạo ra các tác động tích cực cho thương hiệu mẹ.
+
+VD: FedEx có các thương hiệu nhánh là: Express, Ground, Freight, ... Các thương hiệu con này có bộ nhận diện tương đồng với thương hiệu mẹ.
+
+Tuy nhiên nếu thương hiệu nhánh không thành công, hình ảnh của thương hiệu mẹ cũng sẽ bị ảnh hưởng tương đối
+
+> Bộ nhận diện thương hiệu mẹ và thương hiệu nhánh có thể gây nhiễu trong tâm trí khách hàng nếu không được quản trị kỹ lưỡng.
+
+Đối với các doanh nghiệp nhỏ, hệ thống nhận diện của họ có thể chỉ là website, hình ảnh truyền thông trên bao bì, ... Nhưng nếu có sự chỉn chu từ những yếu tố nhỏ nhất này, đó cũng là điểm cộng cho sự chuyên nghiệp để có được lòng tin từ khách hàng.
+
+VD: Thương hiệu Hồng Lam, từ một của hàng nhỏ, hiện nay họ đã có nhiều cơ sở kinh doanh trên cả nước. Đây là ví dụ cho thấy tác động tích cực của việc quản trị hệ thống nhận diện thương hiệu một cách chuyên nghiệp.
+
+Mọi sản phẩm của Hồng Lam, từ hộp ô mai, cách bài trí cửa hàng, băng dính đều có sự nhất quán vô cùng trong cách sử dụng hình ảnh của bộ nhận diện thương hiệu
