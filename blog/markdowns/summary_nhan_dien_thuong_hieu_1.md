@@ -136,3 +136,26 @@ Tuy nhiên nếu thương hiệu nhánh không thành công, hình ảnh của t
 VD: Thương hiệu Hồng Lam, từ một của hàng nhỏ, hiện nay họ đã có nhiều cơ sở kinh doanh trên cả nước. Đây là ví dụ cho thấy tác động tích cực của việc quản trị hệ thống nhận diện thương hiệu một cách chuyên nghiệp.
 
 Mọi sản phẩm của Hồng Lam, từ hộp ô mai, cách bài trí cửa hàng, băng dính đều có sự nhất quán vô cùng trong cách sử dụng hình ảnh của bộ nhận diện thương hiệu
+
+Trong bối cảnh cạnh tranh hiện nay, việc chỉ tập trung nâng cao chất lượng đã khôn còn mang nhiều giá trị khác biệt.
+
+> Tư duy phát triển và đồng nhất thương hiệu trong tâm trí khách hàng ngày một quan trọng
+
+**Sở hữu hệ thống nhận diện chuẩn mực, bảm sát định vị thương hiệu trong dài hạn**
+
+Một hệ thống nhận diện thương hiệu mạnh là hệ thống được xây dựng, phát triển dựa trên nhiều yếu tố:
+- Cụ thể
+- Đơn giản
+- Dễ nhớ
+- Khác biệt
+- Tin cậy
+...
+
+> Hệ thống nhận diện thương hiệu cũng là một ngôn ngữ giao tiếp giữa doanh nghiệp với khách hàng
+
+Một hệ thống nhận diện tốt có thể được sử dụng cả chục năm, xuyên suốt quá trình tồn tại của doanh nghiệp.
+**Điều quan trọng ở đây là phải hiểu rõ định vị thương hiệu của doanh nghiệp**
+
+> Mỗi điểm chạm thị giác là một lần thương hiệu ghi dấu ấn trong tâm trí khách hàng
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/113500181-f7ad7c00-9556-11eb-8cf4-663a2e328014.jpg">
