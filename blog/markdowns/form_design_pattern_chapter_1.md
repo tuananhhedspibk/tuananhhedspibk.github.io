@@ -89,3 +89,17 @@ Password thường ngắn và dễ bị crack. Vậy nên chúng ta thường "y
 - Chứa ít nhất 1 kí tự hoa, thường, số ...
 
 Điều này sẽ khiến người dùng cảm thấy mệt mỏi với khâu thiết lập password.
+
+Thay vào đó ta có thể hỏi người dùng "Passphrase" - về bản chất là tập hợp các từ.
+
+Nó bảo mật hơn so với password về mặt độ dài.
+
+Xong phương pháp này không phổ biến nên khiến người dùng không quen cũng như nghi ngại về tính bảo mật.
+
+### Field Styling
+
+Vị trí của Label cũng như focus style là những thứ cần được xem xét.
+
+### LABEL POSITION
+
+Việc đặt label ngay bên cạnh component sẽ thuận cho việc đánh mắt của user hơn. Tuy nhiên với không gian hẹp hơn thì nên đặt ở phía trên component.
