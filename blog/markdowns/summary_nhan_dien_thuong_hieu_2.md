@@ -125,3 +125,19 @@ Ví dụ với thương hiệu trà dưới đây, ở bao bì logo sẽ gồm c
 Khi áp dụng cho kích thước rất nhỏ (nhỏ hơn kích thước tối thiểu quy định của logo) thì việc sử dụng các biến thể của logo cần phải được xem xét kĩ lưỡng. Ví dụ như khi thiết kế `favicon` (Favorite icon - icon ở thanh tab trước tên trang web trên trình duyệt), với kích thước 16x16 px ta chỉ có thể sử dụng một phần của logo để hiển thị - phải cực kì đơn giản hoá logo
 
 Với từng loại logo cũng sẽ có kích thước tối thiểu khác nhau (loại chữ, biểu tượng hoặc kết hợp cả hai). Ngoài ra kích thước tối thiểu đối với bố cục ngang, dọc cũng là khác nhau.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114261897-de557580-9a17-11eb-8159-855e111de7c6.jpg">
+
+> Dù logo xuất hiện ở đâu, nó chỉ phát huy hết tác dụng nếu người dùng nhìn rõ nó
+
+**Logo với khoảng cách an toàn**
+
+"Khoảng cách an toàn" hay "không gian trống" là khoảng không gian xung quanh logo mà ở đó các yếu tố chữ và hình ảnh không được phép xâm phạm để đảm bảo logo được nhận diện rõ ràng.
+
+Khoảng cách an toàn thường dựa vào:
+- Chiều cao, rộng của logo
+- Tính chất riêng của từng logo
+
+Khoảng cách an toàn không được quy định bởi một con số cụ thể vì nó phụ thuộc vào độ lớn của logo (tăng tính linh hoạt tương xứng với kích cỡ của logo)
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114262032-a69afd80-9a18-11eb-8764-0c326cb3b218.jpg">
