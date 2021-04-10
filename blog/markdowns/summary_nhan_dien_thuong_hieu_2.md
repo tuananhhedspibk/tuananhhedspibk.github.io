@@ -141,3 +141,46 @@ Khoảng cách an toàn thường dựa vào:
 Khoảng cách an toàn không được quy định bởi một con số cụ thể vì nó phụ thuộc vào độ lớn của logo (tăng tính linh hoạt tương xứng với kích cỡ của logo)
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/114262032-a69afd80-9a18-11eb-8764-0c326cb3b218.jpg">
+
+**Logo với tỉ lệ**
+
+Logo bị co kéo, bóp méo là chuyện không hiếm, nó sẽ khiến thương hiệu của bạn mất chuyên nghiệp trong con mắt của khách hàng.
+
+Các designer khi thiết kế logo đều dựa theo những quy tắc, tỉ lệ nhất định:
+- Tỉ lệ vàng
+- Số pi
+- Quy tắc 1/3
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114269109-e0332f00-9a3f-11eb-88e9-4e8e306b1c42.jpg">
+
+**Ứng dụng logo một cách đồng bộ**
+*Logo với bố cục*
+
+Thông thường logo được thiết kế để thích ứng với nhiều bố cục, trườngh hợp khác nhau.
+
+Trong những trường hợp như vậy hãy ứng dụng và sắp xếp thông tin sao cho đạt hiệu quả thẩm mỹ cao nhất.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114269113-e4f7e300-9a3f-11eb-87cc-0933be7ecd93.jpg">
+
+Trung tâm văn bản là vị trí mà logo hiếm khi xuất hiện vì nó sẽ tạo ra tranh chấp với các yếu tố xung quanh cũng như khiến bố cục trở nên lộn xộn.
+
+Với game, landing page, website thì vị trí của logo sẽ linh hoạt hơn tuỳ theo bố cục, bối cảnh
+
+*Logo với màu nền*
+
+Màu của logo trên thực tế không hề cố định, nó sẽ được thay đổi tuỳ theo màu nền cũng như quá trình in ấn.
+
+Logo thường phải tuỳ biến trên các màu nền:
+- Đơn sắc (monochrome)
+- Hình ảnh
+- Đa sắc
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114269368-a2cfa100-9a41-11eb-85f7-f030b5fd6875.jpg">
+
+Có thể sử dụng bộ màu phụ trợ để tạo cảm giác tuỳ biến, linh hoạt, sáng tạo cho thương hiệu. Nhưng cần sử dụng bộ màu phụ trợ cẩn thận vì nếu nó gồm quá nhiều màu sẽ khiến cho khách hàng không biết được đâu mới thực sự là thương hiệu của bạn.
+
+Với nền ảnh, một bức ảnh có quá nhiều chi tiết sẽ làm ảnh hưởng đến việc hiển thị logo. Cần chú ý đến:
+- Độ trong suốt (opacity)
+- Độ tương phản (contrast) của ảnh
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114269374-a95e1880-9a41-11eb-9cde-984da1a9f54a.jpg">
