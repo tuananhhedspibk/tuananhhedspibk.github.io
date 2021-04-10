@@ -119,3 +119,9 @@ Với logo bao gồm chữ + biểu tượng thì đến kích thước tối th
 Ví dụ với thương hiệu trà dưới đây, ở bao bì logo sẽ gồm cả biểu tượng và chữ, nhưng ở nhãn trà với kích thước nhỏ thì chỉ cần biểu tượng mang tính đặc trưng là đủ.
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/113503797-0a33af80-956f-11eb-92fc-5e922b490325.jpg">
+
+Để đảm bảo sự tiếp nhận về mặt thị giác, yếu tố khoảng cách cũng cần phải được tính đến. Ví dụ như trong thiết kế trình chiếu, có thể nội dung slide đã đảm bảo tính đầy đủ, cân đối, nhưng khi trình chiếu liệu bạn có chắc những người ở hàng ghế dưới có thể nhìn thấy rõ nội dung slide ?
+
+Khi áp dụng cho kích thước rất nhỏ (nhỏ hơn kích thước tối thiểu quy định của logo) thì việc sử dụng các biến thể của logo cần phải được xem xét kĩ lưỡng. Ví dụ như khi thiết kế `favicon` (Favorite icon - icon ở thanh tab trước tên trang web trên trình duyệt), với kích thước 16x16 px ta chỉ có thể sử dụng một phần của logo để hiển thị - phải cực kì đơn giản hoá logo
+
+Với từng loại logo cũng sẽ có kích thước tối thiểu khác nhau (loại chữ, biểu tượng hoặc kết hợp cả hai). Ngoài ra kích thước tối thiểu đối với bố cục ngang, dọc cũng là khác nhau.
