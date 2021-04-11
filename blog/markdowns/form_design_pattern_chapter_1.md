@@ -103,3 +103,26 @@ Vị trí của Label cũng như focus style là những thứ cần được xe
 ### LABEL POSITION
 
 Việc đặt label ngay bên cạnh component sẽ thuận cho việc đánh mắt của user hơn. Tuy nhiên với không gian hẹp hơn thì nên đặt ở phía trên component.
+
+Nếu nội dung của label quá dài thì việc đặt label ngay cạnh component (control) không hẳn là một ý hay. Hãy cô đọng nội dung của label tối đa, nếu vẫn thấy dài thì việc đặt label phía trên control là một giải pháp tốt.
+
+### LOOK, SIZE, AND SPACE
+
+> Form fields should look like form fields
+
+Câu nói phía trên có nghĩa như thế nào ? Một cách đơn giản, text input nên để trống để người dùng biết nó cần được điền vào (giống như những cuốn sách dạy trẻ tập tô màu), vì thể placeholder lúc này không cần thiết.
+
+Điều này đồng nghĩa với việc "không gian trống" cần được bo viền (thêm border) để người dùng nhận biết đây là text input, nếu bỏ đi bo viền hoặc chỉ bo viền ở bottom có thể khiến người dùng hiểu nhầm đây là separator, dữ liệu người dùng nhập vào sẽ đi lên trên hay xuống dưới separator đó ?
+
+> Things that appear close together suggest they belong together
+
+Label nên ở gần form control mà nó kết nối, việc để khoảng cách cân bằng giữa các `form-group` có thể tăng tính thẩm mỹ nhưng lại khiến người dùng bối rối.
+
+Label và text box nên đủ lớn để dễ đọc và dễ dùng. Nên label nên có kích thước nhỏ nhất là 16px, text box nên có kích cỡ nhỏ nhất là 44px (các "tap target" nói chung).
+
+### FOCUS STYLES
+
+Browser cũng mặc định thêm style cho component khi chúng được focus, tuy nhiên những style này quá mờ nhạt, khó thấy.
+
+Không nên vì thế mà loại bỏ đi `focus style`, trái lại việc loại bỏ này có thể khiến trải nghiệm người dùng bị ảnh hưởng nghiêm trọng. Hãy ghi đè `focus style` mặc định của trình duyệt để khiến nó rõ ràng hơn.
+
