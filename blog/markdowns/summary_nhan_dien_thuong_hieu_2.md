@@ -202,3 +202,53 @@ Chỉ nên thay đổi logo vào những tình huống cụ thể như:
 
 **Màu sắc - trợ thủ đắc lực của thương hiệu**
 
+> Màu sắc có thể tác động mạnh mẽ lên hành vi mua hàng của khách hàng hơn cả tâm lí
+
+Trong thực tế có đến **90%** người dùng sẽ mua hàng dựa trên màu sắc sau **90s** quan sát. Có **84.7%** người dùng cho biết màu sắc là yếu tố đầu tiên khiến họ mua sản phẩm.
+
+**80%** người cho rằng màu sắc ảnh hưởng đến nhận diện thương hiệu
+
+**Cá tính của màu - Dấu ấn thương hiệu**
+
+Màu của thương hiệu có thể gồm: một, hai hoặc một dải màu. Mỗi màu truyền tải một cảm xúc khác nhau.
+
+> Việc thay đổi sắc độ màu cũng có thể khiến người ta nghĩ về một thông điệp hoàn toàn khác.
+
+Theo thống kê, trong số các thương hiệu hàng đầu thế giới, tỉ lệ thương hiệu sử dụng màu nhận diện là màu xanh dương (33%), màu đỏ (29%).
+
+Có đến **95%* thương hiệu chỉ sử dụng một đến hai màu làm màu nhận diện.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114303966-a2034180-9b0b-11eb-8f69-1916b572afc6.jpg">
+
+Người làm thương hiệu luôn phải tìm ra một màu nhận diện để có thể truyền tải đến người dùng cảm xúc mà họ muốn thương hiệu mang lại.
+
+Lấy ví dụ:
+- Các thương hiệu đồ ăn nhanh thường dùng "màu đỏ" và "màu vàng" (màu sắc nóng) để tạo sự kích thích.
+- Google không có một màu nhận diện đặc trưng mà kết hợp 4 màu. Qua đó tạo nên sự hài hước, năng động, đặc biệt là màu không có thứ tự cho thấy Google không theo một nguyên tắc nào cả.
+
+Nhiều khi việc lựa chọn màu nhận diện hoàn toàn do người sáng lập thương hiệu.
+
+Cá tính của màu được tạo nên qua thời gian, qua cảm xúc chung của con người. Nó có thể khác đi với mỗi người.
+
+Bạn có thể đi ngược lại xu thế chung, ví dụ như:
+- Không sử dụng tone xanh để nhận diện cho thương hiệu về nông nghiệp sạch, nước tinh khiết.
+- Không sử dụng màu hồng để nói về sự dịu dàng của phụ nữ
+
+Không sao cả, tuy nhiên sẽ mất nhiều thời gian hơn để thuyết phục thị trường về thứ mà bạn muốn họ cảm nhận về mình.
+
+**Kiến thức quản trị màu sắc**
+
+Nếu chỉ có một, hai màu nhận diện thì sẽ rất khó để tạo nên tính hấp dẫn cho thương hiệu. Vậy nên ta cần có màu chính cũng như các màu bổ trợ
+
+Màu bổ trợ là tập các màu được dùng cùng màu chính để thiết kế được linh hoạt nhưng vẫn đảm bảo yếu tố phân cấp, chính phụ.
+
+> Màu chính luôn phải được nổi bật nhất và được dùng cho các phần tông tin quan trọng
+
+Tuỳ từng doanh nghiệp, sẽ có cách áp dụng màu chính cũng như màu phụ trợ cho các sản phẩm truyền thông của mình như: bao bì, tài liệu văn phòng.
+
+Ví dụ như thương hiệu đồ ăn nhanh Momol, lấu "màu đỏ" và "màu vàng" làm màu nhận diện chính, nhưng màu phụ trợ cũng được sử dụng đồng nhất:
+- Màu xanh lá cây cho sản phẩm tươi, nhấn mạnh vào tính "fresh"
+- Màu xanh dương cho những đồ uống lạnh.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/114303968-a3cd0500-9b0b-11eb-8b70-bfde8d593e98.jpg">
+
