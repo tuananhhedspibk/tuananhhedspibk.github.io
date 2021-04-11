@@ -184,3 +184,21 @@ Với nền ảnh, một bức ảnh có quá nhiều chi tiết sẽ làm ảnh
 - Độ tương phản (contrast) của ảnh
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/114269374-a95e1880-9a41-11eb-9cde-984da1a9f54a.jpg">
+
+**Ra quyết định hợp thời cho logo**
+
+Nếu sau một khoảng thời gian nhất định, logo không còn truyền tải một cách chính xác ý niệm của thương hiệu thì việc "thay áo mới" cho logo là rất cần thiết.
+
+Việc thay đổi logo cần có chiến lước cẩn thận để người dùng có thể dễ dàng tiếp nhận ý niệm mới của thương hiệu cũng như dề dàng quen với "tấm áo mới" của thương hiệu.
+
+Chỉ nên thay đổi logo vào những tình huống cụ thể như:
+- **Logo đã lỗi thời** (lỗi thời là khi màu sắc, thiết kế của logo đã bị tụt hậu so với xu thế hiện tại), tuy nhiên sự cổ điển có thể giúp bạn truyền tải về tính bền vững qua thời gian của thương hiệu
+- **Khi các dòng sản phẩm đã được mở rộng**: thay đổi logo khi tên công ty, sản phẩm thay đổi.
+- **Thể hiện sự hợp nhất hoặc phối hợp**: khi hợp nhất 2 công ty lại.
+
+**NHỮNG GAM MÀU THƯƠNG HIỆU**
+
+> Màu sắc góp phần tăng nhận diện thương hiệu lên đến 80%
+
+**Màu sắc - trợ thủ đắc lực của thương hiệu**
+
