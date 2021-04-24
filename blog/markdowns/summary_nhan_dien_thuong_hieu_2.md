@@ -252,3 +252,31 @@ Ví dụ như thương hiệu đồ ăn nhanh Momol, lấu "màu đỏ" và "mà
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/114303968-a3cd0500-9b0b-11eb-8b70-bfde8d593e98.jpg">
 
+Cũng có những quy định chặt chẽ liên quan đến màu chính và màu phụ:
+- Màu nào dùng cho chữ, màu nào dùng cho nền
+- Bộ màu nào dùng cho ấn phẩm truyền thông, bộ màu nào dùng cho thương hiệu, doanh nghiệp
+
+**Hệ màu**
+
+Gồm 2 hệ màu chính:
+- CMYK: dùng cho in ấn
+- RGB: dùng cho hiển thị trên màn hình
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/115959854-3d070d00-a549-11eb-8870-639951715b18.jpg">
+
+**Tỉ lệ màu**
+
+Là tỉ lệ tương quan giữa màu chính và các màu đi kèm
+
+> Để một màu là màu nhấn, nó cần xuất hiện trên một màu nền có độ tương phản cao với màu nhận diện
+
+Khi đó dù tỉ lệ màu nhấn không lớn, nó vẫn có thể thu hút sự chú ý của khách hàng.
+
+Tỉ lệ màu trong bố cục có thể chia làm 3 loại:
+- Màu chủ đạo: thường là màu chiếm diện tích nhiều nhất, nổi trội nhất (60%)
+- Màu cấp hai: khoảng 30%
+- Màu nhấn mạnh: thường là màu có tính tương phản, đối kháng cao so với màu chủ đạo để tạo sự "cân đối", "hài hoà". Ví dụ: gam màu nóng lạnh, quang độ ... Tuy nhiên cần tế nhị, hài hoà không nên lộ liễu khi sử dụng màu nhấn
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/115959942-b7379180-a549-11eb-9327-0d79b2955606.jpg">
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/115960091-480e6d00-a54a-11eb-92d0-c4a95f40037b.jpg">
