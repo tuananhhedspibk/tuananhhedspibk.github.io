@@ -280,3 +280,44 @@ Tỉ lệ màu trong bố cục có thể chia làm 3 loại:
 <img width="720" src="https://user-images.githubusercontent.com/15076665/115959942-b7379180-a549-11eb-9327-0d79b2955606.jpg">
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/115960091-480e6d00-a54a-11eb-92d0-c4a95f40037b.jpg">
+
+**Quản trị màu sắc nhận diện**
+
+> Màu sắc cũng là yếu tố bổ trợ cho thương hiệu trong quá trình ghi dấu nhận diện
+
+Màu sắc chỉ tạo được sự gợi nhắc về thương hiệu khi và chỉ khi nó tạo được sự liên kết với tâm trí người dùng. Liên kết có được là kết quả của một quá trình liên tục xuất hiện, lặp đi lặp lại một cách nhất quán.
+
+> Tính lặp đi lặp lại giúp khắc ghi một ấn tượng nào đó, giúp người xem dễ dàng hình dung hơn về thông điệp
+
+Có thể ở những lần đầu tiên khách hàng chưa thể ghi nhớ được thương hiệu của bạn, nhưng việc lặp đi lặp lại có chủ đích này sẽ giúp thương hiệu của bạn theo màu sắc bước vào tâm trí người dùng một cách vô thức.
+
+**Đảm bảo sự chính xác của thông số màu**
+
+Trong thực tế sai số màu sắc luôn luôn xuất hiện, nguyên nhân là do đâu ?
+
+1. Cảm nhận thị giác của mắt người là khác nhau cũng như khả năng hiển thị màu sắc của máy tính là khác nhau ở loại máy, ...
+2. Do quá trình in, có thể dẫn đến sản phẩm đầu ra có màu lệch hoàn toàn so với thiết kế.
+
+Dưới đây là ví dụ về việc áp dụng hai hệ màu CMYK và RGB trên cùng một sản phẩm
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/115986948-d0921980-a5ed-11eb-921a-4c6bf47365de.jpg">
+
+**Quản trị vấn đề thường gặp đối với màu sắc**
+
+1. Tranh chấp màu sắc với đối thủ cạnh tranh
+
+Việc hai thương hiệu có chung màu nhận diện là rất dễ xảy ra. Ta lấy ví dụ ở các hãng `đồ ăn nhanh`, họ thường sử dụng `tone màu nóng`, `đỏ`. Mục đích chính là để tạo cảm giác thèm ăn, kích thích vị giác. Hay các thương hiệu `nước tinh khiết` thường có tone `màu trắng` hoặc `xanh`.
+
+Có thể cân nhắc việc điều chỉnh thông số màu để tạo ra một màu riêng cho thuơng hiệu của bạn mà không tạo ra quá nhiều sự thay đổi về nhận diện.
+
+Như ví dụ dưới đây với 2 doanh nghiệp `DOO Entertainment` và `Defi-media`
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/115987229-21564200-a5ef-11eb-99ca-f8ecbbb3b6a3.jpg">
+
+Một giải pháp khác ở đây là sử dụng các màu thứ cấp khác với đối thủ để không bị hoà lẫn với đối thủ.
+
+> Việc phối hợp với các màu sắc khác sẽ tạo nên cảm nhận khác so với màu nguyên bản
+
+2. Màu sắc thích ứng với bối cảnh
+
+Luôn xem xét bối cảnh để tìm được màu nhận diện cho phù hợp.
