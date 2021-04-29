@@ -60,7 +60,7 @@ inquirer.prompt(questions).then(answers => {
             <meta name="author" content="">
 
             <title>${title}</title>
-            <link rel="icon" type="img/png" href="https://tuananhhedspibk.github.io/blog/img/icon.png">
+            <link rel="icon" type="img/png" href="https://tuananhhedspibk.github.io/blog/img/vn-icon.png">
 
             <!-- Bootstrap core CSS -->
             <link href="https://tuananhhedspibk.github.io/blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
