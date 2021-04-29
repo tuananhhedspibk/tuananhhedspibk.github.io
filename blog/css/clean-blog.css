@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Clean Blog v5.0.7 (https://startbootstrap.com/template-overviews/clean-blog)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
 
@@ -469,6 +469,12 @@ footer .copyright {
 #older_posts_display_btn {
   color: #fff;
   cursor: pointer;
+}
+
+#quote-content {
+  color: #015171;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 .tags a {
