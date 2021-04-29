@@ -321,3 +321,23 @@ Một giải pháp khác ở đây là sử dụng các màu thứ cấp khác v
 2. Màu sắc thích ứng với bối cảnh
 
 Luôn xem xét bối cảnh để tìm được màu nhận diện cho phù hợp.
+
+Liên tục thẩm định và lắng nghe từ thị trường là một công việc vô cùng cần thiết:
+- Khách hàng có đang cảm nhận đúng về thông điệp trong màu sắc mà bạn đã chọn hay không ?
+- Khả năng nhận diện màu sắc của họ là bao nhiêu ?
+- Tín hiệu tích cực mà màu sắc mang lại
+
+3. Màu sắc và lăng kính văn hoá
+
+Tìm hiểu kĩ về văn hoá của từng vùng miền để sử dụng màu sắc cho phù hợp với vùng miền đó.
+
+> Điều quan trọng ở đây không phải là truyền đạt cho một người cái gì, mà là liệu người ta có chấp nhận thứ mình chia sẻ hay không
+
+Xét màu đỏ làm ví dụ. Nghiên cứu cho thấy khi nhìn thấy màu đỏ, con người ta sẽ cảm thấy phấn khích, năng nổ.
+Đó là lí do tại sao các quán ăn nhanh như KFC hay McDonald thường sử dụng màu đỏ, NHƯNG trong văn hoá Ấn Độ thì màu đỏ tượng trưng cho quyền lực còn ở Nam Phi màu đỏ sẽ gợi nên sự chết chóc.
+
+Vậy nên phải nghiên cứu văn hoá vùng miền thật kĩ, để ứng xử cho phù hợp, tránh những "tác dụng phụ" không đáng có
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116527106-48758200-a915-11eb-9238-d07c30069388.jpg">
+
+**SỰ XUẤT HIỆN CỦA YẾU TỐ ĐỒ HOẠ**
