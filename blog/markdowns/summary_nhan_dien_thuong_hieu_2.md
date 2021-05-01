@@ -135,6 +135,7 @@ Với từng loại logo cũng sẽ có kích thước tối thiểu khác nhau 
 "Khoảng cách an toàn" hay "không gian trống" là khoảng không gian xung quanh logo mà ở đó các yếu tố chữ và hình ảnh không được phép xâm phạm để đảm bảo logo được nhận diện rõ ràng.
 
 Khoảng cách an toàn thường dựa vào:
+
 - Chiều cao, rộng của logo
 - Tính chất riêng của từng logo
 
@@ -147,6 +148,7 @@ Khoảng cách an toàn không được quy định bởi một con số cụ th
 Logo bị co kéo, bóp méo là chuyện không hiếm, nó sẽ khiến thương hiệu của bạn mất chuyên nghiệp trong con mắt của khách hàng.
 
 Các designer khi thiết kế logo đều dựa theo những quy tắc, tỉ lệ nhất định:
+
 - Tỉ lệ vàng
 - Số pi
 - Quy tắc 1/3
@@ -154,7 +156,7 @@ Các designer khi thiết kế logo đều dựa theo những quy tắc, tỉ l�
 <img width="720" src="https://user-images.githubusercontent.com/15076665/114269109-e0332f00-9a3f-11eb-88e9-4e8e306b1c42.jpg">
 
 **Ứng dụng logo một cách đồng bộ**
-*Logo với bố cục*
+_Logo với bố cục_
 
 Thông thường logo được thiết kế để thích ứng với nhiều bố cục, trườngh hợp khác nhau.
 
@@ -166,11 +168,12 @@ Trung tâm văn bản là vị trí mà logo hiếm khi xuất hiện vì nó s�
 
 Với game, landing page, website thì vị trí của logo sẽ linh hoạt hơn tuỳ theo bố cục, bối cảnh
 
-*Logo với màu nền*
+_Logo với màu nền_
 
 Màu của logo trên thực tế không hề cố định, nó sẽ được thay đổi tuỳ theo màu nền cũng như quá trình in ấn.
 
 Logo thường phải tuỳ biến trên các màu nền:
+
 - Đơn sắc (monochrome)
 - Hình ảnh
 - Đa sắc
@@ -180,6 +183,7 @@ Logo thường phải tuỳ biến trên các màu nền:
 Có thể sử dụng bộ màu phụ trợ để tạo cảm giác tuỳ biến, linh hoạt, sáng tạo cho thương hiệu. Nhưng cần sử dụng bộ màu phụ trợ cẩn thận vì nếu nó gồm quá nhiều màu sẽ khiến cho khách hàng không biết được đâu mới thực sự là thương hiệu của bạn.
 
 Với nền ảnh, một bức ảnh có quá nhiều chi tiết sẽ làm ảnh hưởng đến việc hiển thị logo. Cần chú ý đến:
+
 - Độ trong suốt (opacity)
 - Độ tương phản (contrast) của ảnh
 
@@ -192,6 +196,7 @@ Nếu sau một khoảng thời gian nhất định, logo không còn truyền t
 Việc thay đổi logo cần có chiến lước cẩn thận để người dùng có thể dễ dàng tiếp nhận ý niệm mới của thương hiệu cũng như dề dàng quen với "tấm áo mới" của thương hiệu.
 
 Chỉ nên thay đổi logo vào những tình huống cụ thể như:
+
 - **Logo đã lỗi thời** (lỗi thời là khi màu sắc, thiết kế của logo đã bị tụt hậu so với xu thế hiện tại), tuy nhiên sự cổ điển có thể giúp bạn truyền tải về tính bền vững qua thời gian của thương hiệu
 - **Khi các dòng sản phẩm đã được mở rộng**: thay đổi logo khi tên công ty, sản phẩm thay đổi.
 - **Thể hiện sự hợp nhất hoặc phối hợp**: khi hợp nhất 2 công ty lại.
@@ -216,13 +221,14 @@ Màu của thương hiệu có thể gồm: một, hai hoặc một dải màu. 
 
 Theo thống kê, trong số các thương hiệu hàng đầu thế giới, tỉ lệ thương hiệu sử dụng màu nhận diện là màu xanh dương (33%), màu đỏ (29%).
 
-Có đến **95%* thương hiệu chỉ sử dụng một đến hai màu làm màu nhận diện.
+Có đến \*_95%_ thương hiệu chỉ sử dụng một đến hai màu làm màu nhận diện.
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/114303966-a2034180-9b0b-11eb-8f69-1916b572afc6.jpg">
 
 Người làm thương hiệu luôn phải tìm ra một màu nhận diện để có thể truyền tải đến người dùng cảm xúc mà họ muốn thương hiệu mang lại.
 
 Lấy ví dụ:
+
 - Các thương hiệu đồ ăn nhanh thường dùng "màu đỏ" và "màu vàng" (màu sắc nóng) để tạo sự kích thích.
 - Google không có một màu nhận diện đặc trưng mà kết hợp 4 màu. Qua đó tạo nên sự hài hước, năng động, đặc biệt là màu không có thứ tự cho thấy Google không theo một nguyên tắc nào cả.
 
@@ -231,6 +237,7 @@ Nhiều khi việc lựa chọn màu nhận diện hoàn toàn do người sáng
 Cá tính của màu được tạo nên qua thời gian, qua cảm xúc chung của con người. Nó có thể khác đi với mỗi người.
 
 Bạn có thể đi ngược lại xu thế chung, ví dụ như:
+
 - Không sử dụng tone xanh để nhận diện cho thương hiệu về nông nghiệp sạch, nước tinh khiết.
 - Không sử dụng màu hồng để nói về sự dịu dàng của phụ nữ
 
@@ -247,18 +254,21 @@ Màu bổ trợ là tập các màu được dùng cùng màu chính để thi�
 Tuỳ từng doanh nghiệp, sẽ có cách áp dụng màu chính cũng như màu phụ trợ cho các sản phẩm truyền thông của mình như: bao bì, tài liệu văn phòng.
 
 Ví dụ như thương hiệu đồ ăn nhanh Momol, lấu "màu đỏ" và "màu vàng" làm màu nhận diện chính, nhưng màu phụ trợ cũng được sử dụng đồng nhất:
+
 - Màu xanh lá cây cho sản phẩm tươi, nhấn mạnh vào tính "fresh"
 - Màu xanh dương cho những đồ uống lạnh.
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/114303968-a3cd0500-9b0b-11eb-8b70-bfde8d593e98.jpg">
 
 Cũng có những quy định chặt chẽ liên quan đến màu chính và màu phụ:
+
 - Màu nào dùng cho chữ, màu nào dùng cho nền
 - Bộ màu nào dùng cho ấn phẩm truyền thông, bộ màu nào dùng cho thương hiệu, doanh nghiệp
 
 **Hệ màu**
 
 Gồm 2 hệ màu chính:
+
 - CMYK: dùng cho in ấn
 - RGB: dùng cho hiển thị trên màn hình
 
@@ -273,6 +283,7 @@ Là tỉ lệ tương quan giữa màu chính và các màu đi kèm
 Khi đó dù tỉ lệ màu nhấn không lớn, nó vẫn có thể thu hút sự chú ý của khách hàng.
 
 Tỉ lệ màu trong bố cục có thể chia làm 3 loại:
+
 - Màu chủ đạo: thường là màu chiếm diện tích nhiều nhất, nổi trội nhất (60%)
 - Màu cấp hai: khoảng 30%
 - Màu nhấn mạnh: thường là màu có tính tương phản, đối kháng cao so với màu chủ đạo để tạo sự "cân đối", "hài hoà". Ví dụ: gam màu nóng lạnh, quang độ ... Tuy nhiên cần tế nhị, hài hoà không nên lộ liễu khi sử dụng màu nhấn
@@ -323,6 +334,7 @@ Một giải pháp khác ở đây là sử dụng các màu thứ cấp khác v
 Luôn xem xét bối cảnh để tìm được màu nhận diện cho phù hợp.
 
 Liên tục thẩm định và lắng nghe từ thị trường là một công việc vô cùng cần thiết:
+
 - Khách hàng có đang cảm nhận đúng về thông điệp trong màu sắc mà bạn đã chọn hay không ?
 - Khả năng nhận diện màu sắc của họ là bao nhiêu ?
 - Tín hiệu tích cực mà màu sắc mang lại
@@ -341,3 +353,90 @@ Vậy nên phải nghiên cứu văn hoá vùng miền thật kĩ, để ứng x
 <img width="720" src="https://user-images.githubusercontent.com/15076665/116527106-48758200-a915-11eb-9238-d07c30069388.jpg">
 
 **SỰ XUẤT HIỆN CỦA YẾU TỐ ĐỒ HOẠ**
+
+Những mảng hoạ tiết phát triển từ logo đã kéo các sản phẩm của thuơng hiệu dưới đây về cùng một hướng, đồng bộ.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116770717-9eb30400-aa80-11eb-84d5-11ff482caf57.jpg">
+
+**Các yếu tố đồ hoạ nhận diện**
+
+Hoạ tiết có thể là: đường nét, chấm điểm, khối hình cơ bản. Những yếu tố này có thể được:
+
+- Cắt từ một phần của logo
+- Phát triển dựa trên sự tương đồng với logo.
+
+Xét ví dụ sau:
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116776769-4b9f7800-aaa5-11eb-853a-2fbd6314c3f5.jpg">
+
+Thương hiệu "Bobbuy" có logo sử dụng dạng font chữ biểu tượng nét đứt, thương hiệu này cũng thêm "line nét đứt" như hoạ tiết trang trí.
+
+Line này có 2 tác dụng:
+
+- Phân vùng nội dung
+- Tạo nên điểm nhất gây ấn tượng cho thương hiệu
+
+Việc sử dụng lâu dài, nhất quán yếu tố hoạ tiết này cũng mang đến điểm nhận diện cho thương hiệu Bobbuy.
+
+Bên cạnh đường nét như trên, dạng hoạ tiết lặp lại tạo thành pattern cũng có khả năng đem lại tính nhận diện mạnh mẽ.
+Pattern có 2 đặc tính như sau:
+
+- Gây ấn tượng mạnh
+- Gây chú ý
+
+Nên pattern có thể sử dụng làm:
+
+- Điểm nhấn
+- Làm nền cho sản phẩm thiết kế
+
+Như ví dụ dưới đây, pattern được tạo nên từ logo qua đó tạo điểm nhấn cho bao bì.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116776924-37a84600-aaa6-11eb-80c0-8f128f793b74.jpg">
+
+> Sức mạnh của hoạ tiết đến từ tính linh hoạt
+
+Hoạ tiết có thể xuất hiện ở: bao bì, giấy gói quà, danh thiếp, ...
+
+Tuy nhiên điều cần lưu tâm ở đây đó là sự `đồng nhất` của hoạ tiết đối với các yếu tố nhận diện thương hiệu khác.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116777009-daf95b00-aaa6-11eb-8894-df18b2e91eeb.jpg">
+
+Bộ nhận diện văn phòng gần như là một điều **bắt buộc** đối với doanh nghiệp. Vì nó mang tính chất:
+
+- Đại diện cho doanh nghiệp
+- Thể hiện sự chuyên nghiệp của doanh nghiệp
+
+Việc sử dụng hình ảnh với các bộ nhận diện văn phòng thường khá rườm rà, phức tạp. Vậy nên việc sử dụng hoạ tiết sẽ tạo cảm giác trang nhã, thanh lịch, đơn giản.
+
+Ví dụ như thương hiệu "Syncho" dưới đây, hoạ tiết "line" với điểm nhấn ở hai đầu (tương đồng với logo)
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116777132-bc479400-aaa7-11eb-8f32-b48befc2f88d.jpg">
+
+**Quản trị hoạ tiết nhận diện**
+
+Cần đặt ra hai câu hỏi khi quản trị các yếu tố đồ hoạ nhận diện của thương hiệu:
+
+- Hoạ tiết đó đã đồng bộ với các yếu tố nhận diện khác hay chưa ?
+- Hoạ tiết đó có làm cản trở việc tiếp nhận thông tin ?
+
+Hoạ tiết cần phù hợp với phong cách của sản phẩm cũng như phong cách của doanh nghiệp, không những thế hoạ tiết cần phải phù hợp với màu sắc, đường nét cũng như các yếu tố xung quanh của sản phẩm truyền thông.
+
+Có thể sử dụng kết hợp các template có sẵn cùng các yếu tố khác như chữ, logo nhằm tạo tính dễ áp dụng do không phải lúc nào doanh nghiệp cũng có thể đầu tư thời gian, kinh phí cho một thiết kế ấn tượng.
+
+Tuy nhiên với các template (bố cục có sẵn) này, ta chỉ nên sử dụng với các văn bản mang tính chất truyền tải thông tin chính thống thay vì sản phẩm truyền thông cần sự "sáng tạo", "đột phá".
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116777890-bb176680-aaa9-11eb-9de5-389fe1502d9f.jpg">
+
+Thương hiệu Inovabank ở trên sử dụng bố cục cố định cùng hoạ tiết dưới chân xuyên suốt mọi sản phẩm truyền thông của họ, qua đó tạo nên một template riêng biệt cho thương hiệu.
+
+Việc lạm dụng hoạ tiết có thể dẫn tới việc làm mất tập trung trong quá trình tiếp nhận thông tin.
+
+Hoạ tiết có thể tạo nên điều hướng cho trang, tuy nhiên nếu:
+- Đặt hoạ tiết nhầm chỗ
+- Đặt ở những vị trí không hợp lí
+
+Sẽ khiến các phần thông tin trở nên lộn xộn, khó đọc, gây nhiễu thông tin cho người dùng.
+
+> Nếu mong muốn mọi thứ nổi bật thì sẽ chẳng có gì nổi bật cả
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/116778262-cec3cc80-aaab-11eb-8e79-93c040f586cd.jpg">
