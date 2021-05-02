@@ -556,9 +556,9 @@ footer .copyright {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
+  font-size: 1em;
+  width: 700px;
+  height: 400px;
   perspective: 1000px;
 }
 
@@ -590,7 +590,6 @@ footer .copyright {
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
 }
