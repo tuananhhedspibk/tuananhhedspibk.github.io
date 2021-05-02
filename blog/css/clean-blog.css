@@ -595,3 +595,12 @@ footer .copyright {
   color: #015171;
   transform: rotateY(180deg);
 }
+
+.proverb-ref-label {
+  display: inline-block;
+}
+
+.proverb-ref-link {
+  color: #015171;
+  text-decoration: underline;
+}
