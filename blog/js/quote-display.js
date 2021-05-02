@@ -1,11 +1,11 @@
 function setHTMLContentOfENQuote(data) {
-  document.getElementById('quote-content').innerText = data['content'];
-  document.getElementById('quote-mean').innerText = data['mean'];
-  document.getElementById('quote-example').innerText = data['link'];
+  document.getElementById('content').innerText = data['content'];
+  document.getElementById('mean').innerText = data['mean'];
+  document.getElementById('example').innerText = data['link'];
 }
 
 function setHTMLContentOfJPQuote(data) {
-  document.getElementById('quote-content').innerText = data['content'];
+  document.getElementById('content').innerText = data['content'];
 }
 
 function displayQuoteOf(quoteType) {
