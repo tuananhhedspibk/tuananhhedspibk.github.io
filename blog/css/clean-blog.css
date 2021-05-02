@@ -555,8 +555,6 @@ footer .copyright {
 }
 
 .flip-card {
-  box-shadow: 2px 2px 4px 3px #dcdcdc;
-  border-radius: 5px;
   font-size: 2em;
   width: 700px;
   height: 400px;
@@ -587,11 +585,13 @@ footer .copyright {
 }
 
 .flip-card-front {
+  box-shadow: 2px 2px 4px 3px #dcdcdc;
   color: black;
 }
 
 .flip-card-back {
   border: solid 1px #c3c3c3;
+  border-radius: 5px;
   color: #015171;
   transform: rotateY(180deg);
 }
