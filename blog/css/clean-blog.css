@@ -590,8 +590,7 @@ footer .copyright {
 }
 
 .flip-card-back {
-  border: solid 1px #c3c3c3;
-  border-radius: 5px;
+  box-shadow: 2px 2px 4px 3px #dcdcdc;
   color: #015171;
   transform: rotateY(180deg);
 }

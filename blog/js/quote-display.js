@@ -1,7 +1,7 @@
 function setHTMLContentOfENQuote(data) {
   document.getElementById('content').innerText = data['content'];
   document.getElementById('mean').innerText = data['mean'];
-  document.getElementById('example').innerText = data['link'];
+  document.getElementById('example').innerText = data['example'];
 }
 
 function setHTMLContentOfJPQuote(data) {
