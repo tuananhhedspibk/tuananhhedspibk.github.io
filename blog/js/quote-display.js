@@ -46,7 +46,7 @@ function displayQuoteOf(quoteType) {
         switch (quoteType) {
           case 'PROVERB': {
             randomIndex = Math.floor(Math.random() * data['proverbs'].length);
-            setHTMLContentOfENQuote(data['proverbs'][randomIndex]);
+            setHTMLContentOfProverb(data['proverbs'][randomIndex]);
             break;
           }
           case 'EN': {
