@@ -1,10 +1,14 @@
 function setHTMLContentOfENQuote(data) {
+  console.log(data);
+
   document.getElementById('quote-content').innerText = data['content'];
   document.getElementById('quote-mean').innerText = data['mean'];
   document.getElementById('quote-link').innerText = data['link'];
 }
 
 function setHTMLContentOfJPQuote(data) {
+  console.log(data);
+
   document.getElementById('quote-content').innerText = data['content'];
 }
 
@@ -22,6 +26,8 @@ function displayQuoteOf(quoteType) {
       break;
     }
   }
+
+  console.log(fileURL)
 
   let rawFile = new XMLHttpRequest();
   rawFile.open('GET', fileURL, false);
