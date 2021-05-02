@@ -1,0 +1,29 @@
+{
+  "quotes": [
+    {
+      "content": "Fake it til make it",
+      "mean": "",
+      "example": ""
+    },
+    {
+      "content": "Know something like the back of my hand",
+      "mean": "Know something very details",
+      "example": "I know you like the back of my hand"
+    },
+    {
+      "content": "A full plate",
+      "mean": "Very busy",
+      "example": ""
+    },
+    {
+      "content": "Know something inside out",
+      "mean": "Know something very details",
+      "example": "You should know a person inside out before deciding marry them"
+    },
+    {
+      "content": "At the drop of a haty",
+      "mean": "Something happens suddenly",
+      "example": "My friend is so good, if I need help he would be here at the drop of a hat"
+    }
+  ]
+}
