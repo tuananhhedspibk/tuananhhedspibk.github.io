@@ -11,7 +11,7 @@ function setHTMLContentOfJPQuote(data) {
 function setHTMLContentOfProverb(data) {
   document.getElementById('content').innerHTML = data['content'];
   document.getElementById('mean').innerHTML = data['mean'];
-  document.getElementById('link').innerHTML = `<a href="${data['link']}">Link</a>`;
+  document.getElementById('proverb-link').innerHTML = `<a href="${data['link']}">Link</a>`;
 }
 
 function displayQuoteOf(quoteType) {
