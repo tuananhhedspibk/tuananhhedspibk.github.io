@@ -5,7 +5,7 @@ function setHTMLContentOfENQuote(data) {
 }
 
 function setHTMLContentOfJPQuote(data) {
-  document.getElementById('content').innerText = data['content'];
+  document.getElementById('quote-content').innerText = data['content'];
 }
 
 function displayQuoteOf(quoteType) {
