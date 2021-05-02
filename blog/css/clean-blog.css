@@ -556,7 +556,7 @@ footer .copyright {
 
 .flip-card {
   background-color: transparent;
-  font-size: 1em;
+  font-size: .8em;
   width: 700px;
   height: 400px;
   perspective: 1000px;
@@ -590,6 +590,7 @@ footer .copyright {
 }
 
 .flip-card-back {
-  color: white;
+  border: solid 1px #015171;
+  color: #015171;
   transform: rotateY(180deg);
 }
