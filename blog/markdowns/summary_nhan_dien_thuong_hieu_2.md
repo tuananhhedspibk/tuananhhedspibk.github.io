@@ -440,3 +440,118 @@ Sẽ khiến các phần thông tin trở nên lộn xộn, khó đọc, gây nh
 > Nếu mong muốn mọi thứ nổi bật thì sẽ chẳng có gì nổi bật cả
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/116778262-cec3cc80-aaab-11eb-8e79-93c040f586cd.jpg">
+
+Cần chú ý những yếu tố sau khi thẩm định hoạ tiết
+1. Vị trí, kích thước, tần suất xuất hiện của hoạ tiết phải đúng quy chuẩn
+2. Đảm bảo hoạ tiết không lấn át các yếu tố chính của thiết kế tổng thể
+
+**HÃY ĐỂ HÌNH ẢNH KỂ CHUYỆN**
+
+> Hình ảnh là cacnhs tay phải giúp thương hiệu kể những câu chuyện của mình
+
+Tuỳ theo chiến dịch mà yếu tố hình ảnh sẽ được tuỳ biến:
+- Ấm cúng sum vầy trong dịp tết
+- Hào hứng vui tươi trong dịp khuyến mại
+
+**Hình ảnh và thương hiệu**
+
+Thông thường, thương hiệu sử dụng hai loại hình ảnh chính cho mọi hoạt động của mình:
+- Ảnh chụp (Photography)
+- Ảnh minh hoạ (Illustration)
+
+Sử dụng hình ảnh minh hoạ là cách giúp các mẩu quảng cáo, tiếp thị của thương hiệu trở nên nổi bật, khác biệt, thu hút.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117105943-f96a9980-adb9-11eb-99d5-ed2adc2186de.jpg">
+
+Nó có thể được sử dụng cho:
+- Nội dung ngắn
+- Nội dung tường thuật
+
+Hình ảnh minh hoạ có những đặc điểm sau đây:
+- Đường nét đơn giản
+- Mảng đơn giản
+
+Hình ảnh minh hoạ có thể được sử dụng trong logo, chữ, đồ hoạ.
+
+Các thương hiệu về nền tảng công nghệ như: Facebook, Twitter, Skype, Dropbox thường sử dụng hình ảnh minh hoạ và màu nhận diện nhiều hơn so với ảnh chụp.
+
+Các hình ảnh minh hoạ sẽ tạo cảm giác gần gũi với người xem => Đây là điều là các sản phẩm này đều muốn người dùng cảm nhận
+
+Sản phẩm trà An Yên dưới đây sử dụng hình vẽ minh hoạ để thể hiện đặc tính mộc mạc
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117106642-308d7a80-adbb-11eb-80c6-bd3db6c87e5b.jpg">
+
+Với những sản phẩm thể hiện phong cách sống, thương hiệu thường dựa nhiều hơn vào nhiếp ảnh để thể hiện cá tính của mình
+
+Ví dụ như thương hiệu thời trang dưới đây
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117108436-2325bf80-adbe-11eb-9861-8bf60755e1d5.jpg">
+
+Các thương hiệu như Nike, Burberry, Coca-Cola đều sử dụng ảnh chụp để thể hiện các thông điệp tới thế giới thật
+Như Nike, họ tập trung vào việc kết nối cảm xúc với khách hàng. Hầu như các hình ảnh của họ luôn truyền tải năng lượng, cảm hứng và trực quan với thông điệp "Just do it" hướng đến 3 nhóm đối tượng sau:
+- Giới trẻ
+- Fan hâm mộ thể thao
+- VĐV nghiệp dư
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117108443-24ef8300-adbe-11eb-97f5-df1cd293b6f3.jpg">
+
+> Hình ảnh minh hoạ có tính ứng dụng cao và linh hoạt
+
+> Hình ảnh chụp có thể phá vỡ cách mà khách hàng cảm nhận về thương hiệu chỉ thông qua một cái nhìn
+
+**Quản trị hình ảnh thương hiệu**
+
+> Thương hiệu được tạo ra thông qua các điểm tương tác
+
+Hình ảnh cần có những quy chuẩn về: cảm tính và lí tính. Hãy nhớ rằng, tính nhất quán không có nghĩa là "GIỐNG NHAU" - nghĩa là sử dụng lặp đi lặp lại một hình ảnh nhiều lần, mà ở đây tính nhất quán thể hiện ở:
+- Điểm tương đồng về chủ đề, bố cục, màu sắc (với ảnh chụp)
+- Điểm tương đồng về màu sắc, hiệu ứng, cách thể hiện (với ảnh minh hoạ)
+
+**Sử dụng đồng bộ ảnh minh hoạ**
+
+`Skype` xây dựng bộ icon, hình minh hoạ của họ từ:
+- Các mảng, nét to
+- Màu xanh của đám mây đặc trưng (lấy từ logo)
+
+`Google` xây dựng bộ icon, hình minh hoạ của họ từ:
+- Các hình khối cơ bản (tròn, vuông, tam giác, ...)
+- Hiệu ứng bóng (theo phong cách Material Design)
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117109505-bd3a3780-adbf-11eb-96b0-f00916fa0f62.jpg">
+
+Ta có thể thấy Google là một trong số các thương hiệu dẫn đầu trong việc sử dụng hình minh hoạ làm nhận diện thương hiệu:
+- Product Icon
+- Logo
+- Sản phẩm, video quảng cáo
+
+**Cách thể hiện**
+
+Google sử dụng yếu tố mảng với phong cách "Geometric shape" - "Dạng hình học cơ bản" để tạo nên các hình ảnh từ các hình minh hoạ cơ bản.
+
+Qua đó đem lại cảm giác hiện đại, thân thiện.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117109520-c3301880-adbf-11eb-9c25-c881fad38d48.jpg">
+
+**Hiệu ứng**
+
+Có nhiều loại hiệu ứng có thể được thể hiện trong hình minh hoạ:
+- Đổ bóng mềm (soft shadow): tạo cảm giác giống thật
+- Dựng hình 3D
+- Hiệu ứng phẳng (flat design)
+
+Google sử dụng phong cách đơn giản là "ĐỔ BÓNG THẲNG" với góc 45 độ -> vẫn tạo ra mức độ tương phản
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117109525-c4614580-adbf-11eb-9a4b-3b9b84fdf448.jpg">
+
+**Màu sắc**
+
+Google quy định 3 cách sử dụng màu chính
+- Monochromatic (đơn sắc): chỉ thêm bớt sáng, tối hoặc tăng giảm giá trị của màu
+- Dùng màu xám kết hợp với một màu khác để tạo độ tương phản
+- Phối hợp các màu bão hoà với nhau
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/117109530-c4f9dc00-adbf-11eb-8fc4-783e0205042c.jpg">
+
+Hình minh hoạ của google **đề cao sự tương phản để rõ nét về hình ảnh**
+
+**Sử dụng đồng bộ, linh hoạt đối với ảnh chụp**
