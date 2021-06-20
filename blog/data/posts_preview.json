@@ -42,17 +42,6 @@
         ],
         "posted_at": "Posted at November 1, 2020"
     },
-    "master_slave_architecture": {
-        "title": "Master slave for begginer",
-        "description": "Master slave DB Architecture",
-        "tags": [
-            "Architecture",
-            "Master-Slave",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at October 27, 2020"
-    },
     "xau_the_nao_dep_ra_sao_chapter_7": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 7",
         "description": "Summary \"Xau the nao, dep ra sao\" - Chapter 7",
@@ -130,6 +119,17 @@
         ],
         "posted_at": "Posted at October 17, 2020"
     },
+    "master_slave_architecture": {
+        "title": "Master slave for begginer",
+        "description": "Master slave DB Architecture",
+        "tags": [
+            "Architecture",
+            "Master-Slave",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at October 27, 2020"
+    },
     "flexbox_fundamental": {
         "title": "Flexbox fundamental",
         "description": "Basics knowledges about Flexbox",
@@ -162,6 +162,66 @@
         ],
         "posted_at": "Posted at October 2, 2020"
     },
+    "readable_code_6": {
+        "title": "Readable code 6",
+        "description": "Readable code translation to Vietnamese (chapter 7)",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at June 20, 2021"
+    },
+    "readable_code_5": {
+        "title": "Readable code translation to Vietnamese (chapter 5)",
+        "description": "This chapter is about writing comment when coding",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on February 22, 2020"
+    },
+    "readable_code_4": {
+        "title": "Readable code translation to Vietnamese (chapter 4)",
+        "description": "This chapter is about the beautiful of the coding style",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on July 11, 2019"
+    },
+    "readable_code_3": {
+        "title": "Readable code translation to Vietnamese (chapter 3)",
+        "description": "This chapter is about naming for not misunderstood",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on July 06, 2019"
+    },
+    "readable_code_2": {
+        "title": "Readable code translation to Vietnamese (chapter 2)",
+        "description": "This chapter is about naming for variable",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on July 06, 2019"
+    },
+    "readable_code_1": {
+        "title": "Readable code translation to Vietnamese (chapter 1)",
+        "description": "This chapter is about writing code for understanding cheap",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted on July 06, 2019"
+    },
     "refactoring_ui_4": {
         "title": "Refactoring UI (part 4)",
         "description": "Translation of Refactoring UI book",
@@ -173,15 +233,37 @@
         ],
         "posted_at": "Posted at September 18, 2020"
     },
-    "readable_code_5": {
-        "title": "Readable code translation to Vietnamese (chapter 5 - processing)",
-        "description": "This chapter is about writing comment when coding",
+    "refactoring_ui_3": {
+        "title": "Refactoring UI (Part 3)",
+        "description": "Summary content of Refactoring UI book in Vietnamese - Part 3 (processing)",
         "tags": [
-            "Clean code",
+            "UI",
+            "UX",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at December 1, 2019"
+    },
+    "refactoring_ui_2": {
+        "title": "Refactoring UI Part 2",
+        "description": "Summary content of Refactoring UI book in Vietnamese  - Part 2 (processing)",
+        "tags": [
+            "UI",
+            "UX",
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on February 22, 2020"
+        "posted_at": "Posted at August 10, 2019"
+    },
+    "refactoring_ui_1": {
+        "title": "Refactoring UI Part 1",
+        "description": "Summary content of Refactoring UI book in Vietnamese  - Part 1 (processing)",
+        "tags": [
+            "UI",
+            "UX",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at August 02, 2019"
     },
     "graphql_with_react": {
         "title": "GraphQL with React",
@@ -193,47 +275,6 @@
         ],
         "posted_at": "Posted at December 7, 2019"
     },
-    "refactoring_ui_3": {
-        "title": "Refactoring UI (Part 3)",
-        "description": "Summary content of Refactoring UI book in Vietnamese - Part 3 (processing)",
-        "tags": [
-            "UI",
-            "UX",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at December 1, 2019"
-    },
-    "cnn_coursera": {
-        "title": "Convolutional Neural Networks",
-        "description": "Convolutional Neural Networks course on Coursera 's content",
-        "tags": [
-            "CNN",
-            "Deep learning",
-            "english"
-        ],
-        "posted_at": "Posted at November 27, 2019"
-    },
-    "structuring_machine_learning_projects": {
-        "title": "Structuring Machine Learning Projects",
-        "description": "Summary content of Structuring Machine Learning Projects course on Coursera",
-        "tags": [
-            "Machine Learning",
-            "english"
-        ],
-        "posted_at": "Posted at November 13, 2019"
-    },
-    "hyper_regular_optimize": {
-        "title": "Summary content of Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization course on Coursera",
-        "description": "Content is going to be updated day by day",
-        "tags": [
-            "Deep Learning",
-            "Hyperparameter",
-            "Regularization",
-            "Optimization",
-            "english"
-        ],
-        "posted_at": "Posted at November 04, 2019"
-    },
     "redux_from_scratch": {
         "title": "Redux from scratch",
         "description": "Implement Redux by plain javascript",
@@ -243,16 +284,6 @@
             "english"
         ],
         "posted_at": "Posted at September 15, 2019"
-    },
-    "deep_learning_coding_note": {
-        "title": "Deep Learning Coding Note",
-        "description": "Quick note about deep learning coding",
-        "tags": [
-            "Deep Learning",
-            "Coding",
-            "english"
-        ],
-        "posted_at": "Posted on September 10, 2019"
     },
     "syn_token_filter": {
         "title": "Synonym Token Filter",
@@ -342,28 +373,6 @@
         ],
         "posted_at": "Posted at August 14, 2019"
     },
-    "refactoring_ui_2": {
-        "title": "Refactoring UI Part 2",
-        "description": "Summary content of Refactoring UI book in Vietnamese  - Part 2 (processing)",
-        "tags": [
-            "UI",
-            "UX",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at August 10, 2019"
-    },
-    "refactoring_ui_1": {
-        "title": "Refactoring UI Part 1",
-        "description": "Summary content of Refactoring UI book in Vietnamese  - Part 1 (processing)",
-        "tags": [
-            "UI",
-            "UX",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at August 02, 2019"
-    },
     "ant_design": {
         "title": "Ant Design (Quick note)",
         "description": "Quick note in Vietnamese about Ant design",
@@ -422,46 +431,6 @@
             "vietnamese"
         ],
         "posted_at": "Posted on July 11, 2019"
-    },
-    "readable_code_4": {
-        "title": "Readable code translation to Vietnamese (chapter 4)",
-        "description": "This chapter is about the beautiful of the coding style",
-        "tags": [
-            "Clean code",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on July 11, 2019"
-    },
-    "readable_code_3": {
-        "title": "Readable code translation to Vietnamese (chapter 3)",
-        "description": "This chapter is about naming for not misunderstood",
-        "tags": [
-            "Clean code",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on July 06, 2019"
-    },
-    "readable_code_2": {
-        "title": "Readable code translation to Vietnamese (chapter 2)",
-        "description": "This chapter is about naming for variable",
-        "tags": [
-            "Clean code",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on July 06, 2019"
-    },
-    "readable_code_1": {
-        "title": "Readable code translation to Vietnamese (chapter 1)",
-        "description": "This chapter is about writing code for understanding cheap",
-        "tags": [
-            "Clean code",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted on July 06, 2019"
     },
     "elixir_basic": {
         "title": "Elixir basic",
