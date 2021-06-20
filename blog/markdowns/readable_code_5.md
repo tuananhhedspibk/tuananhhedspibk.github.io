@@ -476,3 +476,30 @@ for (list<Product>::reverse_iterator it = products.rbegin(); ... )
 Comment đầu tiên thì đúng hơn về mặt kĩ thuật, comment thứ hai lại thể hiện ý đồ của người viết code - cái mà người đọc mong muốn nắm bắt được
 
 #### “Named Function Parameter” Comments
+
+Giả sử bạn thấy lời gọi hàm như sau
+
+```typescript
+Connect(10, false)
+```
+
+Lời gọi hàm này khá khó hiểu do sự xuất hiện của hai tham số "10" và "false"
+
+Trong các ngôn ngữ như Python, bạn có thể gán giá trị cho tham số theo tên 
+
+```python
+def Connect(time_out, use_encryption):
+
+Connect(time_out = 10, use_encryption = True)
+```
+
+#### Use Information-Dense Words
+
+Trong ngành lập trình, có những tác vụ sẽ lặp đi lặp lại. Chúng sẽ được đi kèm với các từ ngữ chuyên dụng cho tác vụ đó
+
+Một vài từ tiêu biểu như:
+- heuristic
+- brute-forces
+- naive solution
+
+Những từ này sẽ giúp rút ngắn đi những comment dài "loằng ngoằng".
