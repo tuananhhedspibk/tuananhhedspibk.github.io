@@ -1,4 +1,14 @@
 {
+    "readable_code_6": {
+        "title": "Readable code 6",
+        "description": "Readable code translation to Vietnamese (chapter 7)",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at June 20, 2021"
+    },
     "form_design_pattern_chapter_1": {
         "title": "Form Design Pattern - Chapter 1",
         "description": "Form design pattern (chapter 1) summary in vietnamese",
@@ -10,8 +20,8 @@
         "posted_at": "Posted at April 4, 2021"
     },
     "summary_nhan_dien_thuong_hieu_2": {
-        "title": "Summary Nhan Dien Thuong Hieu - Part 2",
-        "description": "Summary Nhan Dien Thuong Hieu - Part 2",
+        "title": "Summary Nhan Dien Thuong Hieu - Chapter 2",
+        "description": "Summary Nhan Dien Thuong Hieu - Chapter 2",
         "tags": [
             "UI",
             "UX",
@@ -162,18 +172,8 @@
         ],
         "posted_at": "Posted at October 2, 2020"
     },
-    "readable_code_6": {
-        "title": "Readable code 6",
-        "description": "Readable code translation to Vietnamese (chapter 7)",
-        "tags": [
-            "Clean code",
-            "Translation",
-            "vietnamese"
-        ],
-        "posted_at": "Posted at June 20, 2021"
-    },
     "readable_code_5": {
-        "title": "Readable code translation to Vietnamese (chapter 5)",
+        "title": "Readable code translation to Vietnamese (chapter 5, 6)",
         "description": "This chapter is about writing comment when coding",
         "tags": [
             "Clean code",
