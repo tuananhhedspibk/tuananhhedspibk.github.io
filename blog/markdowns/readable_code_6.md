@@ -136,7 +136,7 @@ Một vài coders nghĩ rằng, không nên có nhiều `return statement` trong
 
 VD:
 
-```typescirpt
+```typescript
 const checkString = (str: string): boolean => {
   if (str === null) return false;
   if (str.length === 0) return true;
@@ -168,7 +168,7 @@ Các đoạn code lồng nhau quá sâu sẽ dẫn tới khó hiểu. Mỗi mộ
 
 Dưới đây là một ví dụ khá đơn giản về việc sử dụng double-check condition.
 
-```typescirpt
+```typescript
 if (user_result === SUCCESS) {
   if (permission_result !== SUCCESS) {
      return "permission_error";
@@ -199,7 +199,7 @@ return "done";
 
 Khi sửa lại code, người viết code đã thêm vào phần mà anh ta "cảm thấy" là "dễ nhất" để thêm vào
 
-```typescirpt
+```typescript
 if (user_result === SUCCESS) {
   if (permission_result !== SUCCESS) {
      return "permission_error";
