@@ -116,3 +116,153 @@ if (exponent >= 0) {
 > Hãy sử dụng if/else. Toán từ 3 ngôi "?" chỉ nên dùng cho những trường hợp đơn giản nhất
 
 #### Avoid do/while Loops
+
+Các ngôn ngữ như C, Perl, ... đều có vòng lặp dạng `do { // code } while (condition)`
+VD:
+
+```C
+do {
+  node = node.next;
+} while (node != NULL)
+```
+
+Với do/while thì code bên trong `do {}` sẽ được thực thi ít nhất một lần, việc đoạn code đó có được thực thi lại hay không, sẽ phụ thuộc vào điều kiện **bên dưới**. Điều này khá là kì quặc vì thông thường chúng ta sẽ đọc code theo thứ tự từ **trên xuống dưới**, và hầu như chúng ta không đọc lại code lần thứ 2. Việc sử dụng do/while sẽ làm cho quá trình đọc code trở nên mất tự nhiên, vì nó đi ngược lại với logic đọc thông thường (giống như cách mà `for`, `while`, `if` thực hiện)
+
+Vòng lặp while sẽ dễ đọc hơn vì chúng ta sẽ thấy được điều kiện trước khi đọc đoạn code bên trong. Cũng khá may, trong thực tế hầu hết các vòng lặp do/while đều có thể được viết lại dưới dạng vòng lặp while.
+
+#### Returning Early from a Function
+
+Một vài coders nghĩ rằng, không nên có nhiều `return statement` trong một hàm. Điều này hoàn toàn KHÔNG CHÍNH XÁC
+
+VD:
+
+```typescirpt
+const checkString = (str: string): boolean => {
+  if (str === null) return false;
+  if (str.length === 0) return true;
+}
+```
+
+#### The Infamous goto
+
+Các ngôn ngữ lập trình hiện đại có nhiều cách xử lí vấn đề nên goto dường như được sử dụng khá ít. Tuy nhiên một số project viết bằng C nổi tiếng như Linux kernel vẫn sử dụng goto.
+
+Trong trường hợp đơn giản nhất, goto sẽ chuyển hướng thực hiện xuống cuối hàm
+
+```C
+if (p == NULL) goto exit; 
+
+//
+//
+
+exit:
+  fclose(f1);
+  fclose(f2);
+```
+
+Tuy nhiên nếu sử dụng nhiều goto, trong đó sử dụng goto cho mục đích *đi lên* thì code của bạn lúc nãy sẽ giống như những sợi mỳ spaghetti vậy. Thế nên việc sử dụng goto vô tội vạ là một điều cấm kị nếu muốn follow code rõ ràng.
+
+### Minimize Nesting
+
+Các đoạn code lồng nhau quá sâu sẽ dẫn tới khó hiểu. Mỗi một "tầng code" sẽ là một lần người đọc phải nhớ các điều kiện tương ứng. Khi đọc xong một "tầng code" sẽ khá khó để người đọc có thể nhớ lại được điều kiện tương ứng với "tầng" đó là như thế nào.
+
+Dưới đây là một ví dụ khá đơn giản về việc sử dụng double-check condition.
+
+```typescirpt
+if (user_result === SUCCESS) {
+  if (permission_result !== SUCCESS) {
+     return "permission_error";
+  }
+  return "";
+} else {
+  return "user_error";
+}
+
+return "done";
+```
+
+Đọc đoạn code trên, người đọc sẽ phải luôn ghi nhớ giá trị của `user_result` và `permission_result`. Hơn nữa đoạn code này còn tệ ở chỗ, nó xen kẽ giữa điều kiện `=== SUCCESS` và `!== SUCCESS`
+
+#### How Nesting Accumulates
+
+Ban đầu đoạn code trên khá đơn giản và dễ hiểu
+
+```typescript
+if (user_result === SUCCESS) {
+  return "";
+} else {
+  return "user_error";
+}
+
+return "done";
+```
+
+Khi sửa lại code, người viết code đã thêm vào phần mà anh ta "cảm thấy" là "dễ nhất" để thêm vào
+
+```typescirpt
+if (user_result === SUCCESS) {
+  if (permission_result !== SUCCESS) {
+     return "permission_error";
+  }
+  return "";
+}
+```
+
+Đối với người viết code, sự thay đổi này là khá rõ ràng và nó "hằn sâu" vào suy nghĩ của anh ta. Tuy nhiên với người đọc code lần đầu tiên, khi không hề có context cảm giác sẽ khá mơ hồ.
+ 
+#### Removing Nesting by Returning Early
+
+Đoạn code trên có thể cải thiện bằng cách xử lí trường hợp failed trước, sau đó sẽ trả về trường hợp success (returning early)
+
+```typescript
+if (user_result !== SUCCESS) {
+  return "user_error";
+}
+
+if (permission_result !== SUCCESS) {
+  return "permisson_error";
+}
+
+return "done";
+```
+
+Ngoài việc giảm số tầng code từ 2 xuống 1, đoạn code này cũng giúp người đọc không phải "nhớ" các giá trị của điều kiện quá lâu.
+
+#### Removing Nesting Inside Loops
+
+Kĩ thuật returning early không phải lúc nào cũng phát huy hiệu quả, ví dụ như với các vòng lặp
+
+```typescript
+for (let i = 0; i < results.length; i++) {
+  if (results[i] !== null) {
+    // ...
+    if (result[i].name.length > 0) {
+      // ...
+    }
+  }
+}
+```
+
+Trong tình huống này, ta có thể sử dụng kĩ thuật tương tự như "returning early" đó là "continue"
+
+```typescript
+for (let i = 0; i < results.length; i++) {
+  if (results[i] === null) continue;
+  // ...
+
+  if (result[i].name.length <= 0) continue;
+  // ...
+}
+```
+
+Tuy vậy việc sử dụng continue cũng dễ gây ra sự hiểu nhầm, nó có thể sẽ giống như goto nhưng nếu sử dụng cho từng vòng lặp (mỗi vòng lặp là một scope riêng) thì vẫn có thể chấp nhận được.
+
+#### Can You Follow the Flow of Execution?
+
+Chương này nói về việc viết các flow control cấp thấp (condition, loop). Tuy nhiên bạn cũng nên chú ý về flow cấp cao hơn, cụ thể là từ khi bắt đầu hàm `main()` cho đến các lời gọi hàm kế tiếp và cuối cùng là kết thúc chương trình
+
+### Tổng kết 
+
+Qua chương này bạn có thể thấy rằng, xử lí những trườngh hợp đơn giản trước là một sự lựa chọn đúng đắn. Hãy viết nhiều "linear code" hơn thay vì viết những "nesting code" khiến người đọc phải ghi nhớ nhiều hơn về giá trị của các biến số
+
+Tránh sử dụng goto, do/while loop. Chú ý đến thứ tự sắp xếp điều kiện trong `if statement`, đặt những giá trị `thay đổi` ở `bên trái`, những giá trị `ổn định` hơn ở `bên phải`. Sử dụng toán từ ba ngôi (? :) một cách thực sự hợp lí.
