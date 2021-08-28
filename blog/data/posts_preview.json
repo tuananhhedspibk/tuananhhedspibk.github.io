@@ -1,4 +1,14 @@
 {
+    "best_practices_writting_dockerfile": {
+        "title": "Best Practices Writting Dockerfile",
+        "description": "Best Practices Writting Dockerfile",
+        "tags": [
+            "Docker",
+            "Best-practices",
+            "vietnamese2"
+        ],
+        "posted_at": "Posted at 2021, August 28"
+    },
     "readable_code_7": {
         "title": "Readable code 7",
         "description": "Readable code translation to Vietnamese (chapter 8)",
