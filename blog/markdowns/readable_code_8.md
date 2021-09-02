@@ -104,4 +104,44 @@ Có rất nhiều ngôn ngữ lập trình quy định về phạm vi truy cập
 - Class
 - Block
 
-Điều này là rất tốt vì nó sẽ hạn chế tối đa số lượng các dòng code có thể "nhìn thấy" biến.
+Điều này là rất tốt vì nó sẽ hạn chế tối đa số lượng các dòng code có thể "nhìn thấy" biến. Tại sao phải làm như vậy? Vì nó giúp người đọc không phải ghi nhớ quá nhiều biến trong đầu.
+
+Nếu bạn giảm được scope cho biến theo bội số của 2 thì số lượng biến trong scope sẽ giảm nửa
+
+Xét ví dụ sau với một class rất dài:
+
+```ts
+class LargeClass {
+  string str_;
+
+  void Method1() {
+    str_ = ...;
+    Method2();
+  }
+  
+  void Method2() {
+    // Uses str_
+  }
+    // Lots of other methods that don't use str_ ...
+};
+```
+
+Ở một góc độ nào đó các biến như `str_` sẽ được coi là các biến `mini-global`. Với các class lớn thì sẽ khá khó để có thể theo dõi các biến thường xuyên, vậy nên nếu có ít biến `mini-global` thì sẽ tốt hơn:
+
+```ts
+class LargeClass {
+  void Method1() {
+    string str = ...;
+    Method2(str);
+  }
+  
+  void Method2(string str) {
+    // Uses str
+  }
+  // Now other methods can't see str.
+};
+```
+
+Lúc này `str_` sẽ trở thành biến local.
+
+Một cách khác để hạn chế truy cập đến các thuộc tính của class đó là **triển khai nhiều static methods nhất có thể**. Các static methods là một cách khá ổn để cho người đọc có thể thấy rằng các methods này hoàn toàn tách biệt so với các thuộc tính của class.
