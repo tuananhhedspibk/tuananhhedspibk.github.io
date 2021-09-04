@@ -1,6 +1,7 @@
 ## Chương 9: Biến và tính dễ đọc
 
 Có 3 vấn đề chính sẽ được đề cập đến trong chương này:
+
 1. Càng nhiều biến thì càng khó theo dõi code.
 2. Biến với scope càng lớn thì càng khó theo dõi biến.
 3. Biến thay đổi càng nhiều thì càng khó theo dõi giá trị của biến.
@@ -19,6 +20,7 @@ root_message.last_view_time = now
 ```
 
 Liệu có cần phải giữ lại biến `now` ? Câu trả lời là không, lí do là:
+
 - Nó không chia nhỏ các biểu thức phức tạp.
 - Bản thân `datetime.datetime.now()` đã có ý nghĩa rõ ràng.
 - Nó chỉ được sử dụng duy nhất một lần, vì vậy nó không làm giảm đi bất kì đoạn code thừa nào.
@@ -63,7 +65,6 @@ var remove_one = function (array, value_to_remove) {
 
 Việc trả về kết quả ngay khi có được sẽ cải thiện ít nhiều hiệu năng của code khiến task của chúng ta được thực hiện nhanh nhất có thể.
 
-
 #### Loại bỏ các biến điều khiển luồng
 
 ```js
@@ -100,6 +101,7 @@ Trên thực tế, điều nên làm đó là "thu nhỏ phạm vi của mọi b
 > Hãy làm cho biến của bạn được sử dụng bởi số dòng code ít nhất có thể
 
 Có rất nhiều ngôn ngữ lập trình quy định về phạm vi truy cập của các biến
+
 - Module
 - Class
 - Block
@@ -118,7 +120,7 @@ class LargeClass {
     str_ = ...;
     Method2();
   }
-  
+
   void Method2() {
     // Uses str_
   }
@@ -134,7 +136,7 @@ class LargeClass {
     string str = ...;
     Method2(str);
   }
-  
+
   void Method2(string str) {
     // Uses str
   }
@@ -145,3 +147,91 @@ class LargeClass {
 Lúc này `str_` sẽ trở thành biến local.
 
 Một cách khác để hạn chế truy cập đến các thuộc tính của class đó là **triển khai nhiều static methods nhất có thể**. Các static methods là một cách khá ổn để cho người đọc có thể thấy rằng các methods này hoàn toàn tách biệt so với các thuộc tính của class.
+
+Hoặc một cách tiếp cận khác đó là **chia nhỏ các class lớn**. Cách tiếp cận này chỉ có hiệu quả nếu các class con độc lập với nhau, nếu bạn tạo ra các class con gọi đến nhau thì đó là một việc làm vô ích.
+
+Cách tiếp cận tương tự cũng được áp dụng cho các file lớn hoặc các hàm dài. Tuy nhiên nguyên tắc ở đây là các thành phần con phải độc lập với nhau về mặt dữ liệu (biến số).
+
+Tuy nhiên các ngôn ngữ khác nhau lại có các quy định khác nhau về việc hình thành scope
+
+#### If statement Scope trong C++
+
+Xét chương trình C++ sau:
+
+```C++
+PaymentInfo* info = database.ReadPaymentInfo();
+if (info) {
+  cout << "User paid: " << info->amount() << endl;
+}
+// Many more lines of code below ...
+```
+
+Người đọc code sẽ ghi nhớ rằng biến **info** sẽ được tiếp tục sử dụng. Nhưng trong C++ ta có thể tạo ra biến ngay trong biểu thức điều kiện vì biến **info** này chỉ được dùng trong **if statement**
+
+```C++
+if (PaymentInfo* info = database.ReadPaymentInfo()) {
+  cout << "User paid: " << info->amount() << endl;
+}
+```
+
+Giờ thì người đọc code hoàn toàn có thể quên đi biến **info** sau khi đọc xong **if scope**
+
+#### Tạo biến private trong Javascript
+
+Giả sử bạn có một biến persistent chỉ được sử dụng bởi một function
+
+```JS
+submitted = false; // Note: global variable
+var submit_form = function (form_name) {
+  if (submitted) {
+    return;  // don't double-submit the form
+  }
+  // ...
+  submitted = true;
+};
+```
+
+Các biến global như biến `submitted` thường sẽ khiến người đọc "sợ" khi đọc phải chúng dù trên thực tế biến này chỉ được sử dụng bởi một function duy nhất nhưng người đọc lại không thể chắc chắn điều đó. Vì trên thực tế các file JS khác có thể sử dụng biến này cho các mục đích khác.
+
+Bạn có thể tránh điều này bằng cách đưa biến `submitted` vào trong một `closure`
+
+```JS
+var submit_form = (function () {
+  var submitted = false; // Note: can only be accessed by the function below
+
+  return function (form_name) {
+    if (submitted) {
+      return;  // don't double-submit the form
+    }
+    // ...
+    submitted = true;
+  };
+}());
+```
+
+Cụm ngoặc `()` ở dòng cuối cùng cho thấy hàm sẽ được thực thi ngay tức thì và trả về hàm ở bên trong.
+
+#### Javascript Global Scope
+
+Trong JS nếu bạn không sử dụng từ khoá `var` khi định nghĩa biến, thì biến đó mặc định sẽ là `global variable`.
+
+```HTML
+<script>
+  var f = function () {
+    // DANGER: 'i' is not declared with 'var'!
+    for (i = 0; i < 10; i += 1)
+      // ...
+    };
+  f();
+</script>
+
+<script>
+  alert(i); // Alerts '10'. 'i' is a global variable!
+</script>
+```
+
+Rất nhiều lập trình viên không để ý tới điều này, từ đó dẫn đến những bugs không đáng có. Ví dụ hai functions định nghĩa local variable nhưng không dùng `var`, khi thực thi thì vô tình hai functions này sẽ "nói chuyện với nhau". Các lập trình viên thiếu kinh nghiệm sẽ nghĩ rằng vấn đề nằm ở máy tính hoặc RAM.
+
+Vậy nên một "best practice" trong JS đó là **luôn sử dụng từ khoá var khi định nghĩa biến**. Việc làm này sẽ giới hạn scope của biến nằm trong hàm xâu nhất (nơi mà biến được định nghĩa).
+
+#### Không hề có scope lồng nhau trong Javascript và Python
