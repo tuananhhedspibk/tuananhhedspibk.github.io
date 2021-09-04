@@ -555,3 +555,65 @@ Google quy định 3 cách sử dụng màu chính
 Hình minh hoạ của google **đề cao sự tương phản để rõ nét về hình ảnh**
 
 **Sử dụng đồng bộ, linh hoạt đối với ảnh chụp**
+
+**Chủ đề, tinh thần của bộ ảnh**
+
+Tuỳ vào mục đích, một bộ ảnh sẽ có những quy tắc về chủ đề tập trung mà nó hướng tới.
+
+Nếu thông điệp là:
+- Các đặc tính sản phẩm hãy sử dụng hình ảnh sản phẩm
+- Cá tính và câu chuyện về thương hiệu hãy sử dụng ảnh về phong cách sống
+- Về doanh nghiệp hãy sử dụng hình ảnh của nhân viên
+
+Để đảm bảo về tính quy chuẩn các ảnh đều phải có quy định rõ ràng về:
+- Đối tượng xuất hiện
+- Câu chuyện mà bức ảnh đang kể
+- Cảm xúc mà bức ảnh mang lại
+
+Trong một sốt trường hợp **góc chụp**, **hành động** của đối tượng xuất hiện cũng sẽ được quy định chặt chẽ.
+
+*Ảnh chụp người*
+
+Bức ảnh cần có một bối cảnh tổng thể
+- Đối tượng xuất hiện trong ảnh là gì?
+- Họ thể hiện tinh thần gì?
+
+Các thông điệp để giới thiệu thương hiệu có thể được thể hiện qua hình ảnh con người.
+
+Tuỳ vào:
+- Thông điệp muốn truyền đạt
+- Sự tin cậy
+- Chuyên môn
+- Năng lực
+- ...
+
+Mà cách tiếp cận và thể hiện của hình ảnh hoàn toàn có thể khác nhau giữa các thương hiệu
+
+Với 2 hình ảnh dưới đây
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/132080287-b39d3170-62dc-4c91-acc7-250b7bdb2182.jpg">
+
+Hình ảnh đầu tiên nhằm thể hiện cá tính của thương hiệu đó là: thân thiện và chuyên nghiệp. Đó là lí do các nhân vật trong hình ảnh ở trong tư thế giao tiếp cởi mở nhằm tạo cảm giác hào hứng, sự hợp tác thành công.
+
+Hình ảnh thứ 2 nằm trong chiến dịch nụ cười New Smile, với cách tiếp cận tự nhiên (không phân biệt độ tuổi, màu da, quốc tịch) nhằm tạo cảm giác kết nối với người xem.
+
+*Ảnh chụp sản phẩm*
+
+Vì không thể ngửi nếm hay chạm hoặc cảm nhận được sản phẩm nên ảnh chụp sản phẩm phải thể hiện rõ ràng nhất các đặc tính của sản phẩm.
+
+Lấy ví dụ về trường hợp của Coca-Cola
+
+Khơi gợi được cảm giác khao khát về một thức uống mát lạnh được thèm khát thông qua chai nước với đường cong đặc trưng "Contour Bottle", trải nghiệm uống sảng khoái từ hơi ga (gồm cả lý tính lẫn cảm tính).
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/132080674-afe1fd14-9552-4c2a-9eb7-eda7e7a6c4ec.jpg">
+
+Lạnh và có hơi, mềm mại và gợi cảm, gai và sắc nét, sảng khoái và ngạc nhiên, thư giãn, các mảng sáng tối đối lập?
+
+Coca-Cola đều có những quy định rất chặt về hình ảnh sản phẩm:
+- Góc chụp thẳng để đưa dòng chữ Coca-Cola làm trung tâm
+- Các yếu tố về ánh sáng xuyên qua để ngoài việc đảm bảo màu nâu đặc trưng của đồ uống người xem vẫn có thể thấy được các gam màu khác như: màu cam, đỏ trầm, caramel
+- Các chi tiết như bọt ga nhằm thể hiện sự sảng khoái
+
+Đó chính là sức mạnh của hình ảnh
+
+> Khi thể hiện được đúng các yếu tố, người ta sẽ phải kinh ngạc về sức mạnh truyền tải của hình ảnh
