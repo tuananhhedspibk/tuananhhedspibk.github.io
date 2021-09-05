@@ -235,3 +235,218 @@ Rất nhiều lập trình viên không để ý tới điều này, từ đó d
 Vậy nên một "best practice" trong JS đó là **luôn sử dụng từ khoá var khi định nghĩa biến**. Việc làm này sẽ giới hạn scope của biến nằm trong hàm xâu nhất (nơi mà biến được định nghĩa).
 
 #### Không hề có scope lồng nhau trong Javascript và Python
+
+Các ngôn ngữ như Java hay C++ đều có khái niệm `block scope`, là khi các biến được định nghĩa trong các `if`, `while`, `for` statement hoặc các statement tương tự thì các biến đó chỉ có thể được "nhìn thấy" bên trong scope đó mà thôi
+
+```Java
+if (...) {
+  int x = 1;
+}
+
+x++; // Compile-error! 'x' is undefined.
+```
+
+Nhưng trong các ngôn ngữ như `Python` hay `Javascript` điều đó hoàn toàn ngược lại. Các biến định nghĩa bên trong một scope lại bị "kéo ra" và được sử dụng trong toàn bộ function.
+
+Xét ví dụ dưới đây đối với biến `example_value`
+
+```Python
+# No use of example_value up to this point.
+if request:
+  for value in request.values:
+    if value > 0:
+      example_value = value
+      break
+
+for logger in debug.loggers:
+  logger.log("Example:", example_value)
+```
+
+Quy tắc về scope này cũng gây ra khá nhiều bất ngờ cho các lập trình viên, những đoạn code kiểu này sẽ khá là khó đọc. Trong các ngôn ngữ khác, sẽ dễ dàng để tìm ra biến `example_value` bằng cách đi theo "lề trái" của function mà bạn đang xem xét.
+
+Chương trình trên cũng tiềm ẩn lỗi đó là nếu biến `example_value` không được định nghĩa hoặc set giá trị ở phần đầu tiên thì khi đến phần thứ hai, exception `"NameError: ‘example_value’ is not defined"` sẽ được đưa ra. Chúng ta có thể sửa lại chương trình trên bằng cách định nghĩa `example_value` trong scope chung gần nhất:
+
+```Python
+example_value = None
+
+if request:
+  for value in request.values:
+    if value > 0:
+      example_value = value
+      break
+
+if example_value:
+  for logger in debug.loggers:
+    logger.log("Example:", example_value)
+```
+
+Trong trường hợp này biến `example_value` nên bị loại bỏ vì nó chỉ lưu trữ các giá trị mang tính trung gian. Ta có thể thực hiện việc loại bỏ biến `example_value` bằng cách "kết thúc task sớm nhất có thể".
+
+```Python
+def LogExample(value):
+  for logger in debug.loggers:
+    logger.log("Example:", value)
+
+if request:
+  for value in request.values:
+    if value > 0:
+      LogExample(value)  # deal with 'value' immediately
+      break
+```
+
+#### Di chuyển phần định nghĩa xuống phía dưới
+
+Các chương trình được viết bằng ngôn ngữ C quy định các biến phải được định nghĩa ở đầu function hoặc block. Thật không may, nếu function của bạn quá dài với nhiều biến thì việc theo dõi các biến sẽ trở nên khó khăn.
+
+Ví dụ dưới đây, các biến đều được định nghĩa ở đầu function
+
+```Python
+def ViewFilteredReplies(original_id):
+  filtered_replies = []
+  root_message = Messages.objects.get(original_id)
+  all_replies = Messages.objects.select(root_id=original_id)
+
+  root_message.view_count += 1
+  root_message.last_view_time = datetime.datetime.now()
+  root_message.save()
+
+  for reply in all_replies:
+    if reply.spam_votes <= MAX_SPAM_VOTES:
+      filtered_replies.append(reply)
+
+  return filtered_replies
+```
+
+Trong ví dụ trên người đọc code phải chú ý đến ba biến cùng một lúc, sẽ dễ dàng hơn cho người đọc nếu như các biến được định nghĩa ngay trước khi chúng được sử dụng.
+
+```Python
+def ViewFilteredReplies(original_id):
+  root_message = Messages.objects.get(original_id)
+  root_message.view_count += 1
+  root_message.last_view_time = datetime.datetime.now()
+  root_message.save()
+
+  all_replies = Messages.objects.select(root_id=original_id)
+  filtered_replies = []
+
+  for reply in all_replies:
+    if reply.spam_votes <= MAX_SPAM_VOTES:
+      filtered_replies.append(reply)
+  
+  return filtered_replies
+```
+
+Bạn có thể tự hỏi rằng liệu biến `all_replies` có thực sự cần thiết vì ta hoàn toàn có thể loại bỏ nó bằng cách viết như sau:
+
+```Python
+for reply in Messages.objects.select(root_id=original_id):
+```
+
+Trong trường hợp này biến `all_replies` sẽ đóng vai trò `explaining variable` nên sự có mặt của nó là cần thiết.
+
+### Thích việc sử dụng các biến viết một lần hơn
+
+Trong suốt chương này chúng ta có thể thấy rằng việc theo dõi nhiều biến cùng một lúc là vô cùng khó khăn. Thế nhưng khó khăn sẽ còn gia tăng nếu như các biến này thay đổi giá trị thường xuyên.
+
+Để giải quyết vấn đề này, bạn có thể áp dụng một chiến lược nghe khá lạ tai đó là: **sử dụng các biến viết một lần nhiều hơn**.
+
+Các biến với giá trị "cố định dài hạn" sẽ dễ dàng hơn cho người đọc:
+
+```Java
+static const int NUM_THREADS = 10;
+```
+
+Việc sử dụng các biến hằng số kiểu này sẽ giúp người đọc không phải theo dõi sự thay đổi giá trị của biến quá nhiều. Và vì lí do này, việc sử dụng `const` trong các ngôn ngữ như C++ hay Java đều được khuyến khích.
+
+Trên thực tế, các ngôn ngữ như Python hay Java có các kiểu `String` là **immutable**
+
+Kể cả khi bạn không đưa biến về hằng số được thì việc thay đổi giá trị của biến ở ít chỗ nhất có thể cũng đã giúp cho người đọc code tiết kiệm khá nhiều công sức và thời gian trong quá trình đọc code.
+
+> Biến càng bị thay đổi giá trị ở nhiều nơi thì sẽ càng khó để biết được giá trị hiện thời của nó
+
+Vậy làm thế nào để đưa các biến về hằng số? Chỉ có một cách duy nhất đó là tái cấu trúc lại code.
+
+### Ví dụ cuối cùng
+
+Xét ví dụ dưới đây, khi trang web của chúng ta có nhiều `text field` được định nghĩa liên tiếp nhau
+
+```HTML
+<input type="text" id="input1" value="Dustin">
+<input type="text" id="input2" value="Trevor">
+<input type="text" id="input3" value="">
+<input type="text" id="input4" value="Melissa">
+```
+
+Bạn có thể thấy id của các input sẽ tăng dần từ "input1" -> "input4"
+
+Nhiệm vụ của bạn là viết một hàm có tên `setFirstEmptyInput()` nhận đầu vào là một xâu, và sẽ set giá trị của xâu đó cho <input> element đầu tiên còn trống, hàm trả về DOM element của <input> element được set giá trị hoặc `null` nếu mọi <input> element đều đã được "lấp đầy"
+
+Đoạn code dưới đây thực hiện được yêu cầu nói trên nhưng lại không tuân thủ các nguyên tắc được đề ra trong chương này.
+
+```JS
+var setFirstEmptyInput = function (new_value) {
+  var found = false;
+  var i = 1;
+  var elem = document.getElementById('input' + i);
+
+  while (elem !== null) {
+    if (elem.value === '') {
+      found = true;
+      break;
+    }
+    i++;
+    elem = document.getElementById('input' + i);
+  }
+
+  if (found) elem.value = new_value;
+
+  return elem;
+};
+```
+
+Có khá nhiều cách tiếp cận trong việc cải thiện đoạn code trên, chúng ta hãy thử xem xét từ các biến mà hàm sử dụng
+- `var found`
+- `var i`
+- `var elem`
+
+Như ta thấy biến `found` chỉ chứa giá trị trung gian nên có thể bị loại bỏ.
+
+```JS
+var setFirstEmptyInput = function (new_value) {
+  var i = 1;
+  var elem = document.getElementById('input' + i);
+  while (elem !== null) {
+    if (elem.value === '') {
+      elem.value = new_value;
+      return elem;
+    }
+    i++;
+    elem = document.getElementById('input' + i);
+  }
+
+  return null;
+};
+```
+
+Với `elem` cảm giác như biến này sẽ được lặp qua vòng lặp while nhưng trên thực tế ta chỉ đơn thuần tăng giá trị biến i lên mà thôi. Vậy ta có thể tái cấu trúc code như sau:
+
+```JS
+var setFirstEmptyInput = function (new_value) {
+  for (var i = 1; true; i++) {
+    var elem = document.getElementById('input' + i);
+    if (elem === null)
+      return null;  // Search Failed. No empty input found.
+    if (elem.value === '') {
+      elem.value = new_value;
+      return elem;
+    }
+  }
+};
+```
+
+### Tổng kết
+
+Bạn có thể thu gọn code của mình để khiến chúng dễ đọc hơn bằng những cách sau đây:
+- `Loại bỏ biến`: loại bỏ các biến trung gian và xử lí kết quả trả về ngay lập tức.
+- `Giảm scope của biến`: Đưa biến vào một scope để có ít dòng code nhất sử dụng biến.
+- `Sử dụng write-once variables`: Các biến immutable (sử dụng `const`, `final`) sẽ dễ hiểu hơn rất nhiều.
