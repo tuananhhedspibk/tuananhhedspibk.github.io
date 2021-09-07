@@ -77,3 +77,7 @@ var findClosestLocation = function (lat, lng, array) {
     return closest;
 };
 ```
+
+Đoạn code này dễ đọc hơn nhiều vì người đọc chỉ cần tập trung vào phần code thực hiện chức năng chính của hàm.
+
+Hơn nữa việc tách hàm như thế này sẽ giúp cho việc test dễ dàng hơn và tái sử dụng dễ dàng hơn. Bản thân hàm ``
