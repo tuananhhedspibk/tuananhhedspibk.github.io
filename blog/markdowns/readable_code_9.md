@@ -16,3 +16,64 @@ Lời khuyên ở đây đó là **hãy tích cực tìm và bóc tách các v�
 3. Nếu thấy một số lượng các dòng codes nhất định đang giải quyết **các vấn đề con không liên quan** thì hãy tách chúng thành một hàm riêng.
 
 ### Ví dụ mở đầu: findClosetLocation()
+
+Nhiệm vụ của hàm này đó là: *tìm địa điểm gần nhất với điểm đầu vào*
+
+
+```JS
+// Return which element of 'array' is closest to the given latitude/longitude.
+// Models the Earth as a perfect sphere.
+var findClosestLocation = function (lat, lng, array) {
+    var closest;
+    var closest_dist = Number.MAX_VALUE;
+    for (var i = 0; i < array.length; i += 1) {
+        // Convert both points to radians.
+        var lat_rad = radians(lat);
+        var lng_rad = radians(lng);
+        var lat2_rad = radians(array[i].latitude);
+        var lng2_rad = radians(array[i].longitude);
+        // Use the "Spherical Law of Cosines" formula.
+        var dist = Math.acos(Math.sin(lat_rad) * Math.sin(lat2_rad) +
+                             Math.cos(lat_rad) * Math.cos(lat2_rad) *
+                             Math.cos(lng2_rad - lng_rad));
+        if (dist < closest_dist) {
+            closest = array[i];
+          closest_dist = dist;
+        }
+    }
+    return closest;
+};
+```
+
+Đa phần đoạn code trên đều tập trung vào việc *tính khoảng cách giữa 2 điểm* - điều này không liên quan nhiều đến chức năng chính của hàm. Vậy nên ta có thể tách nó ra thành một hàm riêng `spherical_distance()`.
+
+```JS
+var spherical_distance = function (lat1, lng1, lat2, lng2) {
+  var lat1_rad = radians(lat1);
+  var lng1_rad = radians(lng1);
+  var lat2_rad = radians(lat2);
+  var lng2_rad = radians(lng2);
+  
+  // Use the "Spherical Law of Cosines" formula.
+  return Math.acos(Math.sin(lat1_rad) * Math.sin(lat2_rad) +
+         Math.cos(lat1_rad) * Math.cos(lat2_rad) *
+         Math.cos(lng2_rad - lng1_rad));
+};
+```
+
+Bây giờ đoạn code của hàm `findClosetLocation` sẽ như sau:
+
+```JS
+var findClosestLocation = function (lat, lng, array) {
+    var closest;
+    var closest_dist = Number.MAX_VALUE;
+    for (var i = 0; i < array.length; i += 1) {
+        var dist = spherical_distance(lat, lng, array[i].latitude, array[i].longitude);
+        if (dist < closest_dist) {
+            closest = array[i];
+            closest_dist = dist;
+        }
+    }
+    return closest;
+};
+```
