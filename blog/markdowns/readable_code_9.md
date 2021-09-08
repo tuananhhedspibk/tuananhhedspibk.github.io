@@ -80,4 +80,79 @@ var findClosestLocation = function (lat, lng, array) {
 
 Đoạn code này dễ đọc hơn nhiều vì người đọc chỉ cần tập trung vào phần code thực hiện chức năng chính của hàm.
 
-Hơn nữa việc tách hàm như thế này sẽ giúp cho việc test dễ dàng hơn và tái sử dụng dễ dàng hơn. Bản thân hàm ``
+Hơn nữa việc tách hàm như thế này sẽ giúp cho việc test dễ dàng hơn và tái sử dụng dễ dàng hơn. Bản thân hàm `spherical_distance` cũng có thể được tái sử dụng trong tương lai. Vậy nên ta mới nói đây là "vấn dề không liên quan" bởi bản thân hàm này là độc lập và nó không quan tâm đến việc mình được sử dụng như thế nào.
+
+### Utility code thuần tuý
+
+Sẽ có các task mà mọi chương trình đều thực hiện (đọc - ghi file, chỉnh sửa xâu).
+
+Thông thường các hàm utility này đều đã được triển khai sẵn bởi ngôn ngữ lập trình. Ví dụ:
+- PHP: có hàm đọc nội dung file `file_get_contents("filename")`
+- Python: `open("filename").read()`
+
+Nhưng có những trường hợp ta phải tự mình triển khai các hàm này. Nếu thư viện chưa có sẵn các hàm utility, hãy viết nó. Dần dần bạn sẽ có một tập hợp các hàm utilities của riêng mình.
+
+### Code có mục đích chung khác
+
+Như ví dụ dưới đây, sử dụng hàm `alert` trong Javascript để hiển thị pop-up message sau khi gọi `ajax` để lấy dữ liệu từ server.
+
+```JS
+ajax_post({
+    url: 'http://example.com/submit',
+    data: data,
+    on_success: function (response_data) {
+        var str = "{\n";
+        for (var key in response_data) {
+            str += "  " + key + " = " + response_data[key] + "\n";
+        }
+        alert(str + "}");
+        // Continue handling 'response_data' ...
+    }
+});
+```
+
+Mục đích của `ajax_post()` là gửi request đến server, nhận và xử lí dữ liệu trả về. Bản thân nội dung của hàm `on_success` có thể tách thành một hàm riêng đó là `format_pretty` để hiển thị kết quả theo một format lên alert của trình duyệt.
+
+```JS
+var format_pretty = function (obj) {
+    var str = "{\n";
+    for (var key in obj) {
+        str += "  " + key + " = " + obj[key] + "\n";
+    }
+    return str + "}";
+};
+```
+
+### Lợi ích ngoài mong đợi
+
+Ngoài lợi ích tái sử dụng thì việc tách hàm `format_pretty` còn cho phép chúng ta dễ dàng cải thiện hàm. Khi làm việc với những hàm con sẽ dễ dàng cho chúng ta:
+- Xử lí các trường hợp đặc biệt
+- Thêm tính năng
+
+Ví dụ hàm `format_pretty` chỉ xử lí:
+- Trường hợp đầu vào là object chứ không xử lí khi đầu vào là string, ...
+- Trường hợp đầu vào là nested-object thì hàm chỉ in ra `[object Object]`
+
+Hơn nữa việc in object một cách đệ quy sẽ rất khó thực hiện nếu không tách hàm.
+
+Code cải thiện sẽ như sau:
+
+```JS
+var format_pretty = function (obj, indent) {
+    // Handle null, undefined, strings, and non-objects.
+
+    if (obj === null) return "null";
+    if (obj === undefined) return "undefined";
+    if (typeof obj === "string") return '"' + obj + '"';
+    if (typeof obj !== "object") return String(obj);
+    if (indent === undefined) indent = "";
+
+    // Handle (non-null) objects.
+    var str = "{\n";
+    for (var key in obj) {
+        str += indent + "  " + key + " = ";
+        str += format_pretty(obj[key], indent + " ") + "\n";
+    }
+    return str + indent + "}";
+};
+```
