@@ -156,3 +156,52 @@ var format_pretty = function (obj, indent) {
     return str + indent + "}";
 };
 ```
+
+### Tạo thật nhiều đoạn code có thể tái sử dụng
+
+Hàm `format_pretty` có thể tái sử dụng lại ở nhiều nơi. Trên thực tế các hàm như vậy thường được đưa vào thư mục `util/`.
+
+Càng tạo ra nhiều các hàm như vậy thì sẽ càng tốt vì:
+- Dự án của bạn sẽ nhỏ vì không phải code lại những hàm hỗ trợ như vậy
+- Có thể yên tâm sử dụng chúng (thư viện, template, ...) mà không cần quan tâm đến bên trong
+
+> Có 2 hướng tiếp cận trong lập trình
+> Top-down: thiết kế và triển khai các hàm ở mức cao trước, sau đó mới triển khai các hàm cấp thấp để hỗ trợ các hàm cấp cao
+> Bottom-up: giải quyết các vấn đề ở cấp thấp bằng cách triển khai các hàm ở cấp thấp trước, sau đó sẽ kết hợp chúng lại để giải quyết vấn đề ở cấp cao hơn
+> Trên thực tế, 2 hướng tiếp cận này thường được sử dụng cùng lúc với nhau
+
+### Chức năng đặc trưng của dự án
+
+Lấy ví dụ về một đoạn code chuyển tên người thành business URL
+
+```Python
+business = Business()
+business.name = request.POST["name"]
+
+url_path_name = business.name.lower()
+url_path_name = re.sub(r"['\.]", "", url_path_name) url_path_name = re.sub(r"[^a-z0-9]+", "-", url_path_name) url_path_name = url_path_name.strip("-")
+
+business.url = "/biz/" + url_path_name
+business.date_created = datetime.datetime.utcnow() business.save_to_database()
+```
+
+Đoạn code trên đang "làm sạch URL" và chuyển nó thành một URL hợp lệ (VD: My Name -> /biz/my-name).
+
+Có thể tách đoạn xử lí "Chuyển tên thành một URL hợp lệ" thành một hàm riêng như sau:
+
+```Python
+CHARS_TO_REMOVE = re.compile(r"['\.]+")
+CHARS_TO_DASH = re.compile(r"[^a-z0-9]+")
+
+def make_url_friendly(text):
+    text = text.lower()
+    text = CHARS_TO_REMOVE.sub('', text) text = CHARS_TO_DASH.sub('-', text) return text.strip("-")
+```
+
+Bây giờ thì đoạn code ban đầu sẽ trở nên dễ đọc hơn rất nhiều
+
+```Python
+business = Business()
+business.name = request.POST["name"]
+business.url = "/biz/" + make_url_friendly(business.name) business.date_created = datetime.datetime.utcnow() business.save_to_database()
+```
