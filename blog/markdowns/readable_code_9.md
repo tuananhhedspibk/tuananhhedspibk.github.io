@@ -205,3 +205,9 @@ business = Business()
 business.name = request.POST["name"]
 business.url = "/biz/" + make_url_friendly(business.name) business.date_created = datetime.datetime.utcnow() business.save_to_database()
 ```
+
+Hàm `make_url_friendly` có thể coi là hàm dùng chung, nó có thể được đưa vào `util/` hoặc để tại folder hiện tại cũng được nhưng điều quan trọng ở đây là ta đã bóc tách được một vấn đề không liên quan đến chức năng chính của chương trình ra thành một hàm riêng.
+
+### Đơn giản hoá interface hiện có
+
+
