@@ -210,4 +210,45 @@ Hàm `make_url_friendly` có thể coi là hàm dùng chung, nó có thể đư�
 
 ### Đơn giản hoá interface hiện có
 
+Mọi người đều thích một thư viện có interface "sạch":
+- Có ít tham số đầu vào
+- Dễ dàng sử dụng
+- Không cần cài đặt quá nhiều
 
+Sử dụng một interface "sạch" cũng giúp code của bạn đơn giản và hiệu quả hơn.
+
+Tuy nhiên nếu interface đang dùng không được "sạch" cho lắm, bạn vẫn có thể viết các hàm bao cho nó.
+
+Lấy ví dụ: khi bạn cần truy cập thông tin cookie của trình duyệt, trình duyệt chỉ cung cấp dữ liệu cookie dưới dạng xâu `document.cookie` trong khi bản chất của cookie lại là các cặp `key/value`. Vậy nên khi cần truy xuất một cặp `key/value` nào đó trong cookie bạn cần phải duyệt qua rất nhiều thông tin chứa trong nó. Ví dụ như đoạn code sau dùng để đọc ra thông tin về `max_results` có trong cookie
+
+```JS
+var max_results;
+var cookies = document.cookie.split(';');
+
+for (var i = 0; i < cookies.length; i++) {
+    var c = cookies[i];
+    c = c.replace(/^[ ]+/, '');  // remove leading spaces
+    if (c.indexOf("max_results=") === 0)
+    max_results = Number(c.substring(12, c.length));
+}
+```
+
+Một đoạn code khá loằng ngoằng phải không. Chúng ta có thể tạo và sử dụng hàm `get_cookie` như sau:
+
+```JS
+var max_results = Number(get_cookie("max_results"));
+```
+
+Việc set giá trị cho cookie lại càng trông "lạ hơn".
+
+```JS
+document.cookie = "max_results=50; expires=Wed, 1 Jan 2020 20:53:47 UTC; path=/";
+```
+
+Cảm giác như thể chúng ta đang overwrite toàn bộ giá trị của cookie vậy. Nhưng không, "bằng một cách nào đó" chỉ có `max_results` là được set giá trị. Sẽ tốt hơn nếu chúng ta có một hàm như sau:
+
+```JS
+set_cookie(name, value, days_to_expire);
+```
+
+Bài học ở đây đó là **bạn không nhất thiết phải chịu đựng việc sử dụng một interface "bẩn" như vậy**. Bạn hoàn toàn có thể tạo các wrapper functions để che dấu đi các khuyết điểm của interface mà bạn đang gặp phải.
