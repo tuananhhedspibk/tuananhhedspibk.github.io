@@ -285,3 +285,35 @@ def url_safe_encrypt(obj):
 user_info = { "username": "...", "password": "..." }
 url = "http://example.com/?user_info=" + url_safe_encrypt(user_info)
 ```
+
+### Đưa mọi thứ đi quá xa xa
+
+Như đã nói ở đầu chương, "chúng ta sẽ cố gắng tích cực tìm kiếm và bóc tách các vấn đề con không liên quan". Tôi dùng từ "tích cực" ở đây là vì các lập trình viên thường "không tích cực" lắm trong vấn đề này. Tuy nhiên khi "tích cực quá mức" sẽ khiến mọi thứ đi quá xa.
+
+Ví dụ như đoạn code ở phần trên có thể được chia nhỏ hơn nữa như sau:
+
+```Python
+user_info = { "username": "...", "password": "..." }
+url = "http://example.com/?user_info=" + url_safe_encrypt_obj(user_info)
+
+def url_safe_encrypt_obj(obj):
+    obj_str = json.dumps(obj)
+    return url_safe_encrypt_str(obj_str)
+
+def url_safe_encrypt_str(data):
+    encrypted_bytes = encrypt(data)
+    return base64.urlsafe_b64encode(encrypted_bytes)
+
+def encrypt(data):
+    cipher = make_cipher()
+    encrypted_bytes = cipher.update(data)
+    encrypted_bytes += cipher.final() # flush out any remaining bytes return encrypted_bytes
+
+def make_cipher():
+    return Cipher("aes_128_cbc", key=PRIVATE_KEY, init_vector=INIT_VECTOR, op=ENCODE)
+```
+
+Việc chia nhỏ hàm như vậy sẽ khiến người đọc khó theo dõi flow của chương trình. Có thể những hàm nhỏ này sẽ được dùng ở những chỗ khác trong project, nhưng hiện tại thì chưa cần thiết.
+
+### Tổng kết
+
