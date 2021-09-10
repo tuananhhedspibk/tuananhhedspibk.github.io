@@ -1,4 +1,24 @@
 {
+    "readable_code_9": {
+        "title": "Readable code 9",
+        "description": "Readable code translation to Vietnamese (chapter 10)",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at September 10, 2021"
+    },
+    "readable_code_8": {
+        "title": "Readable code 8",
+        "description": "Readable code translation to Vietnamese (chapter 9)",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at August 30, 2021"
+    },
     "best_practices_writting_dockerfile": {
         "title": "Best Practices Writting Dockerfile",
         "description": "Best Practices Writting Dockerfile",
