@@ -252,3 +252,36 @@ set_cookie(name, value, days_to_expire);
 ```
 
 Bài học ở đây đó là **bạn không nhất thiết phải chịu đựng việc sử dụng một interface "bẩn" như vậy**. Bạn hoàn toàn có thể tạo các wrapper functions để che dấu đi các khuyết điểm của interface mà bạn đang gặp phải.
+
+### Chỉnh sửa interface dựa theo nhu cầu của bạn
+
+Có những đoạn code chỉ dùng để hỗ trợ cho các đoạn code khác - ví dụ như thiết lập đầu vào cho một hàm hoặc xử lí output.
+
+Những đoạn code mang tính chất "kết nối" như thế này thường sẽ được tách ra thành hàm riêng.
+
+Ví dụ chương trình của bạn đang phải xử lí khá nhiều dữ liệu nhạy cảm như `{username: ..., password: ...}`. Nhiệm vụ cần làm là đưa các thông tin này dưới dạng mã hoá lên URL. Chương trình dưới đây sẽ thực hiện nhiệm vụ đó:
+
+```Python
+user_info = { "username": "...", "password": "..." }
+user_str = json.dumps(user_info)
+cipher = Cipher("aes_128_cbc", key=PRIVATE_KEY, init_vector=INIT_VECTOR, op=ENCODE) encrypted_bytes = cipher.update(user_str)
+encrypted_bytes += cipher.final() # flush out the current 128 bit block
+url = "http://example.com/?user_info=" + base64.urlsafe_b64encode(encrypted_bytes)
+```
+
+Vấn đề chúng ta cần giải quyết ở đây là *Mã hoá thông tin người dùng và đưa vào URL*, nhưng đoạn code hiện tại lại thực hiện nhiệm vụ chính là *Mã hoá một python object vào URL*. Vậy nên ta có thể tách nó thành một hàm riêng:
+
+```Python
+def url_safe_encrypt(obj):
+    obj_str = json.dumps(obj)
+    cipher = Cipher("aes_128_cbc", key=PRIVATE_KEY, init_vector=INIT_VECTOR, op=ENCODE) encrypted_bytes = cipher.update(obj_str)
+    encrypted_bytes += cipher.final() # flush out the current 128 bit block
+    return base64.urlsafe_b64encode(encrypted_bytes)
+```
+
+Đoạn code thực hiện chức năng chính sẽ như sau:
+
+```python
+user_info = { "username": "...", "password": "..." }
+url = "http://example.com/?user_info=" + url_safe_encrypt(user_info)
+```
