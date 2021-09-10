@@ -317,3 +317,4 @@ Việc chia nhỏ hàm như vậy sẽ khiến người đọc khó theo dõi fl
 
 ### Tổng kết
 
+Nội dung chính của chương này chỉ xoay quanh việc viết các hàm để giải quyết các vấn đề chung, qua đó khiến phần lõi của dự án không quá cồng kềnh. Điều này giúp người đọc code và người viết code có thể theo sát dự án dễ dàng hơn đồng thời cũng giúp xây dựng thư viện các hàm có thể tái sử dụng sau này.
