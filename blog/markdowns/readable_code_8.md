@@ -1,452 +1,248 @@
-## Chương 9: Biến và tính dễ đọc
+### Chương 8: Chia nhỏ các biểu thức cồng kềnh
 
-Có 3 vấn đề chính sẽ được đề cập đến trong chương này:
+Loài mực ống là một loài động vật thông minh và khá thú vị, chúng có một cơ thể hoàn chỉnh ngoại trừ một điểm yếu duy nhất: bộ não có hình bánh rán bao quanh thực quản, khiến chúng mỗi khi nuốt thức ăn sẽ làm ảnh hưởng đến bộ não của mình.
 
-1. Càng nhiều biến thì càng khó theo dõi code.
-2. Biến với scope càng lớn thì càng khó theo dõi biến.
-3. Biến thay đổi càng nhiều thì càng khó theo dõi giá trị của biến.
+Liên hệ với code, một "đoạn" code quá dài sẽ gây ra những hiệu ứng không đáng có. Nghiên cứu chỉ ra rằng bộ não chỉ có thể xử lí 3, 4 yếu tố cùng một lúc. Vậy nên code càng dài sẽ càng khó cho người đọc có thể hiểu được nội dung của đoạn code đó.
 
-### Loại bỏ các biến
+> Hãy chia nhỏ đoạn code của bạn thành những đoạn code nhỏ, dễ đọc hơn
 
-Việc loại bỏ các biến "không cần thiết" sẽ giúp code ngắn gọn và dễ đọc hơn.
+#### Explaining variables
 
-#### Các biến temp không cần thiết
+Cách đơn giản nhất đó là sử dụng các biến để gán cho các biểu thức con.
+Các biến này còn được gọi là "explaining variable" vì chúng giúp giải thích ý nghĩa của biểu thức con.
 
-Xem xét đoạn code dưới đây
-
-```python
-now = datetime.datetime.now()
-root_message.last_view_time = now
-```
-
-Liệu có cần phải giữ lại biến `now` ? Câu trả lời là không, lí do là:
-
-- Nó không chia nhỏ các biểu thức phức tạp.
-- Bản thân `datetime.datetime.now()` đã có ý nghĩa rõ ràng.
-- Nó chỉ được sử dụng duy nhất một lần, vì vậy nó không làm giảm đi bất kì đoạn code thừa nào.
-
-Nếu bỏ biến `now` thì code sẽ dễ hiểu hơn nhiều:
-
-```python
-root_message.last_view_time = datetime.datetime.now()
-```
-
-Các biến như biến `now` thường được gọi là "leftover" vì có thể ban đầu chủ ý của người viết đó là sử dụng lại nhiều lần nhưng thực sự nó lại không cần thiết.
-
-#### Loại bỏ các kết quả trung gian
-
-```js
-var remove_one = function (array, value_to_remove) {
-  var index_to_remove = null;
-  for (var i = 0; i < array.length; i += 1) {
-    if (array[i] === value_to_remove) {
-      index_to_remove = i;
-      break;
-    }
-  }
-  if (index_to_remove !== null) {
-    array.splice(index_to_remove, 1);
-  }
-};
-```
-
-Trên đây là ví dụ về một hàm JS loại bỏ đi một giá trị có trong mảng. Biến `index_to_remove` dùng để lưu `index` của phần từ sẽ bị loại bỏ - nó được coi là một kết quả trung gian. Thông thường biến này sẽ bị loại bỏ vì ta có thể trả về kết quả ngay khi có được.
-
-```js
-var remove_one = function (array, value_to_remove) {
-  for (var i = 0; i < array.length; i += 1) {
-    if (array[i] === value_to_remove) {
-      array.splice(i, 1);
-      return;
-    }
-  }
-};
-```
-
-Việc trả về kết quả ngay khi có được sẽ cải thiện ít nhiều hiệu năng của code khiến task của chúng ta được thực hiện nhanh nhất có thể.
-
-#### Loại bỏ các biến điều khiển luồng
-
-```js
-boolean done = false;
-
-while (/* condition */ && !done) {
-  //...
-  if (...) {
-    done = true;
-    continue;
-  }
-}
-```
-
-Đôi khi bạn sẽ thấy những đoạn code kiểu như trên. Biến `done` được gọi là biến điều khiển luồng. Mục đích duy nhất của chúng là chỉ đạo việc thực thi của chương trình, chúng hoàn toàn không hề chứa bất kì dữ liệu thực tế nào. Những biến thế này có thể loại bỏ được nếu chúng ta áp dụng tốt lập trình cấu trúc
-
-```js
-while (/* condition */) {
-  //...
-  if (...) {
-    break;
-  }
-}
-```
-
-Với những trường hợp phức tạp hơn khi có các vòng lặp lồng nhau, giải pháp là tách hàm.
-
-### Thu nhỏ scope của biến
-
-Chúng ta thường được khuyên rằng: "Tránh sử dụng các biến global" vì phạm vi của chúng rất rộng và rất khó để kiểm soát giá trị. Đồng thời cũng sẽ dễ dàng gây ra sự xung đột về không gian tên giữa biến local và biến global dẫn đến việc chỉnh sửa nhầm giá trị của biến.
-
-Trên thực tế, điều nên làm đó là "thu nhỏ phạm vi của mọi biến" chứ không riêng gì biến global.
-
-> Hãy làm cho biến của bạn được sử dụng bởi số dòng code ít nhất có thể
-
-Có rất nhiều ngôn ngữ lập trình quy định về phạm vi truy cập của các biến
-
-- Module
-- Class
-- Block
-
-Điều này là rất tốt vì nó sẽ hạn chế tối đa số lượng các dòng code có thể "nhìn thấy" biến. Tại sao phải làm như vậy? Vì nó giúp người đọc không phải ghi nhớ quá nhiều biến trong đầu.
-
-Nếu bạn giảm được scope cho biến theo bội số của 2 thì số lượng biến trong scope sẽ giảm nửa
-
-Xét ví dụ sau với một class rất dài:
+VD:
 
 ```ts
-class LargeClass {
-  string str_;
+// before
 
-  void Method1() {
-    str_ = ...;
-    Method2();
-  }
+if (line.split(':')[0].strip() === 'root') {}
 
-  void Method2() {
-    // Uses str_
-  }
-    // Lots of other methods that don't use str_ ...
-};
+// after
+const userName = line.split(':')[0].strip();
+
+if (userName === 'root') {}
 ```
 
-Ở một góc độ nào đó các biến như `str_` sẽ được coi là các biến `mini-global`. Với các class lớn thì sẽ khá khó để có thể theo dõi các biến thường xuyên, vậy nên nếu có ít biến `mini-global` thì sẽ tốt hơn:
+#### Summary variables
+
+Ngay cả khi không cần thiết phải giải thích ý nghĩa của biểu thức con (vì bạn có thể hiểu được ngay ý nghĩa của nó) thì việc thay thế biểu thức con bằng các biến số giúp cho việc quản lí code dễ dàng hơn, lúc này các biến thay thế sẽ được gọi là **Summary variable**
+
+VD:
 
 ```ts
-class LargeClass {
-  void Method1() {
-    string str = ...;
-    Method2(str);
-  }
-
-  void Method2(string str) {
-    // Uses str
-  }
-  // Now other methods can't see str.
-};
-```
-
-Lúc này `str_` sẽ trở thành biến local.
-
-Một cách khác để hạn chế truy cập đến các thuộc tính của class đó là **triển khai nhiều static methods nhất có thể**. Các static methods là một cách khá ổn để cho người đọc có thể thấy rằng các methods này hoàn toàn tách biệt so với các thuộc tính của class.
-
-Hoặc một cách tiếp cận khác đó là **chia nhỏ các class lớn**. Cách tiếp cận này chỉ có hiệu quả nếu các class con độc lập với nhau, nếu bạn tạo ra các class con gọi đến nhau thì đó là một việc làm vô ích.
-
-Cách tiếp cận tương tự cũng được áp dụng cho các file lớn hoặc các hàm dài. Tuy nhiên nguyên tắc ở đây là các thành phần con phải độc lập với nhau về mặt dữ liệu (biến số).
-
-Tuy nhiên các ngôn ngữ khác nhau lại có các quy định khác nhau về việc hình thành scope
-
-#### If statement Scope trong C++
-
-Xét chương trình C++ sau:
-
-```C++
-PaymentInfo* info = database.ReadPaymentInfo();
-if (info) {
-  cout << "User paid: " << info->amount() << endl;
+if (request.user.id === document.owner_id) {
+  // user can edit this document...
 }
-// Many more lines of code below ...
-```
 
-Người đọc code sẽ ghi nhớ rằng biến **info** sẽ được tiếp tục sử dụng. Nhưng trong C++ ta có thể tạo ra biến ngay trong biểu thức điều kiện vì biến **info** này chỉ được dùng trong **if statement**
-
-```C++
-if (PaymentInfo* info = database.ReadPaymentInfo()) {
-  cout << "User paid: " << info->amount() << endl;
+if (request.user.id !== document.owner_id) {
+  // document is read-only...
 }
 ```
 
-Giờ thì người đọc code hoàn toàn có thể quên đi biến **info** sau khi đọc xong **if scope**
+Biểu thức `request.user.id != document.owner_id` không dài nhưng lại có tới 5 biến số, điều này sẽ làm cho người đọc tốn một chút thời gian để nghĩ về nó.
 
-#### Tạo biến private trong Javascript
+Mục đích chính của biểu thức này là "kiểm tra xem, liệu user có phải là chủ nhân của document" hay không?
 
-Giả sử bạn có một biến persistent chỉ được sử dụng bởi một function
+Mục đích trên có thể được thể hiện một cách rõ ràng hơn thông qua một **summary variable** như sau:
 
-```JS
-submitted = false; // Note: global variable
-var submit_form = function (form_name) {
-  if (submitted) {
-    return;  // don't double-submit the form
-  }
-  // ...
-  submitted = true;
-};
-```
+```ts
+const userOwnsDocument = request.user.id === document.owner_id
 
-Các biến global như biến `submitted` thường sẽ khiến người đọc "sợ" khi đọc phải chúng dù trên thực tế biến này chỉ được sử dụng bởi một function duy nhất nhưng người đọc lại không thể chắc chắn điều đó. Vì trên thực tế các file JS khác có thể sử dụng biến này cho các mục đích khác.
-
-Bạn có thể tránh điều này bằng cách đưa biến `submitted` vào trong một `closure`
-
-```JS
-var submit_form = (function () {
-  var submitted = false; // Note: can only be accessed by the function below
-
-  return function (form_name) {
-    if (submitted) {
-      return;  // don't double-submit the form
-    }
-    // ...
-    submitted = true;
-  };
-}());
-```
-
-Cụm ngoặc `()` ở dòng cuối cùng cho thấy hàm sẽ được thực thi ngay tức thì và trả về hàm ở bên trong.
-
-#### Javascript Global Scope
-
-Trong JS nếu bạn không sử dụng từ khoá `var` khi định nghĩa biến, thì biến đó mặc định sẽ là `global variable`.
-
-```HTML
-<script>
-  var f = function () {
-    // DANGER: 'i' is not declared with 'var'!
-    for (i = 0; i < 10; i += 1)
-      // ...
-    };
-  f();
-</script>
-
-<script>
-  alert(i); // Alerts '10'. 'i' is a global variable!
-</script>
-```
-
-Rất nhiều lập trình viên không để ý tới điều này, từ đó dẫn đến những bugs không đáng có. Ví dụ hai functions định nghĩa local variable nhưng không dùng `var`, khi thực thi thì vô tình hai functions này sẽ "nói chuyện với nhau". Các lập trình viên thiếu kinh nghiệm sẽ nghĩ rằng vấn đề nằm ở máy tính hoặc RAM.
-
-Vậy nên một "best practice" trong JS đó là **luôn sử dụng từ khoá var khi định nghĩa biến**. Việc làm này sẽ giới hạn scope của biến nằm trong hàm xâu nhất (nơi mà biến được định nghĩa).
-
-#### Không hề có scope lồng nhau trong Javascript và Python
-
-Các ngôn ngữ như Java hay C++ đều có khái niệm `block scope`, là khi các biến được định nghĩa trong các `if`, `while`, `for` statement hoặc các statement tương tự thì các biến đó chỉ có thể được "nhìn thấy" bên trong scope đó mà thôi
-
-```Java
-if (...) {
-  int x = 1;
+if (userOwnsDocument) {
+  // user can edit this document...
 }
 
-x++; // Compile-error! 'x' is undefined.
+if (!userOwnsDocument) {
+  // document is read-only...
+}
 ```
 
-Nhưng trong các ngôn ngữ như `Python` hay `Javascript` điều đó hoàn toàn ngược lại. Các biến định nghĩa bên trong một scope lại bị "kéo ra" và được sử dụng trong toàn bộ function.
+Việc đọc biểu thức điều kiện `if(userOwnsDocument)` như trên sẽ dễ dàng hơn rất nhiều.
 
-Xét ví dụ dưới đây đối với biến `example_value`
+#### Sử dụng luật De-Morgan
 
-```Python
-# No use of example_value up to this point.
-if request:
-  for value in request.values:
-    if value > 0:
-      example_value = value
-      break
+Với luật này ta có thể biến đổi các biểu thức logic sao cho dễ đọc hơn như sau:
 
-for logger in debug.loggers:
-  logger.log("Example:", example_value)
+```ts
+// before
+if (!(file_exists && !is_protected)) Error("Sorry, could not read file.");
+
+// after
+if (!file_exists ||!is_protected) Error("Sorry, could not read file.");
 ```
 
-Quy tắc về scope này cũng gây ra khá nhiều bất ngờ cho các lập trình viên, những đoạn code kiểu này sẽ khá là khó đọc. Trong các ngôn ngữ khác, sẽ dễ dàng để tìm ra biến `example_value` bằng cách đi theo "lề trái" của function mà bạn đang xem xét.
+#### Lạm dụng các biểu thức logic ngắn
 
-Chương trình trên cũng tiềm ẩn lỗi đó là nếu biến `example_value` không được định nghĩa hoặc set giá trị ở phần đầu tiên thì khi đến phần thứ hai, exception `"NameError: ‘example_value’ is not defined"` sẽ được đưa ra. Chúng ta có thể sửa lại chương trình trên bằng cách định nghĩa `example_value` trong scope chung gần nhất:
+Trong các ngôn ngữ lập trình, toán tử logic sẽ thực thi các đáng giá logic ngắn. Ví dụ với biểu thức `if(a | b)` thì giá trị của `b` sẽ không được xem xét nếu giá trị của `a` là `true`. Điều này khá hữu ích tuy nhiên nó cũng hay bị lạm dụng trong các biểu thức phức tạp hơn.
 
-```Python
-example_value = None
+VD:
 
-if request:
-  for value in request.values:
-    if value > 0:
-      example_value = value
-      break
-
-if example_value:
-  for logger in debug.loggers:
-    logger.log("Example:", example_value)
+```c#
+assert((!(bucket = FindBucket(key))) || !bucket->IsOccupied());
 ```
 
-Trong trường hợp này biến `example_value` nên bị loại bỏ vì nó chỉ lưu trữ các giá trị mang tính trung gian. Ta có thể thực hiện việc loại bỏ biến `example_value` bằng cách "kết thúc task sớm nhất có thể".
+Đoạn code trên có ý nghĩa như sau: tìm `bucket` ứng với `key`, nếu có thì kiểm tra xem nó có bị chiếm giữ (`!bucket->IsOccupied()`) hay không.
 
-```Python
-def LogExample(value):
-  for logger in debug.loggers:
-    logger.log("Example:", value)
+Tuy chỉ có một dòng nhưng việc đọc biểu thức này lại khá tốn thời gian. Trái lại, nếu viết như sau:
 
-if request:
-  for value in request.values:
-    if value > 0:
-      LogExample(value)  # deal with 'value' immediately
-      break
+```c#
+bucket = FindBucket(key);
+if (bucket != NULL) assert(!bucket->IsOccupied());
 ```
 
-#### Di chuyển phần định nghĩa xuống phía dưới
+Với ý nghĩa hoàn toàn tương tự, dù được viết trên 2 dòng thế nhưng đoạn code này lại dễ hiểu hơn rất nhiều.
 
-Các chương trình được viết bằng ngôn ngữ C quy định các biến phải được định nghĩa ở đầu function hoặc block. Thật không may, nếu function của bạn quá dài với nhiều biến thì việc theo dõi các biến sẽ trở nên khó khăn.
+Vậy tại sao lại có những "đoạn code 1 dòng" như vậy? Viết như vậy trông "ngầu" hơn rất nhiều, đồng thời khiến cho việc đọc code cũng cần "dùng đến não" nhiều hơn. Thế nhưng nó lại khiến cho tốc độ đọc code bị ảnh hưởng đáng kể.
 
-Ví dụ dưới đây, các biến đều được định nghĩa ở đầu function
+> Cảnh giác với những đoạn code thông minh - Chúng có thể khiến người đọc cảm thấy khó hiểu
 
-```Python
-def ViewFilteredReplies(original_id):
-  filtered_replies = []
-  root_message = Messages.objects.get(original_id)
-  all_replies = Messages.objects.select(root_id=original_id)
+Điều này không có nghĩa là chúng ta nên "đoạn tuyệt" với các biểu thức như vậy, trong một số trường hợp chúng vẫn phát huy tác dụng:
 
-  root_message.view_count += 1
-  root_message.last_view_time = datetime.datetime.now()
-  root_message.save()
-
-  for reply in all_replies:
-    if reply.spam_votes <= MAX_SPAM_VOTES:
-      filtered_replies.append(reply)
-
-  return filtered_replies
+```ts
+  if (object && object.method()) {}
 ```
 
-Trong ví dụ trên người đọc code phải chú ý đến ba biến cùng một lúc, sẽ dễ dàng hơn cho người đọc nếu như các biến được định nghĩa ngay trước khi chúng được sử dụng.
+#### Ví dụ: Chiến đấu với các logic phức tạp
 
-```Python
-def ViewFilteredReplies(original_id):
-  root_message = Messages.objects.get(original_id)
-  root_message.view_count += 1
-  root_message.last_view_time = datetime.datetime.now()
-  root_message.save()
+Xét ví dụ sau về `Range`
 
-  all_replies = Messages.objects.select(root_id=original_id)
-  filtered_replies = []
-
-  for reply in all_replies:
-    if reply.spam_votes <= MAX_SPAM_VOTES:
-      filtered_replies.append(reply)
-  
-  return filtered_replies
-```
-
-Bạn có thể tự hỏi rằng liệu biến `all_replies` có thực sự cần thiết vì ta hoàn toàn có thể loại bỏ nó bằng cách viết như sau:
-
-```Python
-for reply in Messages.objects.select(root_id=original_id):
-```
-
-Trong trường hợp này biến `all_replies` sẽ đóng vai trò `explaining variable` nên sự có mặt của nó là cần thiết.
-
-### Thích việc sử dụng các biến viết một lần hơn
-
-Trong suốt chương này chúng ta có thể thấy rằng việc theo dõi nhiều biến cùng một lúc là vô cùng khó khăn. Thế nhưng khó khăn sẽ còn gia tăng nếu như các biến này thay đổi giá trị thường xuyên.
-
-Để giải quyết vấn đề này, bạn có thể áp dụng một chiến lược nghe khá lạ tai đó là: **sử dụng các biến viết một lần nhiều hơn**.
-
-Các biến với giá trị "cố định dài hạn" sẽ dễ dàng hơn cho người đọc:
-
-```Java
-static const int NUM_THREADS = 10;
-```
-
-Việc sử dụng các biến hằng số kiểu này sẽ giúp người đọc không phải theo dõi sự thay đổi giá trị của biến quá nhiều. Và vì lí do này, việc sử dụng `const` trong các ngôn ngữ như C++ hay Java đều được khuyến khích.
-
-Trên thực tế, các ngôn ngữ như Python hay Java có các kiểu `String` là **immutable**
-
-Kể cả khi bạn không đưa biến về hằng số được thì việc thay đổi giá trị của biến ở ít chỗ nhất có thể cũng đã giúp cho người đọc code tiết kiệm khá nhiều công sức và thời gian trong quá trình đọc code.
-
-> Biến càng bị thay đổi giá trị ở nhiều nơi thì sẽ càng khó để biết được giá trị hiện thời của nó
-
-Vậy làm thế nào để đưa các biến về hằng số? Chỉ có một cách duy nhất đó là tái cấu trúc lại code.
-
-### Ví dụ cuối cùng
-
-Xét ví dụ dưới đây, khi trang web của chúng ta có nhiều `text field` được định nghĩa liên tiếp nhau
-
-```HTML
-<input type="text" id="input1" value="Dustin">
-<input type="text" id="input2" value="Trevor">
-<input type="text" id="input3" value="">
-<input type="text" id="input4" value="Melissa">
-```
-
-Bạn có thể thấy id của các input sẽ tăng dần từ "input1" -> "input4"
-
-Nhiệm vụ của bạn là viết một hàm có tên `setFirstEmptyInput()` nhận đầu vào là một xâu, và sẽ set giá trị của xâu đó cho <input> element đầu tiên còn trống, hàm trả về DOM element của <input> element được set giá trị hoặc `null` nếu mọi <input> element đều đã được "lấp đầy"
-
-Đoạn code dưới đây thực hiện được yêu cầu nói trên nhưng lại không tuân thủ các nguyên tắc được đề ra trong chương này.
-
-```JS
-var setFirstEmptyInput = function (new_value) {
-  var found = false;
-  var i = 1;
-  var elem = document.getElementById('input' + i);
-
-  while (elem !== null) {
-    if (elem.value === '') {
-      found = true;
-      break;
-    }
-    i++;
-    elem = document.getElementById('input' + i);
-  }
-
-  if (found) elem.value = new_value;
-
-  return elem;
+```c#
+struct Range {
+  int begin;
+  int end;
+  // For example, [0,5) overlaps with [3,8)
+  bool OverlapsWith(Range other);
 };
 ```
 
-Có khá nhiều cách tiếp cận trong việc cải thiện đoạn code trên, chúng ta hãy thử xem xét từ các biến mà hàm sử dụng
-- `var found`
-- `var i`
-- `var elem`
+Minh hoạ cho khái niệm `overlap`.
 
-Như ta thấy biến `found` chỉ chứa giá trị trung gian nên có thể bị loại bỏ.
+<img src="https://user-images.githubusercontent.com/15076665/131236704-cf5f608f-191f-4a08-9fa9-17d0384dbd56.png">
 
-```JS
-var setFirstEmptyInput = function (new_value) {
-  var i = 1;
-  var elem = document.getElementById('input' + i);
-  while (elem !== null) {
-    if (elem.value === '') {
-      elem.value = new_value;
-      return elem;
-    }
-    i++;
-    elem = document.getElementById('input' + i);
-  }
+Dưới đây là 1 implement cho hàm `OverlapsWith`
 
-  return null;
-};
+```c#
+bool Range::OverlapsWith(Range other) {
+  return (begin >= other.begin && begin <= other.end) ||
+  (end >= other.begin && end <= other.end);
+}
 ```
 
-Với `elem` cảm giác như biến này sẽ được lặp qua vòng lặp while nhưng trên thực tế ta chỉ đơn thuần tăng giá trị biến i lên mà thôi. Vậy ta có thể tái cấu trúc code như sau:
+Tuy chỉ có 2 dòng code, nhưng lại có khá nhiều trường hợp cần phải xem xét như dưới đây. Từ đó dễ dẫn đến bug và bỏ sót một vài trường hợp. Ví dụ như [0, 2) không hề overlap với [2, 4)
 
-```JS
-var setFirstEmptyInput = function (new_value) {
-  for (var i = 1; true; i++) {
-    var elem = document.getElementById('input' + i);
-    if (elem === null)
-      return null;  // Search Failed. No empty input found.
-    if (elem.value === '') {
-      elem.value = new_value;
-      return elem;
-    }
+<img src="https://user-images.githubusercontent.com/15076665/131236800-c6886a45-edc5-4eb7-a596-4386eb95f391.png">
+
+Bản fix hoàn chỉnh
+
+```c#
+return (begin >= other.begin && begin < other.end)
+  || (end > other.begin && end <= other.end)
+  || (begin <= other.begin && end >= other.end);
+```
+
+Đoạn code này khá phức tạp, vậy làm thế nào để "chia nhỏ" nó đây ?
+
+#### Tìm cách tiếp cận tốt hơn
+
+Có một cách tiếp cận thú vị hơn đó là "đi ngược" lại so với cách tiếp cận cũ. Tuỳ vào tình huống bạn gặp phải, có thể nó sẽ là duyệt mảng theo thứ tự ngược.
+
+Ở đây, ngược lại với `OverlapsWith` đó là `un-overlap`. Việc chỉ ra 2 range không overlap sẽ đơn giản hơn nhiều vì chỉ có 2 khả năng:
+1. End của range 1 < Begin của range 2
+2. Có một range bắt đầu sau khi một range kết thúc
+
+```c#
+bool Range::OverlapsWith(Range other) {
+  if (other.end <= begin) return false;  // They end before we begin
+  if (other.begin >= end) return false;  // They begin after we end
+  return true;  // Only possibility left: they overlap
+}
+```
+
+Mỗi dòng code ở đây đều đơn giản hơn rất nhiều, giúp người đọc dễ dàng hơn trong quá trình đọc hiểu của mình.
+
+#### Chia nhỏ các statements lớn
+
+```js
+var update_highlight = function (message_num) {
+  if ($("#vote_value" + message_num).html() === "Up") {
+    $("#thumbs_up" + message_num).addClass("highlighted");
+    $("#thumbs_down" + message_num).removeClass("highlighted");
+  } else if ($("#vote_value" + message_num).html() === "Down") {
+    $("#thumbs_up" + message_num).removeClass("highlighted");
+    $("#thumbs_down" + message_num).addClass("highlighted");
+  } else {
+    $("#thumbs_up" + message_num).removeClass("highighted");
+    $("#thumbs_down" + message_num).removeClass("highlighted");
   }
 };
 ```
 
-### Tổng kết
+Các biểu thức ở đoạn code trên, tuy không dài nhưng số lượng lại nhiều nên vô tình chúng sẽ tạo nên "một biểu thức" lớn.
 
-Bạn có thể thu gọn code của mình để khiến chúng dễ đọc hơn bằng những cách sau đây:
-- `Loại bỏ biến`: loại bỏ các biến trung gian và xử lí kết quả trả về ngay lập tức.
-- `Giảm scope của biến`: Đưa biến vào một scope để có ít dòng code nhất sử dụng biến.
-- `Sử dụng write-once variables`: Các biến immutable (sử dụng `const`, `final`) sẽ dễ hiểu hơn rất nhiều.
+```js
+var update_highlight = function (message_num) {
+  var thumbs_up = $("#thumbs_up" + message_num);
+  var thumbs_down = $("#thumbs_down" + message_num);
+  var vote_value = $("#vote_value" + message_num).html();
+  var hi = "highlighted";
+
+  if (vote_value === "Up") {
+    thumbs_up.addClass(hi);
+    thumbs_down.removeClass(hi);
+  } else if (vote_value === "Down") {
+    thumbs_up.removeClass(hi);
+    thumbs_down.addClass(hi);
+  } else {
+    thumbs_up.removeClass(hi);
+    thumbs_down.removeClass(hi);
+  }
+};
+```
+
+Sử dụng các summary variables sẽ giúp các biểu thức bớt cồng kềnh hơn, ngoài ra các biểu thức này có chung một cấu trúc, việc sử dụng summary variable sẽ giúp code của bạn tuân thủ nguyên tắc DRY (Don't repeate yourself).
+
+Ngoài ra còn một số lợi ích như:
+- Tránh lỗi khi gõ.
+- Thu nhỏ độ dài của dòng code, code sẽ dễ đọc hơn.
+- Nếu cần thay đổi giá trị thì chỉ cần sửa ở một chỗ là xong.
+
+#### Một cách thức sáng tạo khác cho việc đơn giản hoá các biểu thức
+
+```c++
+void AddStats(const Stats& add_from, Stats* add_to) {
+  add_to->set_total_memory(add_from.total_memory() + add_to->total_memory());
+  add_to->set_free_memory(add_from.free_memory() + add_to->free_memory());
+  add_to->set_swap_memory(add_from.swap_memory() + add_to->swap_memory());
+  add_to->set_status_string(add_from.status_string() + add_to->status_string());
+  add_to->set_num_processes(add_from.num_processes() + add_to->num_processes());
+}
+```
+
+Mỗi một dòng là một cụm xử lí khá phức tạp. Sau khi quan sát tầm 10s, ta sẽ thấy các dòng code có cấu trúc tương tự nhau, chỉ khác nhau ở đối tượng tác động. Các dòng code đều có format như sau
+
+```c++
+  add_to->set_XXX(add_from.XXX() + add_to->XXX());
+```
+
+Trong C++, ta có thể định nghĩa các macro để rút gọn code
+
+```c++
+void AddStats(const Stats& add_from, Stats* add_to) {
+  #define ADD_FIELD(field) add_to->set_##field(add_from.field() + add_to->field())
+  ADD_FIELD(total_memory);
+  ADD_FIELD(free_memory);
+  ADD_FIELD(swap_memory);
+  ADD_FIELD(status_string);
+  ADD_FIELD(num_processes);
+
+  #undef ADD_FIELD
+}
+```
+
+#### Tổng kết
+
+Kĩ thuật sử dụng *explaining variable* có 3 lợi điểm sau:
+- Rút gọn các biểu thức cồng kềnh.
+- Như một cách giải thích code (tên biến sẽ nêu ý nghĩa của biểu thức con).
+- Giúp người đọc dễ dàng nhận ra concept chính của code.

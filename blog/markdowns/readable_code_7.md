@@ -1,248 +1,268 @@
-### Chương 7: Chia nhỏ các biểu thức cồng kềnh
+### Chương 7: Making control flow easy to read
 
-Loài mực ống là một loài động vật thông minh và khá thú vị, chúng có một cơ thể hoàn chỉnh ngoại trừ một điểm yếu duy nhất: bộ não có hình bánh rán bao quanh thực quản, khiến chúng mỗi khi nuốt thức ăn sẽ làm ảnh hưởng đến bộ não của mình.
+> Hãy viết các vòng lặp, điều kiện rẽ nhánh "tự nhiên" nhất có thể. Hãy viết code sao cho người đọc không phải dừng lại và đọc lại code của bạn
 
-Liên hệ với code, một "đoạn" code quá dài sẽ gây ra những hiệu ứng không đáng có. Nghiên cứu chỉ ra rằng bộ não chỉ có thể xử lí 3, 4 yếu tố cùng một lúc. Vậy nên code càng dài sẽ càng khó cho người đọc có thể hiểu được nội dung của đoạn code đó.
+#### The Order of Arguments in Conditionals
 
-> Hãy chia nhỏ đoạn code của bạn thành những đoạn code nhỏ, dễ đọc hơn
+Xem xét 2 điều kiện dưới đây
 
-#### Explaining variables
-
-Cách đơn giản nhất đó là sử dụng các biến để gán cho các biểu thức con.
-Các biến này còn được gọi là "explaining variable" vì chúng giúp giải thích ý nghĩa của biểu thức con.
-
-VD:
-
-```ts
-// before
-
-if (line.split(':')[0].strip() === 'root') {}
-
-// after
-const userName = line.split(':')[0].strip();
-
-if (userName === 'root') {}
+```typescript
+if (length >= 10)
 ```
 
-#### Summary variables
+```typescript
+if (10 <= length)
+```
 
-Ngay cả khi không cần thiết phải giải thích ý nghĩa của biểu thức con (vì bạn có thể hiểu được ngay ý nghĩa của nó) thì việc thay thế biểu thức con bằng các biến số giúp cho việc quản lí code dễ dàng hơn, lúc này các biến thay thế sẽ được gọi là **Summary variable**
+Với đa phần lập trình viên, cách viết thứ nhất "quen" và "dễ đọc hơn". Thông thường ở điều kiện, mọi người sẽ viết `a > b` thay vì `b < a`
 
-VD:
+Điều này khá trùng khớp với văn nói trong tiếng Anh
+- Tự nhiên: "if you are at least 18 years old"
+- Không tự nhiên: "if 18 years is less than or equal to your age"
 
-```ts
-if (request.user.id === document.owner_id) {
-  // user can edit this document...
-}
+#### The Order of if/else Blocks
 
-if (request.user.id !== document.owner_id) {
-  // document is read-only...
+```typescript
+if (a == b) {
+  // Case One ...
+} else {
+  // Case Two ...
 }
 ```
 
-Biểu thức `request.user.id != document.owner_id` không dài nhưng lại có tới 5 biến số, điều này sẽ làm cho người đọc tốn một chút thời gian để nghĩ về nó.
-
-Mục đích chính của biểu thức này là "kiểm tra xem, liệu user có phải là chủ nhân của document" hay không?
-
-Mục đích trên có thể được thể hiện một cách rõ ràng hơn thông qua một **summary variable** như sau:
-
-```ts
-const userOwnsDocument = request.user.id === document.owner_id
-
-if (userOwnsDocument) {
-  // user can edit this document...
-}
-
-if (!userOwnsDocument) {
-  // document is read-only...
+```typescript
+if (a != b) {
+  // Case Two ...
+} else {
+  // Case One ...
 }
 ```
 
-Việc đọc biểu thức điều kiện `if(userOwnsDocument)` như trên sẽ dễ dàng hơn rất nhiều.
+Thông thường với if/else block, chúng ta có thể tự do lựa chọn thứ tự cho từng case ứng với mỗi điều kiện
 
-#### Sử dụng luật De-Morgan
+Tuy nhiên cũng có những trường hợp ta nên có sự cân nhắc về tính thứ tự
+- Positive case đưa lên trước (khi debug: `if(debug)`)
+- Đưa các trường hợp "đơn giản" lên trước (vì đơn giản nên chúng khá ít code) nên ta có thể thấy rõ được cả 2 block if/else trên màn hình cùng một lúc
 
-Với luật này ta có thể biến đổi các biểu thức logic sao cho dễ đọc hơn như sau:
+Ví dự như trường hợp sau, bạn đang có web server cần trả về `response` dựa theo `URL query parameter` là `expand_all`
 
-```ts
-// before
-if (!(file_exists && !is_protected)) Error("Sorry, could not read file.");
-
-// after
-if (!file_exists ||!is_protected) Error("Sorry, could not read file.");
-```
-
-#### Lạm dụng các biểu thức logic ngắn
-
-Trong các ngôn ngữ lập trình, toán tử logic sẽ thực thi các đáng giá logic ngắn. Ví dụ với biểu thức `if(a | b)` thì giá trị của `b` sẽ không được xem xét nếu giá trị của `a` là `true`. Điều này khá hữu ích tuy nhiên nó cũng hay bị lạm dụng trong các biểu thức phức tạp hơn.
-
-VD:
-
-```c#
-assert((!(bucket = FindBucket(key))) || !bucket->IsOccupied());
-```
-
-Đoạn code trên có ý nghĩa như sau: tìm `bucket` ứng với `key`, nếu có thì kiểm tra xem nó có bị chiếm giữ (`!bucket->IsOccupied()`) hay không.
-
-Tuy chỉ có một dòng nhưng việc đọc biểu thức này lại khá tốn thời gian. Trái lại, nếu viết như sau:
-
-```c#
-bucket = FindBucket(key);
-if (bucket != NULL) assert(!bucket->IsOccupied());
-```
-
-Với ý nghĩa hoàn toàn tương tự, dù được viết trên 2 dòng thế nhưng đoạn code này lại dễ hiểu hơn rất nhiều.
-
-Vậy tại sao lại có những "đoạn code 1 dòng" như vậy? Viết như vậy trông "ngầu" hơn rất nhiều, đồng thời khiến cho việc đọc code cũng cần "dùng đến não" nhiều hơn. Thế nhưng nó lại khiến cho tốc độ đọc code bị ảnh hưởng đáng kể.
-
-> Cảnh giác với những đoạn code thông minh - Chúng có thể khiến người đọc cảm thấy khó hiểu
-
-Điều này không có nghĩa là chúng ta nên "đoạn tuyệt" với các biểu thức như vậy, trong một số trường hợp chúng vẫn phát huy tác dụng:
-
-```ts
-  if (object && object.method()) {}
-```
-
-#### Ví dụ: Chiến đấu với các logic phức tạp
-
-Xét ví dụ sau về `Range`
-
-```c#
-struct Range {
-  int begin;
-  int end;
-  // For example, [0,5) overlaps with [3,8)
-  bool OverlapsWith(Range other);
-};
-```
-
-Minh hoạ cho khái niệm `overlap`.
-
-<img src="https://user-images.githubusercontent.com/15076665/131236704-cf5f608f-191f-4a08-9fa9-17d0384dbd56.png">
-
-Dưới đây là 1 implement cho hàm `OverlapsWith`
-
-```c#
-bool Range::OverlapsWith(Range other) {
-  return (begin >= other.begin && begin <= other.end) ||
-  (end >= other.begin && end <= other.end);
-}
-```
-
-Tuy chỉ có 2 dòng code, nhưng lại có khá nhiều trường hợp cần phải xem xét như dưới đây. Từ đó dễ dẫn đến bug và bỏ sót một vài trường hợp. Ví dụ như [0, 2) không hề overlap với [2, 4)
-
-<img src="https://user-images.githubusercontent.com/15076665/131236800-c6886a45-edc5-4eb7-a596-4386eb95f391.png">
-
-Bản fix hoàn chỉnh
-
-```c#
-return (begin >= other.begin && begin < other.end)
-  || (end > other.begin && end <= other.end)
-  || (begin <= other.begin && end >= other.end);
-```
-
-Đoạn code này khá phức tạp, vậy làm thế nào để "chia nhỏ" nó đây ?
-
-#### Tìm cách tiếp cận tốt hơn
-
-Có một cách tiếp cận thú vị hơn đó là "đi ngược" lại so với cách tiếp cận cũ. Tuỳ vào tình huống bạn gặp phải, có thể nó sẽ là duyệt mảng theo thứ tự ngược.
-
-Ở đây, ngược lại với `OverlapsWith` đó là `un-overlap`. Việc chỉ ra 2 range không overlap sẽ đơn giản hơn nhiều vì chỉ có 2 khả năng:
-1. End của range 1 < Begin của range 2
-2. Có một range bắt đầu sau khi một range kết thúc
-
-```c#
-bool Range::OverlapsWith(Range other) {
-  if (other.end <= begin) return false;  // They end before we begin
-  if (other.begin >= end) return false;  // They begin after we end
-  return true;  // Only possibility left: they overlap
-}
-```
-
-Mỗi dòng code ở đây đều đơn giản hơn rất nhiều, giúp người đọc dễ dàng hơn trong quá trình đọc hiểu của mình.
-
-#### Chia nhỏ các statements lớn
-
-```js
-var update_highlight = function (message_num) {
-  if ($("#vote_value" + message_num).html() === "Up") {
-    $("#thumbs_up" + message_num).addClass("highlighted");
-    $("#thumbs_down" + message_num).removeClass("highlighted");
-  } else if ($("#vote_value" + message_num).html() === "Down") {
-    $("#thumbs_up" + message_num).removeClass("highlighted");
-    $("#thumbs_down" + message_num).addClass("highlighted");
-  } else {
-    $("#thumbs_up" + message_num).removeClass("highighted");
-    $("#thumbs_down" + message_num).removeClass("highlighted");
+```typescript
+if (!url.HasQueryParameter("expand_all")) {
+  response.Render(items);
+} else {
+  for (int i = 0; i < items.size(); i++) {
+    items[i].Expand();
   }
-};
+}
 ```
 
-Các biểu thức ở đoạn code trên, tuy không dài nhưng số lượng lại nhiều nên vô tình chúng sẽ tạo nên "một biểu thức" lớn.
+Khi người đọc thấy `expand_all` họ sẽ lập tức nghĩ ngay đến trường hợp URL chứa `expand_all` (vì nó gợi nên tính tò mò ở người đọc), hơn nữa trường hợp URL chứa `expand_all` cũng là **positive case**. Chính vì thế, đoạn code trên nên được sửa lại như sau:
 
-```js
-var update_highlight = function (message_num) {
-  var thumbs_up = $("#thumbs_up" + message_num);
-  var thumbs_down = $("#thumbs_down" + message_num);
-  var vote_value = $("#vote_value" + message_num).html();
-  var hi = "highlighted";
-
-  if (vote_value === "Up") {
-    thumbs_up.addClass(hi);
-    thumbs_down.removeClass(hi);
-  } else if (vote_value === "Down") {
-    thumbs_up.removeClass(hi);
-    thumbs_down.addClass(hi);
-  } else {
-    thumbs_up.removeClass(hi);
-    thumbs_down.removeClass(hi);
+```typescript
+if (url.HasQueryParameter("expand_all")) {
+  for (int i = 0; i < items.size(); i++) {
+    items[i].Expand();
   }
-};
-```
-
-Sử dụng các summary variables sẽ giúp các biểu thức bớt cồng kềnh hơn, ngoài ra các biểu thức này có chung một cấu trúc, việc sử dụng summary variable sẽ giúp code của bạn tuân thủ nguyên tắc DRY (Don't repeate yourself).
-
-Ngoài ra còn một số lợi ích như:
-- Tránh lỗi khi gõ.
-- Thu nhỏ độ dài của dòng code, code sẽ dễ đọc hơn.
-- Nếu cần thay đổi giá trị thì chỉ cần sửa ở một chỗ là xong.
-
-#### Một cách thức sáng tạo khác cho việc đơn giản hoá các biểu thức
-
-```c++
-void AddStats(const Stats& add_from, Stats* add_to) {
-  add_to->set_total_memory(add_from.total_memory() + add_to->total_memory());
-  add_to->set_free_memory(add_from.free_memory() + add_to->free_memory());
-  add_to->set_swap_memory(add_from.swap_memory() + add_to->swap_memory());
-  add_to->set_status_string(add_from.status_string() + add_to->status_string());
-  add_to->set_num_processes(add_from.num_processes() + add_to->num_processes());
+} else {
+  response.Render(items);  
 }
 ```
 
-Mỗi một dòng là một cụm xử lí khá phức tạp. Sau khi quan sát tầm 10s, ta sẽ thấy các dòng code có cấu trúc tương tự nhau, chỉ khác nhau ở đối tượng tác động. Các dòng code đều có format như sau
+Ngược lại, có những trường hợp cần đưa các case lỗi ra trước:
 
-```c++
-  add_to->set_XXX(add_from.XXX() + add_to->XXX());
+```python
+if not file:
+  # Log the error ...
+else:
+  # ...
 ```
 
-Trong C++, ta có thể định nghĩa các macro để rút gọn code
+#### The ?: Conditional Expression (a.k.a. "Ternary Operator")
 
-```c++
-void AddStats(const Stats& add_from, Stats* add_to) {
-  #define ADD_FIELD(field) add_to->set_##field(add_from.field() + add_to->field())
-  ADD_FIELD(total_memory);
-  ADD_FIELD(free_memory);
-  ADD_FIELD(swap_memory);
-  ADD_FIELD(status_string);
-  ADD_FIELD(num_processes);
+Việc sử dụng toán tử 3 ngôi gây ra nhiều ý kiến trái chiều
+- Có người cho rằng: việc viết trên một dòng sẽ dễ dàng hơn khi viết trên nhiều dòng
+- Có người cho rằng: việc sử dụng toán tử 3 ngôi khiến người đọc khó đọc và không thuật tiện cho việc debug
 
-  #undef ADD_FIELD
+```typescript
+time_str += (hour >= 12) ? "pm" : "am";
+```
+
+```typescript
+if (hour >= 12) {
+  time_str += "pm";
+} else {
+  time_str += "am";
 }
 ```
 
-#### Tổng kết
+Trong trường hợp này sử dụng toán tử 3 ngôi có vẻ hợp lý hơn
 
-Kĩ thuật sử dụng *explaining variable* có 3 lợi điểm sau:
-- Rút gọn các biểu thức cồng kềnh.
-- Như một cách giải thích code (tên biến sẽ nêu ý nghĩa của biểu thức con).
-- Giúp người đọc dễ dàng nhận ra concept chính của code.
+```c++
+return exponent >= 0 ? mantissa * (1 << exponent) : mantissa / (1 << -exponent);
+```
+
+Trong trường hợp này, toán tử 3 ngôi không chỉ đơn thuần là lựa chọn giữa 2 biểu thức đơn giản nữa mà chủ tâm của người viết chính là "ép" mọi thứ vào trong một dòng.
+
+> Thay vì cố gắng giảm số dòng code, hãy cố gắng giảm thời gian mà người đọc cần bỏ ra để hiểu đoạn code mà bạn viết
+
+```c++
+if (exponent >= 0) {
+  return mantissa * (1 << exponent);
+} else {
+  return mantissa / (1 << -exponent);
+}
+```
+
+> Hãy sử dụng if/else. Toán từ 3 ngôi "?" chỉ nên dùng cho những trường hợp đơn giản nhất
+
+#### Avoid do/while Loops
+
+Các ngôn ngữ như C, Perl, ... đều có vòng lặp dạng `do { // code } while (condition)`
+VD:
+
+```C
+do {
+  node = node.next;
+} while (node != NULL)
+```
+
+Với do/while thì code bên trong `do {}` sẽ được thực thi ít nhất một lần, việc đoạn code đó có được thực thi lại hay không, sẽ phụ thuộc vào điều kiện **bên dưới**. Điều này khá là kì quặc vì thông thường chúng ta sẽ đọc code theo thứ tự từ **trên xuống dưới**, và hầu như chúng ta không đọc lại code lần thứ 2. Việc sử dụng do/while sẽ làm cho quá trình đọc code trở nên mất tự nhiên, vì nó đi ngược lại với logic đọc thông thường (giống như cách mà `for`, `while`, `if` thực hiện)
+
+Vòng lặp while sẽ dễ đọc hơn vì chúng ta sẽ thấy được điều kiện trước khi đọc đoạn code bên trong. Cũng khá may, trong thực tế hầu hết các vòng lặp do/while đều có thể được viết lại dưới dạng vòng lặp while.
+
+#### Returning Early from a Function
+
+Một vài coders nghĩ rằng, không nên có nhiều `return statement` trong một hàm. Điều này hoàn toàn KHÔNG CHÍNH XÁC
+
+VD:
+
+```typescript
+const checkString = (str: string): boolean => {
+  if (str === null) return false;
+  if (str.length === 0) return true;
+}
+```
+
+#### The Infamous goto
+
+Các ngôn ngữ lập trình hiện đại có nhiều cách xử lí vấn đề nên goto dường như được sử dụng khá ít. Tuy nhiên một số project viết bằng C nổi tiếng như Linux kernel vẫn sử dụng goto.
+
+Trong trường hợp đơn giản nhất, goto sẽ chuyển hướng thực hiện xuống cuối hàm
+
+```C
+if (p == NULL) goto exit; 
+
+//
+//
+
+exit:
+  fclose(f1);
+  fclose(f2);
+```
+
+Tuy nhiên nếu sử dụng nhiều goto, trong đó sử dụng goto cho mục đích *đi lên* thì code của bạn lúc nãy sẽ giống như những sợi mỳ spaghetti vậy. Thế nên việc sử dụng goto vô tội vạ là một điều cấm kị nếu muốn follow code rõ ràng.
+
+### Minimize Nesting
+
+Các đoạn code lồng nhau quá sâu sẽ dẫn tới khó hiểu. Mỗi một "tầng code" sẽ là một lần người đọc phải nhớ các điều kiện tương ứng. Khi đọc xong một "tầng code" sẽ khá khó để người đọc có thể nhớ lại được điều kiện tương ứng với "tầng" đó là như thế nào.
+
+Dưới đây là một ví dụ khá đơn giản về việc sử dụng double-check condition.
+
+```typescript
+if (user_result === SUCCESS) {
+  if (permission_result !== SUCCESS) {
+     return "permission_error";
+  }
+  return "";
+} else {
+  return "user_error";
+}
+
+return "done";
+```
+
+Đọc đoạn code trên, người đọc sẽ phải luôn ghi nhớ giá trị của `user_result` và `permission_result`. Hơn nữa đoạn code này còn tệ ở chỗ, nó xen kẽ giữa điều kiện `=== SUCCESS` và `!== SUCCESS`
+
+#### How Nesting Accumulates
+
+Ban đầu đoạn code trên khá đơn giản và dễ hiểu
+
+```typescript
+if (user_result === SUCCESS) {
+  return "";
+} else {
+  return "user_error";
+}
+
+return "done";
+```
+
+Khi sửa lại code, người viết code đã thêm vào phần mà anh ta "cảm thấy" là "dễ nhất" để thêm vào
+
+```typescript
+if (user_result === SUCCESS) {
+  if (permission_result !== SUCCESS) {
+     return "permission_error";
+  }
+  return "";
+}
+```
+
+Đối với người viết code, sự thay đổi này là khá rõ ràng và nó "hằn sâu" vào suy nghĩ của anh ta. Tuy nhiên với người đọc code lần đầu tiên, khi không hề có context cảm giác sẽ khá mơ hồ.
+ 
+#### Removing Nesting by Returning Early
+
+Đoạn code trên có thể cải thiện bằng cách xử lí trường hợp failed trước, sau đó sẽ trả về trường hợp success (returning early)
+
+```typescript
+if (user_result !== SUCCESS) {
+  return "user_error";
+}
+
+if (permission_result !== SUCCESS) {
+  return "permisson_error";
+}
+
+return "done";
+```
+
+Ngoài việc giảm số tầng code từ 2 xuống 1, đoạn code này cũng giúp người đọc không phải "nhớ" các giá trị của điều kiện quá lâu.
+
+#### Removing Nesting Inside Loops
+
+Kĩ thuật returning early không phải lúc nào cũng phát huy hiệu quả, ví dụ như với các vòng lặp
+
+```typescript
+for (let i = 0; i < results.length; i++) {
+  if (results[i] !== null) {
+    // ...
+    if (result[i].name.length > 0) {
+      // ...
+    }
+  }
+}
+```
+
+Trong tình huống này, ta có thể sử dụng kĩ thuật tương tự như "returning early" đó là "continue"
+
+```typescript
+for (let i = 0; i < results.length; i++) {
+  if (results[i] === null) continue;
+  // ...
+
+  if (result[i].name.length <= 0) continue;
+  // ...
+}
+```
+
+Tuy vậy việc sử dụng continue cũng dễ gây ra sự hiểu nhầm, nó có thể sẽ giống như goto nhưng nếu sử dụng cho từng vòng lặp (mỗi vòng lặp là một scope riêng) thì vẫn có thể chấp nhận được.
+
+#### Can You Follow the Flow of Execution?
+
+Chương này nói về việc viết các flow control cấp thấp (condition, loop). Tuy nhiên bạn cũng nên chú ý về flow cấp cao hơn, cụ thể là từ khi bắt đầu hàm `main()` cho đến các lời gọi hàm kế tiếp và cuối cùng là kết thúc chương trình
+
+### Tổng kết 
+
+Qua chương này bạn có thể thấy rằng, xử lí những trườngh hợp đơn giản trước là một sự lựa chọn đúng đắn. Hãy viết nhiều "linear code" hơn thay vì viết những "nesting code" khiến người đọc phải ghi nhớ nhiều hơn về giá trị của các biến số
+
+Tránh sử dụng goto, do/while loop. Chú ý đến thứ tự sắp xếp điều kiện trong `if statement`, đặt những giá trị `thay đổi` ở `bên trái`, những giá trị `ổn định` hơn ở `bên phải`. Sử dụng toán từ ba ngôi (? :) một cách thực sự hợp lí.

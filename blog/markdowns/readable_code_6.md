@@ -1,268 +1,186 @@
-### Chương 6: Making control flow easy to read
+## CHƯƠNG 6: Making Comments Precise and Compact
 
-> Hãy viết các vòng lặp, điều kiện rẽ nhánh "tự nhiên" nhất có thể. Hãy viết code sao cho người đọc không phải dừng lại và đọc lại code của bạn
+Chương trước trình bày về việc nên **comment cái gì**, chương này nói về việc nên **comment như thế nào**
 
-#### The Order of Arguments in Conditionals
+Key idea:
+> Đảm bảo tỉ lệ thông tin-không gian
 
-Xem xét 2 điều kiện dưới đây
+Cần đảm bảo tỉ lệ trên là vì đọc comment cũng sẽ tốn thời gian của người đọc, vậy nên comment phải tóm lược, đầy đủ nhất có thể
 
-```typescript
-if (length >= 10)
+### Keep Comments Compact
+
+Xét ví dụ code C++ dưới đây:
+
+```C++
+// The int is the CategoryType.
+// The first float in the inner pair is the 'score',
+// the second is the 'weight'.
+typedef hash_map<int, pair<float, float> > ScoreMap;
 ```
 
-```typescript
-if (10 <= length)
+Thay vì cần những 3 dòng như trên, ta có thể comment ngắn gọn tron 1 dòng như sau
+
+```C++
+// CategoryType -> (score, weight)
+typedef hash_map<int, pair<float, float> > ScoreMap;
 ```
 
-Với đa phần lập trình viên, cách viết thứ nhất "quen" và "dễ đọc hơn". Thông thường ở điều kiện, mọi người sẽ viết `a > b` thay vì `b < a`
+### Avoid Ambiguous Pronouns
 
-Điều này khá trùng khớp với văn nói trong tiếng Anh
-- Tự nhiên: "if you are at least 18 years old"
-- Không tự nhiên: "if 18 years is less than or equal to your age"
+Với comment bằng tiếng anh thì các từ như "this", "it" thường có ý nghĩa khá mơ hồ, dễ gây hiểu nhầm cho người đọc. Ví dụ như:
 
-#### The Order of if/else Blocks
-
-```typescript
-if (a == b) {
-  // Case One ...
-} else {
-  // Case Two ...
-}
+```javascript
+// Insert the data into the cache, but check if it's too big first.
 ```
 
-```typescript
-if (a != b) {
-  // Case Two ...
-} else {
-  // Case One ...
-}
+Từ "it" ở đây có thể ám chỉ hoặc là "data" hoặc là "cache", người đọc chỉ có thể biết được nếu đọc code, vậy thì comment ở đây là hoàn toàn vô nghĩa.
+
+Cách sửa an toàn nhất đó là thay từ "it" bằng 1 từ cụ thể, giả dụ ở đây là "the data", khi đó ta có comment như sau
+
+```javascript
+// Insert the data into the cache, but check if the data is too big first.
 ```
 
-Thông thường với if/else block, chúng ta có thể tự do lựa chọn thứ tự cho từng case ứng với mỗi điều kiện
+Đây là cách đơn giản nhất, ngoài ra bạn cũng có thể "tái cấu trúc" lại comment để khiến "it" có ý nghĩa hơn
 
-Tuy nhiên cũng có những trường hợp ta nên có sự cân nhắc về tính thứ tự
-- Positive case đưa lên trước (khi debug: `if(debug)`)
-- Đưa các trường hợp "đơn giản" lên trước (vì đơn giản nên chúng khá ít code) nên ta có thể thấy rõ được cả 2 block if/else trên màn hình cùng một lúc
-
-Ví dự như trường hợp sau, bạn đang có web server cần trả về `response` dựa theo `URL query parameter` là `expand_all`
-
-```typescript
-if (!url.HasQueryParameter("expand_all")) {
-  response.Render(items);
-} else {
-  for (int i = 0; i < items.size(); i++) {
-    items[i].Expand();
-  }
-}
+```javascript
+// If the data is small enough, insert it into the cache.
 ```
 
-Khi người đọc thấy `expand_all` họ sẽ lập tức nghĩ ngay đến trường hợp URL chứa `expand_all` (vì nó gợi nên tính tò mò ở người đọc), hơn nữa trường hợp URL chứa `expand_all` cũng là **positive case**. Chính vì thế, đoạn code trên nên được sửa lại như sau:
+#### Polish Sloppy Sentences
 
-```typescript
-if (url.HasQueryParameter("expand_all")) {
-  for (int i = 0; i < items.size(); i++) {
-    items[i].Expand();
-  }
-} else {
-  response.Render(items);  
-}
-```
-
-Ngược lại, có những trường hợp cần đưa các case lỗi ra trước:
+Viết comment tóm lược luôn đi đôi với việc khiến nó trở nên ngắn gọn hơn. Ví dụ với một web crawler:
 
 ```python
-if not file:
-  # Log the error ...
-else:
-  # ...
+ # Depending on whether we've already crawled this URL before, give it a different priority.
 ```
 
-#### The ?: Conditional Expression (a.k.a. "Ternary Operator")
+Nhìn có vẻ ổn nhưng khi so sánh với comment dưới đây:
 
-Việc sử dụng toán tử 3 ngôi gây ra nhiều ý kiến trái chiều
-- Có người cho rằng: việc viết trên một dòng sẽ dễ dàng hơn khi viết trên nhiều dòng
-- Có người cho rằng: việc sử dụng toán tử 3 ngôi khiến người đọc khó đọc và không thuật tiện cho việc debug
-
-```typescript
-time_str += (hour >= 12) ? "pm" : "am";
+```python
+# Give higher priority to URLs we've never crawled before.
 ```
 
-```typescript
-if (hour >= 12) {
-  time_str += "pm";
-} else {
-  time_str += "am";
-}
-```
+Comment sau ngắn gọn, đầy đủ và còn cung cấp thêm thông tin cho trường hợp có mức "priority" cao hơn
 
-Trong trường hợp này sử dụng toán tử 3 ngôi có vẻ hợp lý hơn
+#### Describe Function Behavior Precisely
 
-```c++
-return exponent >= 0 ? mantissa * (1 << exponent) : mantissa / (1 << -exponent);
-```
-
-Trong trường hợp này, toán tử 3 ngôi không chỉ đơn thuần là lựa chọn giữa 2 biểu thức đơn giản nữa mà chủ tâm của người viết chính là "ép" mọi thứ vào trong một dòng.
-
-> Thay vì cố gắng giảm số dòng code, hãy cố gắng giảm thời gian mà người đọc cần bỏ ra để hiểu đoạn code mà bạn viết
-
-```c++
-if (exponent >= 0) {
-  return mantissa * (1 << exponent);
-} else {
-  return mantissa / (1 << -exponent);
-}
-```
-
-> Hãy sử dụng if/else. Toán từ 3 ngôi "?" chỉ nên dùng cho những trường hợp đơn giản nhất
-
-#### Avoid do/while Loops
-
-Các ngôn ngữ như C, Perl, ... đều có vòng lặp dạng `do { // code } while (condition)`
-VD:
+Giả sử bạn đang viết hàm đếm số dòng của 1 file:
 
 ```C
-do {
-  node = node.next;
-} while (node != NULL)
+// Return the number of lines in this file.
+int CountLines(string filename) { ... }
 ```
 
-Với do/while thì code bên trong `do {}` sẽ được thực thi ít nhất một lần, việc đoạn code đó có được thực thi lại hay không, sẽ phụ thuộc vào điều kiện **bên dưới**. Điều này khá là kì quặc vì thông thường chúng ta sẽ đọc code theo thứ tự từ **trên xuống dưới**, và hầu như chúng ta không đọc lại code lần thứ 2. Việc sử dụng do/while sẽ làm cho quá trình đọc code trở nên mất tự nhiên, vì nó đi ngược lại với logic đọc thông thường (giống như cách mà `for`, `while`, `if` thực hiện)
+Từ "line" ở đây mang ý nghĩa khá mơ hồ, có nhiều cách để định nghĩa một line. Dưới đây là một vài trường hợp đặc biệt
+- "" (empty file) -> 0 line hay 1 line
+- "hello\n" -> 1 line hay 2 line
 
-Vòng lặp while sẽ dễ đọc hơn vì chúng ta sẽ thấy được điều kiện trước khi đọc đoạn code bên trong. Cũng khá may, trong thực tế hầu hết các vòng lặp do/while đều có thể được viết lại dưới dạng vòng lặp while.
-
-#### Returning Early from a Function
-
-Một vài coders nghĩ rằng, không nên có nhiều `return statement` trong một hàm. Điều này hoàn toàn KHÔNG CHÍNH XÁC
-
-VD:
-
-```typescript
-const checkString = (str: string): boolean => {
-  if (str === null) return false;
-  if (str.length === 0) return true;
-}
-```
-
-#### The Infamous goto
-
-Các ngôn ngữ lập trình hiện đại có nhiều cách xử lí vấn đề nên goto dường như được sử dụng khá ít. Tuy nhiên một số project viết bằng C nổi tiếng như Linux kernel vẫn sử dụng goto.
-
-Trong trường hợp đơn giản nhất, goto sẽ chuyển hướng thực hiện xuống cuối hàm
+Cách đơn giản nhất đó là đếm số kí tự newline '\n' (tương tự như cách câu lệnh `wc` của Unix thực hiện). Đây sẽ là cách comment tốt hơn
 
 ```C
-if (p == NULL) goto exit; 
-
-//
-//
-
-exit:
-  fclose(f1);
-  fclose(f2);
+// Count how many newline bytes ('\n') are in the file.
+int CountLines(string filename) { ... }
 ```
 
-Tuy nhiên nếu sử dụng nhiều goto, trong đó sử dụng goto cho mục đích *đi lên* thì code của bạn lúc nãy sẽ giống như những sợi mỳ spaghetti vậy. Thế nên việc sử dụng goto vô tội vạ là một điều cấm kị nếu muốn follow code rõ ràng.
+Comment này ngắn hơn phiên bản cũ nhưng lại đầy đủ thông tin hơn, nó nói với người đọc rằng (hàm có thể trả về 0 cũng như bỏ qua kí tự \r)
 
-### Minimize Nesting
+#### Use Input/Output Examples That Illustrate Corner Cases
 
-Các đoạn code lồng nhau quá sâu sẽ dẫn tới khó hiểu. Mỗi một "tầng code" sẽ là một lần người đọc phải nhớ các điều kiện tương ứng. Khi đọc xong một "tầng code" sẽ khá khó để người đọc có thể nhớ lại được điều kiện tương ứng với "tầng" đó là như thế nào.
+Với comment, việc lựa chọn cẩn thận một ví dụ minh hoạ đôi khi sẽ đem lại hiệu quả hơn cả ngàn từ ngữ. Ví dụ:
 
-Dưới đây là một ví dụ khá đơn giản về việc sử dụng double-check condition.
+```C
+// Remove the suffix/prefix of 'chars' from the input 'src'.
+String Strip(String src, String chars) { ... }
+```
+
+Comment phía trên chưa tóm lược được chức năng của hàm vì nó chưa trả lời được các câu hỏi như:
+- Liệu chars là một "cụm cố định" hay chỉ đơn thuần là một tập các chữ cái ?
+- Liệu nếu phía cuối của xâu có chứa nhiều cụm chars thì liệu chúng có bị loại bỏ hay không ?
+
+```C
+// ...
+// Example: Strip("abba/a/ba", "ab") returns "/a/"
+String Strip(String src, String chars) { ... }
+```
+
+Thay vào đó một ví dụ được lựa chọn cẩn thận như trên có thể giúp cho người đọc nắm bắt ngay được chức năng của hàm. Ngược lại với một ví dụ đơn giản như dưới đây, chức năng chính của hàm vẫn chưa được thể hiện rõ cho người đọc
+
+```C
+// Example: Strip("ab", "a") returns "b"
+```
+
+Đây là một ví dụ khác mà bạn có thể sử dụng ví dụ minh hoạ cho comment
+
+```C
+// Rearrange 'v' so that elements < pivot come before those >= pivot;
+// Then return the largest 'i' for which v[i] < pivot (or -1 if none are < pivot)
+int Partition(vector<int>* v, int pivot);
+```
+
+Comment này khá là ngắn gọn, tuy nhiên lại khó để hình dung, nếu thêm ví dụ minh hoạ thì sẽ tốt hơn nhiều
+
+```C
+// ...
+// Example: Partition([8 5 9 8 2], 8) might result in [5 2 | 8 9 8] and return 1
+int Partition(vector<int>* v, int pivot);
+```
+
+Có một vài điểm mà ta cần chú ý ở ví dụ minh hoạ trên
+- Tồn tại phần tử của vector có giá trị bằng pivot (test được TH biên)
+- Vector không "bị" sắp xếp - tránh cho người dùng hiểu nhầm ý nghĩa của hàm
+- Giá trị trả về của hàm là 1, và không tồn tại giá trị 1 trong vector
+- Giá trị 8 trong vector được lặp lại -> hàm của chúng ta cho phép các input vector chứa các giá trị lặp
+
+#### State the Intent of Your Code
+
+Trong thực tế chúng ta thường comment theo kiểu "diễn xuôi" lại những gì mà đoạn code phía dưới thực hiện
+
+```C++
+void DisplayProducts(list<Product> products) {
+  products.sort(CompareProductByPrice);
+  // Iterate through the list in reverse order
+  for (list<Product>::reverse_iterator it = products.rbegin(); it != products.rend();
+    ++it)
+   DisplayPrice(it->price);
+  ...
+}
+```
+
+Comment dưới đây có vẻ tốt hơn
+
+```C++
+// Display each price, from highest to lowest
+for (list<Product>::reverse_iterator it = products.rbegin(); ... )
+```
+
+Comment đầu tiên thì đúng hơn về mặt kĩ thuật, comment thứ hai lại thể hiện ý đồ của người viết code - cái mà người đọc mong muốn nắm bắt được
+
+#### “Named Function Parameter” Comments
+
+Giả sử bạn thấy lời gọi hàm như sau
 
 ```typescript
-if (user_result === SUCCESS) {
-  if (permission_result !== SUCCESS) {
-     return "permission_error";
-  }
-  return "";
-} else {
-  return "user_error";
-}
-
-return "done";
+Connect(10, false)
 ```
 
-Đọc đoạn code trên, người đọc sẽ phải luôn ghi nhớ giá trị của `user_result` và `permission_result`. Hơn nữa đoạn code này còn tệ ở chỗ, nó xen kẽ giữa điều kiện `=== SUCCESS` và `!== SUCCESS`
+Lời gọi hàm này khá khó hiểu do sự xuất hiện của hai tham số "10" và "false"
 
-#### How Nesting Accumulates
+Trong các ngôn ngữ như Python, bạn có thể gán giá trị cho tham số theo tên 
 
-Ban đầu đoạn code trên khá đơn giản và dễ hiểu
+```python
+def Connect(time_out, use_encryption):
 
-```typescript
-if (user_result === SUCCESS) {
-  return "";
-} else {
-  return "user_error";
-}
-
-return "done";
+Connect(time_out = 10, use_encryption = True)
 ```
 
-Khi sửa lại code, người viết code đã thêm vào phần mà anh ta "cảm thấy" là "dễ nhất" để thêm vào
+#### Use Information-Dense Words
 
-```typescript
-if (user_result === SUCCESS) {
-  if (permission_result !== SUCCESS) {
-     return "permission_error";
-  }
-  return "";
-}
-```
+Trong ngành lập trình, có những tác vụ sẽ lặp đi lặp lại. Chúng sẽ được đi kèm với các từ ngữ chuyên dụng cho tác vụ đó
 
-Đối với người viết code, sự thay đổi này là khá rõ ràng và nó "hằn sâu" vào suy nghĩ của anh ta. Tuy nhiên với người đọc code lần đầu tiên, khi không hề có context cảm giác sẽ khá mơ hồ.
- 
-#### Removing Nesting by Returning Early
+Một vài từ tiêu biểu như:
+- heuristic
+- brute-forces
+- naive solution
 
-Đoạn code trên có thể cải thiện bằng cách xử lí trường hợp failed trước, sau đó sẽ trả về trường hợp success (returning early)
-
-```typescript
-if (user_result !== SUCCESS) {
-  return "user_error";
-}
-
-if (permission_result !== SUCCESS) {
-  return "permisson_error";
-}
-
-return "done";
-```
-
-Ngoài việc giảm số tầng code từ 2 xuống 1, đoạn code này cũng giúp người đọc không phải "nhớ" các giá trị của điều kiện quá lâu.
-
-#### Removing Nesting Inside Loops
-
-Kĩ thuật returning early không phải lúc nào cũng phát huy hiệu quả, ví dụ như với các vòng lặp
-
-```typescript
-for (let i = 0; i < results.length; i++) {
-  if (results[i] !== null) {
-    // ...
-    if (result[i].name.length > 0) {
-      // ...
-    }
-  }
-}
-```
-
-Trong tình huống này, ta có thể sử dụng kĩ thuật tương tự như "returning early" đó là "continue"
-
-```typescript
-for (let i = 0; i < results.length; i++) {
-  if (results[i] === null) continue;
-  // ...
-
-  if (result[i].name.length <= 0) continue;
-  // ...
-}
-```
-
-Tuy vậy việc sử dụng continue cũng dễ gây ra sự hiểu nhầm, nó có thể sẽ giống như goto nhưng nếu sử dụng cho từng vòng lặp (mỗi vòng lặp là một scope riêng) thì vẫn có thể chấp nhận được.
-
-#### Can You Follow the Flow of Execution?
-
-Chương này nói về việc viết các flow control cấp thấp (condition, loop). Tuy nhiên bạn cũng nên chú ý về flow cấp cao hơn, cụ thể là từ khi bắt đầu hàm `main()` cho đến các lời gọi hàm kế tiếp và cuối cùng là kết thúc chương trình
-
-### Tổng kết 
-
-Qua chương này bạn có thể thấy rằng, xử lí những trườngh hợp đơn giản trước là một sự lựa chọn đúng đắn. Hãy viết nhiều "linear code" hơn thay vì viết những "nesting code" khiến người đọc phải ghi nhớ nhiều hơn về giá trị của các biến số
-
-Tránh sử dụng goto, do/while loop. Chú ý đến thứ tự sắp xếp điều kiện trong `if statement`, đặt những giá trị `thay đổi` ở `bên trái`, những giá trị `ổn định` hơn ở `bên phải`. Sử dụng toán từ ba ngôi (? :) một cách thực sự hợp lí.
+Những từ này sẽ giúp rút ngắn đi những comment dài "loằng ngoằng".
