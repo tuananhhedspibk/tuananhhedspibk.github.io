@@ -1,7 +1,17 @@
 {
+    "readable_code_11": {
+        "title": "Readable code 11",
+        "description": "Readable code translation to Vietnamese (chapter 11)",
+        "tags": [
+            "Clean code",
+            "Translation",
+            "vietnamese"
+        ],
+        "posted_at": "Posted at September 11, 2021"
+    },
     "readable_code_10": {
         "title": "Readable code 10",
-        "description": "Readable code translation to Vietnamese (chapter 11)",
+        "description": "Readable code translation to Vietnamese (chapter 10)",
         "tags": [
             "Clean code",
             "Translation",
@@ -11,7 +21,7 @@
     },
     "readable_code_9": {
         "title": "Readable code 9",
-        "description": "Readable code translation to Vietnamese (chapter 10)",
+        "description": "Readable code translation to Vietnamese (chapter 9)",
         "tags": [
             "Clean code",
             "Translation",
@@ -21,7 +31,7 @@
     },
     "readable_code_8": {
         "title": "Readable code 8",
-        "description": "Readable code translation to Vietnamese (chapter 9)",
+        "description": "Readable code translation to Vietnamese (chapter 8)",
         "tags": [
             "Clean code",
             "Translation",
@@ -41,7 +51,7 @@
     },
     "readable_code_7": {
         "title": "Readable code 7",
-        "description": "Readable code translation to Vietnamese (chapter 8)",
+        "description": "Readable code translation to Vietnamese (chapter 7)",
         "tags": [
             "Clean code",
             "Translation",
@@ -51,7 +61,7 @@
     },
     "readable_code_6": {
         "title": "Readable code 6",
-        "description": "Readable code translation to Vietnamese (chapter 7)",
+        "description": "Readable code translation to Vietnamese (chapter 6)",
         "tags": [
             "Clean code",
             "Translation",
@@ -223,7 +233,7 @@
         "posted_at": "Posted at October 2, 2020"
     },
     "readable_code_5": {
-        "title": "Readable code translation to Vietnamese (chapter 5, 6)",
+        "title": "Readable code translation to Vietnamese (chapter 5)",
         "description": "This chapter is about writing comment when coding",
         "tags": [
             "Clean code",
