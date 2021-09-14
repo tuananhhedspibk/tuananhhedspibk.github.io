@@ -89,9 +89,20 @@
         ],
         "posted_at": "Posted at April 4, 2021"
     },
-    "summary_nhan_dien_thuong_hieu_2": {
-        "title": "Summary Nhan Dien Thuong Hieu - Chapter 2",
-        "description": "Summary Nhan Dien Thuong Hieu - Chapter 2",
+    "summary_nhan_dien_thuong_hieu_2_b": {
+        "title": "Summary Nhan Dien Thuong Hieu - Chapter 2 (Section B)",
+        "description": "Summary Nhan Dien Thuong Hieu - Chapter 2 (Section B)",
+        "tags": [
+            "UI",
+            "UX",
+            "Summary",
+            "vietnamese2"
+        ],
+        "posted_at": "Posted at April 4, 2021"
+    },
+    "summary_nhan_dien_thuong_hieu_2_a": {
+        "title": "Summary Nhan Dien Thuong Hieu - Chapter 2 (Section A)",
+        "description": "Summary Nhan Dien Thuong Hieu - Chapter 2 (Section A)",
         "tags": [
             "UI",
             "UX",
