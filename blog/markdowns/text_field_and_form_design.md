@@ -46,3 +46,16 @@ Thường thì label sẽ có 3 vị trí:
 Style tốt nhất sẽ tuỳ thuộc vào:
 - Mục đích của thiết kế
 - Kích cỡ của form
+
+<img src="https://user-images.githubusercontent.com/15076665/133546081-875ef4b9-4b66-4c8a-93ff-97f411c9ce0c.jpeg" width="720">
+
+### Label căn lề trái
+
+Đây là một sự lựa chọn tốt khi dữ liệu cần nhập vào không quen thuộc với user.
+
+**Ưu điểm**: dễ dàng scale label và tốt cho các form theo chiều dọc
+**Nhược điểm**: khoảng cách giữa các labels với các inputs sẽ khác nhau, khiến người dùng phải đánh mắt nhiều.
+
+<img src="https://user-images.githubusercontent.com/15076665/133546562-bf9a5be4-5543-439b-a920-e0b1c79383e5.jpeg" width="720">
+
+### Label căn lề phải
