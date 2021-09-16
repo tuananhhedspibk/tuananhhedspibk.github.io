@@ -59,3 +59,19 @@ Style tốt nhất sẽ tuỳ thuộc vào:
 <img src="https://user-images.githubusercontent.com/15076665/133546562-bf9a5be4-5543-439b-a920-e0b1c79383e5.jpeg" width="720">
 
 ### Label căn lề phải
+
+Tăng tốc độ đọc của người dùng lên hai lần so với **căn lề trái**.
+
+**Ưu điểm**: do các labels lúc này đã gần với inputs hơn nên người dùng không phải đánh mắt quá nhiều, từ đó giúp tăng tốc độ "đọc hiểu" giao diện của người dùng.
+**Nhược điểm**: khó hơn trong việc đọc toàn bộ form để từ đó hiểu được thông tin nào là cần thiết.
+
+<img src="https://user-images.githubusercontent.com/15076665/133584580-0f3b920e-ca36-49d6-996c-5b586a2e604e.jpeg" width="720">
+
+### Label căn trên top
+
+Thời gian đọc form sẽ là ngắn nhất, đồng thời hoạt động tốt với mobile khi chiều rộng bị hạn chế
+
+**Ưu điểm**: cho phép người dùng bắt được nội dung của input và label cùng một lúc, từ đó tăng tốc độ "đọc hiểu".
+**Nhược điểm**: yêu cầu nhiều không gian chiều dọc hơn.
+
+<img src="https://user-images.githubusercontent.com/15076665/133585132-c7535770-6915-4167-b97e-ffab919601a2.jpeg" width="720">
