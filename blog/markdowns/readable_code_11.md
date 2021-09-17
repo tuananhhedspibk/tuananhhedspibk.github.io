@@ -121,3 +121,86 @@ VD: "Santa Monica, USA" -> "Santa Monica, Carlifornia"
 Nếu thêm tính năng trên thì **chắc chắn** code sẽ rối hơn rất nhiều
 
 ### Áp dụng "Một task tại Một thời điểm"
+
+Để ý một chútt chúng ta sẽ thấy đoạn code phía trên thực hiện nhiều tasks cùng một lúc:
+- Tách dữ liệu ra từ `location_info` dictionary
+- Đưa ra dữ liệu cho "City", đặt giá trị mặc định cho nó là "Middle-Of-Nowhere"
+- Đựa ra dữ liệu cho "Country", đặt giá trị mặc định cho nó là "Planet Earth"
+- Cập nhật giá trị cho place
+
+Ta sẽ chia nhỏ thành 4 tasks con thực hiện các nhiệm vụ một cách độc lập:
+
+```JS
+var town    = location_info["LocalityName"];               // e.g. "Santa Monica"
+var city    = location_info["SubAdministrativeAreaName"];  // e.g. "Los Angeles"
+var state   = location_info["AdministrativeAreaName"];     // e.g. "CA"
+var country = location_info["CountryName"];                // e.g. "USA"
+```
+
+Lúc này ta đã xong nhiệm vụ với `location_info` và có thể sử dụng 4 biến thay vì phải nhớ từng `key` của `location_info`.
+
+Bây giờ sẽ tiến hành thiết lập giá trị cho "hai nửa".
+
+1. Nửa thứ 1:
+
+```JS
+var first_half = "Middle-of-Nowhere";
+
+if (state && country !== "USA") {
+  first_half = state;
+}
+
+if (city) {
+  first_half = city;
+}
+
+if (town) {
+  first_half = town;
+}
+```
+
+2. Nửa thứ 2:
+
+```JS
+var second_half = "Planet Earth";
+
+if (country) {
+  second_half = country;
+}
+
+if (state && country === "USA") {
+  second_half = state;
+}
+```
+
+Cuối cùng là "ghép" hai nửa lại với nhau:
+
+```JS
+return first_half + ", " + second_half;
+```
+
+Dưới đây là hình mình hoạ cho quá trình refactor lại code.
+
+<img src="https://user-images.githubusercontent.com/15076665/133785416-7d2289ff-ad86-4b36-8d5b-fc9c4bda4cca.png" width="720">
+
+### Cách tiếp cận khác
+
+Có nhiều cách tiếp cận khi tiến hành refactor code, việc chia nhỏ task sẽ giúp việc đọc code dễ dàng hơn. Ở đoạn code đã được refactor ở trên, nếu để ý kĩ vẫn có đoạn có thể chia thành 2 tasks con:
+1. Duyệt qua một danh sách các biến và chọn ra biến phù hợp
+2. Sử dụng một danh sách khác với điều kiện riêng cho trường hợp `country` là "USA"
+
+Ta có thể chia trường hợp với giá trị "USA" như sau:
+
+```JS
+var first_half, second_half;
+
+if (country === "USA") {
+  first_half = town || city || "Middle-of-Nowhere";
+  second_half = state || "USA";
+} else {
+  first_half = town || city || state || "Middle-of-Nowhere";
+  second_half = country || "Planet Earth";
+}
+
+return first_half + ", " + second_half;
+```
