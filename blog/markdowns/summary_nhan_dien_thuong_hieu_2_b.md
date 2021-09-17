@@ -221,3 +221,17 @@ Bất kì thương hiệu nào luôn có sự lặp lại một số màu nhất
 Sự nhất quán này giúp khách hàng dễ dàng nhận ra thương hiệu và gợi lên những cảm xúc gắn liền với thương hiệu
 
 <img src="https://user-images.githubusercontent.com/15076665/133264309-d52b362c-1aa7-476f-8e13-9019b84c2844.jpg">
+
+**Chữ nói gì về thương hiệu**
+
+Nếu hình ảnh và màu sắc có thể gây ấn tượng cho người dùng ngay lập tức thì chữ yêu cầu người dùng phải đọc theo chủ đích.
+
+Quá trình trải nghiệm nội dung chính là quá trình mà người dùng cảm nhận được các đặc tính của chữ. Không phải ngẫu nhiên con người sáng tạo ra cả nghìn kiểu chữ, mổi kiểu chữ sẽ gợi ra cảm xúc, hình dung và sự thôi thúc khác nhau.
+
+**Điều chưa nói về chữ**
+
+Chữ vẫn hàng ngày khiến ta đưa ra lựa chọn, khiến ta mua hàng và khéo léo điều hướng sự chú ý.
+
+Chỉ nhìn qua một vài chữ cái, chắc hẳn bạn cũng sẽ nhận ra được các thương hiệu dưới đây:
+
+<img src="https://user-images.githubusercontent.com/15076665/133790851-13abd8c4-0008-4982-af6f-85e887776ab9.jpg">
