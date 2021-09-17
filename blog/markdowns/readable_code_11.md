@@ -80,3 +80,44 @@ var vote_changed = function (old_vote, new_vote) {
 ```
 
 ### Bóc tách các giá trị từ Object
+
+Giả sử chúng ta có một task đó là bóc tách các thông tin từ dữ liệu địa chỉ và đưa ra dưới dạng xâu "Thành Phố, Đất nước". Minh hoạ như hình dưới đây: 
+
+<img src="https://user-images.githubusercontent.com/15076665/133739683-51550c0d-bd1e-4eb3-9328-6b4f413a9260.png" width="720">
+
+Tuy nhiên trong trường hợp thiếu dữ liệu
+- Nếu `LocalityName` không có thì `SubAdministrativeAreaName` sẽ được sử dụng.
+- Nếu `SubAdministrativeAreaName` không có thì `AdministrativeAreaName` sẽ được sử dụng.
+- Nếu `AdministrativeAreaName` không có thì sẽ đưa ra "Middle-of-NoWhere" để thay thế.
+- Nếu `CountryName` không có thì sẽ đưa ra `Planet Earth` để thay thế.
+
+<img src="https://user-images.githubusercontent.com/15076665/133740007-1952fb54-8ff3-4048-b1d9-fdb8c0d378dc.png" width="720">
+
+Đoạn code triển khai sẽ như sau:
+
+```JS
+var place = location_info["LocalityName"];  // e.g. "Santa Monica"
+
+if (!place) {
+  place = location_info["SubAdministrativeAreaName"];  // e.g. "Los Angeles"
+}
+if (!place) {
+  place = location_info["AdministrativeAreaName"];  // e.g. "California"
+}
+if (!place) {
+  place = "Middle-of-Nowhere";
+}
+if (location_info["CountryName"]) {
+    place += ", " + location_info["CountryName"];  // e.g. "USA"
+} else {
+   place += ", Planet Earth";
+}
+return place;
+```
+
+Hơi rối một chút nhưng nó hoạt động tốt, giả sử nếu với địa điểm ở Mỹ thay vì đưa ra tên đất nước, sẽ đưa ra tên của bang.
+VD: "Santa Monica, USA" -> "Santa Monica, Carlifornia"
+
+Nếu thêm tính năng trên thì **chắc chắn** code sẽ rối hơn rất nhiều
+
+### Áp dụng "Một task tại Một thời điểm"
