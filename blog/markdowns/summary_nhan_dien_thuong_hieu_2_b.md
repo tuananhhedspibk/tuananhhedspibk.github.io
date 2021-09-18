@@ -234,4 +234,80 @@ Chữ vẫn hàng ngày khiến ta đưa ra lựa chọn, khiến ta mua hàng v
 
 Chỉ nhìn qua một vài chữ cái, chắc hẳn bạn cũng sẽ nhận ra được các thương hiệu dưới đây:
 
-<img src="https://user-images.githubusercontent.com/15076665/133790851-13abd8c4-0008-4982-af6f-85e887776ab9.jpg">
+<img src="https://user-images.githubusercontent.com/15076665/133790851-13abd8c4-0008-4982-af6f-85e887776ab9.jpg" width="720">
+
+Chữ đóng vai trò quan trọng trong xây dựng cá tính và thông điệp cho logo, giúp nhắc nhớ về thương hiệu
+
+1. **Chữ biểu trưng**
+
+Chữ trong logo chính là một thiết kế độc đáo giúp truyền tải cá tính và ý nghĩa riêng của thương hiệu.
+
+Chữ trong logo thường sử dụng điểm nhấn đặc biệt hoặc tích hợp trong hình ảnh của thương hiệu. Nhấn mạnh về yếu tố **độc đáo** và **cá tính**
+
+2. **Chữ tiêu đề và khẩu hiệuu**
+
+Ngoài yếu tố nhận diện thì chữ tiêu đề và khẩu hiệu còn phải đảm bảo yếu tố truyền tải thông tin. Vì thế nên chữ tiêu đề và khẩu hiệu không nhất thiết phải cùng kiểu với chữ logo.
+
+3. **Chữ nội dung**
+
+Được sử dụng cho các đoạn văn bản, đảm bảo yếu tố rõ ràng và trung tính.
+
+Để đảm bảo yếu tố đồng nhất và nhận diện, **chữ nội dung** và **chữ tiêu đề, khẩu hiệu** sẽ được sử dụng cùng một typeface:
+- **Chữ nội dung** được quy định sử dụng các **font chữ thường**.
+- **Chữ tiêu đề và khẩu hiệu** sử dụng các **font viết hoa** và **in đậm** để đảm bảo yếu tố gây ấn tượng và phân tách nội dung.
+
+<img src="https://user-images.githubusercontent.com/15076665/133888900-c443120f-6b0a-457e-9f43-63a5b138c323.jpg" width="720">
+
+**Chữ nói gì về thương hiệu?**
+
+Cá tính của chữ là lí do mà hiện tại hơn 20,000 font chữ và con số này không ngừng tăng lên.
+
+4 dạng kiểu chữ thể hiện những tính chất khác nhau.
+
+1. **San serif typeface - Chữ không chân**
+
+<img src="https://user-images.githubusercontent.com/15076665/133888936-54f4a4bf-041c-4743-a35b-2867a09c9c85.jpg" width="720">
+
+Các kiểu chữ không chân mang lại:
+- Trải nghiệm đọc tốt.
+- Sự trẻ trung, năng động.
+- Sự phân biệt giữa các chữ cái rõ ràng.
+
+Các thương hiệu công nghệ thường sử dụng font chữ không chân để thể hiện sự hiện đại của mình (VD: Facebook, Apple)
+
+Với Apple dù có nhiều sự thay đổi trong font chữ nhưng kiểu chữ họ chọn vẫn là chữ không chân (Myriad Pro -> Helvetica Neue -> New Sanfrancisco).
+
+Kiểu chữ nên được sử dụng một cách thống nhất trên các sản phẩm, nội dung gắn với thương hiệu.
+
+2. **Serif typeface - Chữ có chân**
+
+<img src="https://user-images.githubusercontent.com/15076665/133889034-db22516c-828d-49bb-a884-b5d2cb8d1ff9.jpg" width="720">
+
+Chữ có chân thường gợi nên cảm giác:
+- Vững chắc.
+- Cổ điển, Truyền thống.
+- Thanh lịch, trang trọng.
+
+Thể hiện rất tốt trên các nội dung in ấn.
+
+Thường được các thương hiệu **thời trang** và **tạp chí** lựa chọn.
+
+3. **Hand writing typeface - Chữ viết tay**
+
+Cảm giác thân thiện, hoài cổ. Nó giúp truyền đạt những cảm xúc, tâm tình mà thương hiệu muốn tâm sự riêng với khách hàng.
+
+Loại chữ này thường được các thương hiệu thủ công hoặc tỉ mỉ lựa chọn.
+
+Tạo hình khá phức tạp và có nhiều đường nét kéo dài. Thường được ứng dụng trong chữ biểu tượng với vai trò điểm nhấn hoặc truyền tải thông điệp ngắn trong chữ tiêu đề và khẩu hiệu.
+
+<img src="https://user-images.githubusercontent.com/15076665/133889505-50194cf9-9e0a-4cc3-9cf2-6fe858d5cb07.jpg" width="720">
+
+4. **Decorative typeface - Chữ trang trí**
+
+Phục vụ cho mục đích gây sự chú ý. Kiểu chữ này thường có nhiều điểm biến tấu vì thể chỉ nên sử dụng một cách điều độ với mục đích cụ thể.
+
+Có thể sử dụng để làm điểm nhấn cho **chữ biểu tượng**. Hiếm khi được sử dụng cho **chữ nội dung**.
+
+Ví dụ với thương hiệu Coca-Cola với kiểu chữ **Spencerian** với các dải chữ uốn lượn, thể hiện "sự giản dị", "độc đáo" và "quyến rũ" nhưng lại có một tâm hồn "trẻ trung".
+
+> Có thể sử dụng nhiều kiểu chữ khác nhau nhưng chúng phải phối kết hợp một cách ăn ý để thể hiện được thông điệp, cá tính của thương hiệu một cách đồng nhất.
