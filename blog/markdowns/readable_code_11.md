@@ -204,3 +204,65 @@ if (country === "USA") {
 
 return first_half + ", " + second_half;
 ```
+
+### Một ví dụ rộng hơn
+
+Trong hệ thống web crawling mà chúng tôi mới xây dựng, có một hàm gọi là `UpdateCounts()` được gọi để update các chỉ số thống kê mỗi khi một trang web được tải xuống.
+
+```C#
+void UpdateCounts(HttpDownload hd) {
+  counts["Exit State" ][hd.exit_state()]++;       // e.g. "SUCCESS" or "FAILURE"
+  counts["Http Response"][hd.http_response()]++;  // e.g. "404 NOT FOUND"
+  counts["Content-Type" ][hd.content_type()]++;   // e.g. "text/html"
+}
+```
+
+Đây là những gì mà chúng tôi *muốn*.
+
+Tuy nhiên trong thực tế thì `HttpDownload` object không hề có các method như trên, thay vào đó nó là một class phức tạp với nhiều class lồng ở bên trong, ngoài ra trong một số trường hợp các giá trị trên có thể không có và khi đó chúng tôi phải thay bằng giá trị mặc định "unknown".
+
+Vì thế code hiện tại trông khá là lộn xộn:
+
+```C#
+// WARNING: DO NOT STARE DIRECTLY AT THIS CODE FOR EXTENDED PERIODS OF TIME.
+void UpdateCounts(HttpDownload hd) {
+  // Figure out the Exit State, if available.
+  if (!hd.has_event_log() || !hd.event_log().has_exit_state()) {
+    counts["Exit State"]["unknown"]++;
+  } else {
+    string state_str = ExitStateTypeName(hd.event_log().exit_state());
+    counts["Exit State"][state_str]++;
+  }
+
+  // If there are no HTTP headers at all, use "unknown" for the remaining elements.
+  if (!hd.has_http_headers()) {
+    counts["Http Response"]["unknown"]++;
+    counts["Content-Type"]["unknown"]++;
+    return;
+  }
+    
+  HttpHeaders headers = hd.http_headers();
+  // Log the HTTP response, if known, otherwise log "unknown"
+  if (!headers.has_response_code()) {
+    counts["Http Response"]["unknown"]++;
+  } else {
+    string code = StringPrintf("%d", headers.response_code());
+    counts["Http Response"][code]++;
+  }
+
+  // Log the Content-Type if known, otherwise log "unknown"
+  if (!headers.has_content_type()) {
+    counts["Content-Type"]["unknown"]++;
+  } else {
+    string content_type = ContentTypeMime(headers.content_type());
+    counts["Content-Type"][content_type]++;
+  }
+}
+```
+
+Code trên thực hiện khá nhiều tasks cùng một lúc:
+1. Sử dụng "unknown" như là giá trị mặc định cho các key.
+2. Kiểm tra xem khi nào member của HttpDownload không tồn tại.
+3. Bóc tách giá trị, chuyển thành dạng `string`
+4. Cập nhật `counts[]`.
+
