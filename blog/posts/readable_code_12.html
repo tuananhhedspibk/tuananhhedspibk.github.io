@@ -1,57 +1,4 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
-
-let fileName = '';
-let title = '';
-let des = '';
-let postedDate = '';
-
-const questions = [
-    {
-        type: 'input',
-        name: 'blogTitle',
-        message: 'Input blog title?\n>>> '
-    },
-    {
-        type: 'input',
-        name: 'blogDescription',
-        message: 'Input blog description?\n>>> '
-    },
-    {
-        type: 'input',
-        name: 'tagsList',
-        message: 'Input tags List name?\n>>> '
-    },
-    {
-        type: 'input',
-        name: 'postedDate',
-        message: 'Input blog posted date?\n>>> '
-    },
-    {
-        type: 'input',
-        name: 'fileName',
-        message: 'Input .md, .html file name?\n>>> '
-    }
-]
-
-inquirer.prompt(questions).then(answers => {
-    title = answers['blogTitle'];
-    des = answers['blogDescription'];
-    postedDate = answers['postedDate'];
-    tagsList = answers['tagsList'].split(',');
-    fileName = answers['fileName'];
-
-    let postsPreviewJSONData = JSON.parse(fs.readFileSync('../data/posts_preview.json'));
-
-    postsPreviewJSONData[fileName] = {
-        "title": title,
-        "description": des,
-        "tags": tagsList,
-        "posted_at": `Posted at ${postedDate}`
-    }
-
-    const htmlFormat =
-        `<!DOCTYPE html>
+<!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="utf-8">
@@ -59,7 +6,7 @@ inquirer.prompt(questions).then(answers => {
             <meta name="description" content="">
             <meta name="author" content="">
 
-            <title>${title}</title>
+            <title>Readable code 12</title>
             <link rel="icon" type="img/png" href="https://tuananhhedspibk.github.io/blog/img/vn-icon.png">
 
             <!-- Bootstrap core CSS -->
@@ -103,15 +50,15 @@ inquirer.prompt(questions).then(answers => {
             </nav>
 
             <!-- Page Header -->
-            <header class="masthead" style="background-image: url('https://tuananhhedspibk.github.io/blog/img/${fileName}.png')">
+            <header class="masthead" style="background-image: url('https://tuananhhedspibk.github.io/blog/img/clean-code-bg.jpg')">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                    <h1>${title}</h1>
-                    <h2 class="subheading">${des}</h2>
-                    <span class="meta">Posted on ${postedDate}</span>
+                    <h1>Readable code 12</h1>
+                    <h2 class="subheading">Readable code translation to Vietnamese (chapter 12)</h2>
+                    <span class="meta">Posted on September 19, 2021</span>
                     </div>
                 </div>
                 </div>
@@ -183,21 +130,8 @@ inquirer.prompt(questions).then(answers => {
             <script src="https://tuananhhedspibk.github.io/blog/js/clean-blog.min.js"></script>
             <script src="https://tuananhhedspibk.github.io/blog/js/markdown.js"></script>
             <script>
-            showMarkdownFromFileAt('https://tuananhhedspibk.github.io/blog/markdowns/${fileName}.md');
+            showMarkdownFromFileAt('https://tuananhhedspibk.github.io/blog/markdowns/readable_code_12.md');
             </script>
         </body>
         </html>
-    `;
-
-    fs.writeFileSync('../data/posts_preview.json', JSON.stringify(postsPreviewJSONData, '', 4));
-
-    fs.writeFile(`../posts/${fileName}.html`, htmlFormat, err => {
-        if (err) throw err;
-        console.log('HTML file is created successfully.');
-    });
-
-    fs.writeFile(`../markdowns/${fileName}.md`, '', err => {
-        if (err) throw err;
-        console.log('Markdown file is created successfully.');
-    });
-});
+    
