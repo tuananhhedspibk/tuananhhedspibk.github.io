@@ -4,9 +4,9 @@
 
 ## Chương 2: Quản trị các yếu tố nhận diện thương hiệu
 
-**B. CÁC YẾU TỐ NHẬN DIỆN ĐẶC THÙ**
+### B. CÁC YẾU TỐ NHẬN DIỆN ĐẶC THÙ
 
-**Hãy để hình ảnh kể chuyện**
+### Hãy để hình ảnh kể chuyện
 
 > Hình ảnh là cacnhs tay phải giúp thương hiệu kể những câu chuyện của mình
 
@@ -222,7 +222,7 @@ Sự nhất quán này giúp khách hàng dễ dàng nhận ra thương hiệu v
 
 <img src="https://user-images.githubusercontent.com/15076665/133264309-d52b362c-1aa7-476f-8e13-9019b84c2844.jpg">
 
-**Chữ nói gì về thương hiệu**
+### Chữ nói gì về thương hiệu
 
 Nếu hình ảnh và màu sắc có thể gây ấn tượng cho người dùng ngay lập tức thì chữ yêu cầu người dùng phải đọc theo chủ đích.
 
@@ -311,3 +311,71 @@ Có thể sử dụng để làm điểm nhấn cho **chữ biểu tượng**. H
 Ví dụ với thương hiệu Coca-Cola với kiểu chữ **Spencerian** với các dải chữ uốn lượn, thể hiện "sự giản dị", "độc đáo" và "quyến rũ" nhưng lại có một tâm hồn "trẻ trung".
 
 > Có thể sử dụng nhiều kiểu chữ khác nhau nhưng chúng phải phối kết hợp một cách ăn ý để thể hiện được thông điệp, cá tính của thương hiệu một cách đồng nhất.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928850-771224ae-b7c3-418b-bcf4-efb0259c917f.jpg">
+
+**Quản trị chữ nhận diện**
+
+**Sử dụng chữ đồng bộ**: để đảm bảo tính đồng bộ, các thương hiệu sẽ quy định một kiểu chữ (primary typeface) với bộ chữ và các quy định sử dụng.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928860-d2ae1cfb-38e3-41a3-8418-73d81dc22277.jpg">
+
+Thông thường sẽ có một bộ chữ "dự phòng" để sử dụng khi nền tảng hiện tại không hỗ trợ chữ nhận diện.
+
+- Font chữ cho tiêu đề cần đảm bảo tính nổi bật và sự chú ý.
+- Font chữ cho nội dung cần đảm bảo trải nghiệm đọc và dễ theo dõi.
+
+**Tuân thủ quy cách trình bày**
+
+Kiểu chữ là cách bạn nói với khách hàng "Mình là ai?". Quy cách trình bày, sắp xếp là cách bạn nói về mình như thế nào.
+
+Quy cách trình bảy có thể hiểu là cách tuỳ chỉnh, sắp xếp các con chữ với nhau trong văn bản.
+
+Khi tỉ lệ chữ không cân đối, giãn cách dòng bất đồng đều, vô tình đã làm cho thương hiệu mất đi cá tính và tạo nên sự thiếu chuyên nghiệp.
+
+*Cỡ chữ (font size)*: phải thoả mãn phân cấp thông tin một cách cân đối, rõ ràng. Chữ nên được quy định tỉ lệ giữa các phần trong văn bản: tiêu đề, phần thân, phụ đề và ghi chú, ...
+
+*Khoảng cách (Leading, Tracking, Kerning)*: là khoảng cách giữa các chữ, các dòng trong văn bản. Những khoảng cách này cũng được tuỳ biến để: cân đối hoặc tạo điểm nhấn cho bố cục, gây to mò.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928907-da858cfc-4427-4dfc-b3f5-5d89d36ad198.jpg">
+
+*Bố cục*: là tỉ lệ giữa các thành tố của văn bản (giữa headline, title, body), khoảng cách giữa các phần, các cột, ...
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928926-4f9428a3-5b9b-428c-921f-c51f0e950dec.jpg">
+
+**Linh hoạt khi sử dụng chữ**
+
+Chữ được các thương hiệu sử dụng khá linh động.
+- Đối với các thương hiệu có tính ổn định về cảm xúc, chữ nhận diện có thể được duy trì trong việc sử dụng.
+- Đối với các tình huống như muốn thể hiện một thông điệp khác biệt, thương hiệu hoàn toàn có thể sử dụng kết hợp các kiểu chữ đặc biệt để truyền tải nội dung.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928938-24101b53-f53a-40c5-a365-4fab50a2ff88.jpg">
+
+Khi chữ nhận diện không được hỗ trợ trên nền tảng sử dụng, ta có thể sử dụng các kiểu chữ thứ cấp để thay thế. Chữ thứ cấp là chữ có nhiều điểm tương đồng với chữ nhận diện nhưng có mức độ phổ biến và được hỗ trợ rộng rãi hơn.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928959-ca2d8817-d6a5-489f-80e7-da35d5c8f5d6.jpg">
+
+**Lưu ý khi sử dụng chữ trong thực tế**
+
+- **In ấn**: khi gửi các nội dung để in ấn hãy chắc chắn font chữ của bạn sẽ được hiển thị chính xác. Nên gửi kèm font chữ với nội dung in ấn cho nhà in hoặc chuyển đổi các font sang pixels để chữ không bị ảnh hưởng
+- **Hiển thị trực tuyến**: Các tệp PDF sẽ đảm bảo yếu tố hiển thị chính xác của chữ trên tất cả các nền tảng.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928971-7c03d3c0-84b1-4331-a827-2460bfe425c9.jpg">
+
+### Nhận diện thương hiệu qua bố cục
+
+> Khi các yếu tố cùng xuất hiện trong tổng thể thì việc đảm bảo sự hài hoà giữa các yếu tố là rất quan trọng
+
+**Những điều chưa biết về bố cục**
+
+> Bố cục là sự sắp xếp các yếu tố đồ hoạ như logo, chữ, hình ảnh, ... thậm chí là cả các khoảng trống xung quanh các yếu tố đó
+
+Bố cục có tác động không nhỏ tới trải nghiệm đọc và sự tiếp nhận nội dung.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928975-dc418707-7ccf-48fc-88a1-b2d17f0241a6.jpg">
+
+**Bố cục và sự nhận diện**
+
+Sự tổng hoà giữa các yếu tố cũng sẽ tạo nên cảm nhận thị giác cho người xem, khi cảm giác này được duy trì một cách nhất quán thì sự nhận diện cũng sẽ được thiết lập.
+
+<img width="720" src="https://user-images.githubusercontent.com/15076665/133928977-2eb460ba-5fb7-49ee-ac9b-cab6cd4a2297.jpg">
