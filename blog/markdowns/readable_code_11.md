@@ -266,3 +266,64 @@ Code trên thực hiện khá nhiều tasks cùng một lúc:
 3. Bóc tách giá trị, chuyển thành dạng `string`
 4. Cập nhật `counts[]`.
 
+Chúng ta có thể cải thiện đoạn code trên để phân chia code theo task như sau:
+
+```C#
+void UpdateCounts(HttpDownload hd) {
+  // Task: define default values for each of the values we want to extract
+  string exit_state = "unknown";
+  string http_response = "unknown";
+  string content_type = "unknown";
+  // Task: try to extract each value from HttpDownload, one by one
+  if (hd.has_event_log() && hd.event_log().has_exit_state()) {
+    exit_state = ExitStateTypeName(hd.event_log().exit_state());
+  }
+  if (hd.has_http_headers() && hd.http_headers().has_response_code()) {
+    http_response = StringPrintf("%d", hd.http_headers().response_code());
+  }
+  if (hd.has_http_headers() && hd.http_headers().has_content_type()) {
+    content_type = ContentTypeMime(hd.http_headers().content_type());
+  }
+  // Task: update counts[]
+  counts["Exit State"][exit_state]++;
+  counts["Http Response"][http_response]++;
+  counts["Content-Type"][content_type]++;
+}
+```
+
+Có thể thấy rằng 3 đoạn code trong hàm thực hiện lần lượt 3 tasks sau:
+1. Định nghĩa giá trị mặc định
+2. Bóc tách giá trị từ `HttpDownload` object
+3. Update counts.
+
+Một ưu điểm có thể thấy rõ ở cách viết này đó là khi đọc mỗi đoạn code ta không cần quan tâm đến các đoạn code khác.
+
+### Cải thiện hơn nữa
+
+Chúng ta cũng có thể viết các hàm helper để cải thiện code như sau
+
+```C#
+void UpdateCounts(HttpDownload hd) {
+  counts["Exit State"][ExitState(hd)]++;
+  counts["Http Response"][HttpResponse(hd)]++;
+  counts["Content-Type"][ContentType(hd)]++;
+}
+```
+
+Các hàm này sẽ bóc tách giá trị tương ứng từ các object hoặc trả về giá trị mặc định là "unknown"
+
+```C#
+string ExitState(HttpDownload hd) {
+  if (hd.has_event_log() && hd.event_log().has_exit_state()) {
+    return ExitStateTypeName(hd.event_log().exit_state());
+  } else {
+    return "unknown";
+  }
+}
+```
+
+Việc tách function như trên sẽ giúp giảm đi các biến trung gian.
+
+### Tổng kết
+
+Nếu cảm thấy code khó đọc, hãy liệt kê các tasks mà code đang thực hiện. Xem xét việc chia ra thành các functions.
