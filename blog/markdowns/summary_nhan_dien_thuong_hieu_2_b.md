@@ -379,3 +379,72 @@ Bố cục có tác động không nhỏ tới trải nghiệm đọc và sự t
 Sự tổng hoà giữa các yếu tố cũng sẽ tạo nên cảm nhận thị giác cho người xem, khi cảm giác này được duy trì một cách nhất quán thì sự nhận diện cũng sẽ được thiết lập.
 
 <img width="720" src="https://user-images.githubusercontent.com/15076665/133928977-2eb460ba-5fb7-49ee-ac9b-cab6cd4a2297.jpg">
+
+Quy định về bố cục hướng về tính kế thừa và phát triển.
+
+Lưới (grid) là một phương tiện để xác định vị trí của các yếu tố. Việc sử dụng lưới là cách mà một ứng dụng xác định rõ ràng sự xuất hiện cũng như cách xuất hiện của các yếu tố bên trong tổng thể.
+
+Hơn nữa việc sử dụng lưới cũng đảm bảo tính chỉn chu cân đối cho tổng thể.
+Một lưới tốt sẽ đảm bảo được trật tự, sự rõ ràng về cấu trúc cho bố cục.
+
+Với các `hệ thống tài chính`, `ngân hàng` yêu cầu về sự minh bạch, rõ ràng là ưu tiên số 1, nên không thể sử dụng hệ thống lưới chéo với các thương hiệu về tài chính, ngân hàng.
+
+Với các `đơn vị sáng tạo` thì việc sử dụng lưới theo kiểu chuẩn đôi khi lại gây ra cảm giác buồn chán.
+
+Một bố cục tốt là bố cục đặt trên một hệ thống lưới có ý đồ.
+
+Các tài liệu thường có trải nghiệm đọc lật trang trong khi các trang web sẽ có trải nghiệm đọc lướt từ trên xuống nên với mỗi một kiểu ứng dụng, tài liệu sẽ có một bố cục riêng.
+
+**Bố cục thể hiện nội dung**
+
+Bố cục chính là yếu tố nền tảng để nội dung được thể hiện đúng.
+
+Các yếu tố khi được sắp xếp trong bố cục sẽ tạo nên một hệ thống phân cấp thông tin. Hệ thống phân cấp thông tin này được thiết lập dựa trên mối quan hệ phối hợp hoặc tương phản giữa các yếu tố, tạo ra các điểm neo chính phụ để điều hướng trong quá trình thị giác tương tác với hình ảnh.
+
+> Khi các nội dung được tiết lộ thông qua trải nghiệm điều hướng chính là lúc thông điệp tiếp cận một cách hiệu quả nhất tới người dùng
+
+Nếu tất cả các yếu tố đều ngang bằng nhau, khách hàng của bạn sẽ hoang mang trong quá trình tiếp nhận thông tin.
+
+<img src="https://user-images.githubusercontent.com/15076665/134003783-5ce1ca32-1fb1-4300-aebc-29aac3b959cb.jpg" width="720">
+
+#### Quản trị bố cục
+
+**Xác định rõ phân cấp và đảm bảo tương quan của các yếu tố**
+
+Bố cục liên quan đến kích thước và vị trí của các yếu tố như chữ, hình ảnh, logo. Khả năng tiếp nhận thông điệp thường bị ảnh hưởng bởi một số các đặc trưng liên quan đến vị trí như:
+- Các điểm neo được tạo nên bởi các đường căn gióng.
+- Các đường nhấn dẫn dắt.
+
+**Logo trong bố cục**
+
+Do thói quen đọc thường là "trên -> dưới", "trái -> phải" nên logo thường được đặt ở góc trên cùng bên trái để logo dễ được tìm thấy trong quá trình người đọc lướt trang.
+
+Việc đặt logo ở vị trí `trên cùng bên trái` sẽ giúp logo xuất hiện đầu tiên trong trải nghiệm. Tuy nhiên có những trường hợp logo được đặt ở `góc dưới cùng bên phải` như một sự nhắc nhớ của thương hiệu đối với người xem.
+
+<img src="https://user-images.githubusercontent.com/15076665/134003813-4b17356a-f9b1-4fea-be1f-c789d00dd80f.jpg" width="720">
+
+**Chữ trong bố cục**
+
+<img src="https://user-images.githubusercontent.com/15076665/134003818-a7e445ed-414c-4e57-b521-296f01f00d31.jpg" width="720">
+
+Trong tổng thể khi chữ xuất hiện phải được cân bằng với các yếu tố hình ảnh. Kích thước chữ, tỉ lệ căn gióng cần được chú ý để đảm bảo yếu tố thẩm mỹ của sản phẩm.
+
+Nội dung sẽ được thể hiện ở các cấp độ quan trọng khác nhau dựa trên kích thước chữ hoặc màu sắc.
+
+<img src="https://user-images.githubusercontent.com/15076665/134003823-8fed84d1-23a5-42ce-a405-68974812feab.jpg" width="720">
+
+Thông thường title sẽ được làm nổi bật nhờ kích thước lớn nhất, nhấn nhá và màu sắc. Cấp độ 2 sẽ là nội dung, thường có kích thước và nhấn nhá ở mức bình thường. Cuối cùng là các nội dung bổ sung (hotline, website)
+
+Dù có phân cấp độ như thế nào đi nữa thì việc đảm bảo yếu tố đọc vẫn là quan trọng nhất.
+
+**Hình ảnh, hoạ tiết trong bố cục**
+
+Hình ảnh có sức truyền tải thông điệp vô cùng mạnh mẽ. Tuỳ theo mục đích thiết kế, hình ảnh có thể được sử dụng trong tổng thể bằng nhiều cách:
+- Nhân tố chủ chốt với hình ảnh tràn trang như ở dưới.
+- Được sắp xếp ở nhiều vị trí khác nhau trong lưới.
+
+Có một bố cục chắn chắn sẽ giúp hình ảnh được thể hiện nhất quán, phát huy được thế mạnh nhưng vẫn giữ được sự hài hoà với các yếu tố khác.
+
+<img src="https://user-images.githubusercontent.com/15076665/134003829-a0df1055-b858-4ddc-ac32-cda8f555095c.jpg" width="720">
+
+Các yếu tố đồ hoạ bổ trợ thường được sử dụng để điều hướng thông tin. Khi sử dụng các yếu tố đồ hoạ, cần chú ý tiết chế nhằm hạn chế việc hệ thống phân cấp bị rối loạn bởi quá nhiều yếu tố.
