@@ -448,3 +448,39 @@ Có một bố cục chắn chắn sẽ giúp hình ảnh được thể hiện 
 <img src="https://user-images.githubusercontent.com/15076665/134003829-a0df1055-b858-4ddc-ac32-cda8f555095c.jpg" width="720">
 
 Các yếu tố đồ hoạ bổ trợ thường được sử dụng để điều hướng thông tin. Khi sử dụng các yếu tố đồ hoạ, cần chú ý tiết chế nhằm hạn chế việc hệ thống phân cấp bị rối loạn bởi quá nhiều yếu tố.
+
+### Linh hoạt khi sử dụng bố cục
+
+Có hai cách để thương hiệu định hướng bố cục cho ứng dụng:
+- Bố cục quy chuẩn có sự linh hoạt.
+- Bố cục chặt chẽ với hệ thốn template.
+
+Với việc sử dụng template thì quá trình triển khai trong thực tế sẽ chở nên nhanh chóng tuy nhiên lại thiếu đi tính sáng tạo. Hệ thống template thường được triển khai với các thương hiệu có không quá nhiều các sản phẩm ứng dụng.
+
+Layout ở dạng template thường được ứng dụng trên các sản phẩm không yêu cầu quá nhiều sự sáng tạo về mặt thị giác, trong khi yêu cầu nhiều hơn về yếu tố đồng bộ, nhận diện và thẩm mĩ.
+
+<img src="https://user-images.githubusercontent.com/15076665/134347339-7f573f47-2c54-4d77-83f4-cdcbfcd3064e.jpg" width="720">
+
+Vì tính chất truyền tải thông tin của mình, bố cục vẫn là một yếu tố linh hoạt. Như ở ví dụ dưới đây, vị trí và kích thước của logo không cần phải quy chuẩn như template phía trên, bởi ưu tiên trước nhất nằm ở hai yếu tố:
+- Sự sáng tạo.
+- Thông điệp.
+
+<img src="https://user-images.githubusercontent.com/15076665/134347361-5138a5e2-2a80-4976-9190-7b6925757c7f.jpg" width="720">
+
+### Bí kíp quản trị
+
+Cần cân nhắc giữa hai yếu tố:
+- Nội dung chuyên nghiệp
+- Tính sáng tạo
+
+Để lựa chọn bố cục theo:
+- Template
+- Sáng tạo, linh hoạt
+
+Dù là bố cục theo kiểu gì, cũng cần tuân thủ các nguyên tắc dưới đây
+
+1. Các yếu tố xuất hiện trong bố cục có sự phối hợp nhịp nhàng với nhau, từ đó tạo nên hệ thống phân cấp, dẫn dắt đúng ý đồ.
+
+2. Khi sử dụng tempalte cần xem xét kĩ về vị trí, kích thước của các yếu tố như hình ảnh, logo chữ để đảm bảo sự đồng nhất, chuyên nghiệp.
+
+3. Linh hoạt khi sử dụng ứng dụng tuỳ vào thông điệp truyền tải và tính chất dẫn dắt thông tin.
