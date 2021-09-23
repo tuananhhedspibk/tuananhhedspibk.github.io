@@ -288,12 +288,6 @@ header.masthead .post-heading .meta a {
   color: #0085A1;
 }
 
-.post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
 .post-preview > a > .post-subtitle {
   font-weight: 300;
   margin: 0 0 10px;
@@ -429,6 +423,19 @@ footer .copyright {
   display: none;
 }
 
+.post-title-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+p.post-title {
+  display: inline-block;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
+
 .about-content {
   align-items: center;
   display: flex;
@@ -475,6 +482,11 @@ footer .copyright {
   color: #015171;
   font-size: 3em;
   font-weight: bold;
+}
+
+.fas {
+  color: #015171;
+  font-size: 25px;
 }
 
 .tags a {

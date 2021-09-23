@@ -8,7 +8,8 @@
             "Summary",
             "vietnamese2"
         ],
-        "posted_at": "Posted at September 23, 2021"
+        "posted_at": "Posted at September 23, 2021",
+        "status": "in_progress"
     },
     "readable_code_13": {
         "title": "Readable code 13",
@@ -18,7 +19,8 @@
             " Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 23, 2021"
+        "posted_at": "Posted at September 23, 2021",
+        "status": "done"
     },
     "readable_code_12": {
         "title": "Readable code 12",
@@ -28,7 +30,8 @@
             " Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 19, 2021"
+        "posted_at": "Posted at September 19, 2021",
+        "status": "done"
     },
     "text_field_and_form_design": {
         "title": "Text Field And Form Design",
@@ -38,7 +41,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 14, 2021"
+        "posted_at": "Posted at September 14, 2021",
+        "status": "in_progress"
     },
     "readable_code_11": {
         "title": "Readable code 11",
@@ -48,7 +52,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 11, 2021"
+        "posted_at": "Posted at September 11, 2021",
+        "status": "done"
     },
     "readable_code_10": {
         "title": "Readable code 10",
@@ -58,7 +63,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 11, 2021"
+        "posted_at": "Posted at September 11, 2021",
+        "status": "done"
     },
     "readable_code_9": {
         "title": "Readable code 9",
@@ -68,7 +74,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 10, 2021"
+        "posted_at": "Posted at September 10, 2021",
+        "status": "done"
     },
     "readable_code_8": {
         "title": "Readable code 8",
@@ -78,7 +85,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at August 30, 2021"
+        "posted_at": "Posted at August 30, 2021",
+        "status": "done"
     },
     "best_practices_writting_dockerfile": {
         "title": "Best Practices Writting Dockerfile",
@@ -88,7 +96,8 @@
             "Best-practices",
             "vietnamese2"
         ],
-        "posted_at": "Posted at 2021, August 28"
+        "posted_at": "Posted at 2021, August 28",
+        "status": "in_progress"
     },
     "readable_code_7": {
         "title": "Readable code 7",
@@ -98,7 +107,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at August 27, 2021"
+        "posted_at": "Posted at August 27, 2021",
+        "status": "done"
     },
     "readable_code_6": {
         "title": "Readable code 6",
@@ -108,7 +118,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at June 20, 2021"
+        "posted_at": "Posted at June 20, 2021",
+        "status": "done"
     },
     "form_design_pattern_chapter_1": {
         "title": "Form Design Pattern - Chapter 1",
@@ -118,7 +129,8 @@
             "UX",
             "vietnamese2"
         ],
-        "posted_at": "Posted at April 4, 2021"
+        "posted_at": "Posted at April 4, 2021",
+        "status": "in_progress"
     },
     "summary_nhan_dien_thuong_hieu_2_b": {
         "title": "Summary Nhan Dien Thuong Hieu - Chapter 2 (Section B)",
@@ -129,7 +141,8 @@
             "Summary",
             "vietnamese2"
         ],
-        "posted_at": "Posted at April 4, 2021"
+        "posted_at": "Posted at April 4, 2021",
+        "status": "done"
     },
     "summary_nhan_dien_thuong_hieu_2_a": {
         "title": "Summary Nhan Dien Thuong Hieu - Chapter 2 (Section A)",
@@ -140,7 +153,8 @@
             "Summary",
             "vietnamese2"
         ],
-        "posted_at": "Posted at April 4, 2021"
+        "posted_at": "Posted at April 4, 2021",
+        "status": "done"
     },
     "summary_nhan_dien_thuong_hieu_1": {
         "title": "Summary Nhan Dien Thuong Hieu - Chapter 1",
@@ -151,7 +165,8 @@
             "Summary",
             "vietnamese2"
         ],
-        "posted_at": "Posted at January 31, 2021"
+        "posted_at": "Posted at January 31, 2021",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_8": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 8",
@@ -162,7 +177,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at November 1, 2020"
+        "posted_at": "Posted at November 1, 2020",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_7": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 7",
@@ -173,7 +189,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 26, 2020"
+        "posted_at": "Posted at October 26, 2020",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_6": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 6",
@@ -184,7 +201,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 26, 2020"
+        "posted_at": "Posted at October 26, 2020",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_5": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 5",
@@ -195,7 +213,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 25, 2020"
+        "posted_at": "Posted at October 25, 2020",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_4": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 4",
@@ -206,7 +225,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 19, 2020"
+        "posted_at": "Posted at October 19, 2020",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_3": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 3",
@@ -217,7 +237,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 18, 2020"
+        "posted_at": "Posted at October 18, 2020",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_2": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 2",
@@ -228,7 +249,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 17, 2020"
+        "posted_at": "Posted at October 17, 2020",
+        "status": "done"
     },
     "xau_the_nao_dep_ra_sao_chapter_1": {
         "title": "Summary \"Xau the nao, dep ra sao\" - Chapter 1",
@@ -239,7 +261,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 17, 2020"
+        "posted_at": "Posted at October 17, 2020",
+        "status": "done"
     },
     "master_slave_architecture": {
         "title": "Master slave for begginer",
@@ -250,7 +273,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 27, 2020"
+        "posted_at": "Posted at October 27, 2020",
+        "status": "done"
     },
     "flexbox_fundamental": {
         "title": "Flexbox fundamental",
@@ -261,7 +285,8 @@
             "UI",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 8, 2020"
+        "posted_at": "Posted at October 8, 2020",
+        "status": "done"
     },
     "grid_fundamental": {
         "title": "Grid Fundamental",
@@ -272,7 +297,8 @@
             "UI",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 5, 2020"
+        "posted_at": "Posted at October 5, 2020",
+        "status": "done"
     },
     "grid_layout_flexbox_components": {
         "title": "Grid for layout, Flexbox for components",
@@ -282,7 +308,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at October 2, 2020"
+        "posted_at": "Posted at October 2, 2020",
+        "status": "done"
     },
     "readable_code_5": {
         "title": "Readable code translation to Vietnamese (chapter 5)",
@@ -292,7 +319,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on February 22, 2020"
+        "posted_at": "Posted on February 22, 2020",
+        "status": "done"
     },
     "readable_code_4": {
         "title": "Readable code translation to Vietnamese (chapter 4)",
@@ -302,7 +330,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 11, 2019"
+        "posted_at": "Posted on July 11, 2019",
+        "status": "done"
     },
     "readable_code_3": {
         "title": "Readable code translation to Vietnamese (chapter 3)",
@@ -312,7 +341,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 06, 2019"
+        "posted_at": "Posted on July 06, 2019",
+        "status": "done"
     },
     "readable_code_2": {
         "title": "Readable code translation to Vietnamese (chapter 2)",
@@ -322,7 +352,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 06, 2019"
+        "posted_at": "Posted on July 06, 2019",
+        "status": "done"
     },
     "readable_code_1": {
         "title": "Readable code translation to Vietnamese (chapter 1)",
@@ -332,7 +363,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 06, 2019"
+        "posted_at": "Posted on July 06, 2019",
+        "status": "done"
     },
     "refactoring_ui_4": {
         "title": "Refactoring UI (part 4)",
@@ -343,7 +375,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 18, 2020"
+        "posted_at": "Posted at September 18, 2020",
+        "status": "done"
     },
     "refactoring_ui_3": {
         "title": "Refactoring UI (Part 3)",
@@ -353,7 +386,8 @@
             "UX",
             "vietnamese"
         ],
-        "posted_at": "Posted at December 1, 2019"
+        "posted_at": "Posted at December 1, 2019",
+        "status": "done"
     },
     "refactoring_ui_2": {
         "title": "Refactoring UI Part 2",
@@ -364,7 +398,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at August 10, 2019"
+        "posted_at": "Posted at August 10, 2019",
+        "status": "done"
     },
     "refactoring_ui_1": {
         "title": "Refactoring UI Part 1",
@@ -375,7 +410,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at August 02, 2019"
+        "posted_at": "Posted at August 02, 2019",
+        "status": "done"
     },
     "graphql_with_react": {
         "title": "GraphQL with React",
@@ -385,7 +421,8 @@
             "React",
             "english"
         ],
-        "posted_at": "Posted at December 7, 2019"
+        "posted_at": "Posted at December 7, 2019",
+        "status": "done"
     },
     "redux_from_scratch": {
         "title": "Redux from scratch",
@@ -395,7 +432,8 @@
             "Javascript",
             "english"
         ],
-        "posted_at": "Posted at September 15, 2019"
+        "posted_at": "Posted at September 15, 2019",
+        "status": "done"
     },
     "syn_token_filter": {
         "title": "Synonym Token Filter",
@@ -405,7 +443,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 03, 2019"
+        "posted_at": "Posted at September 03, 2019",
+        "status": "done"
     },
     "query_types_es": {
         "title": "Query types are commonly used in Elasticsearch",
@@ -416,7 +455,8 @@
             "Summary",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 03, 2019"
+        "posted_at": "Posted at September 03, 2019",
+        "status": "done"
     },
     "es_basic_2": {
         "title": "Elasticsearch basic (Part 2)",
@@ -425,7 +465,8 @@
             "Elasticsearch",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 03, 2019"
+        "posted_at": "Posted at September 03, 2019",
+        "status": "done"
     },
     "es_basic_1": {
         "title": "Elasticsearch basic (Part 1)",
@@ -434,7 +475,8 @@
             "Elasticsearch",
             "vietnamese"
         ],
-        "posted_at": "Posted at September 03, 2019"
+        "posted_at": "Posted at September 03, 2019",
+        "status": "done"
     },
     "neural_networks_and_deep_learning": {
         "title": "Summary the main content of the course Neural Networks and Deep Learning on Coursera",
@@ -444,7 +486,8 @@
             "Deep Learning",
             "vietnamese"
         ],
-        "posted_at": "Posted on August 31, 2019"
+        "posted_at": "Posted on August 31, 2019",
+        "status": "done"
     },
     "cnn_basic": {
         "title": "CNN",
@@ -454,7 +497,8 @@
             "DeepLearning",
             "english"
         ],
-        "posted_at": "Posted at August 24, 2019"
+        "posted_at": "Posted at August 24, 2019",
+        "status": "done"
     },
     "flutter_basic": {
         "title": "Flutter basic",
@@ -463,7 +507,8 @@
             "Flutter",
             "english"
         ],
-        "posted_at": "Posted at August 24, 2019"
+        "posted_at": "Posted at August 24, 2019",
+        "status": "done"
     },
     "dart_basic": {
         "title": "Dart Basic",
@@ -472,7 +517,8 @@
             "Dart",
             "english"
         ],
-        "posted_at": "Posted at August 24, 2019"
+        "posted_at": "Posted at August 24, 2019",
+        "status": "done"
     },
     "mobile_design": {
         "title": "MobileDesign",
@@ -483,7 +529,8 @@
             "Mobile",
             "english"
         ],
-        "posted_at": "Posted at August 14, 2019"
+        "posted_at": "Posted at August 14, 2019",
+        "status": "done"
     },
     "ant_design": {
         "title": "Ant Design (Quick note)",
@@ -494,7 +541,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 26, 2019"
+        "posted_at": "Posted on July 26, 2019",
+        "status": "done"
     },
     "english_grammar_2": {
         "title": "English Grammar Series 2 (processing)",
@@ -503,7 +551,8 @@
             "english",
             "Grammar"
         ],
-        "posted_at": "Posted on July 21, 2019"
+        "posted_at": "Posted on July 21, 2019",
+        "status": "done"
     },
     "graph_ql": {
         "title": "GraphQL Basics",
@@ -513,7 +562,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 17, 2019"
+        "posted_at": "Posted on July 17, 2019",
+        "status": "done"
     },
     "quick_eng_note": {
         "title": "Quick note about English knowledges",
@@ -522,7 +572,8 @@
             "english",
             "Note"
         ],
-        "posted_at": "Posted on July 12, 2019"
+        "posted_at": "Posted on July 12, 2019",
+        "status": "done"
     },
     "english_grammar_1": {
         "title": "English Grammar Series 1 (processing)",
@@ -531,7 +582,8 @@
             "english",
             "Grammar"
         ],
-        "posted_at": "Posted on July 12, 2019"
+        "posted_at": "Posted on July 12, 2019",
+        "status": "done"
     },
     "git_merged_commit_revert": {
         "title": "Git merged commit revert",
@@ -542,7 +594,8 @@
             "Translation",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 11, 2019"
+        "posted_at": "Posted on July 11, 2019",
+        "status": "done"
     },
     "elixir_basic": {
         "title": "Elixir basic",
@@ -551,7 +604,8 @@
             "Elixir",
             "english"
         ],
-        "posted_at": "Posted on July 05, 2019"
+        "posted_at": "Posted on July 05, 2019",
+        "status": "done"
     },
     "elm_basic": {
         "title": "Elm basic",
@@ -560,7 +614,8 @@
             "Elm",
             "english"
         ],
-        "posted_at": "Posted on July 05, 2019"
+        "posted_at": "Posted on July 05, 2019",
+        "status": "done"
     },
     "en_ja_trans_exp": {
         "title": "English Japanese translation experience",
@@ -570,6 +625,7 @@
             "Experience",
             "vietnamese"
         ],
-        "posted_at": "Posted on July 05, 2019"
+        "posted_at": "Posted on July 05, 2019",
+        "status": "done"
     }
 }

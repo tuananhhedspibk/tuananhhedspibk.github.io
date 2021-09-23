@@ -12,6 +12,19 @@
     display: none;
 }
 
+.post-title-wrapper {
+	align-items: center;
+	display: flex;
+}
+
+p.post-title {
+	display: inline-block;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+}
+
 .about-content {
 	align-items: center;
 	display: flex;
@@ -58,6 +71,11 @@
 	color: #015171;
 	font-size: 3em;
 	font-weight: bold;
+}
+
+.fas {
+	color: #015171;
+	font-size: 25px;
 }
 
 .tags {
